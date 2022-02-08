@@ -2,7 +2,8 @@
 import react from "react";
 //=====================STYLING IMPORTS
 import {
-    MainBody, Wrapper,
+    MainBody,
+    Wrapper,
   } from "../styles"
 
 //=====================COMPONENT
@@ -14,7 +15,7 @@ export const Main = () => {
                 <p>Here, experimental code will be run</p>
                 <h3>This component, Main, will display active components</h3>
             </Wrapper>
-            
+
         </MainBody>
     )
 }

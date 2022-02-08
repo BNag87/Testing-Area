@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 
     box-shadow: 5px 5px rgba(0, 0, 0, 0.3) ;
 
-    border: 5px outset grey;
+    border: 5px solid white;
     border-radius: 20px;
 
     display: flex;
