@@ -19,8 +19,9 @@ export const ExpTable = () => {
     //push all chars into the array
     ar_charBin.push(Char1, Char2, Char3);
 
-    //useState to store data for populating table
-    const [data, setData] = useState([]);
+    //useState to store character records
+    const [st_charData, set_st_charData] = useState([]);
+    
 
     return(
         <>
@@ -67,11 +68,12 @@ export const ExpTable = () => {
         </>
     )
   
-//this is dummy code
-document.getElementById("txt_idField").innerHTML = "Spong";
-
     //this is an onClick function for use in record rows in the JSX populated table for characters  
-    function barkCharData(idIn){
+    async function barkCharData(idIn){
+        await set_st_charData(ar_charBin);
+        console.log("==========================");
+        console.log("st_charData was set to contain ar_charBin");
+        console.log("Data of st_charData[0]: "+st_charData[0].id+ ", "+st_charData[0].full_name+", "+st_charData[0].race+", "+st_charData[0].level);
         console.log("==========================");
         
         try{
@@ -80,11 +82,15 @@ document.getElementById("txt_idField").innerHTML = "Spong";
             let nameField = document.getElementsByName("first_name_field");
 
             //Set the fields
-            idField.innerHTML = String(ar_charBin[idIn-1].id);
-            console.log("\n---> idField: "+idField);
+            idField.innerHTML = st_charData[idIn-1].id;
+            console.log("\n---> idField: "+st_charData[idIn-1].id);
             console.log("---> idField.innerHTML: "+idField.innerHTML+"\n")
             
-            nameField.innerHTML = String(ar_charBin[idIn-1].full_name);
+            nameField.innerHTML = String(st_charData[idIn-1].full_name);
+            console.log("\n---> nameField: "+nameField);
+            console.log("---> nameField.innerHTML: "+nameField.innerHTML+"\n")
+
+            nameField.innerHTML = String(st_charData[idIn-1].full_name);
             console.log("\n---> nameField: "+nameField);
             console.log("---> nameField.innerHTML: "+nameField.innerHTML+"\n")
 
