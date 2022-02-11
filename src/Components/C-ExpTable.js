@@ -1,11 +1,11 @@
 import React, {useState, useRef} from 'react';
-import { char_Obj } from "../Reference Files/ObjectDefs"
+import { char_Obj } from "../Reference Files/ObjectDefs";
 import { 
     Wrapper,
     Table,
     TableHead,
     TableRow, 
-    } from "../styles"
+    } from "../styles";
 
 export const ExpTable = () => {
 
@@ -14,15 +14,12 @@ export const ExpTable = () => {
     let Char3 = new char_Obj(3,"Euridice", "Swiftblade", 23, "Female", "Human", "Bard", 5);
     
     //array to store characters
-    let ar_charBin = [];
-    
-    //push all chars into the array
-    ar_charBin.push(Char1, Char2, Char3);
+    let ar_charBin = [Char1, Char2, Char3];
 
     //useState to store character records
-    const [st_charData, set_st_charData] = useState([]);
-    
+    const [st_charData, set_st_charData] = useState([ar_charBin]); 
 
+//APP RENDERING HERE↓
     return(
         <>
             <Wrapper>
@@ -67,37 +64,38 @@ export const ExpTable = () => {
             </Wrapper>
         </>
     )
-  
-    //this is an onClick function for use in record rows in the JSX populated table for characters  
-    async function barkCharData(idIn){
-        await set_st_charData(ar_charBin);
-        console.log("==========================");
-        console.log("st_charData was set to contain ar_charBin");
-        console.log("Data of st_charData[0]: "+st_charData[0].id+ ", "+st_charData[0].full_name+", "+st_charData[0].race+", "+st_charData[0].level);
-        console.log("==========================");
-        
+//FUNCTIONS FOR APP HERE↓
+       //this is an onClick function for use in record rows in the JSX populated table for characters  
+       function barkCharData(idIn){
+
         try{
-            //Get the fields...
-            let idField = document.getElementById("txt_idField");
-            let nameField = document.getElementsByName("first_name_field");
-
-            //Set the fields
-            idField.innerHTML = st_charData[idIn-1].id;
-            console.log("\n---> idField: "+st_charData[idIn-1].id);
-            console.log("---> idField.innerHTML: "+idField.innerHTML+"\n")
+            console.log("\n\nStarting again...")
+            console.log("\n==========================")
             
-            nameField.innerHTML = String(st_charData[idIn-1].full_name);
-            console.log("\n---> nameField: "+nameField);
-            console.log("---> nameField.innerHTML: "+nameField.innerHTML+"\n")
+            //need to get the element to display in as a reference
+            // document.getElementsByName("idField").innerHTML = st_charData[idIn-1];           
+            
+            //display all character attributes
+        console.log("-idIn was set as: "+ idIn +", so as an array index it is: " + (idIn-1));
+            //display a part of the st_chardata array. figure out what you're pointing to
+        console.log("-st_charData[idIn-1[0]] = " +st_charData[idIn-1][idIn][idIn+1]);
+        console.log("-st_charData[0].id = " +st_charData[0].id);
+        console.log("-st_charData[0][0].full_name = " +st_charData[0].full_name);
+            //     for(let i = 0; i < st_charData.length; i++)
+        //         {
+        //             console.log("i Loop: "+i)
+        //             for (let x = 0; x < st_charData[i].length; x++)
+        //             {
+        //                 console.log("Outer i: " +i+", element x: " +x+". Details follow→ ")
+        //                 console.log(st_charData[i][x])
 
-            nameField.innerHTML = String(st_charData[idIn-1].full_name);
-            console.log("\n---> nameField: "+nameField);
-            console.log("---> nameField.innerHTML: "+nameField.innerHTML+"\n")
-
-        }
+        //             }
+        //         }
+         }
+        
         catch(error)
         {
-            console.log("Pants were shat in the 'barkCharData' function [line 72]:\n\t" +error)
+            console.log("\n\nPants were shat in the 'barkCharData' function:\n\t" +error)
         }                    
     }
 }
