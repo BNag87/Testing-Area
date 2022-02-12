@@ -15,9 +15,14 @@ export const ExpTable = () => {
     
     //array to store characters
     let ar_charBin = [Char1, Char2, Char3];
+    
+
 
     //useState to store character records
-    const [st_charData, set_st_charData] = useState([ar_charBin]); 
+    const [st_charData, set_st_charData] = useState(ar_charBin); 
+    const [st_myThing, set_st_myThing] = useState(""); 
+
+
 
 //APP RENDERING HERE↓
     return(
@@ -51,7 +56,7 @@ export const ExpTable = () => {
                 <h2>Object elements</h2>
                 <p>These fields should update with object<br/>attributes when the records above are clicked</p>
 
-                <input type="text" id="txt_idField" name ="id_field" placeholder="ID"/>
+                <input type="text" id="txt_idField" name="id_field" placeholder="ID" disabled={true}/>
                 <input type="text" id="txt_fNameField" name ="first_name_field" placeholder="First Name" disabled={true} />
                 <input type="text" id="txt_sNameField" placeholder="Second Name" disabled={true} />
                 <input type="text" id="txt_ageField" placeholder="Age" disabled={true} />
@@ -64,38 +69,30 @@ export const ExpTable = () => {
             </Wrapper>
         </>
     )
-//FUNCTIONS FOR APP HERE↓
-       //this is an onClick function for use in record rows in the JSX populated table for characters  
-       function barkCharData(idIn){
 
-        try{
-            console.log("\n\nStarting again...")
-            console.log("\n==========================")
-            
-            //need to get the element to display in as a reference
-            // document.getElementsByName("idField").innerHTML = st_charData[idIn-1];           
-            
-            //display all character attributes
-        console.log("-idIn was set as: "+ idIn +", so as an array index it is: " + (idIn-1));
-            //display a part of the st_chardata array. figure out what you're pointing to
-        console.log("-st_charData[idIn-1[0]] = " +st_charData[idIn-1][idIn][idIn+1]);
-        console.log("-st_charData[0].id = " +st_charData[0].id);
-        console.log("-st_charData[0][0].full_name = " +st_charData[0].full_name);
-            //     for(let i = 0; i < st_charData.length; i++)
-        //         {
-        //             console.log("i Loop: "+i)
-        //             for (let x = 0; x < st_charData[i].length; x++)
-        //             {
-        //                 console.log("Outer i: " +i+", element x: " +x+". Details follow→ ")
-        //                 console.log(st_charData[i][x])
 
-        //             }
-        //         }
-         }
+
+//this is an onClick function for use in record rows in the JSX populated table for characters  
+function barkCharData(idIn){
+
+    try{
+        let var_id = st_charData[idIn-1].id;
+        let var_fullName = st_charData[idIn-1].full_name;
+        let var_firstName = st_charData[idIn-1].first_name;
+        let var_secondName = st_charData[idIn-1].second_name;
+        let var_age = st_charData[idIn-1].age;
         
-        catch(error)
-        {
-            console.log("\n\nPants were shat in the 'barkCharData' function:\n\t" +error)
-        }                    
-    }
+        let id_box = document.getElementById("txt_idField")
+        let fname_box = document.getElementById("txt_fNameField")
+        console.log(id_box);
+        id_box.value = st_charData[idIn-1].id;
+     }
+    
+    catch(error)
+    {
+        console.log("\n\nPants were shat in the 'barkCharData' function:\n\t" +error)
+    }                    
+}
+
+
 }
