@@ -16,13 +16,54 @@ export const ExpTable = () => {
     let Char2 = new char_Obj(2,"Kaedwen", "Isaani", 36, "Male", "Dragonborn", "Sorcerer", 8); 
     let Char3 = new char_Obj(3,"Euridice", "Swiftblade", 23, "Female", "Human", "Bard", 5);
     
-    //array to store characters
-    let ar_charBin = [Char1, Char2, Char3];
-  
+    //array to store characters made from objectdefs file
+        let ar_charBin = [Char1, Char2, Char3];
+    
     //useState to store character records
-    const [st_charData, set_st_charData] = useState(ar_charBin);  
+    const [st_charData, set_st_charData] = useState({
+        id: "",
+        fName: "",
+        sName: "",
+        age: "",
+        gender: "",
+        race: "",
+        classType: "",
+        level: "",   
+    });  
+    
+//useState to store and modify display elements for records
+    const [st_displayBoxes, set_st_displayBoxes] = useState({
+        box_id: "",
+        box_fName: "",
+        box_sName: "",
+        box_age: "",
+        box_gender: "",
+        box_race: "",
+        box_class: "",
+        box_level: "",   
+    });
 
-//APP RENDERING HERE↓
+//onclick function to EDIT a record
+    const fireEditRecord = () =>
+{
+    console.log("fireEditRecord was fired!\n"); 
+    
+    //Get an array to contain all display elements:
+    // set_st_displayBoxes({})
+        // document.getElementById("txt_idField"),
+        // document.getElementById("txt_fNameField"),
+        // document.getElementById("txt_sNameField"),
+        // document.getElementById("txt_fNameField"),
+        // document.getElementById("txt_ageField"),
+        // document.getElementById("txt_genderField"),
+        // document.getElementById("txt_raceField"),
+        // document.getElementById("txt_classField"),
+        // document.getElementById("txt_levelField"),
+
+//Unlock fields to edit
+}
+
+    //APP RENDERING HERE↓
     return(
         <>
             <Wrapper>
@@ -52,17 +93,18 @@ export const ExpTable = () => {
 
                 <Wrapper inputWidth="auto">
                 <h2>Object elements</h2>
-                <Wrapper inputFlexDirection = "row">
+                <Wrapper inputFlexDirection = "row" inputWidth="360px">
                     <h2>Character Editing</h2>
                     <RowSpacer/>
-                    <Button>New</Button>
-                    <Button>Edit</Button>
-                    <Button>Save</Button>
-                    <Button>Delete</Button>
+                    <Button id="btn_new" onClick={fireNewRecord} disabled={false}>New</Button>
+                    <Button id="btn_edit" onClick={fireEditRecord} disabled={true}>Edit</Button>
+                    <Button id="btn_save" onClick={fireSaveRecord} disabled={true}>Save</Button>
+                    <Button id="btn_delete" onClick={fireDeleteRecord} disabled={true}>Delete</Button>
                 </Wrapper>
                 
-<Table inputWidth="560px">
+<Table inputWidth="60%">
 
+{/* First half of table, including header, for character records */}
     <TableHead>
     <tr>
         <th>ID</th>
@@ -76,9 +118,10 @@ export const ExpTable = () => {
             <TextInput 
                 type="text" 
                 id="txt_idField" 
-                name="id_field" 
+                name="id" 
                 placeholder="ID" 
                 disabled={true} 
+                value={st_charData.char_id}
                 onChange={displayChangeHandler}
             />
         </td>
@@ -86,18 +129,21 @@ export const ExpTable = () => {
             <TextInput 
                 type="text" 
                 id="txt_fNameField" 
-                name ="first_name_field" 
+                name ="fName" 
                 placeholder="First Name" 
                 disabled={true} 
+                value={st_charData.char_fName}
                 onChange={displayChangeHandler}
             />
         </td>
         <td>
             <TextInput 
                 type="text" 
-                id="txt_sNameField" 
+                id="txt_sNameField"
+                name="sName" 
                 placeholder="Second Name" 
                 disabled={true} 
+                value={st_charData.char_sName}
                 onChange={displayChangeHandler}
             />
         </td>
@@ -105,12 +151,15 @@ export const ExpTable = () => {
             <TextInput 
                 type="text" 
                 id="txt_ageField" 
+                name="age"
                 placeholder="Age" 
-                disabled={true} 
+                disabled={true}
+                value={st_charData.char_age}
                 onChange={displayChangeHandler}
             />
         </td>
     </tr>
+{/* Second half of table for character records */}
 <TableHead>
 <tr>
         <th>Gender</th>
@@ -124,18 +173,22 @@ export const ExpTable = () => {
     <td>
         <TextInput 
             type="text" 
-            id="txt_genderField" 
+            id="txt_genderField"
+            name="gender" 
             placeholder="Gender" 
-            disabled={true} 
+            disabled={true}
+            value={st_charData.char_gender} 
             onChange={displayChangeHandler}
         />
     </td>
     <td>
         <TextInput 
             type="text" 
-            id="txt_raceField" 
+            id="txt_raceField"
+            name="race" 
             placeholder="Race" 
-            disabled={true} 
+            disabled={true}
+            value={st_charData.char_race}
             onChange={displayChangeHandler} 
         />
     </td>
@@ -143,17 +196,21 @@ export const ExpTable = () => {
         <TextInput 
             type="text" 
             id="txt_classField"
+            name="classType"
             placeholder="Class" 
             disabled={true} 
+            value={st_charData.char_class}
             onChange={displayChangeHandler} 
         />
     </td>
     <td>
         <TextInput 
             type="text" 
-            id="txt_levelField" 
+            id="txt_levelField"
+            name="level"
             placeholder="Level" 
             disabled={true} 
+            value={st_charData.char_level}
             onChange={displayChangeHandler} 
         />
     </td>
@@ -164,56 +221,89 @@ export const ExpTable = () => {
         </>
     )
 
+//THIS WORKS, BUT ONLY AFTER THE SECOND CLICK ON A RECORD ROW
+//useState is blank by default, but sho
 
-
-//this is an onClick function for use in record rows in the JSX populated table for characters  
+//this is an onClick function that loads data from character
+//objects in to display boxes
 function barkCharData(idIn){
 
-    try{
-        //create variables to store selected chardata...
-        let var_id = st_charData[idIn-1].id;
-        let var_firstName = st_charData[idIn-1].first_name;
-        let var_secondName = st_charData[idIn-1].second_name;
-        let var_age = st_charData[idIn-1].age;
-        let var_gender = st_charData[idIn-1].gender;
-        let var_race = st_charData[idIn-1].race;
-        let var_classType = st_charData[idIn-1].classType;
-        let var_level = st_charData[idIn-1].level;
-        
-        //create variables to store display elements
-        let id_box = document.getElementById("txt_idField");
-        let fname_box = document.getElementById("txt_fNameField");
-        let sname_box = document.getElementById("txt_sNameField");
-        let age_box = document.getElementById("txt_ageField");
-        let gender_box = document.getElementById("txt_genderField");
-        let race_box = document.getElementById("txt_raceField");
-        let classType_box = document.getElementById("txt_classField");
-        let level_box = document.getElementById("txt_levelField");
-       
-        //assign the char data to the relevant box
-        id_box.value = var_id;
-        fname_box.value = var_firstName;
-        sname_box.value = var_secondName;
-        age_box.value = var_age;
-        gender_box.value = var_gender;
-        race_box.value = var_race;
-        classType_box.value = var_classType;
-        level_box.value = "Level " + var_level;
+    //set the st_charData state to contain whatever character was selected
+    set_st_charData({
+        id: ar_charBin[idIn-1].id,
+        fName: ar_charBin[idIn-1].first_name,
+        sName: ar_charBin[idIn-1].second_name,
+        age: ar_charBin[idIn-1].age,
+        gender: ar_charBin[idIn-1].gender,
+        race: ar_charBin[idIn-1].race,
+        classType:ar_charBin[idIn-1].classType,
+        level: ar_charBin[idIn-1].level
+    })
 
+    console.log("After init, st_charData.id = "+st_charData.id)
+    //then set st_boxes to be referenced
+    set_st_displayBoxes({
+        box_id: document.getElementById("txt_idField"),
+        box_fName: document.getElementById("txt_fNameField"),
+        box_sName: document.getElementById("txt_sNameField"),
+        box_age: document.getElementById("txt_ageField"),
+        box_gender: document.getElementById("txt_genderField"),
+        box_race: document.getElementById("txt_raceField"),
+        box_class: document.getElementById("txt_classField"),
+        box_level: document.getElementById("txt_levelField"),
+    })
+
+    try{
+        //From usestates, updated above,
+        //assign the char data to the relevant box
+        st_displayBoxes.box_id.value = st_charData.id
+        st_displayBoxes.box_fName.value = st_charData.fName;
+        st_displayBoxes.box_sName.value = st_charData.sName;
+        st_displayBoxes.box_age.value = st_charData.age;
+        st_displayBoxes.box_gender.value = st_charData.gender;
+        st_displayBoxes.box_race.value = st_charData.race;
+        st_displayBoxes.box_class.value = st_charData.classType;
+        st_displayBoxes.box_level.value = st_charData.level;
      }
     
-    catch(error)
+    catch(e)
     {
-        console.log("\n\nPants were shat in the 'barkCharData' function:\n\t" +error)
+        console.log("\n\nPants were shat in:\n\t'barkCharData' function:\n" +e)
     }                    
 }
 
+
+//onclick function to CREATE a record
+function fireNewRecord()
+{
+    console.log("fireNewRecord was fired!");
+    //Unlock fields to edit
+}
+
+
+//onclick function to SAVE a record
+function fireSaveRecord()
+{
+    console.log("fireSaveRecord was fired!");
+    //Unlock fields to edit
+}
+
+function fireDeleteRecord()
+{
+    console.log("fireDeleteRecord was fired!");
+    //Unlock fields to edit
+}
+
+
+
 //This handles changing data in the display fields. 
-    //Want to have a css effect fire to visually show the fields have been updated
-function displayChangeHandler()
+function displayChangeHandler(e)
     {
         try{
-        console.log("Fired the change event");
+            console.log("Fired the change event");
+            
+            //update the useState with the change
+            set_st_charData({ ...st_charData, [e.target.name]: [e.target.value] });
         }
         catch(error){
             console.log("Bowel movement detected in 'displayChangeHandler': "+error);

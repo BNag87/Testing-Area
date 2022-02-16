@@ -116,6 +116,10 @@ export const TableRow = styled.tr`
         color: green;
         background: white;
         transition: ease-in-out 0.3s; 
-      }   
+      }
+      &:disabled{
+        background:grey;
+        transition: ease-in-out 0.3s; 
+      }
   `;
 
