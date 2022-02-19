@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { char_Obj } from "../Reference Files/ObjectDefs";
+import { flow_controller, create_socket } from './websocket/websock';
+
 import { 
     Wrapper,
     Table,
@@ -12,14 +14,17 @@ import {
 
 export const ExpTable = () => {
 
+    //create a websocket for transferring data to server
+    // var socket = create_socket("ws://127.0.0.1:55555");
+
     let Char1 = new char_Obj(1,"Saloth", "Saar", 45, "Male", "Dragonborn", "Sorcerer", 10);
     let Char2 = new char_Obj(2,"Kaedwen", "Isaani", 36, "Male", "Dragonborn", "Sorcerer", 8); 
     let Char3 = new char_Obj(3,"Euridice", "Swiftblade", 23, "Female", "Human", "Bard", 5);
     
-    //array to store characters made from objectdefs file
+//array to store characters made from objectdefs file
     let ar_charBin = [Char1, Char2, Char3];
     
-    //useState to store character records
+//useState to store character records
     const [st_charData, set_st_charData] = useState({
         id: "",
         fName: "",
@@ -30,7 +35,7 @@ export const ExpTable = () => {
         classType: "",
         level: "",   
     });  
-    
+
 //useState to store and modify display elements for records
     const [st_displayBoxes, set_st_displayBoxes] = useState({
         box_id: "",
@@ -43,34 +48,39 @@ export const ExpTable = () => {
         box_level: "",   
     });
 
+//useState for a flow controller
+    // const [st_moses, set_st_moses] = useState(flow_controller);
+
     //useEffect to fire on each re-render.
-    //need this to update the text fields as they arer displayed
+    //need this to update the text fields as they are displayed
     useEffect(() => 
     {
         console.log("useEffect was fired with st_charData as a dependancy");
+
+        try{
+            //log values of flow_controller
+            console.log("Contents of st_moses:\n\t")
+            console.log(flow_controller)
+
+            //From usestates, updated above,
+            //assign the char data to the relevant box
+    
+            st_displayBoxes.box_id.value = st_charData.id
+            st_displayBoxes.box_fName.value = st_charData.fName;
+            st_displayBoxes.box_sName.value = st_charData.sName;
+            st_displayBoxes.box_age.value = st_charData.age;
+            st_displayBoxes.box_gender.value = st_charData.gender;
+            st_displayBoxes.box_race.value = st_charData.race;
+            st_displayBoxes.box_class.value = st_charData.classType;
+            st_displayBoxes.box_level.value = st_charData.level;
+            console.log("Init already happened. st_displayBoxes now contains: "+st_displayBoxes)
+        }
         
-        let a = document.getElementById("txt_idField");
-        let b = document.getElementById("txt_fNameField");
-        let c = document.getElementById("txt_sNameField");
-        let d = document.getElementById("txt_ageField");
-        let e = document.getElementById("txt_raceField");
-        let f = document.getElementById("txt_genderField");
-        let g = document.getElementById("txt_classTypeField");
-        let h = document.getElementById("txt_raceField");    
-
-        console.log("In BarkChardata, a: "+a+" and a.value is: "+a.value)
-
-        // set_st_charData(
-        //     a.value, 
-        //     b.value, 
-        //     c.value, 
-        //     d.value,
-        //     e.value,
-        //     f.value,
-        //     g.value,
-        //     h.value
-        // )
-
+        catch(e)
+        {
+            console.log("\n\nPants were shat in:\n\t'barkCharData' function:\n" +e)
+        } 
+        
     }, [st_charData]);
 
 //onclick function to EDIT a record
@@ -81,11 +91,11 @@ export const ExpTable = () => {
 }
 
 //THIS WORKS, BUT ONLY AFTER THE SECOND CLICK ON A RECORD ROW
-//useState is blank by default, but sho
+//useState is blank by default, but should updatew dispklay booxes immediately
 
 //this is an onClick function that loads data from character
 //objects in to display boxes
-async function BarkCharData(idIn){
+function BarkCharData(idIn){
     console.log("\n=-=-=-=----------=-=-=-=\n");
 console.log("BarkCharData fired with '"+idIn+"' as its input");
 
@@ -101,9 +111,6 @@ console.log("BarkCharData fired with '"+idIn+"' as its input");
         level: ar_charBin[idIn-1].level
     })
 
-    console.log("After 'set_st_charData', st_charData.id = "+st_charData.id)
-    //then set st_boxes to be referenced (useEffect to trigger render?)
-    
     set_st_displayBoxes({
         box_id: document.getElementById("txt_idField"),
         box_fName: document.getElementById("txt_fNameField"),
@@ -114,28 +121,7 @@ console.log("BarkCharData fired with '"+idIn+"' as its input");
         box_class: document.getElementById("txt_classField"),
         box_level: document.getElementById("txt_levelField"),
     })
-
-    console.log("After 'set_st_displayBoxes', st_displayBoxes.box_id = "+st_displayBoxes.box_id);
-
-        try{
-            //From usestates, updated above,
-            //assign the char data to the relevant box
-         
-            st_displayBoxes.box_id.value = st_charData.id
-            st_displayBoxes.box_fName.value = st_charData.fName;
-            st_displayBoxes.box_sName.value = st_charData.sName;
-            st_displayBoxes.box_age.value = st_charData.age;
-            st_displayBoxes.box_gender.value = st_charData.gender;
-            st_displayBoxes.box_race.value = st_charData.race;
-            st_displayBoxes.box_class.value = st_charData.classType;
-            st_displayBoxes.box_level.value = st_charData.level;
-            console.log("Init already happened. st_displayBoxes now contains: "+st_displayBoxes)
-        }
-        
-        catch(e)
-        {
-            console.log("\n\nPants were shat in:\n\t'barkCharData' function:\n" +e)
-        }                    
+                  
 }
 
 //onclick function to CREATE a record
@@ -165,7 +151,7 @@ function displayChangeHandler(e)
             console.log("CHANGE event fired!");
             
             //update the useState with the change
-            set_st_charData({ ...st_charData, [e.target.name]: [e.target.value] });
+            // set_st_charData({ ...st_charData, [e.target.name]: [e.target.value] });
         }
         catch(error){
             console.log("Bowel movement detected in 'displayChangeHandler': "+error);

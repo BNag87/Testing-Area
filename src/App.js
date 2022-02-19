@@ -5,6 +5,7 @@ import {
    } from "./styles";
 
 function App() {
+
   return (
     <>
     <GlobalStyle />
