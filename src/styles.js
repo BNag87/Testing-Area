@@ -84,10 +84,10 @@ export const TableRow = styled.tr`
     text-align:center;
     background: white;
     color: black;
-    padding:5px;
-    margin: -3px 0px 5px 0px;
+    padding: ${props => props.inputPadding || "5px"};
+    margin: ${props => props.inputMargin || "-3px 0px 5px 0px"};
     border: none;
-    width: 90px;
+    width: ${props => props.inputWidth || "80px"};
 
     &:disabled{
     background: darkgray;
@@ -110,7 +110,7 @@ export const TableRow = styled.tr`
     font-variant: small-caps;
     font-weight: bolder;
     font-size: large;
-    width: 80px;
+    width: ${props => props.inputWidth || "80px"};
         
       &:hover{
         color: green;
