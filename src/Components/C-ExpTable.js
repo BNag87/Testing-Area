@@ -49,8 +49,8 @@ export const ExpTable = () => {
     {
         console.log("useEffect was fired with st_charData as a dependancy");
         
-        let aIn = st_charData.id;
-        st_displayBoxes[0].innerHTML = aIn;
+        // let aIn = st_charData.id;
+        // st_displayBoxes[0].innerHTML = aIn;
         
         // let bIn = st_charData.fName;
         // set_st_displayBoxes[1] = bIn;
@@ -73,8 +73,8 @@ export const ExpTable = () => {
         // let hIn = st_charData.level;
         // set_st_displayBoxes[7] = hIn;
 
-        console.log("In useEffect:\naIn is: "
-                    +aIn);
+        // console.log("In useEffect:\naIn is: "
+        //             +aIn);
 
     }, [st_charData, st_displayBoxes]);
 

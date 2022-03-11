@@ -1,6 +1,8 @@
-import { ExpTable } from "./Components/C-ExpTable";
+import React from "react";
+//import { ExpTable } from "./Components/C-ExpTable";
 import { Main } from "./Components/C-Main"
-import { Websock } from "./Components/C-Websocket";
+import { NpcGenerator } from "./Components/C-NpcGenerator";
+
 import { 
       GlobalStyle
    } from "./styles";
@@ -10,7 +12,7 @@ function App() {
     <>
     <GlobalStyle />
       <Main/>
-      <Websock/>
+      <NpcGenerator/>
     </>
   );
 }
