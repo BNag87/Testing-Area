@@ -17,8 +17,7 @@ import {
             FN_randomRanged, //function that generates a random number between arguments (min, max)
             ar_races, //array of races for reference
         } from '../Reference Files/NPCNames';
-import { random } from 'core-js/core/number';
-    //npc generator
+
 //=====-----=====-----=====-----=====----→APP RENDERING HERE←-----=====-----=====-----=====-----=====
 export const NpcGenerator = () => {
 
@@ -27,51 +26,44 @@ function nameNPC(){
     console.log("STAGE 1: Entered the nameNPC()...");
 
     var genderRef = document.getElementById("dis_npc_gender");
-    var genderIndex = null;
+    var genderIndex = genderRef.value === "Male" ? 0 : 1;
+    if (genderIndex === 1)
+    {
+        genderRef.value = "Female";
+    }
     var raceRef = document.getElementById("dis_npc_race");
-    var raceIndex = null;
+    var raceIndex = null; 
+    
+    
     var boxRef = document.getElementById("dis_npc_name");
 
     //first, check if gender already exist. if not, generate one
-        if(genderRef.value !== "Male" || genderRef !== "Female")
-        {
-            console.log("There was no gender. Setting a random one.");
-            genderRef.value = FN_get_random_gender();
-            if (genderRef.value === "Male")
-            {
-                genderIndex = 0;
-                console.log("Gender = male, index = 0");
-            }
-            else
-            {
-                genderIndex = 1;
-                console.log("Gender = female, genderIndex = 1");
-            }
-        }
-        else
-        {
-            genderIndex = genderRef.value === "Male" ? 0 : 1;
-            console.log("genderIndex was " +genderIndex);
-        }
+    if(genderIndex === null)
+    {
+        console.log("genderIndex IS null. Generating a new one")
+        genderRef.value = FN_get_random_gender();
+        genderIndex = genderRef.value === "Male" ? 0 : 1;
+    }
+    else
+    {
+        console.log("Gender IS NOT NULL.")
+        genderIndex = genderRef.value === "Male" ? 0 : 1;
+    }
     
 //now, check for a race...
-    console.log("Finished checking gender. Entering for loop for race checking...");
     if(raceIndex === null)
     {
-        console.log("raceIndex was null! Entering for loop of race generator...");
-
         for(let check = false, i=0; check === false;)
         {
             if(raceRef.value !== ar_races[i])
             {
                 //increase the counter to check the next race array element
-                console.log("Race ("+i+") was not "+ar_races[i]+". Trying again...")
                 i++;
             }
             else
             {
                 //escape here, because race is one of the ones in the original array
-               // console.log("\tSuccess! Race ("+i+") was "+ ar_races[i]+". Setting loop check to true")
+                //console.log("\tSuccess! Race ("+i+") was "+ ar_races[i]+". Setting loop check to true")
                 raceIndex = i;
                 check = true;
             }
@@ -86,14 +78,14 @@ function nameNPC(){
                 raceIndex = random_race_index;
                 check = true;
                 //now, generate a whole new npc based on generated information
-                boxRef.value = FN_get_NPCName(genderIndex, raceIndex);
-                break;
+                boxRef.value = FN_get_npc_name(genderIndex, raceIndex);
+                
             }
         }
     }
     else
     {
-        console.log("Some shit or other");
+        console.log("RACE INDEX WAS NOT NULL");
     }
     
     var newName = FN_get_npc_name(genderIndex, raceIndex);

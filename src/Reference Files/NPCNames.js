@@ -189,12 +189,14 @@ export const FN_get_npc_name = (genderSelected, raceSelected) =>
       if(genderSelected === 0)
       {
          var male_name_index = FN_randomRanged(0, (ar_AllMaleNameArrays[raceSelected].length));
+         console.log("In FN_get_npc_name, \n\tmale_name_index is "+male_name_index+"\n\t[raceselected]"+raceSelected+"\n\tmaleName = "+ar_AllMaleNameArrays[raceSelected][male_name_index]); 
          result = ar_AllMaleNameArrays[raceSelected][male_name_index];  
       }
       //if the gender is 1 (or female), then pick a random name from the associated race list
       else if (genderSelected === 1)
       {
-         var female_name_index = Math.floor(FN_randomRanged(0, ar_AllFemaleNameArrays[raceSelected].length));
+         var female_name_index = FN_randomRanged(0, ar_AllFemaleNameArrays[raceSelected].length);
+         console.log("In FN_get_npc_name, \n\tfemale_name_index is "+female_name_index+"\n\t[raceselected]"+raceSelected+"\n\tFemaleName = "+ar_AllFemaleNameArrays[raceSelected][female_name_index]); 
          result = ar_AllFemaleNameArrays[raceSelected][female_name_index];
       }
 
