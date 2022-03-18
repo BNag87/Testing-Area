@@ -5,8 +5,11 @@ import {
     Table,
     TableHead,
     TableRow,
+    SuperTH,
+    SuperTD,
     Button,
     TextInput, 
+    
     } from "../styles";
 
 import { 
@@ -17,6 +20,10 @@ import {
             FN_randomRanged, //function that generates a random number between arguments (min, max)
             ar_races, //array of races for reference
         } from '../Reference Files/NPCNames';
+
+import {
+        FN_getTalent
+        } from '../Reference Files/NPCTalents';
 
 //=====-----=====-----=====-----=====----→APP RENDERING HERE←-----=====-----=====-----=====-----=====
 export const NpcGenerator = () => {
@@ -105,40 +112,81 @@ function raceNPC(){
     raceBoxRef.value = FN_get_random_race();
 }
 
+function talentNPC(){
+    var talentBoxRef = document.getElementById("dis_npc_talent");
+    talentBoxRef.value = FN_getTalent()
+}
+
 return(
     <>
-        <Wrapper>
-            <h2>NPC Generator</h2>
-            <Table>
-                <TableHead>
-                    <th>Name</th>
-                    <TableRow>
-                        <TextInput id = "dis_npc_name" inputWidth="60%"></TextInput>
-                        <Button onClick = { nameNPC }>?</Button>
-                    </TableRow>
+    <Wrapper>
+        <h2>NPC Generator</h2>
+        <Table inputWidth="auto">
+            <TableHead>
+            <TableRow>
+                <SuperTH>Name</SuperTH>
+                <SuperTD>
+                    <TextInput id = "dis_npc_name" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <Button NoHoverButton onClick = { nameNPC } inputWidth="40px">?</Button>
+                </SuperTD>
 
-                    <th>Gender</th>
-                    <TableRow>
-                        <TextInput id = "dis_npc_gender" inputWidth="60%"></TextInput>
-                        <Button onClick={ genderNPC }>?</Button>
-                    </TableRow>
-
-                    <th>Race</th>
-                    <TableRow>
-                        <TextInput id = "dis_npc_race" inputWidth="60%"></TextInput>
-                        <Button onClick={ raceNPC }>?</Button>
-                    </TableRow>
-
-                    <th>Something</th>
-                    <TableRow>
-                        <TextInput inputWidth="60%"></TextInput>
-                        <Button>?</Button>
-                    </TableRow>
-
-                </TableHead>
+                <SuperTH>Gender</SuperTH>
+                    <SuperTD>
+                        <TextInput id = "dis_npc_gender" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                        <Button NoHoverButton onClick={ genderNPC } inputWidth="40px">?</Button>
+                    </SuperTD>
                 
-            </Table>
-        </Wrapper>
-    </>
+                </TableRow>
+
+                <TableRow>
+                <SuperTH>Race</SuperTH>
+                    <SuperTD>
+                        <TextInput id = "dis_npc_race" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                        <Button NoHoverButton onClick={ raceNPC } inputWidth="40px">?</Button>
+                    </SuperTD>
+
+                <SuperTH>Talent</SuperTH>
+                    <SuperTD>
+                        <TextInput id = "dis_npc_talent" inputWidth="250px" inputHeight="35px" inputFontSize="bolder" disabled={true}></TextInput>
+                        <Button NoHoverButton onClick = { talentNPC } inputWidth="40px">?</Button>
+                    </SuperTD>
+                </TableRow>
+            </TableHead>
+{/* SECOND TABLE COLUMN */}
+            <TableHead>
+            <TableRow>
+            <SuperTH>Demeanor</SuperTH>
+                
+                <SuperTD>
+                    <TextInput id = "dis_npc_x" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <Button NoHoverButton inputWidth="40px">?</Button>
+                </SuperTD>
+                
+                <SuperTH>SoMeThInG</SuperTH>
+                <SuperTD>
+                    
+                    <TextInput id = "dis_npc_y" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <Button NoHoverButton inputWidth="40px">?</Button>
+                </SuperTD>
+                </TableRow>
+                
+                <TableRow>
+                <SuperTH>sOmEtHiNg</SuperTH>
+                <SuperTD>
+                    <TextInput id = "dis_npc_z" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <Button NoHoverButton inputWidth="40px">?</Button>
+                </SuperTD>
+                
+                <SuperTH>Summit</SuperTH>
+                <SuperTD>
+                    <TextInput id = "dis_npc_1" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <Button NoHoverButton inputWidth="40px">?</Button>
+                </SuperTD>
+                </TableRow>
+            </TableHead>
+            
+        </Table>
+    </Wrapper>
+</>
 )
 }
