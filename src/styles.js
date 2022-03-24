@@ -86,10 +86,10 @@ export const TableRow = styled.tr`
   `;
 
   // ==========-------------------- INPUT STYLES
-
   export const TextInput = styled.input`
     text-align:center;
-    font-size: ${props => props.inputFontSize || "large"};
+    font-size: ${props => props.inputFontSize || "900"};
+    font-style: ${props => props.inputFontStyle || "bold"};;
     background: white;
     color: black;
     padding: ${props => props.inputPadding || "5px"};
@@ -104,6 +104,28 @@ export const TableRow = styled.tr`
     transition: ease-in-out 0.3s;
     }
     `;
+
+    export const TextArea = styled.textarea`
+      text-align:left;
+      font-size: ${props => props.inputFontSize || "900"};
+      background: white;
+      color: black;
+      padding: ${props => props.inputPadding || "5px"};
+      margin: ${props => props.inputMargin || "5px 0px 5px 0px"};
+      border: none;
+      border-radius: 5px 5px 5px 5px;
+      width: ${props => props.inputWidth || "430px"};
+      height: ${props => props.inputHeight || "125px"};
+      resize: none;
+
+      &:disabled{
+      background: beige;
+      color: black;
+      box-shadow: 2px 3px rgba(0,0,0,0.34);
+      transition: ease-in-out 0.3s;
+    }
+    `;
+
 
   export const Button = styled.button`
   
@@ -127,8 +149,15 @@ export const TableRow = styled.tr`
         transition: ease-in-out 0.3s; 
       }
       &:disabled{
-        background:grey;
+        background: darkgreen;
+        color: green;
         transition: ease-in-out 0.3s; 
+      
+        &:hover{
+        color: darkgreen;
+        background: darkgreen;
+        transition: ease-in-out 0.3s; 
+      }
       }
 
       ${props => props.NoHoverButton && css`

@@ -27,13 +27,6 @@ let ar_Consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "m",
 let ar_firstParts = ["Ape", "Angle", "Axe", "Basket", "Bull", "Bag", "Bad", "Curd", "Cull", "Crime", "Door", "Dung", "Dale", "Edge", "Elder", "Ear", "Evil", "Fan", "Fell", "Frost", "Flange", "Grape", "Good", "Gun", "Hop", "Hen", "Harp", "Ice", "Inch", "Job", "Jog", "Jump", "Karl", "Kill", "Kurt", "Lime", "Log", "Lip", "Mop", "Mint", "Mold", "Near", "Nice", "Nord", "Oar", "Oak", "Open", "Plim", "Plop", "Parp", "Quint", "Quack", "Quen", "Race", "Rim", "Rung", "Shiv", "Slave", "Shart", "Tint", "Turgle", "Tin", "Udder", "Up", "Under", "Vixen", "Vag", "Veil", "Wine", "West", "Whale", "Xen", "Xion", "Xa","Yeet", "Yag", "Yup", "Yiff", "Zoo", "Zest", "Zag"];
 let ar_lastParts = ["arc", "addle", "anchor", "boil", "beg", "break", "chaff", "clap", "cream", "drill", "-drape", "drive", "fix", "fly", "flap", "grift", "gamble","grease", "hide", "heal", "hang", "jump", "jest", "joust", "kill", "kind", "-kindler", "leave", "lift", "lick", "mover", "mince", "mud", "nip", "nap", "pinch", "place", "-pilfer", "quick", "row", "rinse", "raise", "speed", "spill", "spaff", "spong", "till", "trick", "told", "quack"];
 
-//Race indexes:
-// 0 = dragonborn, 
-// 1 = dwarf, 
-// 2 = elf,
-// 3 = gnome,
-// 4 = halfling,
-// 5 = human.
 export const ar_races = ["Dragonborn", "Dwarf", "Elf", "Gnome", "Halfling", "Human"];
 
 //=========--------==========INTERNAL FUNCTIONS=========--------==========
@@ -175,7 +168,7 @@ export const FN_randLastName = () =>
    }   
 
    else{
-      console.log("When generating a last name, the selection was "+ selection + ". NOT ALLOWED!")
+      console.log("When generating a last name, the selection was '"+ selection + "'. NOT ALLOWED!")
    }
     
 }
@@ -188,15 +181,13 @@ export const FN_get_npc_name = (genderSelected, raceSelected) =>
       //if the gender is 0 (or male), then pick a random name from the associated race list
       if(genderSelected === 0)
       {
-         var male_name_index = FN_randomRanged(0, (ar_AllMaleNameArrays[raceSelected].length));
-         console.log("In FN_get_npc_name, \n\tmale_name_index is "+male_name_index+"\n\t[raceselected]"+raceSelected+"\n\tmaleName = "+ar_AllMaleNameArrays[raceSelected][male_name_index]); 
+         var male_name_index = FN_randomRanged(0, (ar_AllMaleNameArrays[raceSelected].length-1));
          result = ar_AllMaleNameArrays[raceSelected][male_name_index];  
       }
       //if the gender is 1 (or female), then pick a random name from the associated race list
       else if (genderSelected === 1)
       {
-         var female_name_index = FN_randomRanged(0, ar_AllFemaleNameArrays[raceSelected].length);
-         console.log("In FN_get_npc_name, \n\tfemale_name_index is "+female_name_index+"\n\t[raceselected]"+raceSelected+"\n\tFemaleName = "+ar_AllFemaleNameArrays[raceSelected][female_name_index]); 
+         var female_name_index = FN_randomRanged(0, ar_AllFemaleNameArrays[raceSelected].length-1);
          result = ar_AllFemaleNameArrays[raceSelected][female_name_index];
       }
 
