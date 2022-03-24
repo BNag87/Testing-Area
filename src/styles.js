@@ -1,4 +1,4 @@
-import styled, { css, createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
 
 // ==========-------------------- GLOBAL STYLES
 export const GlobalStyle = createGlobalStyle`
@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: calibri;
-
 }
 `;
 
@@ -55,7 +54,13 @@ text-align: center;
 table-layout: fixed;
 border: 3px outset grey;
 width: ${props => props.inputWidth || "300px"}
+`;
 
+export const SuperTH = styled.th`
+background: black;
+color: white ;
+font-variant: small-caps;
+padding: 0px 10px 0px 10px;
 `;
 
 export const TableHead = styled.thead`
@@ -65,41 +70,66 @@ color: white ;
 font-variant: small-caps;
 `;
 
+export const SuperTD = styled.td`
+padding-left:5px;
+
+&:hover{
+  color: green;
+  background: darkgray;
+  transition: ease-in-out 0.3s; 
+}`
+
 export const TableRow = styled.tr`
   border: 20px solid white; 
   background: green;
   color: white;
-  cursor: pointer;
-
-  &:hover{
-    color: green;
-    background: white;
-    transition: ease-in-out 0.3s; 
-  }
   `;
 
   // ==========-------------------- INPUT STYLES
-
   export const TextInput = styled.input`
     text-align:center;
+    font-size: ${props => props.inputFontSize || "900"};
+    font-style: ${props => props.inputFontStyle || "bold"};;
     background: white;
     color: black;
-    padding:5px;
-    margin: -3px 0px 5px 0px;
+    padding: ${props => props.inputPadding || "5px"};
+    margin: ${props => props.inputMargin || "-3px 0px 5px 0px"};
     border: none;
-    width: 90px;
+    width: ${props => props.inputWidth || "80px"};
+    height: ${props => props.inputHeight || "auto"};
 
     &:disabled{
     background: darkgray;
     color: black;
-    width: 92%;
     transition: ease-in-out 0.3s;
     }
     `;
 
+    export const TextArea = styled.textarea`
+      text-align:left;
+      font-size: ${props => props.inputFontSize || "900"};
+      background: white;
+      color: black;
+      padding: ${props => props.inputPadding || "5px"};
+      margin: ${props => props.inputMargin || "5px 0px 5px 0px"};
+      border: none;
+      border-radius: 5px 5px 5px 5px;
+      width: ${props => props.inputWidth || "430px"};
+      height: ${props => props.inputHeight || "125px"};
+      resize: none;
+
+      &:disabled{
+      background: beige;
+      color: black;
+      box-shadow: 2px 3px rgba(0,0,0,0.34);
+      transition: ease-in-out 0.3s;
+    }
+    `;
+
+
   export const Button = styled.button`
   
-    border: red  1px solid;
+    border: red 1px solid;
     border-radius: 5px 3px 5px 3px;
     box-shadow: 2px 2px rgba(0,0,0,0.4);
     padding: 10px;
@@ -110,16 +140,33 @@ export const TableRow = styled.tr`
     font-variant: small-caps;
     font-weight: bolder;
     font-size: large;
-    width: 80px;
-        
+    width: ${props => props.inputWidth || "80px"};
+    cursor: pointer;
+
       &:hover{
         color: green;
         background: white;
         transition: ease-in-out 0.3s; 
       }
       &:disabled{
-        background:grey;
+        background: darkgreen;
+        color: green;
+        transition: ease-in-out 0.3s; 
+      
+        &:hover{
+        color: darkgreen;
+        background: darkgreen;
         transition: ease-in-out 0.3s; 
       }
-  `;
+      }
 
+      ${props => props.NoHoverButton && css`
+      color: #b3c378;
+
+      &:hover {
+          color: #b3c378;
+          background: #b368a3;
+        }
+    `}
+
+`;

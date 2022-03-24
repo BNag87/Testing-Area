@@ -1,4 +1,5 @@
 //=====================MAIN IMPORTS
+import React from 'react';
 //=====================STYLING IMPORTS
 import {
     Wrapper,

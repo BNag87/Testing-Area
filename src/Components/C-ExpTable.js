@@ -37,105 +37,103 @@ export const ExpTable = () => {
     });  
 
 //useState to store and modify display elements for records
-    const [st_displayBoxes, set_st_displayBoxes] = useState({
-        box_id: "",
-        box_fName: "",
-        box_sName: "",
-        box_age: "",
-        box_gender: "",
-        box_race: "",
-        box_class: "",
-        box_level: "",   
-    });
+    const [st_displayBoxes, set_st_displayBoxes] = useState([
+        document.getElementById("txt_idField"),
+        document.getElementById("txt_fNameField"),
+        document.getElementById("txt_sNameField"),        
+        document.getElementById("txt_ageField"),
+        document.getElementById("txt_genderField"),
+        document.getElementById("txt_raceField"),
+        document.getElementById("txt_classField"),
+        document.getElementById("txt_levelField")
+     ]);
 
-//useState for a flow controller
-    // const [st_moses, set_st_moses] = useState(flow_controller);
-
-    //useEffect to fire on each re-render.
-    //need this to update the text fields as they are displayed
+//useEffect to fire on each re-render.
+//need this to update the text fields as the character usestate is updated
     useEffect(() => 
     {
         console.log("useEffect was fired with st_charData as a dependancy");
-
-        try{
-            //log values of flow_controller
-            console.log("Contents of st_moses:\n\t")
-            console.log(flow_controller)
-
-            //From usestates, updated above,
-            //assign the char data to the relevant box
-    
-            st_displayBoxes.box_id.value = st_charData.id
-            st_displayBoxes.box_fName.value = st_charData.fName;
-            st_displayBoxes.box_sName.value = st_charData.sName;
-            st_displayBoxes.box_age.value = st_charData.age;
-            st_displayBoxes.box_gender.value = st_charData.gender;
-            st_displayBoxes.box_race.value = st_charData.race;
-            st_displayBoxes.box_class.value = st_charData.classType;
-            st_displayBoxes.box_level.value = st_charData.level;
-            console.log("Init already happened. st_displayBoxes now contains: "+st_displayBoxes)
-        }
         
-        catch(e)
-        {
-            console.log("\n\nPants were shat in:\n\t'barkCharData' function:\n" +e)
-        } 
+        // let aIn = st_charData.id;
+        // st_displayBoxes[0].innerHTML = aIn;
         
-    }, [st_charData]);
+        // let bIn = st_charData.fName;
+        // set_st_displayBoxes[1] = bIn;
+        
+        // let cIn = st_charData.sName;
+        // set_st_displayBoxes[2] = cIn;
+        
+        // let dIn = st_charData.age;
+        // set_st_displayBoxes[3] = dIn;
+        
+        // let eIn = st_charData.race;
+        // set_st_displayBoxes[4] = eIn;
+        
+        // let fIn = st_charData.gender;
+        // set_st_displayBoxes[5] = fIn;
+        
+        // let gIn = st_charData.classType;
+        // set_st_displayBoxes[6] = gIn;
+        
+        // let hIn = st_charData.level;
+        // set_st_displayBoxes[7] = hIn;
+
+        // console.log("In useEffect:\naIn is: "
+        //             +aIn);
+
+    }, [st_charData, st_displayBoxes]);
 
 //onclick function to EDIT a record
     const fireEditRecord = () =>
 {
-    console.log("fireEditRecord was fired!\n"); 
-    
+    console.log("fireEditRecord was fired!\n");    
 }
-
-//THIS WORKS, BUT ONLY AFTER THE SECOND CLICK ON A RECORD ROW
-//useState is blank by default, but should updatew dispklay booxes immediately
 
 //this is an onClick function that loads data from character
 //objects in to display boxes
 function BarkCharData(idIn){
     console.log("\n=-=-=-=----------=-=-=-=\n");
-console.log("BarkCharData fired with '"+idIn+"' as its input");
+// console.log("BarkCharData fired with '"+idIn+"' as its input");
 
     //set the st_charData state to contain whatever character was selected
-    set_st_charData({
-        id: ar_charBin[idIn-1].id,
-        fName: ar_charBin[idIn-1].first_name,
-        sName: ar_charBin[idIn-1].second_name,
-        age: ar_charBin[idIn-1].age,
-        gender: ar_charBin[idIn-1].gender,
-        race: ar_charBin[idIn-1].race,
-        classType:ar_charBin[idIn-1].classType,
-        level: ar_charBin[idIn-1].level
-    })
-
-    set_st_displayBoxes({
-        box_id: document.getElementById("txt_idField"),
-        box_fName: document.getElementById("txt_fNameField"),
-        box_sName: document.getElementById("txt_sNameField"),
-        box_age: document.getElementById("txt_ageField"),
-        box_gender: document.getElementById("txt_genderField"),
-        box_race: document.getElementById("txt_raceField"),
-        box_class: document.getElementById("txt_classField"),
-        box_level: document.getElementById("txt_levelField"),
-    })
-                  
+    
+    try{
+            set_st_charData({
+            id: ar_charBin[idIn-1].id,
+            fName: ar_charBin[idIn-1].first_name,
+            sName: ar_charBin[idIn-1].second_name,
+            age: ar_charBin[idIn-1].age,
+            gender: ar_charBin[idIn-1].gender,
+            race: ar_charBin[idIn-1].race,
+            classType:ar_charBin[idIn-1].classType,
+            level: ar_charBin[idIn-1].level
+        })
+            console.log("After setting (with idIN: "+idIn+"), st_charData is now:/n");
+            console.log(st_charData);
+    }   
+        
+    catch(e)
+        {
+            console.log("\n\nPants were shat in:\n\t'barkCharData' function:\n" +e)
+        }                    
 }
 
 //onclick function to CREATE a record
 function fireNewRecord()
 {
     console.log("fireNewRecord was fired!");
-    //Unlock fields to edit
+    //need to set character useState to blank for a new record
+        set_st_charData("", "", "", "", "", "", "", "");
+    //need to enable all text inputs
+        set_st_displayBoxes()
+    //need to disable new, edit buttons
 }
 
 //onclick function to SAVE a record
 function fireSaveRecord()
 {
     console.log("fireSaveRecord was fired!");
-    //Unlock fields to edit
+
 }
 
 function fireDeleteRecord()
