@@ -161,11 +161,12 @@ export const TableRow = styled.tr`
       }
 
       ${props => props.NoHoverButton && css`
-      color: #b3c378;
+      background: lightcyan; //blue
+      color: #b3c378; //greenish
 
       &:hover {
-          color: #b3c378;
-          background: #b368a3;
+          color: #b3c378; //greenish
+          background: #b368a3; //blue
         }
     `}
 
