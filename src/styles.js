@@ -152,7 +152,8 @@ export const TableRow = styled.tr`
         background: darkgreen;
         color: green;
         transition: ease-in-out 0.3s; 
-      
+        cursor: not-allowed;
+
         &:hover{
         color: darkgreen;
         background: darkgreen;

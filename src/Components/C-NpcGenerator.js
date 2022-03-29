@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 
 import { 
     Wrapper,
@@ -28,8 +29,9 @@ import { FN_get_NPC_alignment, FN_get_npc_alignment_traits } from '../Reference 
 import { FN_get_npc_bond } from '../Reference Files/NPCBonds';
 import { FN_get_npc_flaw } from '../Reference Files/NPCFlaws';
 
+
+
 //=====-----=====-----=====-----=====----→GLOBAL VARIABLES HERE←-----=====-----=====-----=====-----=====
-let GL_name, GL_gender, GL_race, GL_talent, GL_demeanor, GL_alignment, GL_bond, GL_flaw = "?";
         //global vars that hold generated info. should all eventually be strings.
 
 //=====-----=====-----=====-----=====----→APP RENDERING HERE←-----=====-----=====-----=====-----=====
@@ -38,41 +40,8 @@ export const NpcGenerator = () => {
 //function to toggle all buttons being disabled
 function toggleCripple(input)
 {
-    console.log("Togglecripple fired with input of " +input);
-    //get reference to all display box buttons
-    let nameBTN = document.getElementById("btn_nameNPC");
-    let genderBTN = document.getElementById("btn_genderNPC");
-    let raceBTN = document.getElementById("btn_raceNPC");
-    let talentBTN = document.getElementById("btn_talentNPC");
-    let demeanorBTN = document.getElementById("btn_demeanorNPC");
-    let alignmentBTN = document.getElementById("btn_alignmentNPC");
-    let bondBTN = document.getElementById("btn_bondNPC");
-    let flawBTN = document.getElementById("btn_flawNPC");
-    
-    console.log("\tTogglecripple buttons assigned");
-
-    //then put them all in a single array
-    let ar_btns = [nameBTN, genderBTN, raceBTN, talentBTN, demeanorBTN, alignmentBTN, bondBTN, flawBTN];
-    console.log("\tTogglecripple buttons assigned to an array");
-
-    //for loop to set disabled or enabled for each array element
-    console.log("\tTogglecripple arrived at for loop");
-    for(let i=0; i<ar_btns.length;)
-    {
-        console.log("\tTogglecripple loop number: "+i);
-        if(input === true)
-        {
-            ar_btns[i].disabled = true;
-            console.log("ar_btns["+i+"] was disabled");
-            i++;
-        }
-        else
-        {
-            ar_btns[i].disabled = false;
-            console.log("ar_btns["+i+"] was enabled");
-            i++;
-        }
-    }
+    //console.log("Togglecripple fired with input of " +input);
+    set_st_crippled(input);
 }
 
 
@@ -82,6 +51,7 @@ function nameNPC(){
     //vars to track the gender box and a gender index
     var genderRef = document.getElementById("dis_npc_gender");
     var genderIndex = genderRef.value === "Male" ? 0 : 1;
+
     //if genderindex is 1, then it's female
     if (genderIndex === 1)
     {
@@ -147,7 +117,7 @@ function nameNPC(){
                 console.log("Before updating boxRef: \n\tgenderIndex ="+genderIndex+"\n\traceIndex ="+raceIndex+".")
                 let newName = FN_get_npc_name(genderIndex, raceIndex)
                 boxRef.value = String(newName); //assign result to display box
-                GL_name = String(newName); //assign result to global variable 
+                set_st_blurbVars({GL_Name:String(newName)}); //assign result to global variable 
             }
         }
     }
@@ -238,6 +208,31 @@ function genAllBlurbs(){
     FN_create_npc_blurb();
 }
 
+//=====-----=====-----=====-----=====----→USESTATES HERE←-----=====-----=====-----=====-----=====
+//useState to store character records
+const [st_crippled, set_st_crippled] = useState({
+    btnsDisabled: true
+}); 
+
+const [st_blurbVars, set_st_blurbVars] = useState({
+    //START FROM HERE TODAY. NEED TO MAKE SURE THAT EACH GL_ thing updates with set state
+    GL_name: "", 
+    GL_gender: "", 
+    GL_race: "", 
+    GL_talent: "", 
+    GL_demeanor: "",
+    GL_alignment: "", 
+    GL_bond: "", 
+    GL_flaw: "",
+})
+
+//=====-----=====-----=====-----=====----→USEEFFECT HERE←-----=====-----=====-----=====-----=====
+useEffect(() => 
+    {
+    //re-renders for each update made to watched vars 
+    console.log("Triggered useEffect to update buttons")
+    }, [st_crippled]);
+
 return(
     <>
     <Wrapper>
@@ -255,13 +250,13 @@ return(
                 <SuperTH>Name</SuperTH>
                 <SuperTD>
                     <TextInput id = "dis_npc_name" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
-                    <Button id = "btn_nameNPC" enabled = {false} NoHoverButton onClick = { nameNPC } inputWidth="40px">?</Button>
+                    <Button id = "btn_nameNPC" disabled = {st_crippled} NoHoverButton onClick = { nameNPC } inputWidth="40px">?</Button>
                 </SuperTD>
 
                 <SuperTH>Gender</SuperTH>
                     <SuperTD>
                         <TextInput id = "dis_npc_gender" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
-                        <Button id = "btn_genderNPC" disabled = {true}NoHoverButton onClick={ genderNPC } inputWidth="40px">?</Button>
+                        <Button id = "btn_genderNPC" disabled = {st_crippled} NoHoverButton onClick={ genderNPC } inputWidth="40px">?</Button>
                     </SuperTD>
                 
                 </TableRow>
@@ -270,13 +265,13 @@ return(
                 <SuperTH>Race</SuperTH>
                     <SuperTD>
                         <TextInput id = "dis_npc_race" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
-                        <Button id = "btn_raceNPC" disabled = {true} NoHoverButton onClick={ raceNPC } inputWidth="40px">?</Button>
+                        <Button id = "btn_raceNPC" disabled = {st_crippled} NoHoverButton onClick={ raceNPC } inputWidth="40px">?</Button>
                     </SuperTD>
 
                 <SuperTH>Talent</SuperTH>
                     <SuperTD>
                         <TextInput id = "dis_npc_talent" inputWidth="250px" inputHeight="35px" inputFontSize="900" inputFontStyle="bolder" disabled={true}></TextInput>
-                        <Button id = "btn_talentNPC" disabled = {true}  NoHoverButton onClick = { talentNPC } inputWidth="40px">?</Button>
+                        <Button id = "btn_talentNPC" disabled = {st_crippled}  NoHoverButton onClick = { talentNPC } inputWidth="40px">?</Button>
                     </SuperTD>
                 </TableRow>
             </TableHead>
@@ -289,14 +284,14 @@ return(
                 
                 <SuperTD>
                     <TextInput id = "dis_npc_demeanor" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
-                    <Button id = "btn_demeanorNPC" disabled = {true} NoHoverButton onClick= { demeanorNPC } inputWidth="40px">?</Button>
+                    <Button id = "btn_demeanorNPC" disabled = {st_crippled} NoHoverButton onClick= { demeanorNPC } inputWidth="40px">?</Button>
                 </SuperTD>
                 
                 <SuperTH>Alignment</SuperTH>
                 <SuperTD>
                     
                     <TextInput id = "dis_npc_alignment" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
-                    <Button id = "btn_alignmentNPC" disabled = {true} NoHoverButton onClick={ alignmentNPC } inputWidth="40px">?</Button>
+                    <Button id = "btn_alignmentNPC" disabled = {st_crippled} NoHoverButton onClick={ alignmentNPC } inputWidth="40px">?</Button>
                 </SuperTD>
                 </TableRow>
                 
@@ -304,13 +299,13 @@ return(
                 <SuperTH>Bond</SuperTH>
                 <SuperTD>
                     <TextInput id = "dis_npc_bonds" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
-                    <Button id = "btn_bondNPC" disabled = {true} NoHoverButton onClick={ bondsNPC } inputWidth="40px">?</Button>
+                    <Button id = "btn_bondNPC" disabled = {st_crippled} NoHoverButton onClick={ bondsNPC } inputWidth="40px">?</Button>
                 </SuperTD>
                 
                 <SuperTH>Flaw</SuperTH>
                 <SuperTD>
                     <TextInput id = "dis_npc_flaws" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
-                    <Button id = "btn_flawNPC" disabled = {true} NoHoverButton onClick={ flawsNPC }inputWidth="40px">?</Button>
+                    <Button id = "btn_flawNPC" disabled = {st_crippled} NoHoverButton onClick={ flawsNPC }inputWidth="40px">?</Button>
                 </SuperTD>
                 </TableRow>
             </TableHead>
@@ -319,7 +314,7 @@ return(
 
         <h2>NPC Blurb</h2>
  {/* Generate all blurb here for easier reading */}
-        <TextArea disabled= {true} id="npcBlurb"/>
+        <TextArea disabled= {st_crippled} id="npcBlurb"/>
     </Wrapper>
 </>
 )
