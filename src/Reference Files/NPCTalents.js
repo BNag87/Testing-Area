@@ -29,6 +29,5 @@ let ar_Talents =
 export const FN_getTalent = () => {
     let index = null;
     index = FN_randomRanged(0, (ar_Talents.length-1));
-    console.log("From FN_getTalent["+index+"], got: \n\t"+ar_Talents[index]);
     return ar_Talents[index];
 }

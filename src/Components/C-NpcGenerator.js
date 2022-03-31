@@ -1,6 +1,9 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 
+// WELL DONE! YOU SORTED THE USESTATE PROBLEM!!!
+//Now, for the next challenge, get a connection to a db and store the character data there. Try using AWS
+
 import { 
     Wrapper,
     Table,
@@ -31,19 +34,57 @@ import { FN_get_npc_flaw } from '../Reference Files/NPCFlaws';
 
 
 
-//=====-----=====-----=====-----=====----→GLOBAL VARIABLES HERE←-----=====-----=====-----=====-----=====
-        //global vars that hold generated info. should all eventually be strings.
-
 //=====-----=====-----=====-----=====----→APP RENDERING HERE←-----=====-----=====-----=====-----=====
 export const NpcGenerator = () => {
+
+//=====-----=====-----=====-----=====----→USESTATES HERE←-----=====-----=====-----=====-----=====
+//useState to store character records
+const [st_crippled, set_st_crippled] = useState({
+    btnsDisabled: true
+}); 
+
+//useState to store global values used in a blurb generator. init as ?
+const [st_blurbVars, set_st_blurbVars] = useState({
+    GL_name: "?", 
+    GL_gender: "?", 
+    GL_race: "?", 
+    GL_talent: "?", 
+    GL_demeanor: "?",
+    GL_alignment: "?", 
+    GL_bond: "?", 
+    GL_flaw: "?",
+})
+
+//=====-----=====-----=====-----=====----→USEEFFECT HERE←-----=====-----=====-----=====-----=====
+useEffect(() => 
+    {
+        //re-renders for each update made to watched vars 
+    }, [st_blurbVars]);
+
+//=====-----=====-----=====-----=====----RAW DATA HERE←-----=====-----=====-----=====-----=====
+
+let preBlurb = String(
+    st_blurbVars.GL_name + 
+    " is a " + 
+    String(st_blurbVars.GL_gender).toLowerCase() + 
+    " "  + st_blurbVars.GL_race + 
+    ".\n\nThey are known for " + 
+    String(st_blurbVars.GL_talent).toLowerCase() +
+    ".\nNormally, when talking to others, they are " +
+    String(st_blurbVars.GL_demeanor).toLowerCase() +
+    ".\nTheir guiding principles are " + 
+    String(st_blurbVars.GL_alignment).toLowerCase() +
+    ".\nOn a personal level, they are " + 
+    String(st_blurbVars.GL_bond).toLowerCase() +
+    ".\nTo their discredit, they " + 
+    String(st_blurbVars.GL_flaw).toLowerCase()
+    );
 
 //function to toggle all buttons being disabled
 function toggleCripple(input)
 {
-    //console.log("Togglecripple fired with input of " +input);
     set_st_crippled(input);
 }
-
 
 //onClick handlers:
 function nameNPC(){
@@ -56,16 +97,17 @@ function nameNPC(){
     if (genderIndex === 1)
     {
         genderRef.value = "Female";
-        GL_gender = "Female";
     }
     else
     {
         genderRef.value = "Male";
-        GL_gender = "Male";
     }
+    
+    st_blurbVars.GL_gender = genderRef.value;
+    set_st_blurbVars({...st_blurbVars});
+
     var raceRef = document.getElementById("dis_npc_race");
     var raceIndex = null; 
-    
     var boxRef = document.getElementById("dis_npc_name");
 
     //first, check if gender already exists. if not, generate one
@@ -73,13 +115,15 @@ function nameNPC(){
     {
         genderRef.value = FN_get_random_gender();
         genderIndex = genderRef.value === "Male" ? 0 : 1;
-        GL_gender = genderRef.value === "Male" ? "Male" : "Female";
+        st_blurbVars.GL_gender = genderRef.value === "Male" ? "Male" : "Female" 
+        set_st_blurbVars({...st_blurbVars});
     }
     else
     {
-        console.log("Gender IS NOT NULL.")
+        //this gets fired if gender ref is not null
         genderIndex = genderRef.value === "Male" ? 0 : 1;
-        GL_gender = genderRef.value === "Male" ? "Male" : "Female";
+        st_blurbVars.GL_gender = genderRef.value === "Male" ? "Male" : "Female" 
+        set_st_blurbVars({...st_blurbVars});
     }
     
 //now, check for a race...
@@ -94,8 +138,7 @@ function nameNPC(){
             }
             else
             {
-                //escape here, because race is one of the ones in the original array
-                //console.log("\tSuccess! Race ("+i+") was "+ ar_races[i]+". Setting loop check to true")
+                //escape the loop here, because race is one of the ones in the original array
                 raceIndex = i;
                 check = true;
             }
@@ -103,59 +146,73 @@ function nameNPC(){
             //should reach here if raceRef.value doesn't match any array element
             if(i > (ar_races.length-1))
             {
-                console.log("No race was selected at gen. Loop value was: "+i);
                 //create a random race
-                var random_race_index = FN_randomRanged(0, (ar_races.length-1)); //create a random array index
-                
+                var random_race_index = FN_randomRanged(0, (ar_races.length-1)); //create a random array index  
                 raceRef.value = ar_races[random_race_index]; //assign new race to display box
-                GL_race = String(ar_races[random_race_index]); //assign new race to globabl var
+
+                st_blurbVars.GL_race = ar_races[random_race_index];
+                set_st_blurbVars({...st_blurbVars}); //set global race var to result
                 raceIndex = random_race_index;
-                
                 check = true;
                 
                 //now, generate a whole new npc based on generated information
-                console.log("Before updating boxRef: \n\tgenderIndex ="+genderIndex+"\n\traceIndex ="+raceIndex+".")
                 let newName = FN_get_npc_name(genderIndex, raceIndex)
                 boxRef.value = String(newName); //assign result to display box
-                set_st_blurbVars({GL_Name:String(newName)}); //assign result to global variable 
+
+                st_blurbVars.GL_name = newName;
+                set_st_blurbVars({...st_blurbVars}); //assign result to global variable 
             }
         }
     }
     else
     {
         console.log("RACE INDEX WAS NOT NULL");
-
     }
+
     var newName = FN_get_npc_name(genderIndex, raceIndex);
     var newLastName = FN_randLastName();
     var full_name = newName + " " + newLastName;
     boxRef.value = full_name;
-    GL_name = String(full_name);
-    
+
+    st_blurbVars.GL_name = full_name;
+    set_st_blurbVars({...st_blurbVars});    
 }
 
 function genderNPC(){
     var genderBoxRef = document.getElementById("dis_npc_gender");
     genderBoxRef.value = FN_get_random_gender();
-    GL_gender = String(genderBoxRef.value);
+
+    //setState for talent global state var
+    st_blurbVars.GL_gender = genderBoxRef.value;
+    set_st_blurbVars({...st_blurbVars});
 }
 
 function raceNPC(){
     var raceBoxRef = document.getElementById("dis_npc_race");
     raceBoxRef.value = FN_get_random_race();
-    GL_race = String(raceBoxRef.value);
+ 
+    //setState for race global state var
+    st_blurbVars.GL_race = raceBoxRef.value;
+    set_st_blurbVars({...st_blurbVars});
+
 }
 
 function talentNPC(){
     var talentBoxRef = document.getElementById("dis_npc_talent");
     talentBoxRef.value = FN_getTalent()
-    GL_talent = String(talentBoxRef.value);
+
+    //setState for talent global state var
+    st_blurbVars.GL_talent = talentBoxRef.value;
+    set_st_blurbVars({...st_blurbVars});
 }
 
 function demeanorNPC(){
     var demeanorBoxRef = document.getElementById("dis_npc_demeanor")
     demeanorBoxRef.value = FN_getDemeanor()
-    GL_demeanor = String(demeanorBoxRef.value);
+
+    //setState for demeanor global state var
+    st_blurbVars.GL_demeanor = demeanorBoxRef.value;
+    set_st_blurbVars({...st_blurbVars});
 }
 
 function alignmentNPC(){
@@ -163,19 +220,28 @@ function alignmentNPC(){
     let npcAlignmentTraits = FN_get_npc_alignment_traits(npcAlignment);
     let alignmentBoxRef = document.getElementById("dis_npc_alignment");
     alignmentBoxRef.value = ("["+ String(npcAlignment) +"] " + String(npcAlignmentTraits));
-    GL_alignment = String(npcAlignmentTraits);
+
+    //setState for alignment global state var
+    st_blurbVars.GL_alignment = npcAlignmentTraits;
+    set_st_blurbVars({...st_blurbVars});
 }
 
 function bondsNPC() {
     var bondBoxRef = document.getElementById("dis_npc_bonds");
     bondBoxRef.value = FN_get_npc_bond()
-    GL_bond = String(bondBoxRef.value);
+
+    //setState for bond global state var
+    st_blurbVars.GL_bond = bondBoxRef.value;
+    set_st_blurbVars({...st_blurbVars});
 }
 
 function flawsNPC() {
     var flawsBoxRef = document.getElementById("dis_npc_flaws");
     flawsBoxRef.value = FN_get_npc_flaw()
-    GL_flaw = String(flawsBoxRef.value);
+    
+    //setState for flaw global state var
+    st_blurbVars.GL_flaw = flawsBoxRef.value;
+    set_st_blurbVars({...st_blurbVars});
 }
 
 function FN_create_npc_blurb()
@@ -183,18 +249,18 @@ function FN_create_npc_blurb()
     let blurbRef = document.getElementById("npcBlurb"); //reference to a textarea
     blurbRef.value = 
     (
-        GL_name + " is a " 
-        + GL_gender + " "  + GL_race + 
-        ".\n\nThey are known for " + GL_talent.toLowerCase() +
-        ".\nNormally, when talking to others, they are " + GL_demeanor.toLowerCase() +
-        ".\nTheir guiding principles are " + GL_alignment.toLowerCase() +
-        ".\nOn a personal level, they are " + GL_bond.toLowerCase() +
-        ".\nTo their discredit, they " +GL_flaw.toLowerCase()
+        st_blurbVars.GL_name + 
+        " is a " + String(st_blurbVars.GL_gender).toLowerCase() + 
+        " "  + st_blurbVars.GL_race + 
+        ".\n\nThey are known for " + String(st_blurbVars.GL_talent).toLowerCase() +
+        ".\nNormally, when talking to others, they are " + String(st_blurbVars.GL_demeanor).toLowerCase() +
+        ".\nTheir guiding principles are " + String(st_blurbVars.GL_alignment).toLowerCase() +
+        ".\nOn a personal level, they are " + String(st_blurbVars.GL_bond).toLowerCase() +
+        ".\nTo their discredit, they " + String(st_blurbVars.GL_flaw).toLowerCase()
     );
 }
 
 function genAllBlurbs(){
-
     // Fire EVERY function here to fill out all fields.
     toggleCripple(false);
     nameNPC();
@@ -205,33 +271,8 @@ function genAllBlurbs(){
     alignmentNPC();
     bondsNPC();
     flawsNPC();
-    FN_create_npc_blurb();
+    FN_create_npc_blurb("AFTER GEN");
 }
-
-//=====-----=====-----=====-----=====----→USESTATES HERE←-----=====-----=====-----=====-----=====
-//useState to store character records
-const [st_crippled, set_st_crippled] = useState({
-    btnsDisabled: true
-}); 
-
-const [st_blurbVars, set_st_blurbVars] = useState({
-    //START FROM HERE TODAY. NEED TO MAKE SURE THAT EACH GL_ thing updates with set state
-    GL_name: "", 
-    GL_gender: "", 
-    GL_race: "", 
-    GL_talent: "", 
-    GL_demeanor: "",
-    GL_alignment: "", 
-    GL_bond: "", 
-    GL_flaw: "",
-})
-
-//=====-----=====-----=====-----=====----→USEEFFECT HERE←-----=====-----=====-----=====-----=====
-useEffect(() => 
-    {
-    //re-renders for each update made to watched vars 
-    console.log("Triggered useEffect to update buttons")
-    }, [st_crippled]);
 
 return(
     <>
@@ -246,16 +287,16 @@ return(
                     </SuperTH>
             </TableRow>
             <TableRow>
-                {/* START HERE TODAY! NEED TO FIND OUT HOW TO CHANGE ENABLED to DISABLED AND HAVE CSS REFLECT IT */}
+
                 <SuperTH>Name</SuperTH>
                 <SuperTD>
-                    <TextInput id = "dis_npc_name" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <TextInput id = "dis_npc_name" inputWidth="250px" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_name}></TextInput>
                     <Button id = "btn_nameNPC" disabled = {st_crippled} NoHoverButton onClick = { nameNPC } inputWidth="40px">?</Button>
                 </SuperTD>
 
                 <SuperTH>Gender</SuperTH>
                     <SuperTD>
-                        <TextInput id = "dis_npc_gender" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                        <TextInput id = "dis_npc_gender" inputWidth="250px" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_gender}></TextInput>
                         <Button id = "btn_genderNPC" disabled = {st_crippled} NoHoverButton onClick={ genderNPC } inputWidth="40px">?</Button>
                     </SuperTD>
                 
@@ -264,14 +305,14 @@ return(
                 <TableRow>
                 <SuperTH>Race</SuperTH>
                     <SuperTD>
-                        <TextInput id = "dis_npc_race" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
-                        <Button id = "btn_raceNPC" disabled = {st_crippled} NoHoverButton onClick={ raceNPC } inputWidth="40px">?</Button>
+                        <TextInput id = "dis_npc_race" inputWidth="250px" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_race}></TextInput>
+                        <Button id = "btn_raceNPC" disabled = {st_crippled} NoHoverButton onClick={ raceNPC } inputWidth="40px" value = {st_blurbVars.GL_race}>?</Button>
                     </SuperTD>
 
                 <SuperTH>Talent</SuperTH>
                     <SuperTD>
-                        <TextInput id = "dis_npc_talent" inputWidth="250px" inputHeight="35px" inputFontSize="900" inputFontStyle="bolder" disabled={true}></TextInput>
-                        <Button id = "btn_talentNPC" disabled = {st_crippled}  NoHoverButton onClick = { talentNPC } inputWidth="40px">?</Button>
+                        <TextInput id = "dis_npc_talent" inputWidth="250px" inputHeight="35px" inputFontSize="900" inputFontStyle="bolder" disabled={true} value = {st_blurbVars.GL_talent}></TextInput>
+                        <Button id = "btn_talentNPC" disabled = {st_crippled}  NoHoverButton onClick = { talentNPC } inputWidth="40px"  value = {st_blurbVars.GL_talent}>?</Button>
                     </SuperTD>
                 </TableRow>
             </TableHead>
@@ -283,14 +324,14 @@ return(
             <SuperTH>Demeanor</SuperTH>
                 
                 <SuperTD>
-                    <TextInput id = "dis_npc_demeanor" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <TextInput id = "dis_npc_demeanor" inputWidth="250px" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_demeanor}></TextInput>
                     <Button id = "btn_demeanorNPC" disabled = {st_crippled} NoHoverButton onClick= { demeanorNPC } inputWidth="40px">?</Button>
                 </SuperTD>
                 
                 <SuperTH>Alignment</SuperTH>
                 <SuperTD>
                     
-                    <TextInput id = "dis_npc_alignment" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <TextInput id = "dis_npc_alignment" inputWidth="250px" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_alignment}></TextInput>
                     <Button id = "btn_alignmentNPC" disabled = {st_crippled} NoHoverButton onClick={ alignmentNPC } inputWidth="40px">?</Button>
                 </SuperTD>
                 </TableRow>
@@ -298,13 +339,13 @@ return(
                 <TableRow>
                 <SuperTH>Bond</SuperTH>
                 <SuperTD>
-                    <TextInput id = "dis_npc_bonds" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <TextInput id = "dis_npc_bonds" inputWidth="250px" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_bond}></TextInput>
                     <Button id = "btn_bondNPC" disabled = {st_crippled} NoHoverButton onClick={ bondsNPC } inputWidth="40px">?</Button>
                 </SuperTD>
                 
                 <SuperTH>Flaw</SuperTH>
                 <SuperTD>
-                    <TextInput id = "dis_npc_flaws" inputWidth="250px" inputHeight="35px" disabled={true}></TextInput>
+                    <TextInput id = "dis_npc_flaws" inputWidth="250px" inputHeight="35px" disabled={true}  value = {st_blurbVars.GL_flaw}></TextInput>
                     <Button id = "btn_flawNPC" disabled = {st_crippled} NoHoverButton onClick={ flawsNPC }inputWidth="40px">?</Button>
                 </SuperTD>
                 </TableRow>
@@ -314,7 +355,8 @@ return(
 
         <h2>NPC Blurb</h2>
  {/* Generate all blurb here for easier reading */}
-        <TextArea disabled= {st_crippled} id="npcBlurb"/>
+        <TextArea disabled= {st_crippled} id="npcBlurb" value={ preBlurb } 
+        />
     </Wrapper>
 </>
 )
