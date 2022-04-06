@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 
 // WELL DONE! YOU SORTED THE USESTATE PROBLEM!!!
-//Now, for the next challenge, get a connection to a db and store the character data there. Try using AWS
+//Now, for the next challenge, get a connection to a db and store the character data there. Try using mongodb
 
 import { 
     Wrapper,
