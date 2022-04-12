@@ -1,0 +1,208 @@
+{
+    "shops" : 
+        [
+            {
+                "type" : "Blacksmith/Armoury",
+                "items_light_armour" : 
+                [
+                    "Light Armour",
+                    {
+                        "id": 1,
+                        "item" : "Padded Armour", 
+                        "low_price": 15, 
+                        "med_price": 20, 
+                        "high_price": 30,
+                        "available": true,
+                        "limited": false,
+                        "weight": 8,
+                        "blurb": "AC11. Made of quilted layers of cloth and batting."
+                    },
+                    {
+                        "id": 2,
+                        "item" : "Leather Armour", 
+                        "low_price": 25, 
+                        "med_price": 35, 
+                        "high_price": 50,
+                        "available": true,
+                        "limited": false,
+                        "weight": 10,
+                        "blurb": "AC11. Interlocking pieces of leather, stiffened by being boiled in oil. Its joints are more flexible."
+                    },
+                    {
+                        "id": 3,
+                        "item" : "Studded Leather Armour", 
+                        "low_price": 33, 
+                        "med_price": 45, 
+                        "high_price": 68,
+                        "available": true,
+                        "limited": false,
+                        "weight": 13,
+                        "blurb": "AC12. Interlocking leather pieces, held together with rivets or spikes."
+                    }
+                ],
+
+                "items_medium_armour" : 
+                [
+                    "Medium Armour",
+                    {
+                        "id": 4,
+                        "item" : "Chain Shirt", 
+                        "low_price": 38, 
+                        "med_price": 50, 
+                        "high_price": 75,
+                        "available": true,
+                        "limited": false,
+                        "weight": 20,
+                        "blurb": "AC13. A shirt made of small, interlocking metal rings."
+                    },
+                    {
+                        "id": 5,
+                        "item" : "Scale Mail", 
+                        "low_price": 33, 
+                        "med_price": 45, 
+                        "high_price": 68,
+                        "available": true,
+                        "limited": false,
+                        "weight": 45,
+                        "blurb": "AC14. Leather underlaid coat with leggings and gauntlets. Covered with overlapping pieces of metal."
+                    },
+                    {
+                        "id": 6,
+                        "item" : "Breastplate", 
+                        "low_price": 300, 
+                        "med_price": 400, 
+                        "high_price": 600,
+                        "available": true,
+                        "limited": false,
+                        "weight": 20,
+                        "blurb": "AC14. A fitted metal chest piece, worn with supple leather."
+                    },
+                    {
+                        "id": 7,
+                        "item" : "Half Plate", 
+                        "low_price": 562, 
+                        "med_price": 750, 
+                        "high_price": 1125,
+                        "available": true,
+                        "limited": false,
+                        "weight": 40,
+                        "blurb": "AC15. Shaped metal pieces that cover most of the body. Doesn't include leg protection beyond simple greaves attached with leather straps."
+                    }
+                ],
+                "items_heavy_armour" : 
+                [
+                    "Heavy Armour",
+                    {
+                        "id": 8,
+                        "item" : "Ring Mail", 
+                        "low_price": 22, 
+                        "med_price": 30, 
+                        "high_price": 45,
+                        "available": true,
+                        "limited": false,
+                        "weight": 40,
+                        "blurb": "AC14. Leather armour with heavy rings sewn in to it to better absorb blows."
+                    },
+                    {
+                        "id": 9,
+                        "item" : "Chain Mail", 
+                        "low_price": 56, 
+                        "med_price": 75, 
+                        "high_price": 113,
+                        "available": true,
+                        "limited": false,
+                        "weight": 55,
+                        "blurb": "AC16. Made of interlocking metal rings, includes a layer of quilted fabric worn underneath to precvent chafing and to cushion the impact of blows."
+                    },
+                    {
+                        "id": 10,
+                        "item" : "Splint Armour", 
+                        "low_price": 150, 
+                        "med_price": 200, 
+                        "high_price": 300,
+                        "available": true,
+                        "limited": false,
+                        "weight": 60,
+                        "blurb": "AC17. Made of narrow vertical strips of metal riveted to a backing of leather, worn over cloth padding."
+                    },
+                    {
+                        "id": 11,
+                        "item" : "Plate Armour", 
+                        "low_price": 1125, 
+                        "med_price": 1500, 
+                        "high_price": 2250,
+                        "available": true,
+                        "limited": false,
+                        "weight": 65,
+                        "blurb": "AC18. Made of shaped, interlocking metal plates that cover the entire body. Has thick padding underneath. Buckles and straps distribute the weight over the body."
+                    }
+                ],
+                "items_shields" : 
+                [
+                    "Shields",
+                    {
+                        "id": 12,
+                        "item" : "Buckler", 
+                        "low_price": 7, 
+                        "med_price": 10, 
+                        "high_price": 15,
+                        "available": true,
+                        "limited": false,
+                        "weight": 4,
+                        "blurb": "AC1. A small rounded shield made of wooden planks, with a metal overlay. Has a handle behind the boss."
+                    },                    
+                    {
+                        "id": 13,
+                        "item" : "Round Shield", 
+                        "low_price": 7, 
+                        "med_price": 10, 
+                        "high_price": 15,
+                        "available": true,
+                        "limited": false,
+                        "weight": 6,
+                        "blurb": "AC2. A rounded shield made of locally sourced wooden planks, bound with a metal ring and rivets. Has a handle behind the boss."
+                    },
+                    {
+                        "id": 14,
+                        "item" : "Kite Shield", 
+                        "low_price": 8, 
+                        "med_price": 11, 
+                        "high_price": 16,
+                        "available": true,
+                        "limited": false,
+                        "weight": 7,
+                        "blurb": "AC2. A kite shaped shield made of locally sourced wooden planks, bound with a metal ring and rivets. Has a handle and strap behind the boss."
+                    },
+                    {
+                        "id": 15,
+                        "item" : "Heater Shield", 
+                        "low_price": 9, 
+                        "med_price": 13, 
+                        "high_price": 20,
+                        "available": true,
+                        "limited": false,
+                        "weight": 6,
+                        "blurb": "AC2. A refined design on the kite shield. Made of locally sourced wooden planks, with a metal overlay. Has a handle and strap behind the boss."
+                    },
+                    {
+                        "id": 16,
+                        "item" : "Tower Shield", 
+                        "low_price": 10, 
+                        "med_price": 15, 
+                        "high_price": 25,
+                        "available": true,
+                        "limited": false,
+                        "weight": 10,
+                        "blurb": "AC2. A large convex shield made of wooden planks, with a metal edge and bound with rivets. Has a handle and strap behind the boss. Can render normal arrows useless."
+                    }
+                ]
+            }
+        ]
+    ,
+    "locales":
+        [
+            {"locale_rural": false},
+            {"locale_urban" : false},
+            {"locale_premium": false}
+        ]
+}
