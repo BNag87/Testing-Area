@@ -25,20 +25,23 @@ export const MerchantGenerator = () => {
     //get the json data
     const jsonData = require("../Reference Files/Json Files/shops.json");
 
-    console.log("'Object.values()' of items_light_armour:");
+    // console.log("'Object.values()' of jsonData.shops[0]:");
     const objInnerValues = Object.values(jsonData.shops[0])
-    console.log(objInnerValues);
+    // console.log(objInnerValues);
 
+    // for(let i = 1; i < dummy.length; i++)
+    //     {
+    //         console.table(dummy[i]);
+    //         // for(let x = 1; x < dummy[i].length; x++)
+    //         // {
+    //         //     console.log("Spitting 'dummy["+i+"]["+x+"]': \n"+dummy[i][x].item);                
+    //         // }
+    //     }
+    
     const BarkItemBlurb = (input) => {
         console.log ("Barkitemblurb was fired with the input: " +input);
-        console.log(dummy[input][input].item + " " + dummy[input][input].blurb)
+        console.log("\n"+objInnerValues[0][input].item + "\n" + objInnerValues[0][input].blurb)
     }
-
-    //trying a map to log here, see if data is actually being put in an array
-    let dummy = objInnerValues.map(x => x);
-    console.log("Spitting mapped object: "+dummy[1][1].low_price);
-
-
 
     //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
@@ -64,27 +67,25 @@ export const MerchantGenerator = () => {
                             </TableRow>
 
                             
-                                {objInnerValues.map((things, i) => (
-                                    <TableRow 
-                                        key= {i} 
-                                        onClick={() => BarkItemBlurb(i)}>
-                                        <SuperTD>{dummy[i].item}</SuperTD>
-                                        <SuperTD>{dummy[i].weight}lbs</SuperTD>
-                                        <SuperTD>{dummy[i].low_price}gp</SuperTD>
-                                        <SuperTD>{dummy[i].med_price}gp</SuperTD>
-                                        <SuperTD>{dummy[i].high_price}gp</SuperTD>
+                                
+                            {
+                                objInnerValues.map((things, i) => (
+                                   
+                                    <TableRow key= {i} onClick={() => BarkItemBlurb(i)}>
+
+                                    {Object.keys(things).map((eachThing) => (
+                                        <>
+                                    <SuperTD>{eachThing.item}lbs</SuperTD>
+                                    <SuperTD>{eachThing.weight}lbs</SuperTD>
+                                    <SuperTD>{eachThing.low_price}gp</SuperTD>
+                                    <SuperTD>{eachThing.med_price}gp</SuperTD>
+                                    <SuperTD>{eachThing.high_price}gp</SuperTD>
+                                        </>
+                                    ))}
                                     </TableRow>
-                            ))}
-                            
-
-                            <TableRow>
-                                <SuperTD>Some ITEM</SuperTD>
-                                <SuperTD>Some WGT</SuperTD>
-                                <SuperTD>Some LOW</SuperTD>
-                                <SuperTD>Some MED</SuperTD>
-                                <SuperTD>Some MAX</SuperTD>
-                            </TableRow>
-
+                                    )
+                                )
+                            }
                     </TableHead>
                 </Table>
             </Wrapper>
