@@ -26,7 +26,7 @@ export const MerchantGenerator = () => {
     const jsonData = require("../Reference Files/Json Files/shops.json");
 
     // console.log("'Object.values()' of jsonData.shops[0]:");
-    const objInnerValues = Object.values(jsonData.shops[0])
+    const objInnerValues = Object.values(jsonData.shops)
     // console.log(objInnerValues);
 
     // for(let i = 1; i < dummy.length; i++)
@@ -66,29 +66,44 @@ export const MerchantGenerator = () => {
                                 <SuperTH>Max Price</SuperTH>
                             </TableRow>
 
-                            
-                                
-                            {
-                                objInnerValues.map((things, i) => (
-                                   
-                                    <TableRow key= {i} onClick={() => BarkItemBlurb(i)}>
+                            <TableRow>
+                            <>
+                            {/* THIS GIVES THE SHOP TYPE */}
+                                <SuperTH>objInnerValues[0]</SuperTH>
+                                <SuperTD colSpan={4}>{objInnerValues[0][1][1][1]}</SuperTD>                               
+                            </>
+                            </TableRow>
 
-                                    {Object.keys(things).map((eachThing) => (
-                                        <>
-                                    <SuperTD>{eachThing.item}lbs</SuperTD>
-                                    <SuperTD>{eachThing.weight}lbs</SuperTD>
-                                    <SuperTD>{eachThing.low_price}gp</SuperTD>
-                                    <SuperTD>{eachThing.med_price}gp</SuperTD>
-                                    <SuperTD>{eachThing.high_price}gp</SuperTD>
-                                        </>
-                                    ))}
-                                    </TableRow>
-                                    )
+                            
+                            {/* THIS MAPS THE OBJECT. OBJECTS NEED TO BE MADE TO ARRAYS, THEN MAPPED */}
+                            {objInnerValues[0].map((thing, outerIndex) => (
+                               
+                            Object.values(thing).map((innerThing, innerIndex) => (
+                        <>
+                        <TableRow key = {thing[0].toString()}>
+                        {console.log("Key for tablerow was "+ thing[0][0].toString())}
+                                    <SuperTD>
+                                        {innerThing[2]}
+                                        {console.log("\nouter/inner: "+outerIndex +", " +innerIndex)}
+                                        {console.log("\nData: "+innerThing[2] +", " +innerThing[8] + ", " +innerThing[3]+", " + innerThing[4]+", "+innerThing[5])}
+                                    </SuperTD> 
+                                    
+                                    <SuperTD>{innerThing[8]}lbs</SuperTD>
+                                    <SuperTD>{innerThing[3]}gp</SuperTD>
+                                    <SuperTD>{innerThing[4]}gp</SuperTD>
+                                    <SuperTD>{innerThing[5]}gp</SuperTD>
+                            </TableRow>
+                        </>
+                                    ))
+
+                                )
                                 )
                             }
-                    </TableHead>
-                </Table>
-            </Wrapper>
-            </>
-        )
+                           
+
+    </TableHead>
+    </Table>
+    </Wrapper>
+    </>
+    )
 }
