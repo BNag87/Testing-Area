@@ -31,7 +31,7 @@
                     [
                         3,
                         "Light Armour",
-                        "Studded Leather Armour", 
+                        "Studded Leather", 
                         33, 
                         45, 
                         68,
@@ -57,6 +57,7 @@
                     ],
                     [
                         5,
+                        "Medium Armour",
                         "Scale Mail", 
                         33, 
                         45, 
@@ -68,6 +69,7 @@
                     ],
                     [
                         6,
+                        "Medium Armour",
                         "Breastplate", 
                         300, 
                         400, 
@@ -79,6 +81,7 @@
                     ],
                     [
                         7,
+                        "Medium Armour",
                         "Half Plate", 
                         562, 
                         750, 

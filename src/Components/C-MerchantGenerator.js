@@ -50,7 +50,7 @@ export const MerchantGenerator = () => {
                     
                     <TableHead>
                             <TableRow>
-                            <SuperTH colSpan={5}>
+                            <SuperTH colSpan={6}>
                                 <h2>Merchant Table</h2>
                                 <h4>Blacksmith/Armoury</h4> 
                             </SuperTH>
@@ -58,44 +58,48 @@ export const MerchantGenerator = () => {
 
                             <TableRow>
                                 <SuperTH>Item</SuperTH>
+                                <SuperTH>Category</SuperTH>
                                 <SuperTH>Weight</SuperTH>
                                 <SuperTH>Low Price</SuperTH>
                                 <SuperTH>Avg Price</SuperTH>
                                 <SuperTH>Max Price</SuperTH>
                             </TableRow>
 
-                            <TableRow>
-                            <>
-                            {/* THIS GIVES THE SHOP TYPE */}
-                                <SuperTH>objInnerValues[0][1][1][1]</SuperTH>
-                                <SuperTD colSpan={4}>{objInnerValues[0][1][1][1]}</SuperTD>                               
-                            </>
-                            </TableRow>
-
-                            {/* THIS MAPS THE OBJECT. OBJECTS NEED TO BE MADE TO ARRAYS, THEN MAPPED */}
+                            {/* ARRAY MAPPING! */}
                             {objInnerValues[0].map((thing, outerIndex) => (
-
-                            Object.values(thing).map((innerThing, innerIndex) => (
-                        <>
-                        <TableRow key = {thing[0].toString()}>
-                        {console.log("Key for tablerow was "+ thing[0][0].toString())}
-                                    <SuperTD>
-                                        {innerThing[2]}
-                                        {console.log("\nouter/inner: "+outerIndex +", " +innerIndex)}
-                                        {console.log("\nData: "+innerThing[2] +", " +innerThing[8] + ", " +innerThing[3]+", " + innerThing[4]+", "+innerThing[5])}
-                                    </SuperTD> 
-                                    
-                                    <SuperTD>{innerThing[8]}lbs</SuperTD>
-                                    <SuperTD>{innerThing[3]}gp</SuperTD>
-                                    <SuperTD>{innerThing[4]}gp</SuperTD>
-                                    <SuperTD>{innerThing[5]}gp</SuperTD>
-                            </TableRow>
-                        </>
-                                    ))
-
-                                )
-                                )
-                            }
+                            
+                            // Ternary operator to stop creating rows from element 0
+                            (outerIndex == 0) ? console.log("outerIndex WAS 0") : (outerIndex %2 == 0) ? 
+        
+        Object.values(thing).map((innerThing, innerIndex) => (
+            <>
+                <TableRow inputBackgroundColour="#2b3e24" inputFontColour = "#dddddd" key = {thing[0].toString()}>
+                    <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[3]}gp</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[4]}gp</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[5]}gp</SuperTD>
+                </TableRow>
+            </>
+        ))
+:
+        Object.values(thing).map((innerThing, innerIndex) => (
+            <>
+                <TableRow inputBackgroundColour="#555555" inputFontColour = "#dddddd" key = {thing[0].toString()}>
+                    <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[3]}gp</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[4]}gp</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[5]}gp</SuperTD>
+                </TableRow>
+            </>
+                        )
+                    )
+                )
+            )
+}
 
     </TableHead>
     </Table>

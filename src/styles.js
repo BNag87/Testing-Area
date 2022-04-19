@@ -64,32 +64,43 @@ padding: 0px 10px 0px 10px;
 `;
 
 export const TableHead = styled.thead`
-border: solid white;
+/* border: outset white; */
 background: black;
-color: white ;
+color: white;
 font-variant: small-caps;
 `;
 
 export const SuperTD = styled.td`
-padding-left:5px;
+padding: 2px 5px 2px 5px;
 
-&:hover{
-  color: green;
-  background: darkgray;
-  transition: ease-in-out 0.3s; 
-}`
+
+
+${props => props.NoHoverSmallTxtTD && css`
+
+      font-variant: none;
+      font-family: consolas;
+      font-size: smaller;
+  }
+`}
+`;
 
 export const TableRow = styled.tr`
-  border: 20px solid white; 
-  background: green;
-  color: white;
+  /* border: dashed white;  */
+  background: ${props => props.inputBackgroundColour || "white"};
+  color: ${props => props.inputFontColour || "white"};
+
+      &:hover {
+          color: #FFD700; //gold
+          background: #b368a3; //blue
+          transition: ease-in-out 0.3s;
+      }
   `;
 
   // ==========-------------------- INPUT STYLES
   export const TextInput = styled.input`
     text-align:center;
     font-size: ${props => props.inputFontSize || "900"};
-    font-style: ${props => props.inputFontStyle || "bold"};;
+    font-style: ${props => props.inputFontStyle || "bold"};
     background: white;
     color: black;
     padding: ${props => props.inputPadding || "5px"};
@@ -130,10 +141,10 @@ export const TableRow = styled.tr`
   export const Button = styled.button`
   
     border: red 1px solid;
-    border-radius: 5px 3px 5px 3px;
+    border-radius: ${props => props.inputRadius || "5px 3px 5px 3px"};
     box-shadow: 2px 2px rgba(0,0,0,0.4);
-    padding: 10px;
-    margin: 5px;
+    padding: ${props => props.inputPadding || "10px 10px 10px 10px"};
+    margin: ${props => props.inputMargin || "3px 3px 3px 3px"};
     background: #b368a3; //blue
     color: #b3c378; //greenish
     text-align: center;
@@ -141,6 +152,7 @@ export const TableRow = styled.tr`
     font-weight: bolder;
     font-size: large;
     width: ${props => props.inputWidth || "80px"};
+    height: ${props => props.inputWidth || "auto"};
     cursor: pointer;
 
       &:hover{

@@ -282,7 +282,7 @@ return(
             <TableHead>
             <TableRow>
                 <SuperTH colSpan={4}>
-                <h2>Randomise All<Button onClick={ genAllBlurbs }>???</Button></h2>
+                <h2>Randomise All  <Button inputRadius = "100%"  inputWidth = "50px" inputHeight = "50px" onClick={ genAllBlurbs }>???</Button></h2>
                     
                     </SuperTH>
             </TableRow>
