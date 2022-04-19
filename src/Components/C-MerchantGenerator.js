@@ -18,9 +18,7 @@ import {
 //==========----------→COMPONENT STARTS HERE
 export const MerchantGenerator = () => {
 //WELCOME TO A NEW DAY! YOU'RE ALMOST THERE! 
-//Just need to figure out how to navigate the data structure properly.
-//You got the blurb for items but it was searching through each array
-//one at a time without looking through each object entry!
+//Fix the issue with the table generation! Generates sideways!
 
     //get the json data
     const jsonData = require("../Reference Files/Json Files/shops.json");
@@ -69,15 +67,14 @@ export const MerchantGenerator = () => {
                             <TableRow>
                             <>
                             {/* THIS GIVES THE SHOP TYPE */}
-                                <SuperTH>objInnerValues[0]</SuperTH>
+                                <SuperTH>objInnerValues[0][1][1][1]</SuperTH>
                                 <SuperTD colSpan={4}>{objInnerValues[0][1][1][1]}</SuperTD>                               
                             </>
                             </TableRow>
 
-                            
                             {/* THIS MAPS THE OBJECT. OBJECTS NEED TO BE MADE TO ARRAYS, THEN MAPPED */}
                             {objInnerValues[0].map((thing, outerIndex) => (
-                               
+
                             Object.values(thing).map((innerThing, innerIndex) => (
                         <>
                         <TableRow key = {thing[0].toString()}>
@@ -99,7 +96,6 @@ export const MerchantGenerator = () => {
                                 )
                                 )
                             }
-                           
 
     </TableHead>
     </Table>
