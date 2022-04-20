@@ -117,10 +117,11 @@ export const TableRow = styled.tr`
     `;
 
     export const TextArea = styled.textarea`
-      text-align:left;
+      text-align: ${props => props.inputTextAlign || "left"};
+      justify-content: ${props => props.inputJustify || "flex-start"};
       font-size: ${props => props.inputFontSize || "900"};
-      background: white;
-      color: black;
+      background: ${props => props.inputBackground || "white"};
+      color: ${props => props.inputColour || "Black"};
       padding: ${props => props.inputPadding || "5px"};
       margin: ${props => props.inputMargin || "5px 0px 5px 0px"};
       border: none;
@@ -130,8 +131,10 @@ export const TableRow = styled.tr`
       resize: none;
 
       &:disabled{
-      background: beige;
-      color: black;
+      background: ${props => props.inputDBG || "beige"};
+      color: ${props => props.inputDFC || "black"};
+      border: ${props => props.inputDBorder || "none"};
+      margin: ${props => props.inputDMargin || "5px 0px 5px 0px"};
       box-shadow: 2px 3px rgba(0,0,0,0.34);
       transition: ease-in-out 0.3s;
     }
@@ -142,22 +145,22 @@ export const TableRow = styled.tr`
   
     border: red 1px solid;
     border-radius: ${props => props.inputRadius || "5px 3px 5px 3px"};
-    box-shadow: 2px 2px rgba(0,0,0,0.4);
+    box-shadow: ${props => props.inputBoxShadow || "2px 2px rgba(0,0,0,0.4)"};
     padding: ${props => props.inputPadding || "10px 10px 10px 10px"};
     margin: ${props => props.inputMargin || "3px 3px 3px 3px"};
-    background: #b368a3; //blue
-    color: #b3c378; //greenish
+    background: ${props => props.inputBackground || "#b368a3"}; //blue
+    color: ${props => props.inputColor || "#b3c378"}; //greenish
     text-align: center;
-    font-variant: small-caps;
-    font-weight: bolder;
-    font-size: large;
+    font-variant: ${props => props.inputFontVariant || "small-caps"};
+    font-weight: ${props => props.inputFontWeight || "bolder"};
+    font-size: ${props => props.inputFontSize || "large"};
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputWidth || "auto"};
     cursor: pointer;
 
       &:hover{
-        color: green;
-        background: white;
+        color: ${props => props.inputHBackground || "green"};
+        background: ${props => props.inputHColour || "white"};
         transition: ease-in-out 0.3s; 
       }
       &:disabled{

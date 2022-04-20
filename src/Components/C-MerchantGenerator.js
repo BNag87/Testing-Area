@@ -41,6 +41,12 @@ export const MerchantGenerator = () => {
         console.log("\n"+objInnerValues[0][input].item + "\n" + objInnerValues[0][input].blurb)
     }
 
+    function BarkBlurb(ItemInput, BlurbInput)
+    {
+        let box = document.getElementById("blurbBox");
+        box.value = (ItemInput + ".\n"+ BlurbInput);
+    }
+
     //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
             <>
@@ -52,7 +58,38 @@ export const MerchantGenerator = () => {
                             <TableRow>
                             <SuperTH colSpan={6}>
                                 <h2>Merchant Table</h2>
-                                <h4>Blacksmith/Armoury</h4> 
+                                <hr/>
+                                <h4>Blacksmith/Armoury</h4>
+                                <Button
+                                inputBackground = "#222222"
+                                inputColor = "#cccccc"
+                                inputFontSize = "normal"
+                                inputFontVariant = "normal"
+                                inputWidth = "auto">
+                                    Blacksmith
+                                </Button>
+                                <Button
+                                inputBackground = "#222222"
+                                inputColor = "#cccccc"
+                                inputFontSize = "normal"
+                                inputFontVariant = "normal"
+                                inputWidth = "auto">
+                                    Fletcher
+                                </Button>
+                                <hr/> 
+                                <TextArea 
+                                    id = "blurbBox" 
+                                    disabled = {true} 
+                                    inputHeight = "80px" 
+                                    inputWidth = "350px"
+                                    inputTextAlign = "center"
+                                    inputJustify = "center"
+                                    inputDBG = "#242442"
+                                    inputDFC = "white"
+                                    inputDBorder = "3px grey inset"
+                                    inputDMargin = "0px 0px 3px 0px"
+                                    placeholder = "Click an item below to see its description here"
+                                    />
                             </SuperTH>
                             </TableRow>
 
@@ -73,7 +110,11 @@ export const MerchantGenerator = () => {
         
         Object.values(thing).map((innerThing, innerIndex) => (
             <>
-                <TableRow inputBackgroundColour="#2b3e24" inputFontColour = "#dddddd" key = {thing[0].toString()}>
+                <TableRow 
+                inputBackgroundColour="#2b3e24" 
+                inputFontColour = "#dddddd" 
+                key = {thing[0].toString()}
+                onClick={() => BarkBlurb(innerThing[2],innerThing[9])}>
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
@@ -86,7 +127,12 @@ export const MerchantGenerator = () => {
 :
         Object.values(thing).map((innerThing, innerIndex) => (
             <>
-                <TableRow inputBackgroundColour="#555555" inputFontColour = "#dddddd" key = {thing[0].toString()}>
+                <TableRow 
+                inputBackgroundColour="#555555" 
+                inputFontColour = "#dddddd" 
+                key = {thing[0].toString()} 
+                onClick={() => BarkBlurb(innerThing[2],innerThing[9])}>
+
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
@@ -101,9 +147,9 @@ export const MerchantGenerator = () => {
             )
 }
 
-    </TableHead>
-    </Table>
-    </Wrapper>
-    </>
+                    </TableHead>
+                </Table>
+            </Wrapper>
+            </>
     )
 }
