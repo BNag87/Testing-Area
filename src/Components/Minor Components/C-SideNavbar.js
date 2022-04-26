@@ -4,7 +4,8 @@ import {
     H3,
     NLink,
     P,
-} from "../styles"
+} from "../../styles"
+import { Popup } from "./C-Popups";
 
 //------------------→React Icons Imports
 import { BsSignpostSplit } from 'react-icons/bs';

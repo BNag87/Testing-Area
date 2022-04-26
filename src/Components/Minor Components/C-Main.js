@@ -3,7 +3,7 @@ import React from 'react';
 //=====================STYLING IMPORTS
 import {
     Wrapper,
-  } from "../styles"
+  } from "../../styles"
 
 //=====================COMPONENT
 export const Main = () => {

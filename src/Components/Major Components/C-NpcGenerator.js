@@ -1,9 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-// WELL DONE! YOU SORTED THE USESTATE PROBLEM!!!
-//Now, for the next challenge, get a connection to a db and store the character data there. Try using mongodb
-
 import { 
     Wrapper,
     Table,
@@ -15,7 +12,7 @@ import {
     TextInput,
     TextArea, 
     
-    } from "../styles";
+    } from "../../styles";
 
 import { 
             FN_get_npc_name, //function that grabs a random npc first name

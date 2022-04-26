@@ -13,8 +13,6 @@ body {
 }
 `;
 
-// ==========-------------------- SECTION STYLES
-
 // ==========--------------------DIV STYLES
 export const Wrapper = styled.div`
     width: ${props => props.inputWidth || "auto"};
@@ -44,6 +42,44 @@ width: 100%;
 `
 export const ColumnSplitter = styled.div`
 height: 100%;
+`
+//div for a popup box shown when user hovers over a table element
+export const PopupBox = styled.div`
+  position: fixed;
+  background: black;
+  color: white;
+  width: 50%;
+  height: 10%;
+`
+
+export const closeIcon = styled.div`
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+`
+
+export const Box = styled.div`
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
 `
 
 // ==========-------------------- TABLE STYLES

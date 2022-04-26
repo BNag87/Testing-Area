@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactTooltip from "react-tooltip";
 
 import { 
     Wrapper,
@@ -9,9 +10,12 @@ import {
     SuperTD,
     Button,
     TextInput,
-    TextArea, 
+    TextArea,
+    Box, 
     
-    } from "../styles";
+    } from "../../styles";
+
+import { ToolTip } from '../Minor Components/C-Tooltip';
 
 //Need to create a basic display for shop data.
 
@@ -45,6 +49,15 @@ export const MerchantGenerator = () => {
     {
         let box = document.getElementById("blurbBox");
         box.value = (ItemInput + ".\n"+ BlurbInput);
+    }
+
+    function tooltip(itemName, itemBlurb)
+    {
+        console.log("tooltip was fired with: " +itemName+ ", " +itemBlurb);
+        return(
+            <Box>{itemName}, {itemBlurb}</Box>
+            
+        )
     }
 
     //==========----------→COMPONENT RETURN BLOCK STARTS HERE
@@ -110,11 +123,16 @@ export const MerchantGenerator = () => {
         
         Object.values(thing).map((innerThing, innerIndex) => (
             <>
-                <TableRow 
+                <TableRow
+                onMouseOver={ () => tooltip(innerThing[2], innerThing[9]) } 
                 inputBackgroundColour="#2b3e24" 
                 inputFontColour = "#dddddd" 
                 key = {thing[0].toString()}
                 onClick={() => BarkBlurb(innerThing[2],innerThing[9])}>
+                    {/* Tooltip popup for item blurb */}
+
+
+                    {/* Indidivual td elements to display each item */}
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
@@ -122,6 +140,7 @@ export const MerchantGenerator = () => {
                     <SuperTD NoHoverSmallTxtTD>{innerThing[4]}gp</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[5]}gp</SuperTD>
                 </TableRow>
+
             </>
         ))
 :
@@ -132,13 +151,14 @@ export const MerchantGenerator = () => {
                 inputFontColour = "#dddddd" 
                 key = {thing[0].toString()} 
                 onClick={() => BarkBlurb(innerThing[2],innerThing[9])}>
-
+                      
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[3]}gp</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[4]}gp</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[5]}gp</SuperTD>
+
                 </TableRow>
             </>
                         )

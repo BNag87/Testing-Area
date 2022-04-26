@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { char_Obj } from "../Reference Files/ObjectDefs";
+import { char_Obj } from "../../Reference Files/ObjectDefs";
 
 import { 
     Wrapper,
@@ -9,7 +9,7 @@ import {
     Button,
     RowSpacer,
     TextInput, 
-    } from "../styles";
+    } from "../../styles";
 
 export const ExpTable = () => {
 
