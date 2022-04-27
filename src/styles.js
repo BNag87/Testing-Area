@@ -73,8 +73,8 @@ width: ${props => props.inputWidth || "300px"}
 `;
 
 export const SuperTH = styled.th`
-background: black;
-color: white ;
+background: ${props => props.inputBackgroundColour || "black"};
+color: ${props => props.inputFontColour || "white"};
 font-variant: small-caps;
 padding: 0px 10px 0px 10px;
 `;
@@ -89,10 +89,13 @@ font-variant: small-caps;
 export const SuperTD = styled.td`
 padding: 2px 5px 2px 5px;
 
-
+${props => props.NoHoverTD && css`
+  font-weight: bold;
+  }
+`}
 
 ${props => props.NoHoverSmallTxtTD && css`
-
+  
       font-variant: none;
       font-family: consolas;
       font-size: smaller;
@@ -136,21 +139,22 @@ export const TableRow = styled.tr`
       text-align: ${props => props.inputTextAlign || "left"};
       justify-content: ${props => props.inputJustify || "flex-start"};
       font-size: ${props => props.inputFontSize || "900"};
-      background: ${props => props.inputBackground || "white"};
-      color: ${props => props.inputColour || "Black"};
+      background: ${props => props.inputDBG || "rgba(255, 255, 255, 0.25)"};
+      color: ${props => props.inputDFC || "white"};
       padding: ${props => props.inputPadding || "5px"};
-      margin: ${props => props.inputMargin || "5px 0px 5px 0px"};
-      border: none;
+      border: ${props => props.inputDBorder || "inset rgba(255,255,255,0.9) 4px"};
+      margin: ${props => props.inputDMargin || "20px"};
       border-radius: 5px 5px 5px 5px;
       width: ${props => props.inputWidth || "430px"};
       height: ${props => props.inputHeight || "125px"};
       resize: none;
 
       &:disabled{
-      background: ${props => props.inputDBG || "beige"};
-      color: ${props => props.inputDFC || "black"};
-      border: ${props => props.inputDBorder || "none"};
-      margin: ${props => props.inputDMargin || "5px 0px 5px 0px"};
+      background: ${props => props.inputDBG || "rgba(255, 255, 255, 0.15)"};
+      color: ${props => props.inputDFC || "white"};
+    
+      border: ${props => props.inputDBorder || "inset rgba(255,255,255,0.4) 4px"};
+      margin: ${props => props.inputDMargin || "20px"};
       box-shadow: 2px 3px rgba(0,0,0,0.34);
       transition: ease-in-out 0.3s;
     }

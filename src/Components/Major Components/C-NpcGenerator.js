@@ -346,14 +346,21 @@ return(
                     <Button id = "btn_flawNPC" disabled = {st_crippled} NoHoverButton onClick={ flawsNPC }inputWidth="40px">?</Button>
                 </SuperTD>
                 </TableRow>
+
+                <TableRow >
+                <SuperTH colSpan={4}>
+
+                    <TextArea disabled= {st_crippled} id="npcBlurb" value={ preBlurb }/>
+                    </SuperTH>   
+                </TableRow>
+
             </TableHead>
             
         </Table>
 
-        <h2>NPC Blurb</h2>
+
  {/* Generate all blurb here for easier reading */}
-        <TextArea disabled= {st_crippled} id="npcBlurb" value={ preBlurb } 
-        />
+
     </Wrapper>
 </>
 )
