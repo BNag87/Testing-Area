@@ -116,7 +116,7 @@
                         true,
                         false,
                         55,
-                        "AC16. Made of interlocking metal rings, includes a layer of quilted fabric worn underneath to precvent chafing and to cushion the impact of blows."
+                        "AC16. Made of interlocking metal rings, includes a layer of quilted fabric worn underneath to prevent chafing and to cushion the impact of blows."
                     ],
                     [
                         10,
@@ -499,6 +499,896 @@
                         4,
                         "1d8 Bludgeoning. Properties: Versatile. A wooden handle with a double headed metal hammerhead."
                     ]
+                ],
+
+                [
+                    [
+                        24,
+                        "Gear",
+                        "Ball Bearings", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        2,
+                        "A bag of one thousand ball bearings. Can cover a ten foot area. Creatures moving through them must make a DC10 DEX save or fall prone. Creatures moving at half speed don't need to make a save."
+                    ],
+                    [
+                        25,
+                        "Gear",
+                        "Bell", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        2,
+                        "A small metal bell with a ringer in it. When rung, it can be heard up to sixty feet away."
+                    ],
+                    [
+                        26,
+                        "Gear",
+                        "Block & Tackle", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        5,
+                        "A set of pulleys with a cable threaded through them and a hook to attach to objects. Allows someone to hoist up to four times the weight they can normally lift."
+                    ],
+                    [
+                        27,
+                        "Gear",
+                        "Chain", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        10,
+                        "A ten foot long section of metal chain. Has ten HP and can be broken with a DC20 STR check."
+                    ],
+                    [
+                        28,
+                        "Gear",
+                        "Crowbar", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        5,
+                        "A solid metal bar meant for prying or leveraging. Using one grants advantage on STR checks where the leverage can be applied."
+                    ],
+                    [
+                        29,
+                        "Gear",
+                        "Grappling Hook", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        4,
+                        "A thirty foot length of rope with a heavy hook on the end. Can be used to climb or abseil."
+                    ],
+                    [
+                        30,
+                        "Gear",
+                        "Hammer", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        3,
+                        "A small hammer used by a craftsman or builder. Used for nails, minor breaching or last ditch defence."
+                    ],
+                    [
+                        31,
+                        "Gear",
+                        "Sledgehammer", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        10,
+                        "A longer, heavier hammer. Normally used for demolition."
+                    ],
+                    [
+                        32,
+                        "Gear",
+                        "Hunting Trap", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        25,
+                        "A heavy metal-toothed trap. Creatures passing over it must make a DC13 DEX save or take 1d4 piercing damage and stop moving. DC13 STR check to break free. Each failed check deals 1 piercing damage."
+                    ],
+                    [
+                        33,
+                        "Gear",
+                        "Lamp", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        1,
+                        "A small metal lamp. Casts bright light in a fifteen foot radius, dim light for a further thirty feet. Burns for six hours on one flask/pint of oil."
+                    ],
+                    [
+                        34,
+                        "Gear",
+                        "Bullseye Lantern", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        2,
+                        "A bullseye lantern casts bright light in a sixty foot cone and dim light for a further sixty feet. Burns for six hours on one flask/pint of oil."
+                    ],
+                    [
+                        35,
+                        "Gear",
+                        "Hooded Lantern", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        2,
+                        "A hooded lantern casts bright light in a thrity foot radius and dim light for a further thirty feet. Burns for six hours on one flask/pint of oil. As a bonus action, you can cover the lamp to cast only dim light in a five foot radius."
+                    ],
+                    [
+                        36,
+                        "Gear",
+                        "Lock", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        1,
+                        "A key is provided with the lock. WIthout it, a DC15 DEX/Sleight of Hand check is needed to open it. DMs can adjust prices for better quality locks."
+                    ],
+                    [
+                        37,
+                        "Gear",
+                        "Manacles", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        6,
+                        "Metal restraints that can bind a small or medium creature. DC20 DEX/Sleight of Hand check to escape them, or a DC20 STR check to break them. With thieves tools, DC15 DEX/Sleight of Hand check to escape the m"
+                    ],
+                    [
+                        38,
+                        "Gear",
+                        "Steel Mirror", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        0.5,
+                        "A small handled mirror. Weighty for its size."
+                    ],
+                    [
+                        39,
+                        "Gear",
+                        "Miners Pick", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        10,
+                        "A heavy mining pick. Excellent for breaking through rock."
+                    ],
+                    [
+                        40,
+                        "Gear",
+                        "Pitons", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        3,
+                        "A bag of ten metal spikes, with a hoop in the heads, that are easily driven into rocks. Used as a climbing aid. Can anchor ropes to them."
+                    ],
+                    [
+                        41,
+                        "Gear",
+                        "Iron Pot", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        10,
+                        "A metal pot that can hold one gallon of liquid."
+                    ],
+                    [
+                        42,
+                        "Gear",
+                        "Iron Spikes", 
+                        0.7, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        2,
+                        "A bag of four solid iron spikes. Can be hammered in to most surfaces as an anchor point."
+                    ],
+                    [
+                        43,
+                        "Gear",
+                        "Whetstone", 
+                        0.2, 
+                        0.3, 
+                        0.5,
+                        true,
+                        false,
+                        1,
+                        "A stone with a sand-like surface. Used to maintain the edges of equipment"
+                    ]
+                ]
+                ,
+                [
+                    [
+                        44,
+                        "Artisan Tools",
+                        "Carpenter Tools", 
+                        6, 
+                        8, 
+                        12,
+                        true,
+                        false,
+                        6,
+                        "Files, chisels, saws and sandpaper are just some of the tools provided with carpenter tools. Lets you create woodwork items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        45,
+                        "Artisan Tools",
+                        "Mason Tools", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        8,
+                        "Hammers, precision chisels, rulers and grinders are just some of the tools provided with mason tools. Lets you create structural items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        46,
+                        "Artisan Tools",
+                        "Smith Tools", 
+                        15, 
+                        20, 
+                        30,
+                        true,
+                        false,
+                        8,
+                        "Hammers, grinders, tongs and heat gloves are just some of the tools provided with smith tools. Lets you create metallic items. Includes equipment for making a basic forge and smelter. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        47,
+                        "Artisan Tools",
+                        "Tinker Tools", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        6,
+                        "Calipers, screwdrivers, hand-drills and angle grinders are just some of the tools provided with tinker tools. Lets you create interesting mechanical items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        48,
+                        "Artisan Tools",
+                        "Horn", 
+                        2, 
+                        3, 
+                        5,
+                        true,
+                        false,
+                        2,
+                        "A musical horn. If you have proficiency with this instrument, you can add your proficiency bonus to any Perform checks you make to play it. Each type of instrument requires a seperate proficiency."
+                    ]
+                ]
+            ],
+            [
+                "Fletcher/Bowyer",
+                [
+                    [
+                        49,
+                        "Simple Ranged",
+                        "Light Crossbow", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        6,
+                        "1d8 piercing. Properties: Loading, Two-Handed, Ranged(80/320). A lightweight crossbow that's easier to draw by hand. Requires ammunition to use."
+                    ],
+                    [
+                        50,
+                        "Simple Ranged",
+                        "Shortbow", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        2,
+                        "1d6 piercing. Properties: Ammunition, Two-Handed, Ranged(80/320). A small bow that's easy to operate. Requires ammunition to use."
+                    ]
+                ],
+                [
+                    [
+                        51,
+                        "Martial Ranged",
+                        "Hand Crossbow", 
+                        56, 
+                        75, 
+                        113,
+                        true,
+                        false,
+                        3,
+                        "1d6 piercing. Properties: Light, Loading, Ranged(30/120). A lightweight hand mounted crossbow that's easy to carry and conceal. Requires ammunition to use."
+                    ],
+                    [
+                        52,
+                        "Martial Ranged",
+                        "Heavy Crossbow", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        18,
+                        "1d10 piercing. Properties: Heavy, Loading, Two-Handed, Ranged(100/400). A heavyweight crossbow with high draw power. Has a spade handle at the front to assist with reloading. Requires ammunition to use."
+                    ],
+                    [
+                        53,
+                        "Martial Ranged",
+                        "Longbow", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        3,
+                        "1d8 piercing. Properties: Heavy, Two-Handed, Ranged(150/600). A large bow that requires expert skill to use. Requires ammunition to use."
+                    ]
+                ]
+                ,
+                [
+                    [
+                        54,
+                        "Gear",
+                        "Arrows", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A bundle of twenty fletched arrows, used with any bow."
+                    ],
+                    [
+                        55,
+                        "Gear",
+                        "Bolts", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A bundle of twenty fletched bolts, used with any crossbow."
+                    ],
+                    [
+                        56,
+                        "Gear",
+                        "Bowstring", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        0.05,
+                        "A pack of five waxed bowstrings. Can be used on bows or crossbows."
+                    ],
+                    [
+                        54,
+                        "Gear",
+                        "Bolt Case", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        1,
+                        "A simple case with a latch for storing up to twenty crossbow bolts."
+                    ],
+                    [
+                        54,
+                        "Gear",
+                        "Quiver", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.7,
+                        "A wooden tube closed at one end for storing up to twenty arrows. Has a strap attached to mount on the waist or shoulder."
+                    ]
+                ]
+            ],
+            [
+                "Leatherworker",
+                [
+                    [
+                        49,
+                        "Light Armour",
+                        "Leather Armour", 
+                        20, 
+                        30, 
+                        40,
+                        true,
+                        false,
+                        10,
+                        "AC11. Interlocking pieces of leather, stiffened by being boiled in oil. Its joints are more flexible."
+                    ],
+                    [
+                        50,
+                        "Light Armour",
+                        "Studded Leather", 
+                        33, 
+                        45, 
+                        68,
+                        true,
+                        false,
+                        13,
+                        "AC12. Interlocking leather pieces, held together with rivets or spikes."
+                    ]
+                ],
+                [
+                    [
+                        51,
+                        "Medium Armour",
+                        "Hide Armour", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        12,
+                        "AC12. Crude armour consisting of thick furs and pelts. Used when there is a lack of tools but still a need for better armour."
+                    ]
+                ]
+                ,
+                [
+                    [
+                        52,
+                        "Shields",
+                        "Round Shield", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        2,
+                        "AC2. A round shield, covered in leather. Has a handle behind the boss."
+                    ]
+                ],
+                [
+                    [
+                        53,
+                        "Simple Ranged",
+                        "Sling", 
+                        0.5, 
+                        0.7, 
+                        1,
+                        true,
+                        false,
+                        12,
+                        "1d4 bludgeoning. Properties: Ranged(30/120). A leather patch with two long thin straps on each side. Can hurl simple stones at dangerous speeds. Can use bullets or rocks found on the ground."
+                    ]
+                ],
+                [
+                    [
+                        54,
+                        "Gear",
+                        "Waterskin", 
+                        0.1, 
+                        0.3, 
+                        0.6,
+                        true,
+                        false,
+                        5,
+                        "A well made leather waterskin. Holds up to four pints of liquid."
+                    ]
+                ],
+                [
+                    [
+                        55,
+                        "Artisan Tools",
+                        "Cobbler Tools", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        5,
+                        "Precision knives, tape measures, needles and threads are a few of the tools provided with cobbler tools. Lets you create footwear items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        56,
+                        "Artisan Tools",
+                        "Leatherworker Tools", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        5,
+                        "Precision knives, tanning racks, oils and clamps are a few of the tools provided with leatherworker tools. Lets you create leather items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        57,
+                        "Artisan Tools",
+                        "Bagpipes", 
+                        22, 
+                        30, 
+                        45,
+                        true,
+                        false,
+                        6,
+                        "A set of bagpipes. If you have proficiency with this instrument, you can add your proficiency bonus to any Perform checks you make to play it. Each type of instrument requires a seperate proficiency."
+                    ],
+                    [
+                        58,
+                        "Artisan Tools",
+                        "Drum", 
+                        4, 
+                        6, 
+                        9,
+                        true,
+                        false,
+                        3,
+                        "A large drum with drum sticks. If you have proficiency with this instrument, you can add your proficiency bonus to any Perform checks you make to play it. Each type of instrument requires a seperate proficiency."
+                    ]
+                ]
+            ],
+            [
+                "Temple/Faith Gear",
+                [
+                    [
+                        59,
+                        "Gear",
+                        "Alms Box", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        1,
+                        "A wooden box for collecting alms. Has the local holy symbol etched in to it."
+                    ],
+                    [
+                        60,
+                        "Gear",
+                        "Bell", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        2,
+                        "A polished small metal bell with the local holy symbol etched in to it. Used to signal processions."
+                    ],
+                    [
+                        61,
+                        "Gear",
+                        "Blanket", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        1,
+                        "A simple knitted blanket. Enough for one person to sleep under."
+                    ],
+                    [
+                        62,
+                        "Gear",
+                        "Scripture Book", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        2,
+                        "A large ornate book of holy scripture of the local religion."
+                    ],
+                    [
+                        63,
+                        "Gear",
+                        "Candle", 
+                        0.01, 
+                        0.01, 
+                        0.01,
+                        true,
+                        false,
+                        0.1,
+                        "A simple wax candle. Wider and taller so it lasts longer."
+                    ],
+                    [
+                        64,
+                        "Gear",
+                        "Map/Scroll Case", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A protective tube that keeps rolled up maps or scrolls safe from the elements."
+                    ],
+                    [
+                        65,
+                        "Gear",
+                        "Censer", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        1,
+                        "An ornamental container that burns incense. Used during holy events."
+                    ],
+                    [
+                        66,
+                        "Gear",
+                        "Chalk", 
+                        0.1, 
+                        0.2, 
+                        0.3,
+                        true,
+                        false,
+                        0.2,
+                        "A bundle of five chalk pieces."
+                    ],
+                    [
+                        67,
+                        "Gear",
+                        "Flask", 
+                        0.5, 
+                        0.6, 
+                        0.8,
+                        true,
+                        false,
+                        0.25,
+                        "A bundle of five small glass flasks. Normally used for potions or just storing liquids."
+                    ],
+                    [
+                        68,
+                        "Gear",
+                        "Holy Symbol", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        0.5,
+                        "Either an amulet, emblem or reliquary with the symbol of the local religion etched on it."
+                    ],
+                    [
+                        69,
+                        "Gear",
+                        "Healers Kit", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        3,
+                        "A leather pouch containing bandages, salves and splints. Has ten uses. As an action, you can spend one use of the kit to stabilize a creature that has no HP without needing to make a Medicine check."
+                        ],
+                    [
+                        70,
+                        "Gear",
+                        "Holy Water", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        1,
+                        "A single flask, filled with holy water. Can be thrown up to twenty feet. If the target is a fiend or undead, they take 2d6 radiant damage."
+                    ],
+                    [
+                        71,
+                        "Gear",
+                        "Incense", 
+                        0.1, 
+                        0.2, 
+                        0.3,
+                        true,
+                        false,
+                        0.1,
+                        "A single dried block of fragrant woods, flowers and herbs. Usually used in holy rituals."
+                    ],
+                    [
+                        72,
+                        "Gear",
+                        "Ink Bottle", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.1,
+                        "A bottle of ink. No quill included."
+                    ],
+                    [
+                        73,
+                        "Gear",
+                        "Fountain Pen", 
+                        2, 
+                        3, 
+                        5,
+                        true,
+                        false,
+                        0.1,
+                        "An ornate pen with an inkwell inside of it."
+                    ],
+                    [
+                        74,
+                        "Gear",
+                        "Lamp", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        1,
+                        "A small metal lamp. Casts bright light in a fifteen foot radius, dim light for a further thirty feet. Burns for six hours on one flask/pint of oil."
+                    ],
+                    [
+                        75,
+                        "Gear",
+                        "Hooded Lantern", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        2,
+                        "A hooded lantern casts bright light in a thrity foot radius and dim light for a further thirty feet. Burns for six hours on one flask/pint of oil. As a bonus action, you can cover the lamp to cast only dim light in a five foot radius."
+                    ],
+                    [
+                        76,
+                        "Gear",
+                        "Oil", 
+                        0.1, 
+                        0.2, 
+                        0.4,
+                        true,
+                        false,
+                        0.5,
+                        "A flask of flammable oil, normally used as fuel for lanterns."
+                    ],
+                    [
+                        77,
+                        "Gear",
+                        "Paper", 
+                        0.1, 
+                        0.2, 
+                        0.4,
+                        true,
+                        false,
+                        0.1,
+                        "A single sheet of paper for writing on."
+                    ],
+                    [
+                        78,
+                        "Gear",
+                        "Parchment", 
+                        0.2, 
+                        0.3, 
+                        0.4,
+                        true,
+                        false,
+                        0.1,
+                        "A single sheet of parchment. Tougher than paper and doesn't smudge as easily."
+                    ],
+                    [
+                        79,
+                        "Gear",
+                        "Perfume Vial", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        0.25,
+                        "A single vial of a nice fragrance. Rubbed on to skin and stays for 1d6 hours."
+                    ],
+                    [
+                        80,
+                        "Gear",
+                        "Potion of Healing", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.5,
+                        "Drink to regain 2d4+2 HP. The red liquid glimmers when agitated."
+                    ],
+                    [
+                        81,
+                        "Gear",
+                        "Rations", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        0.1,
+                        "A wrapped pack of dried fruits/nuts/meats/fish that last for a long time."
+                    ],
+                    [
+                        82,
+                        "Gear",
+                        "Torch", 
+                        0.1, 
+                        0.1, 
+                        0.2,
+                        true,
+                        false,
+                        1,
+                        "A sturdy wooden torch. Emits bright light in a thirty foot radius, dim light for a further thirty feet beyond that."
+                    ],
+                    [
+                        83,
+                        "Gear",
+                        "Vial", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.1,
+                        "A single empty glass vial. Normally used to collect samples for research purposes."
+                    ],
+                    [
+                        84,
+                        "Gear",
+                        "Waterskin", 
+                        0.2, 
+                        0.4, 
+                        0.8,
+                        true,
+                        false,
+                        5,
+                        "A well made leather waterskin. Holds up to four pints of liquid."
+                    ]
+
                 ]
             ]
         ]
