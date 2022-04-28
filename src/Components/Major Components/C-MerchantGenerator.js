@@ -12,7 +12,10 @@ import {
     InvisiDiv,
     } from "../../styles";
 
-import Tooltip from "@mui/material/Tooltip"
+import { styled } from '@mui/material/styles';
+import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
+
 
 //==========----------→COMPONENT STARTS HERE
 export const MerchantGenerator = () => {
@@ -38,6 +41,19 @@ export const MerchantGenerator = () => {
         setShopIndex(input)
     }
 
+    //A custom MUI tooltip that supports HTML input
+    const HtmlTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} classes={{ popper: className }} />
+      ))(({ theme }) => ({
+        [`& .${tooltipClasses.tooltip}`]: {
+          backgroundColor: '#FFFDD0',
+          color: 'rgba(0, 0, 0, 0.67)',
+          maxWidth: 220,
+          fontSize: theme.typography.pxToRem(11),
+          border: '3px outset #dadde9',
+        },
+      }));
+
     //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
             <>
@@ -46,6 +62,7 @@ export const MerchantGenerator = () => {
                 <Table inputWidth = "auto">
                     
                     <TableHead>
+                            {/* TABLE TITLE */}
                             <TableRow>
                             <SuperTH colSpan={6}>
                                 <h2>Merchant Items Table</h2>
@@ -105,6 +122,7 @@ export const MerchantGenerator = () => {
                             </SuperTH>
                             </TableRow>
 
+                            {/* TABLE HEADINGS */}
                             <TableRow>
                                 <SuperTH>Item</SuperTH>
                                 <SuperTH>Category</SuperTH>
@@ -123,11 +141,18 @@ export const MerchantGenerator = () => {
         Object.values(thing).map((innerThing, innerIndex) => (
             <>
             {/* Tooltip popup for item blurb */}
-                <Tooltip 
-                title={innerThing[9]} 
-                arrow   
-                placement="top"
-                followCursor={true}
+                <HtmlTooltip title={
+                    <>
+                    <Typography color= "inh{erit">
+                        <b>{innerThing[2]} </b> 
+                    </Typography>
+                    <hr/>
+                    <p><b>{innerThing[9]}</b></p>
+                    </>
+                    } 
+                    arrow
+                    placement="top"
+                    followCursor={true}
                 >
             {/* Table rows for each record */}
                 <TableRow
@@ -146,18 +171,26 @@ export const MerchantGenerator = () => {
                     <SuperTD NoHoverSmallTxtTD>{innerThing[4]}gp</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[5]}gp</SuperTD>
                 </TableRow>
-                </Tooltip>
+                </HtmlTooltip>
             </>
         ))
 :
         Object.values(thing).map((innerThing, innerIndex) => (
             <>
                 {/* Tooltip popup for item blurb */}
-                <Tooltip 
-                title={innerThing[9]} 
-                arrow   
-                placement="top"
-                followCursor={true}
+
+                <HtmlTooltip title={
+                    <>
+                    <Typography color= "inh{erit">
+                        <b>{innerThing[2]} </b> 
+                    </Typography>
+                    <hr/>
+                    <p><b>{innerThing[9]}</b></p>
+                    </>
+                    } 
+                    arrow
+                    placement="top"
+                    followCursor={true}
                 >
 
                 <TableRow 
@@ -174,7 +207,7 @@ export const MerchantGenerator = () => {
                     <SuperTD NoHoverSmallTxtTD>{innerThing[5]}gp</SuperTD>
 
                 </TableRow>
-                </Tooltip>
+                </HtmlTooltip>
             </>
                         )
                     )
