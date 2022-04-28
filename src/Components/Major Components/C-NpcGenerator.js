@@ -313,9 +313,6 @@ return(
 
             </TableHead>
 
-
- {/* Generate all blurb here for easier reading */}
-
     </Wrapper>
 </>
 )
