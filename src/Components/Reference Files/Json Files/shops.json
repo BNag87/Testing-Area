@@ -734,9 +734,9 @@
                         43,
                         "Gear",
                         "Whetstone", 
-                        0.2, 
-                        0.3, 
-                        0.5,
+                        0.01, 
+                        0.02, 
+                        0.03,
                         true,
                         false,
                         1,
@@ -1462,7 +1462,7 @@
                         true,
                         false,
                         0,
-                        "Cure Wounds (lvl 1). Regain 1d8 + Spellcasting Modifier as HP. Does not work on undead or constructs."
+                        "Level 1 Spell. Regain 1d8 + Spellcasting Modifier as HP. Does not work on undead or constructs."
                     ],
                     [
                         91,
@@ -1474,7 +1474,7 @@
                         true,
                         false,
                         0,
-                        "Gentle Repose (lvl 2). A corpse is protected from the effects of decay and can't become undead. Extends the amount of time before the target can't be revived."
+                        "Level 2 Spell. A corpse is protected from the effects of decay and can't become undead. Extends the amount of time before the target can't be revived."
                     ],
                     [
                         92,
@@ -1486,7 +1486,7 @@
                         true,
                         false,
                         0,
-                        "Lesser Restoration (lvl 2). A target can end ONE disease or ONE condition afflicting it. These include Blinded, Deafeaned, Paralysed or Poisoned."
+                        "Level 2 Spell. A target can end ONE disease or ONE condition afflicting it. These include Blinded, Deafeaned, Paralysed or Poisoned."
                     ],
                     [
                         93,
@@ -1498,7 +1498,7 @@
                         true,
                         false,
                         0,
-                        "Remove Curse (lvl 3). A creature, or object, has all curses on it end. If the object is a cursed magic item, the curse remains but the spell breaks the attunement to the owner, so it can at least be removed or discarded."
+                        "Level 3 Spell. A creature, or object, has all curses on it end. If the object is a cursed magic item, the curse remains but the spell breaks the attunement to the owner, so it can at least be removed or discarded."
                     ],
                     [
                         94,
@@ -1510,7 +1510,7 @@
                         true,
                         false,
                         0,
-                        "Revivify (lvl 3). A creature that has died in the last minute is returned to life with one HP. Cannot revivify someone who has died of old age, nor can it restore missing body parts."
+                        "Level 3 Spell. A creature that has died in the last minute is returned to life with one HP. Cannot revivify someone who has died of old age, nor can it restore missing body parts."
                     ],
                     [
                         95,
@@ -1522,7 +1522,7 @@
                         true,
                         false,
                         0,
-                        "Raise Dead (lvl 5). A creature is brought back to life as long as it has not been dead for more than ten days. Returns with one HP and is cured of any diseases. Does not restore missing body parts."
+                        "Lvl 5 Spell. A creature is brought back to life as long as it has not been dead for more than ten days. Returns with one HP and is cured of any diseases. Does not restore missing body parts."
                     ]
                 ]
                 
@@ -1570,7 +1570,7 @@
                     [
                         100,
                         "Common Non-Fiction",
-                        "A Dissertation of Law and Morality as seen by Tyr's Church", 
+                        "A Dissertation of Law and Morality", 
                         6, 
                         8, 
                         10,
@@ -1936,6 +1936,395 @@
 
                 ]
                
+            ],
+            [
+                "General Goods",
+                [
+                    [
+                        9999,
+                        "Gear",
+                        "Abacus", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        2,
+                        "A small frame with rows of beads, used for calculations."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Barrel", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        70,
+                        "A large wooden barrel capable of holding forty gallons of liquid, or four cubic feet of solid material."
+                    ], 
+                    [
+                        9999,
+                        "Gear",
+                        "Blanket", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        1,
+                        "A simple knitted blanket. Enough for one person to sleep under."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Glass Bottle", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        1,
+                        "One glass bottle. Can hold one and a half pints of liquid."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Bucket", 
+                        0.03, 
+                        0.05, 
+                        0.08,
+                        true,
+                        false,
+                        2,
+                        "A single wooden bucket. Can hold three gallons of liquid or half a cubic foot of solid material."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Candle", 
+                        0.01, 
+                        0.01, 
+                        0.02,
+                        true,
+                        false,
+                        0.1,
+                        "A simple wax candle. Wider and taller so it lasts longer."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Chest", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        25,
+                        "A wooden chest with a latch and lock on it. Can hold twelve cubic feet or three hundred pounds of gear. DC12 DEX check to open it without a key."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Common Clothes", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        2,
+                        "Plain clothes made of locally available fabrics or materials."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Fine Clothes", 
+                        11, 
+                        15, 
+                        23,
+                        true,
+                        false,
+                        2,
+                        "Nice clothes made from more expensive materials or fabrics. Some have nice embroidery, some have silk linings for comfort. Some have both and more."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Flask/Tankard", 
+                        0.01, 
+                        0.02, 
+                        0.03,
+                        true,
+                        false,
+                        0.5,
+                        "A simple flask/tankard made of wood. Easily carried, lightweight and durable"
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Hammer", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        3,
+                        "A small hammer used by a craftsman or builder. Used for nails, minor breaching or last ditch defence."
+                    ],
+                    [                        
+                        9999,
+                        "Gear",
+                        "Ink Bottle", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.1,
+                        "A bottle of ink. No quill included."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Ink Pen", 
+                        0.01, 
+                        0.02, 
+                        0.03,
+                        true,
+                        false,
+                        0.1,
+                        "A quill with a small inkwell in the nib."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Jug/Pitcher", 
+                        0.01, 
+                        0.02, 
+                        0.03,
+                        true,
+                        false,
+                        4,
+                        "A wooden/clay/ceramic jug or pitcher can hold one gallon of liquid."
+                    ],
+                    [
+                        72,
+                        "Gear",
+                        "Ladder", 
+                        0.07, 
+                        0.1, 
+                        0.2,
+                        true,
+                        false,
+                        25,
+                        "A simple but sturdy wooden ladder that is ten feet long."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Hooded Lantern", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        2,
+                        "A hooded lantern casts bright light in a thrity foot radius and dim light for a further thirty feet. Burns for six hours on one flask/pint of oil. As a bonus action, you can cover the lamp to cast only dim light in a five foot radius."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Lamp", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        1,
+                        "A small metal lamp. Casts bright light in a fifteen foot radius, dim light for a further thirty feet. Burns for six hours on one flask/pint of oil."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Mess Kit", 
+                        0.1, 
+                        0.2, 
+                        0.3,
+                        true,
+                        false,
+                        1,
+                        "A tin box, with a foldable handle, that contains a simple cup and cutlery. The box clamps together and one side can be used as a cooking pan, the other as a plate or shallow bowl."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Steel Mirror", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        0.5,
+                        "A small handled mirror. Weighty for its size."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Paper", 
+                        0.1, 
+                        0.2, 
+                        0.4,
+                        true,
+                        false,
+                        0.1,
+                        "A single sheet of paper for writing on."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Parchment", 
+                        0.2, 
+                        0.3, 
+                        0.45,
+                        true,
+                        false,
+                        0.1,
+                        "A single sheet of parchment. Tougher than paper and doesn't smudge as easily."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Miners Pick", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        10,
+                        "A heavy mining pick. Excellent for breaking through rock."    
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Iron Pot", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        10,
+                        "A metal pot that can hold one gallon of liquid."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Pouch", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        0.2,
+                        "A cloth/leather pouch can hold one fifth of a cubic foor, six pounds of geear, twenty sling bullets or fifty blowgun needles."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Hempen Rope", 
+                        0.7, 
+                        1, 
+                        1,
+                        true,
+                        false,
+                        10,
+                        "A fifty foot coiled length of hempen rope. Though rough, it is quite tough. Has two HP and can be snapped with a DC17 STR check."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Silk Rope", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        10,
+                        "A fifty foot coiled length of silk rope. Despite being more pleasant to hold, it is just as reliable as its hempend equivalent. Has two HP and can be snapped with a DC17 STR check."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Sack", 
+                        0.1, 
+                        0.1, 
+                        0.2,
+                        true,
+                        false,
+                        0.5,
+                        "A woven hempen sack can hold one cubic foot or thirty pounds of gear."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Merchants Scale", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        3,
+                        "A small balance, pans and assorted weights. Can measure the exact weight of small objects to help determine their worth." 
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Shovel", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        5,
+                        "A long handled shovel with a wide pointed blade at the tip. Pierces the ground more easily than a spade."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Signet Ring", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        0.1,
+                        "A ring with an intricated design carved or engraved in to it. When pressed in to warm sealing wax, it creates an identifying mark."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Soap", 
+                        0.01, 
+                        0.02, 
+                        0.03,
+                        true,
+                        false,
+                        0.1,
+                        "A bar made with an acid and an alkali. The fat can be animal fat or plant based, like olive oil. The alkali is normally lye. Used for bathing or washing out the mouth of little punks."
+                    ],
+                    [
+                        83,
+                        "Gear",
+                        "Vial", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.1,
+                        "A single empty glass vial. Normally used to collect samples for research purposes."
+                    ]
+                ]
             ]
         ]
         

@@ -312,7 +312,7 @@ return(
                 </TableRow>
 
             </TableHead>
-
+    </Table>
     </Wrapper>
 </>
 )
