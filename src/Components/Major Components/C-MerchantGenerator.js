@@ -127,9 +127,8 @@ export const MerchantGenerator = () => {
                                 <SuperTH>Item</SuperTH>
                                 <SuperTH>Category</SuperTH>
                                 <SuperTH>Weight</SuperTH>
-                                <SuperTH>Low Price</SuperTH>
-                                <SuperTH>Avg Price</SuperTH>
-                                <SuperTH>Max Price</SuperTH>
+                                <SuperTH>Price Range</SuperTH>
+
                             </TableRow>
 
                             {/* ARRAY MAPPING! */}
@@ -168,9 +167,26 @@ export const MerchantGenerator = () => {
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
                     {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP */}
-                    <SuperTD NoHoverSmallTxtTD>{(innerThing[3] < 1 && innerThing[3] >= 0.1) ? Math.floor(innerThing[3] * 10)+"sp" : (innerThing[3] < 0.1 && innerThing[3] >= 0.01) ? Math.floor(innerThing[3] * 100)+"cp": innerThing[3]+"gp"}</SuperTD>
-                    <SuperTD NoHoverSmallTxtTD>{(innerThing[4] < 1 && innerThing[4] >= 0.1) ? Math.floor(innerThing[4] * 10)+"sp" : (innerThing[4] < 0.1 && innerThing[4] >= 0.01) ? Math.floor(innerThing[4] * 100)+"cp": innerThing[4]+"gp"}</SuperTD>
-                    <SuperTD NoHoverSmallTxtTD>{(innerThing[5] < 1 && innerThing[5] >= 0.1) ? Math.floor(innerThing[5] * 10)+"sp" : (innerThing[5] < 0.1 && innerThing[5] >= 0.01) ? Math.floor(innerThing[5] * 100)+"cp": innerThing[5]+"gp"}</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>
+                            {
+                            (innerThing[3] < 1 && innerThing[3] >= 0.1) ? 
+                                Math.floor(innerThing[3] * 10)+"sp" 
+                                    : 
+                                (innerThing[3] < 0.1 && innerThing[3] >= 0.01) ? 
+                                    Math.floor(innerThing[3] * 100)+"cp"
+                                        : 
+                                    innerThing[3]+"gp"} 
+                                    &nbsp;to&nbsp; 
+                                    {
+                                        (innerThing[5] < 1 && innerThing[5] >= 0.1) ? 
+                                            Math.floor(innerThing[5] * 10)+"sp" 
+                                            : 
+                                            (innerThing[5] < 0.1 && innerThing[5] >= 0.01) ? 
+                                                Math.floor(innerThing[5] * 100)+"cp"
+                                                : 
+                                                innerThing[5]+"gp"
+                                    }
+                    </SuperTD>
                 </TableRow>
                 </HtmlTooltip>
             </>
@@ -203,11 +219,28 @@ export const MerchantGenerator = () => {
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
-                    {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP */}
-                    <SuperTD NoHoverSmallTxtTD>{(innerThing[3] < 1 && innerThing[3] >= 0.1) ? Math.floor(innerThing[3] * 10)+"sp" : (innerThing[3] < 0.1 && innerThing[3] >= 0.01) ? Math.floor(innerThing[3] * 100)+"cp": innerThing[3]+"gp"}</SuperTD>
-                    <SuperTD NoHoverSmallTxtTD>{(innerThing[4] < 1 && innerThing[4] >= 0.1) ? Math.floor(innerThing[4] * 10)+"sp" : (innerThing[4] < 0.1 && innerThing[4] >= 0.01) ? Math.floor(innerThing[4] * 100)+"cp": innerThing[4]+"gp"}</SuperTD>
-                    <SuperTD NoHoverSmallTxtTD>{(innerThing[5] < 1 && innerThing[5] >= 0.1) ? Math.floor(innerThing[5] * 10)+"sp" : (innerThing[5] < 0.1 && innerThing[5] >= 0.01) ? Math.floor(innerThing[5] * 100)+"cp": innerThing[5]+"gp"}</SuperTD>
-
+                    {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP.
+                    Compounds values in to "[CHEAPEST] to [MOST EXPENSIVE]" */}
+                    <SuperTD NoHoverSmallTxtTD>
+                    {
+                            (innerThing[3] < 1 && innerThing[3] >= 0.1) ? 
+                                Math.floor(innerThing[3] * 10)+"sp" 
+                                    : 
+                                (innerThing[3] < 0.1 && innerThing[3] >= 0.01) ? 
+                                    Math.floor(innerThing[3] * 100)+"cp"
+                                        : 
+                                    innerThing[3]+"gp"} 
+                                    &nbsp;to&nbsp; 
+                                    {
+                                        (innerThing[5] < 1 && innerThing[5] >= 0.1) ? 
+                                            Math.floor(innerThing[5] * 10)+"sp" 
+                                            : 
+                                            (innerThing[5] < 0.1 && innerThing[5] >= 0.01) ? 
+                                                Math.floor(innerThing[5] * 100)+"cp"
+                                                : 
+                                                innerThing[5]+"gp"
+                                    }
+                    </SuperTD>
                 </TableRow>
                 </HtmlTooltip>
             </>

@@ -807,6 +807,7 @@
                     ]
                 ]
             ],
+
             [
                 "Fletcher/Bowyer",
                 [
@@ -937,6 +938,7 @@
                     ]
                 ]
             ],
+
             [
                 "Leatherworker",
                 [
@@ -1073,6 +1075,7 @@
                     ]
                 ]
             ],
+
             [
                 "Temple/Faith Gear",
                 [
@@ -1527,8 +1530,8 @@
                 ]
                 
             ],
+
             [
-            
                 "Bookseller/Library",
                 [
                     [
@@ -1544,7 +1547,7 @@
                         "Published: 1372. \nAuthor: Rab Bitnez. \nAn elborate book on different ways to use and prepare garlic."
                     ],
                     [
-                        98,
+                        97,
                         "Common Non-Fiction",
                         "20,000 Leagues Under The Sea", 
                         6, 
@@ -1556,7 +1559,7 @@
                         "Published: 1371. \nAuthor: Jules Verne. \nA biography of an adventurer who discovered great underwater treasures."
                     ],
                     [
-                        99,
+                        98,
                         "Common Non-Fiction",
                         "A Brief History of Undermountain", 
                         6, 
@@ -1568,7 +1571,7 @@
                         "Published: 1369. \nAuthor: Daizez of Clangeddin's Hrarth. \nA history of the conquest of Undermountain, a vast mine of Mithril. Abandonded by Dwarves, taken by Drow and then a Mad Mage, reclaimed again by the Dwarves."
                     ],
                     [
-                        100,
+                        99,
                         "Common Non-Fiction",
                         "A Dissertation of Law and Morality", 
                         6, 
@@ -1580,7 +1583,7 @@
                         "Published: 1367. Author: Unknown. A detailed review of modern law/morality as viewed from the acolytes of Tyr."
                     ],
                     [
-                        101,
+                        100,
                         "Common Non-Fiction",
                         "A Glimpse in to the Abyss", 
                         6, 
@@ -1592,7 +1595,7 @@
                         "Published: 1322. Author: Tahyr yn Savras. A collection of experiences within the Abyssal plane, the birthplace of demons."
                     ],
                     [
-                        102,
+                        101,
                         "Common Non-Fiction",
                         "A Guide to the Cold North", 
                         6, 
@@ -1604,7 +1607,7 @@
                         "Published: 1343. \nAuthor: Algond, sage of Tashluta. \nA comprehensive guide on how to survive the frigid northern realms. Includes a guide to flora and fauna found in these areas."
                     ],
                     [
-                        103,
+                        102,
                         "Common Non-Fiction",
                         "A Guide to the Underdark", 
                         6, 
@@ -1628,7 +1631,7 @@
                         "Published: 1492. \nAuthor: Unknown. \nA collection of childrens' rhymes to help remember the names and works of the deities of the realms."
                     ],
                     [
-                        103,
+                        104,
                         "Common Non-Fiction",
                         "A Manyrealms Gallimaufry", 
                         6, 
@@ -1640,7 +1643,7 @@
                         "Published: 1114. \nAuthor: Trammeth Anstrelgor. \nA 12th century complation of maps that was considered the most well-known among the scholars of the realms."
                     ],
                     [
-                        103,
+                        105,
                         "Common Non-Fiction",
                         "A Merchant Master's Life", 
                         6, 
@@ -1652,7 +1655,7 @@
                         "Published: Unknown. \nAuthor: Asargrym. \nAn autobiography of a prominent trader, detailing his work as a merchant. Often studied by hopeful prospective traders."
                     ],
                     [
-                        103,
+                        106,
                         "Common Non-Fiction",
                         "A Merchant's Sagacity", 
                         6, 
@@ -1664,7 +1667,7 @@
                         "Published: 1374. \nAuthor: Blackthorn Belgadar. \nAn almost entirely sarcastic book that ultimately suggests how books are a great resource to learn about the mistakes of others in order to make more profund mistakes of their own. The author mused that doom that resided in individuals waited for the precise moment to present itself."
                     ],
                     [
-                        103,
+                        107,
                         "Common Non-Fiction",
                         "A Merchant's Tale", 
                         6, 
@@ -1676,7 +1679,7 @@
                         "Published: Unknown. \nAuthor: Jarn Tilr. \nA collection of childrens stories that detail how to interact with people of different cultures as well as how to sell things for higher prices to the unwary."
                     ],
                     [
-                        103,
+                        108,
                         "Common Non-Fiction",
                         "A Noble's guide to Etiquette", 
                         6, 
@@ -1688,7 +1691,7 @@
                         "Published: 1372. \nAuthor: Unknown. \nA complex guide but structured guide on the many different aspects of how to behave as a noble. Includes detailed guides on how to bow, which types of clothing are relevant to an event and which cutlery to use with which meal."
                     ],
                     [
-                        103,
+                        109,
                         "Common Non-Fiction",
                         "A Primer on Mythical Beasts", 
                         6, 
@@ -1700,7 +1703,7 @@
                         "Published: 1492. \nAuthor: Unknown. \nA Each chapter of this book focuses on a single beast of myth and legend, as well as their cultural origins. Chapter five was dedicated to a strange cryptid known as a miniature giant space hamster."
                     ],
                     [
-                        103,
+                        110,
                         "Common Non-Fiction",
                         "A Rulers Guide", 
                         6, 
@@ -1712,19 +1715,19 @@
                         "Published: Unknown. \nAuthor: Velm Blackrood. \nContains guidance on how to rule effectively as well as how to present authority as a ruler."
                     ],
                     [
-                        103,
+                        111,
                         "Common Non-Fiction",
-                        "A Sages Travel Guie to the North", 
+                        "A Sages Travel Guide to the North", 
                         6, 
                         8, 
                         10,
                         true,
                         false,
                         1,
-                        "Published: Unknown. \nAuthor: Zanshareen Sabiyryn \nA detailed guide of towns, cities and regions in the northern part of the Sword Coast."
+                        "Published: Unknown. \nAuthor: Zanshareen Sabiyryn. \nA detailed guide of towns, cities and regions in the northern part of the Sword Coast."
                     ],
                     [
-                        103,
+                        112,
                         "Common Non-Fiction",
                         "A Shorter History of Amn", 
                         6, 
@@ -1736,7 +1739,7 @@
                         "Published: Unknown. \nAuthor: Unknown. \nA thick book with quick summaries of historical events in the city of Amn."
                     ],
                     [
-                        103,
+                        113,
                         "Common Non-Fiction",
                         "A Slave's Life", 
                         6, 
@@ -1748,7 +1751,7 @@
                         "Published: -3000. \nAuthor: Unknown. \nAn autobiography of a slave in the early days of settlement. The author explains how badly they and other slaves were treated. The author went on to poison his master and began life as a nomad, eventually uniting several warring tribes of the time."
                     ],
                     [
-                        103,
+                        114,
                         "Common Non-Fiction",
                         "A Warrior's Views", 
                         6, 
@@ -1760,7 +1763,7 @@
                         "Published: 400. \nAuthor: Galgarr Thornspur. \nAn experienced warrior shares his wisdom and anecdotes from a long life. An excerpt read: \"Choosing what road to walk in life is a luxury given to few in Faerûn. Perhaps lack of practice is why so many who do have that choice make such a gods-cursed mess of it.\"."
                     ],
                     [
-                        103,
+                        115,
                         "Common Non-Fiction",
                         "A Wayfarer's Belt-Book of Advice", 
                         6, 
@@ -1772,7 +1775,7 @@
                         "Published: Unknown. \nAuthor: Rasthiavar, sage of Iriaebor. \nA collection of useful information for people travelling long distances, through wilderness. Helps identify unsafe mushrooms, how to avoid predatory animals as well as many other useful tidbits."
                     ],
                     [
-                        103,
+                        116,
                         "Common Non-Fiction",
                         "Adventurer's Guide", 
                         6, 
@@ -1784,7 +1787,7 @@
                         "Published: 1374. \nAuthor: Various. \nA valuable collection of knowledge and advice from many different adventurers, added to over the years. Different pages have different writing styles, but the collective knowledge is useful for anyone looking to start life as an adventurer.."
                     ],
                     [
-                        97,
+                        117,
                         "Common Non-Fiction",
                         "Adventures of Grin, Richard and Wu-Wei", 
                         6, 
@@ -1794,11 +1797,86 @@
                         false,
                         1,
                         "Published: 1372. \nAuthor: Unknown. \nA recounting of a lucky foray in to the life of adventuring by ambitious youths. An excerpt reads: \"Look for something long enough, and you will find it; look for something without understanding, and it will find you.\""
+                    ],
+                    [
+                        
+                        9999,
+                        "Common Non-Fiction",
+                        "Amn's Arms and Armour", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. \nA reference book that details the armour and weapon matallurgy practives in the land of Amn."
+                    ],
+                    [
+                        
+                        9999,
+                        "Common Non-Fiction",
+                        "Ancient Lore on Shevarash", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1131. \nAuthor: M.L Boyd. \nA Book the describes the place of Shevarash's place in the Seldarine, the basics of faith and him being the emodiment of the hatred the Fair Folk felt towards to drow."
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Anthropologic Historie of the Settled Lands", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1372. \nAuthor: Carcroft the Long. \nA detailed recounting of the history and legends of the societies and cultures in the settled lands of Faerun."
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Armour through the Ages", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. \nA book that details the improvements in metal casting, smithing and alloying of armour through history. It details poeple originally relying on easily worked leather then with the discovery of metallurgy, an armour race occured as smiths tried to deliver constantly better suits of full plate armour as well as simple breastplates."
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Behaviour of Insects", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. \nDetails the behaviours of simple small insects, then larger ones. The work spans many years of reseach and is well penned."
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Beware the Lizard Marsh", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1371. \nAuthor: Emythene Faldtree. \nA retelling of a series of expeditions by a group of skilled adventurers in to the Lizard Marsh, west of Daggerford, inhabited by fiercly territorial Lizardfolk. The first chapter claims there are many unsolved mysteries in the marsh."
                     ]
                 ],
+
                 [
                     [
-                        101,
+                        118,
                         "Uncommon Non-Fiction",
                         "A Harpers Companion", 
                         14, 
@@ -1809,8 +1887,9 @@
                         1,
                         "Published: 1200. Author: Cressaed Wood. A songbook whose verses carry a magical effect, similar to spells."
                     ],
+
                     [
-                        102,
+                        119,
                         "Uncommon Non-Fiction",
                         "A Harpers Guide", 
                         14, 
@@ -1821,8 +1900,9 @@
                         1,
                         "Published: 1264. Author: Alustriel. A book of the tenets of the Harpers, explaining their role to hopeful members."
                     ],
+
                     [
-                        101,
+                        120,
                         "Uncommon Non-Fiction",
                         "A Harpers Song", 
                         14, 
@@ -1833,8 +1913,9 @@
                         1,
                         "Published: Unknown. Author: Storm Silverhad. A guidebook on acting covertly, forming information rings and subtle manipulations to help readers gain advantages in the world."
                     ],
+
                     [
-                        103,
+                        121,
                         "Uncommon Non-Fiction",
                         "A Historical Treatise on Dragonspear Castle", 
                         14, 
@@ -1845,8 +1926,9 @@
                         1,
                         "Published: 1368. \nAuthor: Unknown. \nA book that covers the major events of Dragonspear Castle in the Sword Coast. From its construction in 1255 to its role in the second Dragonspear war of 1363."
                     ],
+
                     [
-                        103,
+                        122,
                         "Uncommon Non-Fiction",
                         "A History of Draconic Interactions", 
                         14, 
@@ -1857,8 +1939,9 @@
                         1,
                         "Published: 1479. \nAuthor: Unknown. \nA compilation of human knowledge about dragons. Has very detailed facts about dragon society, including a section about the 'Xorvintaal' or 'great game' that dragons used as a proxy for open warfare."
                     ],
+
                     [
-                        103,
+                        123,
                         "Uncommon Non-Fiction",
                         "A Myth Drannan Amphigory", 
                         14, 
@@ -1869,8 +1952,9 @@
                         1,
                         "Published: 1337. \nAuthor: Elminster Aumar. \nA book of proverbs and wisdom regarding magic. One excerpt reads: \"Magic creates, but it also destroys. Whatever ye use it for, it always, always transforms the user and that upon which it acts. Forget that at thy everlasting peril.\"."
                     ],
+
                     [
-                        103,
+                        124,
                         "Uncommon Non-Fiction",
                         "Aesthetics of Human Anatomy", 
                         14, 
@@ -1880,8 +1964,130 @@
                         false,
                         1,
                         "Published: 1372. \nAuthor: Szass Tam of Thay. \nA famed book of anatomical works. Generally hard to find as it was penned by a prominent necromancer. An excerpt reads: \"The human neck is a complex array or vertebrae, discs, muscles, and ligaments. The uppermost disc connects the spine to the skull. Nerves spread down from the neck and into the arms creating a sensory pathway...\""
-                    ] 
+                    ],
+
+                    [
+                        
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "An Archmages Life at Court", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 1351. \nAuthor: Vanderdahast Aeiulvana. \nAn account of the days an archmage spent as a court wizard. it describes the ruler falling deeper in to madness as he became more and more paranoid of threats, real and fake as the days went by. Eventually, the archmage was tasked with interviewing everyone within the court under a zone of truth. The author confesses that it was he who plotted the madness of the ruler in a bid to learn how the human mind can break."  
+                    ],
+
+                    [
+                        
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "An Ecology of the Planes", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 1354 \nAuthor: Garth of Suzail. \nA book that describes the interactions of races native to other planes and their lives. The chapters of the Githyanki and Githzerai have more detail in them."  
+                    ],
+
+                    [ 
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Art of Golem Crafting", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 1370. \nAuthor: Ikathilo. \nA seminal piece of research for anyone looking in to the creation of Golems. The unassuming looking manuscript holds the core of the modern understanding of advanced golem construction."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "The Art of Necromancy", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Kazerabet. \nA tome containing over two centuries of research in to necromancy. Included is information about four necromantic artefacts: Handlyphs of Power, Amulet of Terror, Horn of the Exalted Dead and the Nether Scarab. There are instructions on how to use and recharge these items in the tome."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "The Art of Weaponcrafting", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Shraevyn. \nA book detailing the various levels of magic present in a variety of metals as well as how to remove impurities from metal before forging them."  
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Better Caves and Dungeons Cookbook", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 344. \nAuthor: Unknown. \nA recipe book that suggests useful alternatives to herbs and spices when they may be scarce. Several recipes, though unconventional, are reputed to taste far better than they sound."
+                    ]
                 ],
+
+                [
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "Against the Undead", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        2,
+                        "Published: 1349. \nAuthor: Unknown. \nA book that details a single persons quests to destroy as many undead abominations as possible. Contains lots of useful information on defeating different types from Liches to Vampires. Contains the spells: Corpselight, Cloak fron Undead, Ward against Undead, Teleport Dead, Sunburst."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "The Alcaister", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        2,
+                        "Published: 759. \nAuthor: Unknown. \nA spellbook that contains an number of useful spells, including two unique ones. Spells: Affect Normal Fires, Charm Person, Dancing Lights, Erase, Hold Portal, Identify, Magic Missile, Protection from Evil, Read Magic, Spider Climb, Audible Glamer, Fool's Gold, Locate Object, Magic Mouth, Mirror Image, Rope Trick, Wizard Lock, Clairaudience, Dispel Magic, Flame Arrow, Gust of Wind, Haste, Hold Person, Infravision, Slow, Water Breathing, Charm Monster, Dimension Door, Ice Storm, Remove Curse, Wizard Eye, Bigby's Interposing Hand, Cone of Cold, Feeblemind, Anti-Magic Shell, Death Spell, Geas, Reconstruction, Reverse Gravity, Simulacrum, Death Link. The last page has a rune on it. When the command word is spoken, a portal to another plane opens."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "The Ascension of Vlaakith", 
+                        30, 
+                        58, 
+                        70,
+                        true,
+                        false,
+                        2,
+                        "Published: Unknown. \nAuthor: Unknown Githyanki. \nA tome written entirely in the Gith language. It details the rise to absolute power of Vlaakith and details her reliance on arcane magic to achieve it. It also claims the she would have not succeeded in her campaign against the Illithids without it. It details how important arcane magic is to Githyanki society as well."  
+                    ]
+                ],
+
                 [
                     [
                         97,
@@ -1930,14 +2136,73 @@
                         false,
                         1,
                         "Published: Unknown. \nAuthor: Lodevin Parkar. \nA collection of six short stories about a detective. Enjoyed by teenagers and young adults."
+                    ],
+                    [
+                        9999,
+                        "Common Fiction",
+                        "Apocalypto", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. \nA collection of poetic prophecies about the end of the multiverse."
+                    ],
+                    [
+                        9999,
+                        "Common Fiction",
+                        "Araspers Little Book", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1357. \nAuthor: Arasper Ardanneth. \nA book of musings on chroicling adventures and their stories."
+                    ],
+                    [
+                        9999,
+                        "Common Fiction",
+                        "Archetymbal", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1372. \nAuthor: Kastor. \nA famous work of fiction, detailing the folly of aspirant nobles who make grand promises they inevitably can't keep, causing ruin for people and businesses alike."
+                    ],     
+                    [
+                        
+                        9999,
+                        "Common Fiction",
+                        "The Balad of Daen Winterbrush", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1261. \nAuthor: Daen Winterbrush. \nA book detailing the music and lyrics of said ballad. The bard's name is scribbled on the inside cover."  
+                    ],
+                    [
+                        9999,
+                        "Common Fiction",
+                        "Big Book of Numerological Nursery Rhymes", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1373. \nAuthor: Unknown. \nAn immensely popular collection of traditional songs and poems for children. An excerpt reads: \"Nine are we when taken all three. Last one slain, then six remain. None survive our first less five.\""  
                     ]
-                ],
-                [
-
                 ]
-               
-            ],
+            ]
+            ,
             [
+                
                 "General Goods",
                 [
                     [
@@ -2324,9 +2589,130 @@
                         0.1,
                         "A single empty glass vial. Normally used to collect samples for research purposes."
                     ]
+                ],
+                [
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Carpenter Tools", 
+                        6, 
+                        8, 
+                        12,
+                        true,
+                        false,
+                        6,
+                        "Files, chisels, saws and sandpaper are just some of the tools provided with carpenter tools. Lets you create woodwork items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Cobbler Tools", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        5,
+                        "Precision knives, tape measures, needles and threads are a few of the tools provided with cobbler tools. Lets you create footwear items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Cook's Utensils", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        5,
+                        "A seletion of high quality knives, a multi purpose grater, tongs and spatulas are a few of the tools provided with a set of cook's utensils. Lets you create food items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create something."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Glassblower Tools", 
+                        22, 
+                        30, 
+                        45,
+                        true,
+                        false,
+                        10,
+                        "A selection of blowing pipes, heat gloves, tongs and a crucible are just a few of the tools provided with glassblower tools. Lets you create food items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create something."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Leatherworker Tools", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        5,
+                        "Precision knives, tanning racks, oils and clamps are a few of the tools provided with leatherworker tools. Lets you create leather items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."    
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Mason Tools", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        8,
+                        "Hammers, precision chisels, rulers and grinders are just some of the tools provided with mason tools. Lets you create structural items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."                    
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Potters Tools", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        8,
+                        "A spinning plate, clay, glaze and a small kiln are just some of the tools provided with potter's tools. Lets you create pottery items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Smith Tools", 
+                        15, 
+                        20, 
+                        30,
+                        true,
+                        false,
+                        8,
+                        "Hammers, grinders, tongs and heat gloves are just some of the tools provided with smith tools. Lets you create metallic items. Includes equipment for making a basic forge and smelter. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Weaver Tools", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        5,
+                        "Thick needles, pliers, cutters and a small wood kiln are just some of the tools provided with weaver tools. Lets you create fabric items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Woodcarver Tools", 
+                        0.7, 
+                        1, 
+                        2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ,
+                        true,
+                        false,
+                        8,
+                        "Hammers, chisels, hacksaws and sandpaper are just some of the tools provided with woodcarver tools. Lets you create carved sculpture items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ]
                 ]
             ]
         ]
-        
 
 }
