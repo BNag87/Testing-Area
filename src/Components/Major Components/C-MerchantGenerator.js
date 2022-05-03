@@ -118,6 +118,12 @@ export const MerchantGenerator = () => {
                                     General Store
                                 </Button>
 
+                                <Button
+                                inputBackground = "#222222" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "auto"
+                                onClick = {() => ChangeMerchant(6)}>
+                                    Potions
+                                </Button>
+
                                 <hr/> 
                             </SuperTH>
                             </TableRow>

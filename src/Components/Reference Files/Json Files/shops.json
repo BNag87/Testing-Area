@@ -2713,6 +2713,600 @@
                     ]
                 ]
             ]
+            ,
+            [
+
+                "Potions",
+                [
+                    [
+                        9999,
+                        "Common Potions",
+                        "Potion of Climbing", 
+                        30, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.5,
+                        "Gain a climbing speed equal to walking speed. Gain advantage on STR/Atheletics checks made for climbing. Lasts for one hour."
+                    ], 
+                    [
+                        9999,
+                        "Common Potions",
+                        "Potion of Healing", 
+                        30, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.5,
+                        "Regain 2d4+4 HP."
+                    ]
+                ]
+                ,
+                [
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Oil of Slipperiness", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "A creature gains 'freedom of movement' for eight hours OR a ten foot area can be covered, creating the 'Grease' effect for eight hours."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Philter of Love", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "Whoever drinks this potion will be charmed by the first person it sees, within a ten minute window, for one hour."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Potion of Animal Friendship", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "Convince a creature you mean it no harm. Creature gets a DC14 WIS save if its INT is four or above to save against the effect."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Potion of Fire Breath", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "As a bonus action, you can breathe fire at a target that is thirty feet away. Target takes 4d6 fire damage, half of that on a DC13 DEX save. Effect ends after three breaths or one hour."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Potion of Hill Giant Strength", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "You STR score is increased to twenty-one for an hour."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Potion of Growth", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "For 1d4 hours, target doubles in size and its weight is multiplied by eight."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Potion of Greater Healing", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "Regain 4d4+4 HP."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Potion of Poison", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "Creature takes 3d6 points of poison damage. Must then make a DC13 CON save or be poisoned. If poisoned, creature takes 3d6 points of poison damage on the start of each of their turns. On each DC13 CON save whilst poisoned, the damage is reduced by 1d6."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Potion of Resistance", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "Creature gains resistance to one damage type (of the DMs choosing) for one hour."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Potions",
+                        "Potion of Water Breathing", 
+                        50, 
+                        75, 
+                        100,
+                        true,
+                        false,
+                        0.5,
+                        "Creature can breathe underwater for one hour."
+                    ]
+                ]
+                ,
+                [
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Elixr of Health", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Cures any disease and removes blindness/deafened/paralyzed/poisoned."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Oil of Etherealness", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Can not be percieved by any creatures from other planes. Can pass through objects on original plane. Each foot of movement costs an extra foot."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Clairvoyance", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Allows a creature to place an invisible sensor within one mile of a familiar location, then allows hearing and sight through it. An action switches between seeing or hearing."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Diminution", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Creatures size is halved and all weight is reduced to one eight of normal. Disadvantage on STR checks. Melee and ranged attacks suffer a 1d4 penalty to damage. Lasts for 1d4 hours."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Gaseous Form", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Creature turns in to a misty cloud with a flying speed of ten feet, gain resistance to nonmagical damage and advantage on STR, DEX and CON saves. Can occupy a creatures space and pass through small spaces. Can't cast spells, attack, talk or manipulate objects. Lasts for one hour."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Frost/Stone Giant Strength", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Your STR score is increased to twenty-three for one hour."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Fire Giant Strength", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Your STR score is increased to twenty-five for one hour."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Superior Healing", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Regain 8d4+8 HP."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Heroism", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Creature gains ten temporary HP and gains 1d4 to any attack roll or saving throw."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Invulnerability", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Creature gains resistance to all forms of damage for one minute."
+                    ],
+                    [
+                        9999,
+                        "Rare Potions",
+                        "Potion of Mind Reading", 
+                        500, 
+                        750, 
+                        1000,
+                        true,
+                        false,
+                        0.5,
+                        "Creeature can read the thoughts of any other creature within thrity feet. Creature must speak a language and have an INT greater than four for the effect to work. If the target fails a DC13 WIS save, their surface level thoughts are readable. On subsequent turns, deeper thoughts are revealed. Lasts for one hour."
+                    ]
+                ]
+                ,
+                [
+                    [
+                        9999,
+                        "Very Rare Potions",
+                        "Oil of Sharpness", 
+                        5000, 
+                        22000, 
+                        50000,
+                        true,
+                        false,
+                        0.5,
+                        "A slashing/piercing weapon (or five pieces of ammunition) coated with this oil gain +3 to any attack and damage rolls for one hour."
+                    ],
+                    [
+                        9999,
+                        "Very Rare Potions",
+                        "Potion of Flying", 
+                        5000, 
+                        22000, 
+                        50000,
+                        true,
+                        false,
+                        0.5,
+                        "Creature gains a flying speed equal to its walking speed for one hour."
+                    ],
+                    [
+                        9999,
+                        "Very Rare Potions",
+                        "Potion of Cloud Giant Strength", 
+                        5000, 
+                        22000, 
+                        50000,
+                        true,
+                        false,
+                        0.5,
+                        "Your STR score becomes twenty-seven for one hour."
+                    ],
+                    [
+                        9999,
+                        "Very Rare Potions",
+                        "Potion of Supreme Healing", 
+                        5000, 
+                        22000, 
+                        50000,
+                        true,
+                        false,
+                        0.5,
+                        "Regain 10d4 + 20 HP."
+                    ],
+                    [
+                        9999,
+                        "Very Rare Potions",
+                        "Potion of Invisibility", 
+                        5000, 
+                        22000, 
+                        50000,
+                        true,
+                        false,
+                        0.5,
+                        "Creature, along with anything it's wearing or carrying becomes invisible for one hour. The effect ends if the creature attacks or casts a spell."
+                    ],
+                    [
+                        9999,
+                        "Very Rare Potions",
+                        "Potion of Longevity", 
+                        5000, 
+                        22000, 
+                        50000,
+                        true,
+                        false,
+                        0.5,
+                        "Creatures age is reduced by 1d6 +6 years, to a maximum of thirteen years. There is a ten percent chance the potion will add to a creatures age instead."
+                    ],
+                    [
+                        9999,
+                        "Very Rare Potions",
+                        "Potion of Speed", 
+                        5000, 
+                        22000, 
+                        50000,
+                        true,
+                        false,
+                        0.5,
+                        "Creature gains +2 to its AC, gains advantage on DEX savong throws and an additional action on its turns. That action can only be used to attack once, dash, disengage, hide or use an object."
+                    ],
+                    [
+                        9999,
+                        "Very Rare Potions",
+                        "Potion of Vitality", 
+                        5000, 
+                        22000, 
+                        50000,
+                        true,
+                        false,
+                        0.5,
+                        "Creatures exhaustion is removed. Any disease or poison effects are removed. For the next twenty-four hours, the creature can regain the maximum number of HP for any hit dice spent."
+                    ]
+                ]
+                ,
+                [
+                    [
+                        9999,
+                        "Legendary Potions",
+                        "Potion of Storm Giant Strength", 
+                        50000, 
+                        75000, 
+                        100000,
+                        true,
+                        false,
+                        0.5,
+                        "Your STR score becomes an unfathomable twenty-nine for one hour. "
+                    ]
+                ]
+                ,
+                [
+                    [
+                        9999,
+                        "Gear",
+                        "Acid Vial", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        0.5,
+                        "Throw an acid vial at a creature within twenty feet to cause 2d6 acid damage to them."
+                    ]
+                    ,
+                    [
+                        9999,
+                        "Gear",
+                        "Alchemists Fire", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.5,
+                        "Throw a flask of Alchemists Fire at a target to cause 1d4 fire damage on the start of each of its turns. Target must make a DC10 DEX save to put the flames out."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Antitoxin Vial", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.5,
+                        "Gain advantage on saving throws against poison for one hour. Doesn't benefit Undead or Constructs."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Component Pouch", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        0.5,
+                        "A leather pouch with dividers inside to store multiple different spell components."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Oil Flask", 
+                        0.07, 
+                        0.1, 
+                        0.2,
+                        true,
+                        false,
+                        1,
+                        "Throw a flask of oil at a creature to coat it in oil. If it takes any fire damage before one minute passes, it takes an extra five fire damage from the burning oil. After one minute, the oil dries. Can also be poured over a level five foot surface. Lit here, the oil burns for two rounds and deals five fire damage to any creature that enters it."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Perfume Vial", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        0.25,
+                        "A single vial of a nice fragrance. Rubbed on to skin and stays for 1d6 hours."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Poison Vial", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A single vial of a basic poison. Can coat a slashing weapon, a piering weapon or three pieces of ammunition. Targets hit must make a DC10 CON save or take 1d4 poison damage."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Vial", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.1,
+                        "A single empty glass vial. Normally used to collect samples for research purposes."
+                    ]
+                    
+                ]
+                ,
+                [
+                    [
+                        9999,
+                        "Alchemy Ingredients",
+                        "Common Ingredient", 
+                        0.08, 
+                        0.3, 
+                        0.5,
+                        true,
+                        false,
+                        0.1,
+                        "A commonly available alchemy ingredient. Ask DM for specifics"
+                    ],
+                    [
+                        9999,
+                        "Alchemy Ingredients",
+                        "Uncommon Ingredient", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.1,
+                        "An alchemy ingredient thats usually in short supply. Ask DM for specifics"
+                    ],
+                    [
+                        9999,
+                        "Alchemy Ingredients",
+                        "Rare Ingredient", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.1,
+                        "An alchemy ingredient that's not in stock very often. Ask DM for specifics"
+                    ],
+                    [
+                        9999,
+                        "Alchemy Ingredients",
+                        "Very Rare Ingredient", 
+                        0.08, 
+                        0.3, 
+                        0.5,
+                        true,
+                        false,
+                        0.1,
+                        "An alchemy ingredient that is either dangerous to get or only grows in very specific conditions. Ask DM for specifics"
+                    ]
+                ]
+                ,
+                [
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Alchemists Supplies", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        5,
+                        "A mortar and pestle, drying racks, weighing scales and various clippers are jsut a few of the tools provided with alchemists supplies. Using these, you can create potions. If you are proficient with them, you can add your proficiency bonus to any roll you make when making potions."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Brewers Supplies", 
+                        15, 
+                        20, 
+                        30,
+                        true,
+                        false,
+                        15,
+                        "Several tubs of yeast, a selection of hops, fermenting casks and wort tubs are just a few of the tools provided with brewers supplies. Using these, you can create ales, beers, ciders, spirits and liquors. If you are proficient with them, you can add your proficiency bonus to any roll you make when making alcoholic drinks."
+                    ],
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Cook's Utensils", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        5,
+                        "A seletion of high quality knives, a multi purpose grater, tongs and spatulas are a few of the tools provided with a set of cook's utensils. Lets you create food items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create something."
+                    ]
+                ]
+            ]
         ]
 
 }
