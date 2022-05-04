@@ -937,8 +937,8 @@
                         "A wooden tube closed at one end for storing up to twenty arrows. Has a strap attached to mount on the waist or shoulder."
                     ]
                 ]
-            ],
-
+            ]
+            ,
             [
                 "Leatherworker",
                 [
@@ -1074,8 +1074,8 @@
                         "A large drum with drum sticks. If you have proficiency with this instrument, you can add your proficiency bonus to any Perform checks you make to play it. Each type of instrument requires a seperate proficiency."
                     ]
                 ]
-            ],
-
+            ]
+            ,
             [
                 "Temple/Faith Gear",
                 [
@@ -1529,8 +1529,8 @@
                     ]
                 ]
                 
-            ],
-
+            ]
+            ,
             [
                 "Bookseller/Library",
                 [
@@ -1546,6 +1546,7 @@
                         1,
                         "Published: 1372. \nAuthor: Rab Bitnez. \nAn elborate book on different ways to use and prepare garlic."
                     ],
+
                     [
                         97,
                         "Common Non-Fiction",
@@ -1558,6 +1559,7 @@
                         1,
                         "Published: 1371. \nAuthor: Jules Verne. \nA biography of an adventurer who discovered great underwater treasures."
                     ],
+
                     [
                         98,
                         "Common Non-Fiction",
@@ -1570,6 +1572,7 @@
                         1,
                         "Published: 1369. \nAuthor: Daizez of Clangeddin's Hrarth. \nA history of the conquest of Undermountain, a vast mine of Mithril. Abandonded by Dwarves, taken by Drow and then a Mad Mage, reclaimed again by the Dwarves."
                     ],
+
                     [
                         99,
                         "Common Non-Fiction",
@@ -1582,6 +1585,7 @@
                         1,
                         "Published: 1367. Author: Unknown. A detailed review of modern law/morality as viewed from the acolytes of Tyr."
                     ],
+
                     [
                         100,
                         "Common Non-Fiction",
@@ -1594,6 +1598,7 @@
                         1,
                         "Published: 1322. Author: Tahyr yn Savras. A collection of experiences within the Abyssal plane, the birthplace of demons."
                     ],
+
                     [
                         101,
                         "Common Non-Fiction",
@@ -1606,6 +1611,7 @@
                         1,
                         "Published: 1343. \nAuthor: Algond, sage of Tashluta. \nA comprehensive guide on how to survive the frigid northern realms. Includes a guide to flora and fauna found in these areas."
                     ],
+
                     [
                         102,
                         "Common Non-Fiction",
@@ -1618,6 +1624,7 @@
                         1,
                         "Published: 1370. \nAuthor: Drizzt Do'Urden. \nA comprehensive guide on navigating and survivng in the Underdark. Includes a guide to flora and fauna found in the region."
                     ],
+
                     [
                         103,
                         "Common Non-Fiction",
@@ -1630,6 +1637,7 @@
                         1,
                         "Published: 1492. \nAuthor: Unknown. \nA collection of childrens' rhymes to help remember the names and works of the deities of the realms."
                     ],
+
                     [
                         104,
                         "Common Non-Fiction",
@@ -1642,6 +1650,7 @@
                         1,
                         "Published: 1114. \nAuthor: Trammeth Anstrelgor. \nA 12th century complation of maps that was considered the most well-known among the scholars of the realms."
                     ],
+
                     [
                         105,
                         "Common Non-Fiction",
@@ -1654,6 +1663,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Asargrym. \nAn autobiography of a prominent trader, detailing his work as a merchant. Often studied by hopeful prospective traders."
                     ],
+
                     [
                         106,
                         "Common Non-Fiction",
@@ -1666,6 +1676,7 @@
                         1,
                         "Published: 1374. \nAuthor: Blackthorn Belgadar. \nAn almost entirely sarcastic book that ultimately suggests how books are a great resource to learn about the mistakes of others in order to make more profund mistakes of their own. The author mused that doom that resided in individuals waited for the precise moment to present itself."
                     ],
+
                     [
                         107,
                         "Common Non-Fiction",
@@ -1678,6 +1689,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Jarn Tilr. \nA collection of childrens stories that detail how to interact with people of different cultures as well as how to sell things for higher prices to the unwary."
                     ],
+
                     [
                         108,
                         "Common Non-Fiction",
@@ -1690,6 +1702,7 @@
                         1,
                         "Published: 1372. \nAuthor: Unknown. \nA complex guide but structured guide on the many different aspects of how to behave as a noble. Includes detailed guides on how to bow, which types of clothing are relevant to an event and which cutlery to use with which meal."
                     ],
+
                     [
                         109,
                         "Common Non-Fiction",
@@ -1702,6 +1715,7 @@
                         1,
                         "Published: 1492. \nAuthor: Unknown. \nA Each chapter of this book focuses on a single beast of myth and legend, as well as their cultural origins. Chapter five was dedicated to a strange cryptid known as a miniature giant space hamster."
                     ],
+
                     [
                         110,
                         "Common Non-Fiction",
@@ -1714,6 +1728,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Velm Blackrood. \nContains guidance on how to rule effectively as well as how to present authority as a ruler."
                     ],
+
                     [
                         111,
                         "Common Non-Fiction",
@@ -1726,6 +1741,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Zanshareen Sabiyryn. \nA detailed guide of towns, cities and regions in the northern part of the Sword Coast."
                     ],
+
                     [
                         112,
                         "Common Non-Fiction",
@@ -1738,6 +1754,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Unknown. \nA thick book with quick summaries of historical events in the city of Amn."
                     ],
+
                     [
                         113,
                         "Common Non-Fiction",
@@ -1750,6 +1767,7 @@
                         1,
                         "Published: -3000. \nAuthor: Unknown. \nAn autobiography of a slave in the early days of settlement. The author explains how badly they and other slaves were treated. The author went on to poison his master and began life as a nomad, eventually uniting several warring tribes of the time."
                     ],
+
                     [
                         114,
                         "Common Non-Fiction",
@@ -1762,6 +1780,7 @@
                         1,
                         "Published: 400. \nAuthor: Galgarr Thornspur. \nAn experienced warrior shares his wisdom and anecdotes from a long life. An excerpt read: \"Choosing what road to walk in life is a luxury given to few in Faerûn. Perhaps lack of practice is why so many who do have that choice make such a gods-cursed mess of it.\"."
                     ],
+
                     [
                         115,
                         "Common Non-Fiction",
@@ -1774,6 +1793,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Rasthiavar, sage of Iriaebor. \nA collection of useful information for people travelling long distances, through wilderness. Helps identify unsafe mushrooms, how to avoid predatory animals as well as many other useful tidbits."
                     ],
+
                     [
                         116,
                         "Common Non-Fiction",
@@ -1786,6 +1806,7 @@
                         1,
                         "Published: 1374. \nAuthor: Various. \nA valuable collection of knowledge and advice from many different adventurers, added to over the years. Different pages have different writing styles, but the collective knowledge is useful for anyone looking to start life as an adventurer.."
                     ],
+
                     [
                         117,
                         "Common Non-Fiction",
@@ -1798,6 +1819,7 @@
                         1,
                         "Published: 1372. \nAuthor: Unknown. \nA recounting of a lucky foray in to the life of adventuring by ambitious youths. An excerpt reads: \"Look for something long enough, and you will find it; look for something without understanding, and it will find you.\""
                     ],
+
                     [
                         
                         9999,
@@ -1811,6 +1833,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Unknown. \nA reference book that details the armour and weapon matallurgy practives in the land of Amn."
                     ],
+
                     [
                         
                         9999,
@@ -1824,6 +1847,7 @@
                         1,
                         "Published: 1131. \nAuthor: M.L Boyd. \nA Book the describes the place of Shevarash's place in the Seldarine, the basics of faith and him being the emodiment of the hatred the Fair Folk felt towards to drow."
                     ],
+
                     [ 
                         9999,
                         "Common Non-Fiction",
@@ -1836,6 +1860,7 @@
                         1,
                         "Published: 1372. \nAuthor: Carcroft the Long. \nA detailed recounting of the history and legends of the societies and cultures in the settled lands of Faerun."
                     ],
+
                     [ 
                         9999,
                         "Common Non-Fiction",
@@ -1848,6 +1873,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Unknown. \nA book that details the improvements in metal casting, smithing and alloying of armour through history. It details poeple originally relying on easily worked leather then with the discovery of metallurgy, an armour race occured as smiths tried to deliver constantly better suits of full plate armour as well as simple breastplates."
                     ],
+
                     [ 
                         9999,
                         "Common Non-Fiction",
@@ -1860,6 +1886,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Unknown. \nDetails the behaviours of simple small insects, then larger ones. The work spans many years of reseach and is well penned."
                     ],
+
                     [ 
                         9999,
                         "Common Non-Fiction",
@@ -1871,6 +1898,19 @@
                         false,
                         1,
                         "Published: 1371. \nAuthor: Emythene Faldtree. \nA retelling of a series of expeditions by a group of skilled adventurers in to the Lizard Marsh, west of Daggerford, inhabited by fiercly territorial Lizardfolk. The first chapter claims there are many unsolved mysteries in the marsh."
+                    ],
+
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Book of Black Tidings", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 225. \nAuthor: Urkitbaeran. \nThis book talks about the criminal and mundane powers of Calimport at the time of the books release."
                     ]
                 ],
 
@@ -2006,6 +2046,7 @@
                         1,
                         "Published: 1370. \nAuthor: Ikathilo. \nA seminal piece of research for anyone looking in to the creation of Golems. The unassuming looking manuscript holds the core of the modern understanding of advanced golem construction."  
                     ],
+
                     [
                         
                         9999,
@@ -2019,6 +2060,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Kazerabet. \nA tome containing over two centuries of research in to necromancy. Included is information about four necromantic artefacts: Handlyphs of Power, Amulet of Terror, Horn of the Exalted Dead and the Nether Scarab. There are instructions on how to use and recharge these items in the tome."  
                     ],
+
                     [
                         
                         9999,
@@ -2032,6 +2074,7 @@
                         1,
                         "Published: Unknown. \nAuthor: Shraevyn. \nA book detailing the various levels of magic present in a variety of metals as well as how to remove impurities from metal before forging them."  
                     ],
+
                     [
                         9999,
                         "Uncommon Non-Fiction",
@@ -2043,9 +2086,48 @@
                         false,
                         1,
                         "Published: 344. \nAuthor: Unknown. \nA recipe book that suggests useful alternatives to herbs and spices when they may be scarce. Several recipes, though unconventional, are reputed to taste far better than they sound."
-                    ]
-                ],
+                    ],
 
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Book of Inner Alchemy", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 1400. \nAuthor: The Ren Brothers. \nA book written by Monks that detail ki techniques in martial arts and healing. It also detail the creation of magic items and weapons as well as ways of achieving immortality."
+                    ],
+
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Bronze Methodology", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. \nContains a thorough detailing of bronze metallurgy and methods to work with it."
+                    ],
+
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Chronicle of Years to Come", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 902. \nAuthor: Maglas. \nAn arrangment of cryptic prophecies. Translated by Sammaster, he interpreted that the prophecies predicted that all Faerun would eventually be ruled by undead Dragons. Thus, he formed the Cult of the Dragon with the aspiration of creating dracoliches for this purpose. A translated excerpt reads: \"And naught will be left save shattered thrones with no rulers. But the dead dragons shall rule the world entire, and…\""
+                    ]
+                ]
+                ,
                 [
                     [
                         
@@ -2085,6 +2167,84 @@
                         false,
                         2,
                         "Published: Unknown. \nAuthor: Unknown Githyanki. \nA tome written entirely in the Gith language. It details the rise to absolute power of Vlaakith and details her reliance on arcane magic to achieve it. It also claims the she would have not succeeded in her campaign against the Illithids without it. It details how important arcane magic is to Githyanki society as well."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "Book of Cylinders", 
+                        30, 
+                        58, 
+                        70,
+                        true,
+                        false,
+                        2,
+                        "Published: 1476. \nAuthor: Unknown. \nAn unconventional book that is wrapped in to three cylinders. The three cylinders tell of a plight of a Grippli community beset by a Yaun-Ti."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "Book of Final Breath", 
+                        30, 
+                        58, 
+                        70,
+                        true,
+                        false,
+                        2,
+                        "Published: Unknown. \nAuthor: Unknown. \nAn enchanted book that appears slim, but its pages never end when opened. The book captures the final words of people that died near it. One of the many excerpts reads: \"Come see this! It's mov-\""  
+                    ],
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "Book of Kaza", 
+                        2000, 
+                        2500, 
+                        3000,
+                        true,
+                        false,
+                        2,
+                        "Published: Unknown. \nAuthor: Kaza the Eternal. \nThe book is a tome written by the lich, Kaza. It outlines some of the most dreadful and esoteric knowledge related to the school of necromancy."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "Book of Lore", 
+                        209, 
+                        302, 
+                        388,
+                        true,
+                        false,
+                        2,
+                        "Published: Unknown. \nAuthor: Unknown. \nThis book appears small, but no matter how many pages are turned, there is always one left. Eacg page is decorated with beautiful calligraphy. Reading the book for a week grants the reader knowledge, similar to the effects of a Legend Lore spell, based on what they read."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "Book of the Raven", 
+                        30, 
+                        58, 
+                        70,
+                        true,
+                        false,
+                        2,
+                        "Published: Unknown. \nAuthor: Unknown. \nThis book details how to find a Vistani castle through a seemingly impossible route through thick misty woods."  
+                    ],
+                    [
+                        
+                        9999,
+                        "Rare Non-Fiction",
+                        "Book of the Vile Darkness", 
+                        2000, 
+                        2500, 
+                        3000,
+                        true,
+                        false,
+                        2,
+                        "Published: Unknown. \nAuthor: Vecna. \nThis book corrupts any non-evil being that attempt to read it. If someone is able to read it for a week, they gain great power from it and become more insightful to matters in general."  
                     ]
                 ],
 
@@ -3308,5 +3468,4 @@
                 ]
             ]
         ]
-
 }
