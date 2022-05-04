@@ -3,15 +3,15 @@ import { FN_randomRanged } from './NPCNames'
 //need to generate a random alignment to determine ideals avaialble
 let ar_Alignments = ["LG", "NG", "CG", "LN", "TN", "CN", "LE", "NE", "CE"];
 
-//Alignent "left or right"
-let ar_GoodIdeals = ["Beauty", "Charity", "Greater Good", "Life", "Respect", "Self-sacrifice"];
-let ar_NeutralIdeals = ["Balance", "Knowledge", "Live and let live", "Moderation", "Neutrality", "People"];
-let ar_EvilIdeals = ["Domination", "Greed", "Might", "Pain", "Retribution", "Slaughter"];
+//Alignent "liberal/consvervative" views
+let ar_GoodIdeals = ["'Beauty'", "'Charity'", "'Greater Good'", "'Life'", "'Respect'", "'Self-sacrifice'"];
+let ar_NeutralIdeals = ["'Balance'", "'Knowledge'", "'Live and let live'", "'Moderation'", "'Neutrality'", "'People'"];
+let ar_EvilIdeals = ["'Domination'", "'Greed'", "'Might'", "'Pain'", "'Retribution'", "Slaughter"];
 
 //Alignment "flavour"
-let ar_ChaoticIdeals = ["Change", "Creativity", "Freedom", "Independence", "No limits", "Whimsy"];
-let ar_GenericIdeals = ["Aspiration", "Discovery", "Glory", "Nation", "Redemption", "Self-Knowledge"];
-let ar_LawfulIdeals = ["Community", "Fairness", "Honour", "Logic", "Responsibility", "Tradition"];
+let ar_ChaoticIdeals = ["'Change'", "'Creativity'", "'Freedom'", "'Independence'", "'No limits'", "'Whimsy'"];
+let ar_GenericIdeals = ["'Aspiration'", "'Discovery'", "'Glory'", "'Nation'", "'Redemption'", "'Wisdom'"];
+let ar_LawfulIdeals = ["'Community'", "'Fairness'", "'Honour'", "'Logic'", "'Responsibility'", "'Tradition'"];
 
 //Store "l/r" and "flavour" arrays in their own arrays
 let ar_AlignmentFlavour = [ar_LawfulIdeals, ar_GenericIdeals, ar_ChaoticIdeals];

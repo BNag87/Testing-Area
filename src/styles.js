@@ -141,7 +141,7 @@ export const TableRow = styled.tr`
     `;
   export const Button = styled.button`
   
-    border: red 1px solid;
+    border: ${props => props.inputBorder || "red 1px solid"};
     border-radius: ${props => props.inputRadius || "5px 3px 5px 3px"};
     box-shadow: ${props => props.inputBoxShadow || "2px 2px rgba(0,0,0,0.4)"};
     padding: ${props => props.inputPadding || "10px 10px 10px 10px"};
@@ -153,7 +153,7 @@ export const TableRow = styled.tr`
     font-weight: ${props => props.inputFontWeight || "bolder"};
     font-size: ${props => props.inputFontSize || "large"};
     width: ${props => props.inputWidth || "80px"};
-    height: ${props => props.inputWidth || "auto"};
+    height: ${props => props.inputHeight || "auto"};
     cursor: pointer;
       &:hover{
         color: ${props => props.inputHBackground || "green"};

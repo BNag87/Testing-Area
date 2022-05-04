@@ -62,69 +62,80 @@ export const MerchantGenerator = () => {
                 <Table inputWidth = "auto">
                     
                     <TableHead>
-                            {/* TABLE TITLE */}
+                        {/* TABLE TITLE */}
                             <TableRow>
                             <SuperTH colSpan={6}>
                                 <h2>Merchant Items Table</h2>
+
                                 <hr/>
-                                <InvisiDiv>
-                                    Shop Type: <H3>{objInnerValues[shopIndex][0]}</H3>
-                                </InvisiDiv>
-                                <Button
-                                inputBackground = "#222222"
-                                inputColor = "#cccccc"
-                                inputFontSize = "normal"
-                                inputFontVariant = "normal"
-                                inputWidth = "auto"
-                                onClick = {() => ChangeMerchant(0)}>
-                                    
+                        
+                        {/* InvisiDiv is an invisible div wrapper to help align elements */}
+                            <InvisiDiv>
+                                <Button inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px" onClick = {() => ChangeMerchant(0)}>
                                     Blacksmith
-                                
                                 </Button>
                                 
                                 <Button
-                                inputBackground = "#222222"
-                                inputColor = "#cccccc"
-                                inputFontSize = "normal"
-                                inputFontVariant = "normal"
-                                inputWidth = "auto"
+                                inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
                                 onClick = {() => ChangeMerchant(1)}>
-                                
                                     Fletcher
-                                
                                 </Button>
                                 
                                 <Button
-                                inputBackground = "#222222" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "auto"
+                                inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
                                 onClick = {() => ChangeMerchant(2)}>
                                     Leatherworker
                                 </Button>
 
                                 <Button
-                                inputBackground = "#222222" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "auto"
+                                inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
                                 onClick = {() => ChangeMerchant(3)}>
                                     Temple
                                 </Button>
+                            </InvisiDiv>
 
+                            <InvisiDiv>
                                 <Button
-                                inputBackground = "#222222" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "auto"
+                                inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
                                 onClick = {() => ChangeMerchant(4)}>
                                     Bookseller
                                 </Button>
 
                                 <Button
-                                inputBackground = "#222222" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "auto"
+                                inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
                                 onClick = {() => ChangeMerchant(5)}>
                                     General Store
                                 </Button>
 
                                 <Button
-                                inputBackground = "#222222" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "auto"
+                                inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
                                 onClick = {() => ChangeMerchant(6)}>
                                     Potions
                                 </Button>
+                                
+                                <Button
+                                inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
+                                onClick = {() => ChangeMerchant(7)}>
+                                    Magic Shop
+                                </Button>
+                            </InvisiDiv>
+
+                            <InvisiDiv>
+                            <Button
+                                inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
+                                onClick = {() => ChangeMerchant(8)}>
+                                    Inns
+                                </Button>
+                            </InvisiDiv>
 
                                 <hr/> 
+
+                                <InvisiDiv>
+                                    Shop Type: <H3>{objInnerValues[shopIndex][0]}</H3>
+                                </InvisiDiv>
+
+                                <hr/> 
+
                             </SuperTH>
                             </TableRow>
 
@@ -148,7 +159,7 @@ export const MerchantGenerator = () => {
             {/* Tooltip popup for item blurb */}
                 <HtmlTooltip title={
                     <>
-                    <Typography color= "inh{erit">
+                    <Typography color= "inherit">
                         <b>{innerThing[2]} </b> 
                     </Typography>
                     <hr/>
@@ -204,7 +215,7 @@ export const MerchantGenerator = () => {
 
                 <HtmlTooltip title={
                     <>
-                    <Typography color= "inh{erit">
+                    <Typography color= "inherit">
                         <b>{innerThing[2]} </b> 
                     </Typography>
                     <hr/>

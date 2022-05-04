@@ -806,8 +806,8 @@
                         "A musical horn. If you have proficiency with this instrument, you can add your proficiency bonus to any Perform checks you make to play it. Each type of instrument requires a seperate proficiency."
                     ]
                 ]
-            ],
-
+            ]
+            ,
             [
                 "Fletcher/Bowyer",
                 [
@@ -2797,7 +2797,7 @@
                         true,
                         false,
                         10,
-                        "A selection of blowing pipes, heat gloves, tongs and a crucible are just a few of the tools provided with glassblower tools. Lets you create food items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create something."
+                        "A selection of blowing pipes, heat gloves, tongs and a crucible are just a few of the tools provided with glassblower tools. Lets you create glass items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create something."
                     ],
                     [
                         9999,
@@ -3439,7 +3439,7 @@
                         true,
                         false,
                         5,
-                        "A mortar and pestle, drying racks, weighing scales and various clippers are jsut a few of the tools provided with alchemists supplies. Using these, you can create potions. If you are proficient with them, you can add your proficiency bonus to any roll you make when making potions."
+                        "A mortar and pestle, drying racks, weighing scales and various clippers are just a few of the tools provided with alchemists supplies. Using these, you can create potions. If you are proficient with them, you can add your proficiency bonus to any roll you make when making potions."
                     ],
                     [
                         9999,
@@ -3467,5 +3467,649 @@
                     ]
                 ]
             ]
+            ,
+            [
+                "Arcane/Magic Shop",
+                [
+                    [
+                        9999,
+                        "Simple Melee",
+                        "Quarterstaff", 
+                        0.1, 
+                        0.2, 
+                        0.3,
+                        true,
+                        false,
+                        4,
+                        "1d6 Bluddgeoning. Properties: Versatile. A long wooden staff with a eather grip in the middle and weighted ends."
+                    ]
+                ],
+                [
+                    [
+                        9999,
+                        "Gear",
+                        "Abacus", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        2,
+                        "A small frame with rows of beads, used for calculations."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Arcane Focus - Crystal", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.5,
+                        "A magically attuned crystal through which a spellcaster can cast their magics."
+                    ],
+                        [
+                        9999,
+                        "Gear",
+                        "Arcane Focus - Orb", 
+                        15, 
+                        20, 
+                        30,
+                        true,
+                        false,
+                        0.5,
+                        "A magically attuned polished orb of crystal or other mineral through which a spellcaster can cast their magics."
+
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Arcane Focus - Rod", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.5,
+                        "A magically attuned rod of special metal or wood through which a spellcaster can cast their magics."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Arcane Focus - Staff", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        4,
+                        "A magically attuned ornate staff through which a spellcaster can cast their magics."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Arcane Focus - Wand", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        1,
+                        "A magically attuned ornate wand through which a spellcaster can cast their magics."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Bottle", 
+                        1, 
+                        2, 
+                        3,
+                        true,
+                        false,
+                        0.5,
+                        "A humble glass bottle, usually used for storing liquids."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Candle", 
+                        0.01, 
+                        0.01, 
+                        0.01,
+                        true,
+                        false,
+                        0.1,
+                        "A simple wax candle. Wider and taller so it lasts longer."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Map/Scroll Case", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A protective tube that keeps rolled up maps or scrolls safe from the elements."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Component Pouch", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        0.5,
+                        "A leather pouch with dividers inside to store multiple different spell components."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Druid Focus - Mistletoe", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A sprig of hardy mistletoe that brims with natural power. Used as a means of power druid's spells."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Druid Focus - Totem", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A hand carved wooden totem that brims with natural power. Used as a means of powering druid's spells"
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Druid Focus - Wooden Staff", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A gnarled wooden staff that brims with natural power. Used as a means of powering druid's spells"
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Druid Focus - Yew Wand", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A wooden wand, made of Yew, that brims with natural power. Used as a means of powering druid's spells"
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Hourglass", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        1,
+                        "A wooden hourglass with coloured sand in it, making it easier to see."
+                    ],
+                    [
+                        72,
+                        "Gear",
+                        "Ink Bottle", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.1,
+                        "A bottle of ink. No quill included."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Ink Pen", 
+                        0.01, 
+                        0.02, 
+                        0.03,
+                        true,
+                        false,
+                        0.1,
+                        "A quill with a small inkwell in the nib."
+                    ],
+                    [
+                        77,
+                        "Gear",
+                        "Paper", 
+                        0.1, 
+                        0.2, 
+                        0.4,
+                        true,
+                        false,
+                        0.1,
+                        "A single sheet of paper for writing on."
+                    ],
+                    [
+                        78,
+                        "Gear",
+                        "Parchment", 
+                        0.2, 
+                        0.3, 
+                        0.4,
+                        true,
+                        false,
+                        0.1,
+                        "A single sheet of parchment. Tougher than paper and doesn't smudge as easily."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Pouch", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        0.2,
+                        "A cloth/leather pouch can hold one fifth of a cubic foor, six pounds of geear, twenty sling bullets or fifty blowgun needles."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Robes", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        1,
+                        "Comfortable and ornate robes normally worn by officials or mages."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Spellbook", 
+                        0.3, 
+                        0.5, 
+                        0.8,
+                        true,
+                        false,
+                        3,
+                        "A leather-bound tome with one hundred blank vellum pages that record spells. Essential for wizards."
+                    ],
+                    [
+                        83,
+                        "Gear",
+                        "Vial", 
+                        0.7, 
+                        1, 
+                        2,
+                        true,
+                        false,
+                        0.1,
+                        "A single empty glass vial. Normally used to collect samples for research purposes."
+                    ]
+                ]    
+                ,
+                [
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Alchemists Supplies", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        5,
+                        "A mortar and pestle, drying racks, weighing scales and various clippers are just a few of the tools provided with alchemists supplies. Using these, you can create potions. If you are proficient with them, you can add your proficiency bonus to any roll you make when making potions."
+                    ],
+                    [
+                        85,
+                        "Artisan Tools",
+                        "Calligraphy Tools", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        5,
+                        "Pencils, quills, stencils and putty are a few of the tools provided with calligraphy set. Lets you create written items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."  
+                    ]
+                ]
+                ,
+                [
+                    [
+                        9999,
+                        "Scrolls/Gems",
+                        "Common (Cantrip)", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.5,
+                        "A scroll or gem that contains a cantrip level spell. Scrolls or gems can be fired once before they disintegrate."
+                    ],
+                    [
+                        9999,
+                        "Scrolls/Gems",
+                        "Common (Level 1)", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.5,
+                        "A scroll or gem that contains a level one spell. Scrolls or gems can be fired once before they disintegrate."
+                    ],
+                    [
+                        9999,
+                        "Scrolls/Gems",
+                        "Uncommon (Level 2)", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.5,
+                        "A scroll or gem that contains a level two spell. Scrolls or gems can be fired once before they disintegrate."
+                    ],
+                    [
+                        9999,
+                        "Scrolls/Gems",
+                        "Uncommon (Level 3)", 
+                        375, 
+                        500, 
+                        750,
+                        true,
+                        false,
+                        0.5,
+                        "A scroll or gem that contains a level three spell. Scrolls or gems can be fired once before they disintegrate."
+                    ],
+                    [
+                        9999,
+                        "Scrolls/Gems",
+                        "Rare (Level 4)", 
+                        1875, 
+                        2500, 
+                        3750,
+                        true,
+                        false,
+                        0.5,
+                        "A scroll or gem that contains a level four spell. Scrolls or gems can be fired once before they disintegrate."
+                    ],
+                    [
+                        9999,
+                        "Scrolls/Gems",
+                        "Rare (Level 5)", 
+                        3750, 
+                        5000, 
+                        7500,
+                        true,
+                        false,
+                        0.5,
+                        "A scroll or gem that contains a level five spell. Scrolls or gems can be fired once before they disintegrate."
+                    ]
+                ],
+                [
+                    [
+                        9999,
+                        "Services",
+                        "Identify Item", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0,
+                        "Identifies an item of unknown magical power."
+                    ]
+                ]
+            ]
+            ,
+            [
+                "Inns and Meals",
+                [
+                    [
+                        9999,
+                        "Commoner's Breakfast",
+                        "'Meat' Stick",
+                        0.02,
+                        0.03,
+                        0.05,
+                        true,
+                        false,
+                        0,
+                        "Bland 'meat', slightly salted and roasted on a twig."
+                    ],
+                    [
+                        9999,
+                        "Commoner's Breakfast",
+                        "Roasted Locusts",
+                        0.02,
+                        0.03,
+                        0.05,
+                        true,
+                        false,
+                        0,
+                        "A plate of locusts, pan fried in a small amount of oil."
+                    ],
+                    [   
+                        9999,
+                        "Commoner's Breakfast",
+                        "Cheese Omelette",
+                        0.03,
+                        0.04,
+                        0.06,
+                        true,
+                        false,
+                        0,
+                        "A single egg omelette with a shaving of cheese mxed in."
+                    ],
+                    [   
+                        9999,
+                        "Commoner's Breakfast",
+                        "Ham and Cheese on Rye",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "A single slice of fatty ham, a single slice of old cheese on bitter rye bread."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Merchant's Breakfast",
+                        "Bacon & Egg Sandwich",
+                        0.2,
+                        0.3,
+                        0.5,
+                        true,
+                        false,
+                        0,
+                        "Two slices of fresh bacon and a fried egg with salt and pepper on soft bread slices."
+                    ],
+                    [   
+                        9999,
+                        "Merchant's Breakfast",
+                        "Omelette 'your' Way",
+                        0.2,
+                        0.3,
+                        0.5,
+                        true,
+                        false,
+                        0,
+                        "A three egg omelette with two fillings of choice."
+                    ],
+                    [   
+                        9999,
+                        "Merchant's Breakfast",
+                        "Bloodhawk Eggs",
+                        0.3,
+                        0.4,
+                        0.6,
+                        true,
+                        false,
+                        0,
+                        "Rich Bloodhawk eggs served poached, fried or scrambled. Served with two slices of toast."
+                    ],
+                    [   
+                        9999,
+                        "Merchant's Breakfast",
+                        "Bacon Stuffed Bread",
+                        0.3,
+                        0.5,
+                        0.8,
+                        true,
+                        false,
+                        0,
+                        "Soft bread baked with bacon rashers inside it. The whole loaf tastes of bacon."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Noble's Breakfast",
+                        "Frittata & Herbs",
+                        0.7,
+                        1,
+                        2,
+                        true,
+                        false,
+                        0,
+                        "An omlette layered with slices of boiled potato, peppers and garnished with fresh herbs and salt."
+                    ],
+                    [   
+                        9999,
+                        "Noble's Breakfast",
+                        "Bacon & Owlbear Eggs",
+                        1,
+                        2,
+                        3,
+                        true,
+                        false,
+                        0,
+                        "Smoked bacon rashers with a large fluffy owlbear egg."
+                    ],
+                    [   
+                        9999,
+                        "Noble's Breakfast",
+                        "Boar Ham Steak & Eggs",
+                        1,
+                        2,
+                        3,
+                        true,
+                        false,
+                        0,
+                        "Thick cut boar ham steak, perfectly seasoned and served with well cooked eggs."
+                    ],
+                    [   
+                        9999,
+                        "Noble's Breakfast",
+                        "Truffle Omelette",
+                        2,
+                        3,
+                        5,
+                        true,
+                        false,
+                        0,
+                        "A rich and flavourful omelette made with locally sourced truffles."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Commoner's Lunch",
+                        "Stockpot Stew/Soup",
+                        0.03,
+                        0.04,
+                        0.06,
+                        true,
+                        false,
+                        0,
+                        "A mixture of spare vegetables and meat cuts not used in regular meals."
+                    ],
+                    [   
+                        9999,
+                        "Commoner's Lunch",
+                        "'Adventurers' Steak",
+                        0.03,
+                        0.04,
+                        0.06,
+                        true,
+                        false,
+                        0,
+                        "A thick cut of meat from some kind of animal...hopefully."
+                    ],
+                    [   
+                        9999,
+                        "Commoner's Lunch",
+                        "Minced Pork",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "A plate of minced pork with a few carrot slices mixed in."
+                    ],
+                    [   
+                        9999,
+                        "Commoner's Lunch",
+                        "Roast Goat & Cheese",
+                        0.04,
+                        0.06,
+                        0.09,
+                        true,
+                        false,
+                        0,
+                        "A rough cut of goat meat, fried with a scant handful of herbs and a small amount of cheese on top."
+                    ]
+                ],
+                [                    
+                    [   
+                        9999,
+                        "Merchant's Lunch",
+                        "Roast Lamb & Cheese",
+                        0.3,
+                        0.4,
+                        0.6,
+                        true,
+                        false,
+                        0,
+                        "Pan fried lamb chunks, served with roasted peppers and carrots and some cheese grated on top."
+                    ],
+                    [   
+                        9999,
+                        "Merchant's Lunch",
+                        "Boar Tenderloin",
+                        0.3,
+                        0.5,
+                        0.8,
+                        true,
+                        false,
+                        0,
+                        "A thick slice of boar meat, fried in oil, served with onions and mashed potatos."
+                    ]
+            ]
+            ]  
+        
         ]
 }

@@ -32,6 +32,9 @@ export const NpcGenerator = () => {
 const [st_crippled, set_st_crippled] = useState({
     btnsDisabled: true
 }); 
+
+const [st_npc_Alignment, set_st_npc_Alignment] = useState("?");
+
 //useState to store global values used in a blurb generator. init as ?
 const [st_blurbVars, set_st_blurbVars] = useState({
     GL_name: "?", 
@@ -183,9 +186,10 @@ function demeanorNPC(){
 }
 function alignmentNPC(){
     let npcAlignment = FN_get_NPC_alignment();
+    set_st_npc_Alignment(String(npcAlignment));
     let npcAlignmentTraits = FN_get_npc_alignment_traits(npcAlignment);
     let alignmentBoxRef = document.getElementById("dis_npc_alignment");
-    alignmentBoxRef.value = ("["+ String(npcAlignment) +"] " + String(npcAlignmentTraits));
+    alignmentBoxRef.value = ("["+ String({st_npc_Alignment}) +"] " + String(npcAlignmentTraits));
     //setState for alignment global state var
     st_blurbVars.GL_alignment = npcAlignmentTraits;
     set_st_blurbVars({...st_blurbVars});
@@ -285,7 +289,7 @@ return(
                 <SuperTH>Alignment</SuperTH>
                 <SuperTD>
                     
-                    <TextInput id = "dis_npc_alignment" inputWidth="250px" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_alignment}></TextInput>
+                    <TextInput id = "dis_npc_alignment" inputWidth="250px" inputHeight="35px" disabled={true} value = {"(" + st_npc_Alignment + ") " + st_blurbVars.GL_alignment}></TextInput>
                     <Button id = "btn_alignmentNPC" disabled = {st_crippled} NoHoverButton onClick={ alignmentNPC } inputWidth="40px">?</Button>
                 </SuperTD>
                 </TableRow>
