@@ -126,6 +126,11 @@ export const MerchantGenerator = () => {
                                 onClick = {() => ChangeMerchant(8)}>
                                     Inns
                                 </Button>
+
+                            <Button inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
+                                onClick = {() => ChangeMerchant(9)}>
+                                    Marketplace
+                                </Button>
                             </InvisiDiv>
 
                                 <hr/> 
@@ -145,15 +150,20 @@ export const MerchantGenerator = () => {
                                 <SuperTH>Category</SuperTH>
                                 <SuperTH>Weight</SuperTH>
                                 <SuperTH>Price Range</SuperTH>
+                                <HtmlTooltip title = "Is this item available at this merchant?"  arrow placement="top">
+                                    <SuperTH>Avl?</SuperTH>
+                                </HtmlTooltip>
+                                <HtmlTooltip title = "Is this item in short supply at this merchant?" arrow placement="top">
+                                    <SuperTH>Ltd?</SuperTH>
+                                </HtmlTooltip>
 
                             </TableRow>
 
-                            {/* ARRAY MAPPING! */}
+{/* ARRAY MAPPING! FIRST MAP===============================================================*/}
                             {objInnerValues[shopIndex].map((thing, outerIndex) => (
                             
                             // Ternary operator to stop creating rows from element 0
                             (outerIndex == 0) ? console.log("outerIndex WAS 0") : (outerIndex %2 == 0) ? 
-        
         Object.values(thing).map((innerThing, innerIndex) => (
             <>
             {/* Tooltip popup for item blurb */}
@@ -181,8 +191,16 @@ export const MerchantGenerator = () => {
 
                     {/* Indidivual td elements to display each item */}
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
+                    
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
-                    <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
+
+                    {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
+                    <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
+                    "¼ lb" : innerThing[8] === 0.5 ? 
+                    "½ lb" : innerThing[8]+"lbs" : "N/A")}
+                        
+                        </SuperTD>
+
                     {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP */}
                     <SuperTD NoHoverSmallTxtTD>
                             {
@@ -204,6 +222,16 @@ export const MerchantGenerator = () => {
                                                 innerThing[5]+"gp"
                                     }
                     </SuperTD>
+
+                    {/* Checkbox for if item is available */}
+                    <SuperTD>
+                        <input type="checkbox" defaultChecked={innerThing[6]}/>
+                    </SuperTD>
+                    {/* Checkbox for if item is limited */}
+                    <SuperTD>
+                        <input type="checkbox" defaultChecked={innerThing[7]}/>
+                    </SuperTD>
+
                 </TableRow>
                 </HtmlTooltip>
             </>
@@ -235,7 +263,13 @@ export const MerchantGenerator = () => {
                       
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
-                    <SuperTD NoHoverSmallTxtTD>{innerThing[8]}lbs</SuperTD>
+                    
+                    {/* Ternary operator to change lbs to N/A if weight is 0 */}
+                    <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
+                    "¼ lb" : innerThing[8] === 0.5 ? 
+                    "½ lb" : innerThing[8]+"lbs" : "N/A")}
+                    </SuperTD>
+
                     {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP.
                     Compounds values in to "[CHEAPEST] to [MOST EXPENSIVE]" */}
                     <SuperTD NoHoverSmallTxtTD>
@@ -258,6 +292,16 @@ export const MerchantGenerator = () => {
                                                 innerThing[5]+"gp"
                                     }
                     </SuperTD>
+
+                    {/* Checkbox for if item is available */}
+                    <SuperTD>
+                        <input type="checkbox" defaultChecked={innerThing[6]}/>
+                    </SuperTD>
+                    {/* Checkbox for if item is limited */}
+                    <SuperTD>
+                        <input type="checkbox" defaultChecked={innerThing[7]}/>
+                    </SuperTD>
+
                 </TableRow>
                 </HtmlTooltip>
             </>

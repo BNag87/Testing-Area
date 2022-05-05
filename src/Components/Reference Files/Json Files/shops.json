@@ -4107,9 +4107,856 @@
                         false,
                         0,
                         "A thick slice of boar meat, fried in oil, served with onions and mashed potatos."
+                    ],
+                    [   
+                        9999,
+                        "Merchant's Lunch",
+                        "Baked Goose Breast",
+                        0.3,
+                        0.5,
+                        0.8,
+                        true,
+                        false,
+                        0,
+                        "A butterfly cut of goose breast, pan fried in garlic butter and seasoned with black pepper. Served with shallots and fried potatoes."
+                    ],
+                    [   
+                        9999,
+                        "Merchant's Lunch",
+                        "Grilled Salmon",
+                        0.4,
+                        0.6,
+                        0.9,
+                        true,
+                        false,
+                        0,
+                        "Freshly caught Salmon, pan fried with lemon juice and salt. Served with spring onions and cauliflower."
                     ]
-            ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Noble's Lunch",
+                        "Rack of Lamb",
+                        1,
+                        2,
+                        3,
+                        true,
+                        false,
+                        0,
+                        "A rack of slow cooked lamb, glazed and soft. Served with grilled leeks and salad potatos."
+                    ],
+                    [   
+                        9999,
+                        "Noble's Lunch",
+                        "Shellfish Platter",
+                        2,
+                        3,
+                        5,
+                        true,
+                        false,
+                        0,
+                        "A platter of shellfish cooked in butter and thyme. Served with peas and asparagus."
+                    ],
+                    [   
+                        9999,
+                        "Noble's Lunch",
+                        "Dragon Turtle Soup",
+                        3,
+                        4,
+                        6,
+                        true,
+                        false,
+                        0,
+                        "A light but filling soup made with tender strips of Dragon Turtle meat and several vegetables."
+                    ],
+                    [   
+                        9999,
+                        "Nobles's Lunch",
+                        "Roc Meat Portion",
+                        4,
+                        5,
+                        8,
+                        true,
+                        false,
+                        0,
+                        "A thick cut of Roc meat, pan fried with honey mustard. Served with fried potatoes and onion."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Commoner's Dinner",
+                        "Stockpot Stew/Soup",
+                        0.03,
+                        0.04,
+                        0.06,
+                        true,
+                        false,
+                        0,
+                        "A mixture of spare vegetables and meat cuts not used in regular meals."
+                    ],
+                    [   
+                        9999,
+                        "Commoner's Dinner",
+                        "Grave of Small Birds",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "A selection of assorted small bird meat, fried in grease and lightly salted."
+                    ],
+                    [   
+                        9999,
+                        "Commoner's Dinner",
+                        "'Tasha's Hideous Stew'",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "A stew with random vegetables and meats thrown in, with a random bunch of herbs to give it a litle flavour."
+                    ],
+                    [   
+                        9999,
+                        "Commoner's Dinner",
+                        "Rabbit & Potato Plate",
+                        0.04,
+                        0.06,
+                        0.09,
+                        true,
+                        false,
+                        0,
+                        "A rabbit haunch grilled with some rosemary and served with a simple boiled potato."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Merchants's Dinner",
+                        "Hunter's Pie",
+                        0.3,
+                        0.4,
+                        0.6,
+                        true,
+                        false,
+                        0,
+                        "A chicken and bacon pie, baked with cheese and a sweet smoky sauce."
+                    ],
+                    [   
+                        9999,
+                        "Merchants's Dinner",
+                        "Bloodhawk Breast",
+                        0.3,
+                        0.5,
+                        0.8,
+                        true,
+                        false,
+                        0,
+                        "A butterfly cut Bloodhawks breast, fried in garlic oil. Served with onions, carrots and peas."
+                    ],
+                    [   
+                        9999,
+                        "Merchants's Dinner",
+                        "Crocodile Steak",
+                        0.3,
+                        0.4,
+                        0.6,
+                        true,
+                        false,
+                        0,
+                        "A thick slice of crocodile meat, braised in a red wine sauce. Taste is a little like chicken and pork."
+                    ],
+                    [   
+                        9999,
+                        "Merchants's Dinner",
+                        "Roast Bullywug Legs",
+                        0.3,
+                        0.4,
+                        0.6,
+                        true,
+                        false,
+                        0,
+                        "Meaty legs of a large frog like creature, oven cooked in a brandy sauce. Served with rosemary and thyme mashed potato."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Noble's Dinner",
+                        "Buffalo Ribeye",
+                        1,
+                        2,
+                        3,
+                        true,
+                        false,
+                        0,
+                        "A large steak served medium-rare, fried to perfection and seasoned with just the right amount of salt and pepper. Served with fried potatoes and mayonnaise."
+                    ],
+                    [   
+                        9999,
+                        "Noble's Dinner",
+                        "Sahuagin Caviar",
+                        2,
+                        3,
+                        5,
+                        true,
+                        false,
+                        0,
+                        "Exotic caviar served with crackers, fried onions, chopped boiled eggs and sauteed vegetables."
+                    ],
+                    [   
+                        9999,
+                        "Noble's Dinner",
+                        "Owlbear Steak and Eggs",
+                        3,
+                        4,
+                        6,
+                        true,
+                        false,
+                        0,
+                        "A thick Owlbear steak served medium-rare, seasoned with sage and thyme. Served with fried Owlbear eggs."
+                    ],
+                    [   
+                        9999,
+                        "Noble's Dinner",
+                        "Dragon Steak",
+                        3,
+                        5,
+                        8,
+                        true,
+                        false,
+                        0,
+                        "An impressively thick Dragon steak, cooked to perfection in a plum sauce. Served with fried potatos, mayonnaise and a fresh salad."
+                    ]                    
+                ],
+                [
+                    [   
+                        9999,
+                        "Room Hire",
+                        "Commoner's Bedroom",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "A room with a rough mattress on a splintery wooden bed, loose straw for a pillow and a thin candle for light."
+                    ],
+                    [   
+                        9999,
+                        "Room Hire",
+                        "Merchant's Bedroom",
+                        0.7,
+                        1,
+                        2,
+                        true,
+                        false,
+                        0,
+                        "A room with a comfortable mattress on a well made wooden bed and a lamp is provided with a random book."
+                    ],
+                    [   
+                        9999,
+                        "Room Hire",
+                        "Noble's Bedroom",
+                        3,
+                        4,
+                        6,
+                        true,
+                        false,
+                        0,
+                        "A room with a large luxurious mattress on a varnished ornate bed frame, goose feather pillows with silk sheets. En suite bathroom too. A hooded lamp is provided with several books of choice."
+                    ]
+                ]
+
             ]  
-        
+            ,
+            [
+                "Market/Produce",
+                [
+                    [   
+                        9999,
+                        "Drink Cups",
+                        "Coffee",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "Freshly made strong coffee."
+                    ],
+                    [   
+                        9999,
+                        "Drink Cups",
+                        "Goodberry 'Wine'",
+                        0.07,
+                        0.1,
+                        0.2,
+                        true,
+                        false,
+                        0,
+                        "Freshly squeezed and naturally grown goodberry juice. It's little tangy."
+                    ],
+                    [   
+                        9999,
+                        "Drink Cups",
+                        "Fruit Juice",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "Local fruit, squashed in to juice."
+                    ],
+                    [   
+                        9999,
+                        "Drink Cups",
+                        "Milk",
+                        0.02,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "Fresh milk. Somewhat creamy."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Fruit Piece",
+                        "In Season",
+                        0.02,
+                        0.03,
+                        0.04,
+                        true,
+                        false,
+                        0,
+                        "A piece of ripe fruit. It smells great."
+                    ],
+                    [   
+                        9999,
+                        "Fruit Piece",
+                        "Out of Season",
+                        0.01,
+                        0.01,
+                        0.02,
+                        true,
+                        false,
+                        0,
+                        "A piece of unripe fruit. Very firm and somewhat flavourless."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Vegetable",
+                        "Amaranth Leaf",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "A bitter green leaf. Tastes better when boiled."
+                    ],
+                    [   
+                        9999,
+                        "Vegetable",
+                        "Broccoli/Cauliflower",
+                        0.02,
+                        0.03,
+                        0.05,
+                        true,
+                        false,
+                        0,
+                        "A thick flower of a plant that tastes great when properly cooked."
+                    ],
+                    [   
+                        9999,
+                        "Vegetable",
+                        "Cabbage/Lettuce",
+                        0.01,
+                        0.02,
+                        0.03,
+                        true,
+                        false,
+                        0,
+                        "An easily grown head of cabbage/lettuce. Works well in salads."
+                    ],
+                    [   
+                        9999,
+                        "Vegetable",
+                        "Legumes",
+                        0.03,
+                        0.04,
+                        0.06,
+                        true,
+                        false,
+                        0,
+                        "Either beans, peas or lentils. Work well as sides or as part of a salad."
+                    ],
+                    [   
+                        9999,
+                        "Vegetable",
+                        "Root Vegetable ",
+                        0.01,
+                        0.01,
+                        0.02,
+                        true,
+                        false,
+                        0,
+                        "Either potatos, turnips, onions or other root vegetables. Work well as a base to a soup, a meal or as a side"
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Grains",
+                        "Amaranth",
+                        1,
+                        2,
+                        3,
+                        true,
+                        false,
+                        1,
+                        "A starchy grain with multiple uses as a cereal grain or a flour when milled."
+                    ],
+                    [   
+                        9999,
+                        "Grains",
+                        "Barley/Rye",
+                        1,
+                        2,
+                        3,
+                        true,
+                        false,
+                        1,
+                        "A easily grown grain that is normally milled for flour."
+                    ],
+                    [   
+                        9999,
+                        "Grains",
+                        "Amaranth",
+                        0.01,
+                        0.02,
+                        0.03,
+                        true,
+                        false,
+                        1,
+                        "A starchy grain with multiple uses as a cereal grain or a flour when milled."
+                    ],
+                    [   
+                        9999,
+                        "Grains",
+                        "Oats",
+                        0.3,
+                        0.5,
+                        0.8,
+                        true,
+                        false,
+                        1,
+                        "A versatile and dense grain that makes filling foods, breads and cereal."
+                    ],
+                    [   
+                        9999,
+                        "Grains",
+                        "Quinoa",
+                        0.7,
+                        1,
+                        2,
+                        true,
+                        false,
+                        1,
+                        "A grain with more health benefits than other grains."
+                    ],
+                    [   
+                        9999,
+                        "Grains",
+                        "Rice",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        1,
+                        "A flexible staple food that is easy to cook and goes well with many dishes"
+                    ],
+                    [   
+                        9999,
+                        "Grains",
+                        "Wheat",
+                        0.7,
+                        1,
+                        2,
+                        true,
+                        false,
+                        1,
+                        "A grain that works best when ground in to a flour. It is the most flexible of all flours."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Baked Goods",
+                        "Almond Sweetroll",
+                        0.07,
+                        0.1,
+                        0.2,
+                        true,
+                        false,
+                        0,
+                        "A sweet cake with almond paste inside it. Fairly rich."
+                    ],
+                    [   
+                        9999,
+                        "Baked Goods",
+                        "Seedcake",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0,
+                        "A slice of sweet cake packed with a variety of locally available seeds."
+                    ],
+                    [   
+                        9999,
+                        "Baked Goods",
+                        "Cheese Danish",
+                        0.07,
+                        0.1,
+                        0.2,
+                        true,
+                        false,
+                        0,
+                        "A flaky pastry danish with cheese baked inside it."
+                    ],
+                    [   
+                        9999,
+                        "Baked Goods",
+                        "Fruit Tart",
+                        0.2,
+                        0.3,
+                        0.4,
+                        true,
+                        false,
+                        0,
+                        "Sweet fruits with a honey glaze, baked in to a pastry case."
+                    ],
+                    [   
+                        9999,
+                        "Baked Goods",
+                        "Manchet Loaf",
+                        0.07,
+                        0.1,
+                        0.2,
+                        true,
+                        false,
+                        0,
+                        "A loaf of bread made with coarse flour."
+                    ],
+                    [   
+                        9999,
+                        "Baked Goods",
+                        "Quince Bread",
+                        0.1,
+                        0.2,
+                        0.3,
+                        true,
+                        false,
+                        0,
+                        "A loaf with boiled quince pieces in it. Tastes like a tart apple cake."
+                    ],
+                    [   
+                        9999,
+                        "Baked Goods",
+                        "Rye Loaf",
+                        0.07,
+                        0.1,
+                        0.2,
+                        true,
+                        false,
+                        0,
+                        "A dense loaf of bread with a strong flavour. Quite chewy and filling."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Protein",
+                        "Beef/Buffalo/Deer",
+                        0.2,
+                        0.3,
+                        0.5,
+                        true,
+                        false,
+                        1,
+                        "Locally available meats of larger animals, wrapped in a clean cloth."
+                    ],
+                    [   
+                        9999,
+                        "Protein",
+                        "Boar/Chicken/Pork",
+                        0.06,
+                        0.08,
+                        0.12,
+                        true,
+                        false,
+                        1,
+                        "Locally available meats of the more popular variety, wrapped in a clean cloth."
+                    ],
+                    [   
+                        9999,
+                        "Protein",
+                        "Dried/Salted Meat",
+                        0.3,
+                        0.5,
+                        0.8,
+                        true,
+                        false,
+                        1,
+                        "Dried/salted meats meant for longer keeping. Ideal as travel rations."
+                    ],
+                    [   
+                        9999,
+                        "Protein",
+                        "Eggs",
+                        0.02,
+                        0.03,
+                        0.05,
+                        true,
+                        false,
+                        1,
+                        "Local fowl eggs with a multitude of uses."
+                    ],
+                    [   
+                        9999,
+                        "Protein",
+                        "Fish",
+                        0.4,
+                        0.6,
+                        0.9,
+                        true,
+                        false,
+                        1,
+                        "Locally caught variety of fish."
+                    ],
+                    [   
+                        9999,
+                        "Protein",
+                        "Goat/Lamb",
+                        0.2,
+                        0.3,
+                        0.5,
+                        true,
+                        false,
+                        1,
+                        "Cuts of goat/lamb meat, wrapped in a clean cloth."
+                    ],
+                    [   
+                        9999,
+                        "Protein",
+                        "Shellfish",
+                        1,
+                        2,
+                        3,
+                        true,
+                        false,
+                        1,
+                        "Shellfish, caught locally. There are no pearls."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Cheeses",
+                        "Brie",
+                        0.1,
+                        0.2,
+                        0.3,
+                        true,
+                        false,
+                        0.5,
+                        "A mildly buttery and creamy cheese that pairs well with many foods."
+                    ],
+                    [   
+                        9999,
+                        "Cheeses",
+                        "Cheddar",
+                        0.7,
+                        1,
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "A stronger cheese that pairs well with citrus or sweet flavours."
+                    ],
+                    [   
+                        9999,
+                        "Cheeses",
+                        "Cottage",
+                        0.03,
+                        0.04,
+                        0.05,
+                        true,
+                        false,
+                        0.5,
+                        "A slightly salty and creamy cheese with lots of curds in it. Good as a side or mixed in to a salad."
+                    ],
+                    [   
+                        9999,
+                        "Cheeses",
+                        "Parmesan",
+                        0.3,
+                        0.5,
+                        0.8,
+                        true,
+                        false,
+                        0.5,
+                        "A hard cheese with a gritty texture that tastes slightly fruity and nutty. Best grated over pastas or used in soups and risottos."
+                    ],
+                    [   
+                        9999,
+                        "Cheeses",
+                        "Specialty",
+                        1,
+                        2,
+                        3,
+                        true,
+                        false,
+                        0.5,
+                        "A locally produced cheese with unique flavour."
+                    ]
+                ],
+                [
+                    [   
+                        9999,
+                        "Spices",
+                        "Cinnamon",
+                        0.07,
+                        0.1,
+                        0.2,
+                        true,
+                        false,
+                        0.5,
+                        "A dry armomatic spice with a wide range of uses. Normally adds a warming spice to food."
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Coriander",
+                        0.07,
+                        0.1,
+                        0.2,
+                        true,
+                        false,
+                        0.5,
+                        "A floral and citrusy tasting herb. Normally used with other spices to create exotic tastes."
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Cinnamon",
+                        0.02,
+                        0.03,
+                        0.05,
+                        true,
+                        false,
+                        0.5,
+                        "A dry armomatic spice with a wide range of uses. Normally adds a warming spice to food."
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Cumin",
+                        0.04,
+                        0.07,
+                        0.11,
+                        true,
+                        false,
+                        0.5,
+                        "A slightly sweet and warming spice. Normally used in exotic dishes."
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Garlic",
+                        0.01,
+                        0.02,
+                        0.03,
+                        true,
+                        false,
+                        0.5,
+                        "Related to onions, garlic has a distinctive taste that pairs well with richer foods. Adds a lot of flavour to whatever it is paired with."
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Mustard",
+                        0.7,
+                        1,
+                        2,
+                        true,
+                        false,
+                        0.5,
+                        "Seeds with a strong and pungent flavour. When mixed, it can be either sweet or spicy. Normally paired with meats, vegetables and cheeses."
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Nutmeg",
+                        0.07,
+                        0.1,
+                        0.2,
+                        true,
+                        false,
+                        0.5,
+                        "A rich and nutty flavoured spice. Usually quite subtle. Adds an earthy sensation to foods it is cooked with."
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Pepper",
+                        0.03,
+                        0.05,
+                        0.08,
+                        true,
+                        false,
+                        0.5,
+                        "A universally loved spice that adds a slightly spicy kick to whatever it is added to"
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Salt",
+                        0.04,
+                        0.05,
+                        0.09,
+                        true,
+                        false,
+                        0.5,
+                        "A spice that all cooks swear by for its versatility. Adds 'body' to whatever it is used with."
+                    ],
+                    [   
+                        9999,
+                        "Spices",
+                        "Specialty",
+                        0.1,
+                        0.2,
+                        0.3,
+                        true,
+                        false,
+                        0.5,
+                        "A unique local spice not normally found elsewhere."
+                    ]
+                ]
+            ]
         ]
+    
 }
