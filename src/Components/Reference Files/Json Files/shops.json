@@ -4957,6 +4957,515 @@
                     ]
                 ]
             ]
+            ,
+            [
+                "Jeweler/Gemcutter",
+                [
+                    [
+                        9999,
+                        "Gear",
+                        "Amulet/Necklace",
+                        3,
+                        5,
+                        8,
+                        true,
+                        false,
+                        0.5,
+                        "A necklace of joined delicate chains with a clasp on either end. A gem can be set in it if you include the price of the gem below."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Earrings",
+                        3,
+                        5,
+                        8,
+                        true,
+                        false,
+                        0.5,
+                        "A styled precious metal design to be worn in the ear. A gem can be set in both pieces if you include the price of them gem below."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Jewelery",
+                        38,
+                        50,
+                        75,
+                        true,
+                        false,
+                        0.5,
+                        "Bangles, beads, brooches or any other piece of jewelery. Has a gem set inside it."
+                    ],
+                    [
+                        9999,
+                        "Gear",
+                        "Signet Ring", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        0.1,
+                        "A ring with an intricate design carved or engraved in to it. When pressed in to warm sealing wax, it creates an identifying mark."
+                    ]
+                ],
+                [
+                    [
+                        9999,
+                        "Artisan Tools",
+                        "Jeweler Tools", 
+                        18, 
+                        25, 
+                        38,
+                        true,
+                        false,
+                        6,
+                        "Precision chisels, whetstones, clamps and magnifying glasses are just some of the tools provided with Jeweler tools. Lets you create jewelery items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
+                    ]
+                ],
+                [
+                    [
+                        9999,
+                        "Services",
+                        "Gem Appraisal", 
+                        3, 
+                        5, 
+                        8,
+                        true,
+                        false,
+                        0,
+                        "The jeweler carefully identifies and measures the quality of three gemstones."
+                    ],
+                    [
+                        9999,
+                        "Services",
+                        "Resize Jewelery", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0,
+                        "The jeweler cuts and reforms one piece of jewelery so that it fits comfortably."
+                    ],
+                    [
+                        9999,
+                        "Services",
+                        "Set Gem", 
+                        34, 
+                        96, 
+                        225,
+                        true,
+                        false,
+                        0,
+                        "Price depends on the value of the gem being set. With a competent jeweler, gems can be set in to anything, not just jewelery."
+                    ],
+                    [
+                        9999,
+                        "Services",
+                        "Stonecutting", 
+                        10, 
+                        15, 
+                        20,
+                        true,
+                        false,
+                        0,
+                        "The jeweler cuts a gemstone in to a precise shape at the request of the customer. Also polishes it to remove any rough edges. Include the price of the gemstone (listed below) in this service."
+                    ]
+                ],
+                [
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Azurite", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A soft, deep-blue copper mineral. Produced by the weathering of copper ore deposits."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Banded Agate", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A quartz mineraloid formed from accumulations of siliceous groundwater deposits in rock."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Blue Quartz", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A rare form of light blue quartz. Formed from tourmaline impurities found in regular quartz. "
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Eye Agate", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A light brown gemstone with a white concentric circle on it, formed from silica impurities in agate nodules."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Hematite", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A grey/black mineral formed from the cooling of magma."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Lapis Lazuli", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A deep blue gemstone formed from limestone."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Malachite", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A green mineral formed with carbonated water comes in to contact with copper."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Moss Agate", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A pale gemstone that has green marks in it, formed by metal impurities when the agate forms."
+                    ],
+
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Obsidian", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A shiny black volcanic glass, formed by the rapid cooling of viscous lava from volcanoes."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Rhodochrosite", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A pink mineral formed when managese rich rocks interact with hydrothermal processes."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Tiger Eye", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A brown gem, layered with yellow bands when metal deposits are replaced with silica."
+                    ],
+                    [
+                        9999,
+                        "Common Gemstones",
+                        "Turquoise", 
+                        7, 
+                        10, 
+                        15,
+                        true,
+                        false,
+                        0.25,
+                        "A pale blue-green mineral that forms when metal impurities seep in to rock and form veins."
+                    ]
+                ],
+                [
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Bloodstone", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A grey-red mineral that forms when layers of magma cooled over each other."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Carnelian", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "An orange mineral that forms when two different quartz types mix."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Chalcedony", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A white mineral that forms when watery silica gels at low temperatures."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Chrysoprase", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A green mineral that forms from the weathering of magnesite rich rocks."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Citrine", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A pale yellow-brown mineral that forms amethyst is subjected to heat."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Jasper", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A black, blue or brown mineral that forms from silica rich sediments or volacnic ash."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Moonstone", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A white glowing mineral that forms from layers of magma grow in to each other."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Onyx", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A black or white mineral that forms from stalactites or stalagmites in caves."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Quartz", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A see through crystal available in several colours. Forms when silica cools in magma. Slower cooling allows larger crystals to form."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Sardonyx", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A multicoloured variety of banded Onyx. Forms from silica cooling, then more seeping in to cracks and fissure as a new layer. "
+                    ],
+                    [
+                        9999,
+                        "Uncommon Gemstones",
+                        "Star Rose Quartz", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A white mineral with fibres in it, arranged in to a star pattern. Forms when fibres mix in to silica during the cooling process."
+                    ],
+                    [                    
+                        9999,
+                        "Uncommon Gemstones",
+                        "Zircon", 
+                        38, 
+                        50, 
+                        75,
+                        true,
+                        false,
+                        0.25,
+                        "A pale blue-green mineral that forms when zirconium, silicon and oxygen crystallize in magma."
+                    ]
+                ]
+                ,
+                [
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Amber", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A faint gold coloured mineral, formed from hardened tree sap."
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Amethyst", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A deep purple mineral formed inside of magma bubbles, allowing the mineral to grow from silicon dioxide deposits."
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Chrysoberyl", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A yellow-green prismatic mineral formed from low density magma that rise to the surface to cool."
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Coral", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "Crimson remains of a coral reef that has died and hardened in to a rock like mineral."
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Garnet", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A red or violet mineral formed from metamorphic rock that has high aluminium content in it."
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Jade", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A vivid green mineral formed from tectonic plates moving together, where metamorphic rocks mix together."
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Jet", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "Black ancient decomposed wood that is as hard as most minerals"
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Pearl", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A lustrous white or pink spherical mineral. Formed over time from food a mollusk can't digest."
+                    ]
+                ]
+            ]  
         ]
-    
 }

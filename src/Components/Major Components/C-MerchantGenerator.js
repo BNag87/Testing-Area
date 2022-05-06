@@ -66,8 +66,7 @@ export const MerchantGenerator = () => {
                             <TableRow>
                             <SuperTH colSpan={6}>
                                 <h2>Merchant Items Table</h2>
-
-                                <hr/>
+                            <hr/>
                         
                         {/* InvisiDiv is an invisible div wrapper to help align elements */}
                             <InvisiDiv>
@@ -131,6 +130,11 @@ export const MerchantGenerator = () => {
                                 onClick = {() => ChangeMerchant(9)}>
                                     Marketplace
                                 </Button>
+
+                            <Button inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
+                            onClick = {() => ChangeMerchant(10)}>
+                                Jeweler
+                            </Button>
                             </InvisiDiv>
 
                                 <hr/> 
