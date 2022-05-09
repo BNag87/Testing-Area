@@ -1911,6 +1911,66 @@
                         false,
                         1,
                         "Published: 225. \nAuthor: Urkitbaeran. \nThis book talks about the criminal and mundane powers of Calimport at the time of the books release."
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "The City of Neverwinter", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1372. \nAuthor: Unknown. This book describes the city of Neverwinter as the crown jewel of northern Faerun. It details the city's history as well as it's many skilled merchants that comptete to optimise and refine on every design they make."
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Dethek: Dialects and Diction", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. Contains information about Dethek, the runic script of the Dwarven language and its unique style of phrasing and writing. Also contains a guide on translating Dethek in to the common alphabet."
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Exotic Weaponry", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1374. \nAuthor: Acarus. A collection of guides and personal battle experiences of a legendary paladin. It details how weapons made of different ores can actually provide advantages against specific types of hostiles."
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Falcon Fun", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1492. \nAuthor: Faldorn. Book of the doctrine of shadow druids. It claims that the balance of nature was a myth and that shadow druids should become isolationists and hostile. An excerpt reads: \"We are thunder, and we are rain. We shatter mankind, and grow new life in its place.\""
+                    ],
+                    [ 
+                        9999,
+                        "Common Non-Fiction",
+                        "Folksongs of Faerun", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1492. \nAuthor: Unknown. A collection of folksongs from across Faerun, collected and shared by many bards in to an impressively thick volume.\""
                     ]
                 ],
 
@@ -2125,7 +2185,128 @@
                         false,
                         1,
                         "Published: 902. \nAuthor: Maglas. \nAn arrangment of cryptic prophecies. Translated by Sammaster, he interpreted that the prophecies predicted that all Faerun would eventually be ruled by undead Dragons. Thus, he formed the Cult of the Dragon with the aspiration of creating dracoliches for this purpose. A translated excerpt reads: \"And naught will be left save shattered thrones with no rulers. But the dead dragons shall rule the world entire, and…\""
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Chronicle of Years to Come", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 902. \nAuthor: Maglas. \nAn arrangment of cryptic prophecies. Translated by Sammaster, he interpreted that the prophecies predicted that all Faerun would eventually be ruled by undead Dragons. Thus, he formed the Cult of the Dragon with the aspiration of creating dracoliches for this purpose. A translated excerpt reads: \"And naught will be left save shattered thrones with no rulers. But the dead dragons shall rule the world entire, and…\""
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Circe's Cookbook", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Circe. \nA collection of personal reflections on potion making. It contains no formulas but the abstract content is said to help people understand more about the reactions that take place whilst brewing."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "The City of Hillsfar", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Maglas. \nA guidebook to a city known as one of the most evil of places in the lands. Non-humans who enter the city are thrown in to the arena to fight for their lives. Its ruler cared onlyfor growing the city's trade and torturing prisoners for fun."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "The Compleat Dragon-Hunter", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 1300. \nAuthor: Snerdluk Dragonbane. \nA detailed guide on techniques to search for and hunt dragons. An excerpt reads: \"If it's not on fire, they'll eat it. Hells, if it is on fire, they'll put it out then eat it.\""
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "The Craftworks of Evermeet", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 1374. \nAuthor: Unknown. \nA book of magical formulae, rituals and ingredients required for the creation of several Elven magical items."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "The Curse of the Vampyr", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 1390. \nAuthor: Unknown. \nA collection of lore on vampires. It warns of their ability to charm as well as their hunting habits."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Death & Divinity: A Godly Guide", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. \nAn abstract book that describes death as being too powerful for a single deity to hold. It theorises that it is split in to smaller portfolios such as disease, war, funeral rites and the like."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "A Deep and Creeping Darkness", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. \nA book that tells the continued misfortune of a village as it faced deaths of its miners, a plague and then unexplained disappearances. It mentions that the platinum mine is still valuable and may be worth trying to reclaim."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "The Evil Eye", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: 1491. \nAuthor: Unknown. \nThis book discuses the practices of hags (Night, Sea nad Green). Of note, it details how they enjoy striking deals with mortals and have a preference for handmade magical trinkets."
+                    ],
+                    [
+                        9999,
+                        "Uncommon Non-Fiction",
+                        "Experimental Techniques and Methods", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Published: Unknown. \nAuthor: Unknown. \nA collection of essays written by alchemists and wizards. A lot of the works are submission for final exams for apprentice magisters. The works detail unconventional uses of spells, different casting methods and theories on magic in general."
                     ]
+                    
                 ]
                 ,
                 [
@@ -2237,7 +2418,7 @@
                         
                         9999,
                         "Rare Non-Fiction",
-                        "Book of the Vile Darkness", 
+                        "The Book of Vile Darkness", 
                         2000, 
                         2500, 
                         3000,
@@ -2245,6 +2426,42 @@
                         false,
                         2,
                         "Published: Unknown. \nAuthor: Vecna. \nThis book corrupts any non-evil being that attempt to read it. If someone is able to read it for a week, they gain great power from it and become more insightful to matters in general."  
+                    ],
+                    [
+                        9999,
+                        "Rare Non-Fiction",
+                        "Drow Spinnan Trisagion", 
+                        2000, 
+                        2500, 
+                        3000,
+                        true,
+                        false,
+                        1,
+                        "Published: 713. \nAuthor: Unknown. \nA powerful clerical tome that allows unrestricted worship to the Spiden Queen, Lolth. Those who hold it gain resistance to arcane and divine magics as well as increased awareness, allowing the user to battle effectively. Using the book, a user could cast the 'Restoration' spell."
+                    ],
+                    [
+                        9999,
+                        "Rare Non-Fiction",
+                        "Elameth's Compendium", 
+                        1000, 
+                        1500, 
+                        2000,
+                        true,
+                        false,
+                        1,
+                        "Published: 901. \nAuthor: Elameth. \nA tome of arcane knowledge that details technical knowledge and numerous sketches of a variety of magical artifacts."
+                    ],
+                    [
+                        9999,
+                        "Rare Non-Fiction",
+                        "Farnarest's Guide to Enchanting", 
+                        2000, 
+                        2500, 
+                        3000,
+                        true,
+                        false,
+                        1,
+                        "Published: 1303. \nAuthor: Darnarest. \nPenned by a famous wizard, this guide details several processes for enchanting mundane items with great magical power."
                     ]
                 ],
 
@@ -2357,6 +2574,30 @@
                         false,
                         1,
                         "Published: 1373. \nAuthor: Unknown. \nAn immensely popular collection of traditional songs and poems for children. An excerpt reads: \"Nine are we when taken all three. Last one slain, then six remain. None survive our first less five.\""  
+                    ],
+                    [
+                        9999,
+                        "Common Fiction",
+                        "Farewell to Limbs", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 308. \nAuthor: Unknown. \nA love story of a cleric who meets an enticing drow. Despite the drow losing her fiancee to war, she encourages a relationship with the cleric. through bitterness, she manipulates him in to becoming a butcher, selling limbs for profit."  
+                    ],
+                    [
+                        9999,
+                        "Common Fiction",
+                        "Filfaeril Bound and Willing", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Published: 1350. \nAuthor: Unknown. \nA work of fiction that describes the Dragon Queen Filfaeril's love of whips and chains, in salacious settings."  
                     ]
                 ]
             ]
@@ -5464,8 +5705,272 @@
                         false,
                         0.25,
                         "A lustrous white or pink spherical mineral. Formed over time from food a mollusk can't digest."
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Spinel", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A clear red or green mineral formed from conrundum and magnesia mixing in magma form."
+                    ],
+                    [                    
+                        9999,
+                        "Rare Gemstones",
+                        "Tourmaline", 
+                        75, 
+                        100, 
+                        150,
+                        true,
+                        false,
+                        0.25,
+                        "A pale red or brown mineral formed in cavities within granite deposits."
+                    ]
+                ],
+                [
+                    [                    
+                        9999,
+                        "Very Rare Gemstones",
+                        "Alexandrite", 
+                        375, 
+                        500, 
+                        750,
+                        true,
+                        false,
+                        0.25,
+                        "A dark green gem that only forms when aluminium and beryllium combines with iron, titanium and chromium."
+                    ],
+                    [                    
+                        9999,
+                        "Very Rare Gemstones",
+                        "Aquamarine", 
+                        375, 
+                        500, 
+                        750,
+                        true,
+                        false,
+                        0.25,
+                        "A pale green/blue mineral that forms with a slow cooling process and thousands of years."
+                    ],
+                    [                    
+                        9999,
+                        "Very Rare Gemstones",
+                        "Black Pearl", 
+                        375, 
+                        500, 
+                        750,
+                        true,
+                        false,
+                        0.25,
+                        "This gem is formed from a specific species of oyster if a piece of sand gets stuck in their body."
+                    ],
+                    [                    
+                        9999,
+                        "Very Rare Gemstones",
+                        "Blue Spinel", 
+                        375, 
+                        500, 
+                        750,
+                        true,
+                        false,
+                        0.25,
+                        "A rarely formed mineral that requires cobalt impurities to occur during the gems formation to give it the signature blue shade."
+                    ],
+                    [                    
+                        9999,
+                        "Very Rare Gemstones",
+                        "Peridot", 
+                        375, 
+                        500, 
+                        750,
+                        true,
+                        false,
+                        0.25,
+                        "A rich green gem that forms deep in the crust of the world at very high temperatures."
+                    ],
+                    [                    
+                        9999,
+                        "Very Rare Gemstones",
+                        "Topaz", 
+                        375, 
+                        500, 
+                        750,
+                        true,
+                        false,
+                        0.25,
+                        "A vivid yellow mineral that forms when fluorine gas mixes with a few specific magma formations."
+                    ],
+                    [                    
+                        9999,
+                        "Very Rare Gemstones",
+                        "Alexandrite", 
+                        375, 
+                        500, 
+                        750,
+                        true,
+                        false,
+                        0.25,
+                        "A dark green gem that only forms when aluminium and beryllium combines with iron, titanium and chromium."
                     ]
                 ]
-            ]  
+                ,
+                [
+                    [                    
+                        9999,
+                        "Rarest Gemstones",
+                        "Black Opal", 
+                        750, 
+                        1000, 
+                        1500,
+                        true,
+                        false,
+                        0.25,
+                        "A black mineral with multi-coloured speckles. Forms from mineral rich water evaporating under intense cosntant heat."
+                    ],
+                    [                    
+                        9999,
+                        "Rarest Gemstones",
+                        "Blue Sapphire", 
+                        750, 
+                        1000, 
+                        1500,
+                        true,
+                        false,
+                        0.25,
+                        "A lustrous blue gem formed when titanium mixes with corundum, deep underground."
+                    ],
+                    [                    
+                        9999,
+                        "Rarest Gemstones",
+                        "Emerald", 
+                        750, 
+                        1000, 
+                        1500,
+                        true,
+                        false,
+                        0.25,
+                        "A rich green mineral that forms from a long period of cooling and with berylium deposits."
+                    ],
+                    [                    
+                        9999,
+                        "Rarest Gemstones",
+                        "Fire Opal", 
+                        750, 
+                        1000, 
+                        1500,
+                        true,
+                        false,
+                        0.25,
+                        "A bright orange mineral with brighter streaks of yellow in it. Forms in the depths of volcanoes when magma surrounds and traps water, subjecting it to intense heat and pressure."
+                    ],
+                    [                    
+                        9999,
+                        "Rarest Gemstones",
+                        "Opal", 
+                        750, 
+                        1000, 
+                        1500,
+                        true,
+                        false,
+                        0.25,
+                        "A pale blue/green mineral. Forms from mineral rich water seeping through sandstone and evaporting over a long time."
+                    ],
+                    [                    
+                        9999,
+                        "Rarest Gemstones",
+                        "Star Sapphire", 
+                        750, 
+                        1000, 
+                        1500,
+                        true,
+                        false,
+                        0.25,
+                        "A lustrous blue gem with a persistent optical illusion, called asterism. showing a white star through the centre of the gem. Forms as a normal sapphire would, but with inclusions of rutile causing the effect."
+                    ],
+                    [                    
+                        9999,
+                        "Rarest Gemstones",
+                        "Star Ruby", 
+                        750, 
+                        1000, 
+                        1500,
+                        true,
+                        false,
+                        0.25,
+                        "A rich red mineral with a persistent optical illusion, called asterism. showing a white star through the centre of the gem. Forms as a normal ruby would, but with inclusions of rutile causing the effect."
+                    ],
+                    [                                       
+                        9999,
+                        "Rarest Gemstones",
+                        "Yellow Sapphire", 
+                        750, 
+                        1000, 
+                        1500,
+                        true,
+                        false,
+                        0.25,
+                        "A lustrous yellow mineral. Forms as a normal sapphire would but with iron impurities giving it a yellow tint."
+                    ]
+                ],
+                [
+                
+                    [                    
+                        9999,
+                        "Royalty Gemstones",
+                        "Black Sapphire", 
+                        3750, 
+                        5000, 
+                        7500,
+                        true,
+                        false,
+                        0.25,
+                        "A lustrous black mineral. Forms as a normal sapphire would but with inclusions of hematite"
+                    ],
+                    [                    
+                        9999,
+                        "Royalty Gemstones",
+                        "Diamond", 
+                        3750, 
+                        5000, 
+                        7500,
+                        true,
+                        false,
+                        0.25,
+                        "An entirely transparent mineral that forms out of pure carbon under intense heat and pressure over a long time. Difficult to cut."
+                    ],
+                    [                    
+                        9999,
+                        "Royalty Gemstones",
+                        "Jacinth", 
+                        3750, 
+                        5000, 
+                        7500,
+                        true,
+                        false,
+                        0.25,
+                        "A fiery orange mineral. Formed as zircon but with iron impurities giving it a distinctive colour."
+                    ],
+                    [                    
+                        9999,
+                        "Royalty Gemstones",
+                        "Ruby", 
+                        3750, 
+                        5000, 
+                        7500,
+                        true,
+                        false,
+                        0.25,
+                        "A lustrous deep red mineral formed when corundum mixes with iron impurities."
+                    ]
+                    
+                ]
+            
+            ]
         ]
+    
+
 }
