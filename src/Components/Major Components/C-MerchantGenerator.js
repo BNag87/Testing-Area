@@ -15,6 +15,7 @@ import {
 import { styled } from '@mui/material/styles';
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 
 //==========----------→COMPONENT STARTS HERE
@@ -135,6 +136,11 @@ export const MerchantGenerator = () => {
                             onClick = {() => ChangeMerchant(10)}>
                                 Jeweler
                             </Button>
+
+                            <Button inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px"
+                            onClick = {() => ChangeMerchant(11)}>
+                                Clothier
+                            </Button>
                             </InvisiDiv>
 
                                 <hr/> 
@@ -190,13 +196,11 @@ export const MerchantGenerator = () => {
                 inputFontColour = "#aaaaaa" 
                 key = {thing[0].toString()}
                 >
-                    
-                
 
                     {/* Indidivual td elements to display each item */}
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     
-                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]} <VisibilityOffIcon fontSize sx={{ fontSize: 20 }}/></SuperTD>
 
                     {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
                     <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
