@@ -13,7 +13,7 @@ import {
     } from "../../styles";
 
 import { styled } from '@mui/material/styles';
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
@@ -23,7 +23,6 @@ export const MerchantGenerator = () => {
 
     // create usestate to track what index is being used for rendering shop data
     const [shopIndex, setShopIndex] = useState(0);
-    let shopInd = 0;
     
     //get the json data
     const jsonData = require("../Reference Files/Json Files/shops.json");
@@ -31,15 +30,16 @@ export const MerchantGenerator = () => {
     //convert data in to an array
     const objInnerValues = Object.values(jsonData.shops)
     
-    //console log to spit out specific inputs
-    const BarkItemBlurb = (input) => {
-        console.log ("Barkitemblurb was fired with the input: " +input);
-        console.log("\n"+objInnerValues[0][input].item + "\n" + objInnerValues[0][input].blurb)
-    }
-
     //function that handles onclick function of buttons that change the shop type the user is viewing. auto sorts and generates!
     const ChangeMerchant = (input) => {
         setShopIndex(input)
+    }
+
+    const fireVisibility = (e, input) => {
+        console.log("fireVisibiity was fired!")
+//input is the matching category of the item provided
+        let rowReference = document.querySelector(input)
+        console.log("rowReference is: " +rowReference);
     }
 
     //A custom MUI tooltip that supports HTML input
@@ -173,23 +173,17 @@ export const MerchantGenerator = () => {
                             {objInnerValues[shopIndex].map((thing, outerIndex) => (
                             
                             // Ternary operator to stop creating rows from element 0
-                            (outerIndex == 0) ? console.log("outerIndex WAS 0") : (outerIndex %2 == 0) ? 
+                            (outerIndex === 0) ? console.log("outerIndex WAS 0") : (outerIndex %2 === 0) ? 
         Object.values(thing).map((innerThing, innerIndex) => (
             <>
             {/* Tooltip popup for item blurb */}
-                <HtmlTooltip title={
-                    <>
-                    <Typography color= "inherit">
-                        <b>{innerThing[2]} </b> 
-                    </Typography>
-                    <hr/>
-                    <p><b>{innerThing[9]}</b></p>
-                    </>
-                    } 
-                    arrow
-                    placement="top"
-                    followCursor={true}
-                >
+            <HtmlTooltip title={
+                <>
+                <Typography color= "inherit"><b>{innerThing[2]}</b></Typography>
+                <hr/>
+                <p><b>{innerThing[9]}</b></p>
+                </>
+            } arrow placement="top" followCursor={true}>
             {/* Table rows for each record */}
                 <TableRow
                 inputBackgroundColour="#331B18" 
@@ -200,7 +194,7 @@ export const MerchantGenerator = () => {
                     {/* Indidivual td elements to display each item */}
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     
-                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]} <VisibilityOffIcon fontSize sx={{ fontSize: 20 }}/></SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]} <VisibilityOffIcon fontSize ="inherit" onClick={(e) => fireVisibility(e, innerThing[1])}/></SuperTD>
 
                     {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
                     <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
@@ -266,9 +260,10 @@ export const MerchantGenerator = () => {
                 <TableRow 
                 inputBackgroundColour="#1c1122" 
                 inputFontColour = "#bbbbbb" 
-                key = {thing[0].toString()} 
+                key = {innerThing[0].toString()} 
                 >
-                      
+                      {console.log("From line 267→ \nKey: "+innerThing[0]+" \nFor Item: " +innerThing[2].toString()+ "\nFor Category: "+innerThing[1])}
+
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
                     
