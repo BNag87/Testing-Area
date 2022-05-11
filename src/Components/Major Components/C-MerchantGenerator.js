@@ -36,8 +36,9 @@ export const MerchantGenerator = () => {
     }
 
     const fireVisibility = (e, input) => {
+    //input is the matching category of the item provided
         console.log("fireVisibiity was fired!")
-//input is the matching category of the item provided
+        console.log("Input is: "+input)
         let rowReference = document.querySelector(input)
         console.log("rowReference is: " +rowReference);
     }
