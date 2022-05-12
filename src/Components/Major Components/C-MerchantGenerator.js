@@ -21,6 +21,11 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 //==========----------→COMPONENT STARTS HERE
 export const MerchantGenerator = () => {
 
+//spits out elements of an array passed to it
+const spitArray = (arrayIn) => {
+    console.log(arrayIn);
+}
+
     // create usestate to track what index is being used for rendering shop data
     const [shopIndex, setShopIndex] = useState(0);
     
@@ -35,12 +40,28 @@ export const MerchantGenerator = () => {
         setShopIndex(input)
     }
 
-    const fireVisibility = (e, input) => {
-    //input is the matching category of the item provided
-        console.log("fireVisibiity was fired!")
-        console.log("Input is: "+input)
-        let rowReference = document.querySelector(input)
-        console.log("rowReference is: " +rowReference);
+    const fireVisibility = (e) => {
+        //woRK FROM HERE! YOURE ON THE RIGHT PATH. THIS IS FIRED BY ICONS BUT NEEDS TO GET ALL TABLE ROWS WITH THE PROVIDED ID
+        try{
+            console.log("fireVisibiity was fired!");
+            let rowID = e.target.id;
+            console.log(e);
+            console.log("'e.target.id' is "+ rowID);
+                
+            //need to get table row based on id of visibility icon
+            let selectedItems = document.getElementsByClassName(rowID);
+            console.log("After input, selectedItems ID.query selector:")
+            console.log (selectedItems)
+        }
+
+        catch(error)
+        {
+            console.log("Pants shat in 'fireVisibilty'!\n"+error);
+        }
+        //try to invert visible
+        // (rowID.hidden = false) ? rowID.hidden = true : (rowID.hidden = true) ? rowID.hidden = false : console.log("Nothing wrong here!")
+        
+        
     }
 
     //A custom MUI tooltip that supports HTML input
@@ -55,6 +76,9 @@ export const MerchantGenerator = () => {
           border: '3px outset #dadde9',
         },
       }));
+
+    //empty array to store key values of map generated table rows
+      let rowKeys = [];
 
     //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
@@ -189,13 +213,14 @@ export const MerchantGenerator = () => {
                 <TableRow
                 inputBackgroundColour="#331B18" 
                 inputFontColour = "#aaaaaa" 
-                key = {thing[0].toString()}
+                key = {thing[0][0]}
+                id =  {"rowID"+thing[0][0]}
                 >
-
+                    
                     {/* Indidivual td elements to display each item */}
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     
-                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]} <VisibilityOffIcon fontSize ="inherit" onClick={(e) => fireVisibility(e, innerThing[1])}/></SuperTD>
+                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]} <VisibilityOffIcon fontSize ="inherit" id={"rowID"+thing[0][0]} onClick={(event) => fireVisibility(event)}/></SuperTD>
 
                     {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
                     <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
@@ -263,7 +288,7 @@ export const MerchantGenerator = () => {
                 inputFontColour = "#bbbbbb" 
                 key = {innerThing[0].toString()} 
                 >
-                      {console.log("From line 267→ \nKey: "+innerThing[0]+" \nFor Item: " +innerThing[2].toString()+ "\nFor Category: "+innerThing[1])}
+                      {/* {console.log("From line 267→ \nKey: "+innerThing[0]+" \nFor Item: " +innerThing[2].toString()+ "\nFor Category: "+innerThing[1])} */}
 
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
