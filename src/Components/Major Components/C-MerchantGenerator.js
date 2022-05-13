@@ -41,18 +41,18 @@ const spitArray = (arrayIn) => {
     }
 
     const fireVisibility = (e) => {
-        //woRK FROM HERE! YOURE ON THE RIGHT PATH. THIS IS FIRED BY ICONS BUT NEEDS TO GET ALL TABLE ROWS WITH THE PROVIDED ID
+        //woRK FROM HERE! YOURE ON THE RIGHT PATH. NEED TO FIGURE OUT WHY PARENTID AND ICONID SOMETIMES DONT WORK!
         try{
-            console.log("fireVisibiity was fired!");
-            let rowID = e.target.id;
-            console.log(e);
-            console.log("'e.target.id' is "+ rowID);
-                
-            //need to get table row based on id of visibility icon
-            let selectedItems = document.getElementsByClassName(rowID);
-            console.log("After input, selectedItems ID.query selector:")
-            console.log (selectedItems)
-        }
+            let parentID = e.target.parentElement.parentElement.id;
+            rowKeys.push(parentID)
+            
+            console.log("Row keys contains:")
+            console.table(rowKeys)
+
+            let iconID = e.target.id;
+            console.log(" From fireVisibility():\nparentID:"+parentID+"\niconID: "+iconID)
+            console.log(e.target.parentElement.parentElement)
+            }
 
         catch(error)
         {
@@ -93,7 +93,7 @@ const spitArray = (arrayIn) => {
                             <SuperTH colSpan={6}>
                                 <h2>Merchant Items Table</h2>
                             <hr/>
-                        
+                        {/* TABLE BUTTONS */}
                         {/* InvisiDiv is an invisible div wrapper to help align elements */}
                             <InvisiDiv>
                                 <Button inputBackground = "#222222" inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" inputColor = "#cccccc" inputFontSize = "normal" inputFontVariant = "normal" inputWidth = "130px" onClick = {() => ChangeMerchant(0)}>
@@ -168,15 +168,15 @@ const spitArray = (arrayIn) => {
                             </Button>
                             </InvisiDiv>
 
-                                <hr/> 
+                            <hr/> 
 
-                                <InvisiDiv>
-                                    Shop Type: <H3>{objInnerValues[shopIndex][0]}</H3>
-                                </InvisiDiv>
+                            <InvisiDiv>
+                                Shop Type: <H3>{objInnerValues[shopIndex][0]}</H3>
+                            </InvisiDiv>
 
-                                <hr/> 
+                            <hr/> 
 
-                            </SuperTH>
+                        </SuperTH>
                             </TableRow>
 
                             {/* TABLE HEADINGS */}
@@ -199,56 +199,61 @@ const spitArray = (arrayIn) => {
                             
                             // Ternary operator to stop creating rows from element 0
                             (outerIndex === 0) ? console.log("outerIndex WAS 0") : (outerIndex %2 === 0) ? 
-        Object.values(thing).map((innerThing, innerIndex) => (
-            <>
-            {/* Tooltip popup for item blurb */}
-            <HtmlTooltip title={
-                <>
-                <Typography color= "inherit"><b>{innerThing[2]}</b></Typography>
-                <hr/>
-                <p><b>{innerThing[9]}</b></p>
-                </>
-            } arrow placement="top" followCursor={true}>
-            {/* Table rows for each record */}
-                <TableRow
-                inputBackgroundColour="#331B18" 
-                inputFontColour = "#aaaaaa" 
-                key = {thing[0][0]}
-                id =  {"rowID"+thing[0][0]}
-                >
-                    
-                    {/* Indidivual td elements to display each item */}
-                    <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
-                    
-                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]} <VisibilityOffIcon fontSize ="inherit" id={"rowID"+thing[0][0]} onClick={(event) => fireVisibility(event)}/></SuperTD>
-
-                    {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
-                    <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
-                    "¼ lb" : innerThing[8] === 0.5 ? 
-                    "½ lb" : innerThing[8]+"lbs" : "N/A")}
+                            Object.values(thing).map((innerThing, innerIndex) => (
+                            <>
+                            {/* Tooltip popup for item blurb */}
+                            <HtmlTooltip title={
+                                <>
+                                <Typography color= "inherit"><b>{innerThing[2]}</b></Typography>
+                                <hr/>
+                                <p><b>{innerThing[9]}</b></p>
+                                </>
+                            } arrow placement="top" followCursor={true}>
+                            
+                            {/* Table rows for each record */}
+                            <TableRow
+                            inputBackgroundColour="#331B18" 
+                            inputFontColour = "#aaaaaa" 
+                            key = {thing[0][0]}
+                            id =  {"rowID-"+thing[0][0]}
+                            >
                         
-                        </SuperTD>
+                            {/* Indidivual td elements to display each item */}
+                            <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
+                            
+                            <SuperTD NoHoverSmallTxtTD>
+                                {innerThing[1]} <VisibilityOffIcon fontSize ="inherit" id={"iconID-"+thing[0][0]} onClick={(event) => fireVisibility(event)}/>
+                            </SuperTD>
+
+                            {console.log("From mapping, Icon ID is 'rowID"+thing[0][0]+"'.")}
+
+                            {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
+                            <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
+                            "¼ lb" : innerThing[8] === 0.5 ? 
+                            "½ lb" : innerThing[8]+"lbs" : "N/A")}
+                                
+                                </SuperTD>
 
                     {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP */}
                     <SuperTD NoHoverSmallTxtTD>
-                            {
+                        {
                             (innerThing[3] < 1 && innerThing[3] >= 0.1) ? 
-                                Math.floor(innerThing[3] * 10)+"sp" 
+                            Math.floor(innerThing[3] * 10)+"sp" 
+                            : 
+                            (innerThing[3] < 0.1 && innerThing[3] >= 0.01) ? 
+                            Math.floor(innerThing[3] * 100)+"cp"
+                            : 
+                            innerThing[3]+"gp"} 
+                            &nbsp;to&nbsp; 
+                            {
+                                (innerThing[5] < 1 && innerThing[5] >= 0.1) ? 
+                                    Math.floor(innerThing[5] * 10)+"sp" 
                                     : 
-                                (innerThing[3] < 0.1 && innerThing[3] >= 0.01) ? 
-                                    Math.floor(innerThing[3] * 100)+"cp"
-                                        : 
-                                    innerThing[3]+"gp"} 
-                                    &nbsp;to&nbsp; 
-                                    {
-                                        (innerThing[5] < 1 && innerThing[5] >= 0.1) ? 
-                                            Math.floor(innerThing[5] * 10)+"sp" 
-                                            : 
-                                            (innerThing[5] < 0.1 && innerThing[5] >= 0.01) ? 
-                                                Math.floor(innerThing[5] * 100)+"cp"
-                                                : 
-                                                innerThing[5]+"gp"
-                                    }
+                                    (innerThing[5] < 0.1 && innerThing[5] >= 0.01) ? 
+                                    Math.floor(innerThing[5] * 100)+"cp"
+                                    : 
+                                    innerThing[5]+"gp"
+                            }
                     </SuperTD>
 
                     {/* Checkbox for if item is available */}
