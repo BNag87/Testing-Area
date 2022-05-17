@@ -1,4 +1,6 @@
 import styled, { createGlobalStyle, css } from "styled-components";
+import visIcon from "./Components/Reference Files/Images/visibilityOff.png"
+
 // ==========-------------------- GLOBAL STYLES
 export const GlobalStyle = createGlobalStyle`
 body {
@@ -16,6 +18,26 @@ display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
+
+${props => props.IconDiv && css`
+      display: inherit;
+      align-items: inherit;
+      justify-content: inherit;
+      text-align: inherit;
+      background: url(${visIcon});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      color: ${props => props.inputColour || "rgb(200,200,200)"};
+      border-radius: 4px;
+      margin: 1px;
+      padding: 1px;
+      width: 10px;
+      &:hover {
+          color: white;
+          background: rgba(255,255,255,0.3); 
+        }
+    `}
 `
 export const H3 = styled.div`
 background: ${props => props.inputBackgroundColour || "rgba(255,255,255,0.05)"};
@@ -177,6 +199,22 @@ export const TableRow = styled.tr`
       &:hover {
           color: #b3c378; //greenish
           background: #b368a3; //blue
+        }
+    `}
+    ${props => props.HideButton && css`
+    background-image: url(${visIcon});
+    background-color: rgba(200,190,190, 0.2); //blue
+    border: ${props => props.inputBorder || "rgba(255, 255, 255, 0.2) 1px solid"};
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      padding: 5px;
+      &:hover {
+        background: url(${visIcon});
+        background-color: #dddddd; //blue
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
         }
     `}
 `;

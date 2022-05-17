@@ -17,13 +17,12 @@ import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
-
 //==========----------→COMPONENT STARTS HERE
 export const MerchantGenerator = () => {
 
 //spits out elements of an array passed to it
 const spitArray = (arrayIn) => {
-    console.log(arrayIn);
+    console.table(arrayIn);
 }
 
     // create usestate to track what index is being used for rendering shop data
@@ -41,17 +40,21 @@ const spitArray = (arrayIn) => {
     }
 
     const fireVisibility = (e) => {
-        //woRK FROM HERE! YOURE ON THE RIGHT PATH. NEED TO FIGURE OUT WHY PARENTID AND ICONID SOMETIMES DONT WORK!
-        try{
-            let parentID = e.target.parentElement.parentElement.id;
-            rowKeys.push(parentID)
-            
-            console.log("Row keys contains:")
-            console.table(rowKeys)
 
-            let iconID = e.target.id;
-            console.log(" From fireVisibility():\nparentID:"+parentID+"\niconID: "+iconID)
-            console.log(e.target.parentElement.parentElement)
+        try{
+            //get id of element that clicked (use as an array pointer/grabber)
+            let parentID = e.target.parentElement.parentElement.id;
+           
+            //Remove duplicates of AR_rowKeys and put in AR_setRowKeys array
+            AR_setRowKeys = [...new Set(AR_rowKeys)];
+            spitArray(AR_setRowKeys)
+
+            //Now, grab all HTML references with the key ID provided. MAKE SURE KEY IS PASSED IN
+            console.log("ParentID of this element is: "+parentID);
+
+            //first, queryselect every element of the id provided
+            let ref = document.querySelectorAll(parentID).style.display
+            ref = false;
             }
 
         catch(error)
@@ -78,7 +81,11 @@ const spitArray = (arrayIn) => {
       }));
 
     //empty array to store key values of map generated table rows
-      let rowKeys = [];
+      let AR_rowKeys = [];
+    //empty array to store SET of rowKeys (removes duplicates. populated from a function)
+      let AR_setRowKeys = [];
+    //empty array to store html refernces of AR_setRowKeys (gives access to element attributes, notably "hidden")
+      let AR_RowRefs = [];
 
     //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
@@ -201,6 +208,7 @@ const spitArray = (arrayIn) => {
                             (outerIndex === 0) ? console.log("outerIndex WAS 0") : (outerIndex %2 === 0) ? 
                             Object.values(thing).map((innerThing, innerIndex) => (
                             <>
+                            
                             {/* Tooltip popup for item blurb */}
                             <HtmlTooltip title={
                                 <>
@@ -210,6 +218,7 @@ const spitArray = (arrayIn) => {
                                 </>
                             } arrow placement="top" followCursor={true}>
                             
+                            
                             {/* Table rows for each record */}
                             <TableRow
                             inputBackgroundColour="#331B18" 
@@ -217,15 +226,26 @@ const spitArray = (arrayIn) => {
                             key = {thing[0][0]}
                             id =  {"rowID-"+thing[0][0]}
                             >
-                        
-                            {/* Indidivual td elements to display each item */}
+
+                            {void AR_rowKeys.push("rowID-"+thing[0][0])}
+
+                            {/* Indidivual td elements to display each item in a row*/}
                             <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                             
                             <SuperTD NoHoverSmallTxtTD>
-                                {innerThing[1]} <VisibilityOffIcon fontSize ="inherit" id={"iconID-"+thing[0][0]} onClick={(event) => fireVisibility(event)}/>
-                            </SuperTD>
+                            {innerThing[1]} <Button HideButton
+                                                
+                                inputWidth = "20px" 
+                                inputHeight="20px" 
+                                inputMargin="3px" 
+                                inputPadding="1px" 
+                                onClick={(event) => fireVisibility(event)}>
 
-                            {console.log("From mapping, Icon ID is 'rowID"+thing[0][0]+"'.")}
+                                </Button>
+                            </SuperTD>
+{/* <VisibilityOffIcon fontSize ="inherit" /> */}
+                            {/* For testing, push each row ID in to an array. Figure out what to do next
+                            {AR_rowKeys.push("RID"+thing[0][0]+"CID"+thing[0][1])} */}
 
                             {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
                             <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
@@ -260,12 +280,14 @@ const spitArray = (arrayIn) => {
                     <SuperTD>
                         <input type="checkbox" defaultChecked={innerThing[6]}/>
                     </SuperTD>
+
                     {/* Checkbox for if item is limited */}
                     <SuperTD>
                         <input type="checkbox" defaultChecked={innerThing[7]}/>
                     </SuperTD>
 
                 </TableRow>
+                
                 </HtmlTooltip>
             </>
         ))
@@ -293,8 +315,6 @@ const spitArray = (arrayIn) => {
                 inputFontColour = "#bbbbbb" 
                 key = {innerThing[0].toString()} 
                 >
-                      {/* {console.log("From line 267→ \nKey: "+innerThing[0]+" \nFor Item: " +innerThing[2].toString()+ "\nFor Category: "+innerThing[1])} */}
-
                     <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
                     <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
                     
