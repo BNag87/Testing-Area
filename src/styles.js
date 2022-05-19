@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle, css } from "styled-components";
 import visIcon from "./Components/Reference Files/Images/visibilityOff.png"
+import visIconShow from "./Components/Reference Files/Images/visibilityOn.png"
 
 // ==========-------------------- GLOBAL STYLES
 export const GlobalStyle = createGlobalStyle`
@@ -208,10 +209,37 @@ export const TableRow = styled.tr`
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      padding: 5px;
+    
+    width: 20px;
+    height: 20px;    
+    padding: 1px;
+    margin: 3px;
+
       &:hover {
         background: url(${visIcon});
         background-color: #dddddd; //blue
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        }
+    `}
+    ${props => props.ShowButton && css`
+    
+    background-image: url(${visIconShow});
+    background-color: rgba(200,190,190, 0.2); //blue
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    border: ${props => props.inputBorder || "rgba(255, 255, 255, 0.2) 1px solid"};
+    width: 20px;
+    height: 20px;    
+    padding: 1px;
+    margin: 3px;
+
+      &:hover {
+        background: url(${visIconShow});
+        background-color: #eeeeff;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

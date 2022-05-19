@@ -20,10 +20,15 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 //==========----------→COMPONENT STARTS HERE
 export const MerchantGenerator = () => {
 
-//spits out elements of an array passed to it
-const spitArray = (arrayIn) => {
-    console.table(arrayIn);
-}
+    //spits out elements of an array passed to it
+    const spitArray = (arrayIn) => {
+        console.table(arrayIn);
+    }
+
+    //shorter version of 'console.log'
+    const bark = (input) =>{
+        console.log(input);
+    }
 
     // create usestate to track what index is being used for rendering shop data
     const [shopIndex, setShopIndex] = useState(0);
@@ -43,23 +48,45 @@ const spitArray = (arrayIn) => {
 
         try{
             //get id of element that clicked (use as an array pointer/grabber)
-            let parentID = e.target.parentElement.parentElement.id;
+            let parentID = e.target.parentElement.parentElement.className;
            
             //Remove duplicates of AR_rowKeys and put in AR_setRowKeys array
             AR_setRowKeys = [...new Set(AR_rowKeys)];
+            
+            //Get the row ID where the visibility icon was clicked
+            bark("ParentID of clicked element is: ["+parentID+"]");
+            
+            bark("AR_setRowKeys: ")
             spitArray(AR_setRowKeys)
 
-            //Now, grab all HTML references with the key ID provided. MAKE SURE KEY IS PASSED IN
-            console.log("ParentID of this element is: "+parentID);
-
-            //first, queryselect every element of the id provided
-            let ref = document.querySelectorAll(parentID).style.display
-            ref = false;
+            try{
+                //get the group of rows with the same ID
+                var els = document.getElementsByClassName(parentID)
+            
+                //loop through the new collection...
+                for(let i = 0; i < els.length; i++)
+                {
+                    //then set the display style to none to hide them. Collapses the rows!
+                    var s  = els[i].style;
+                    s.display = (s.display === 'none' ? 'block' : 'none')
+                }
+                    return(
+                        <TableRow>
+                            <SuperTD colSpan={6}>
+                                <Button ShowButton/>
+                            </SuperTD>
+                        </TableRow>
+                    )
+            }
+            catch(error)
+            {
+                bark("Bowels voided in loop:"+error)
+            }
             }
 
         catch(error)
         {
-            console.log("Pants shat in 'fireVisibilty'!\n"+error);
+            bark("Pants shat in 'fireVisibilty'!\n"+error);
         }
         //try to invert visible
         // (rowID.hidden = false) ? rowID.hidden = true : (rowID.hidden = true) ? rowID.hidden = false : console.log("Nothing wrong here!")
@@ -86,6 +113,7 @@ const spitArray = (arrayIn) => {
       let AR_setRowKeys = [];
     //empty array to store html refernces of AR_setRowKeys (gives access to element attributes, notably "hidden")
       let AR_RowRefs = [];
+
 
     //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
@@ -224,9 +252,9 @@ const spitArray = (arrayIn) => {
                             inputBackgroundColour="#331B18" 
                             inputFontColour = "#aaaaaa" 
                             key = {thing[0][0]}
-                            id =  {"rowID-"+thing[0][0]}
+                            className = {"rowID-"+thing[0][0]} 
                             >
-
+                                
                             {void AR_rowKeys.push("rowID-"+thing[0][0])}
 
                             {/* Indidivual td elements to display each item in a row*/}
@@ -240,12 +268,9 @@ const spitArray = (arrayIn) => {
                                 inputMargin="3px" 
                                 inputPadding="1px" 
                                 onClick={(event) => fireVisibility(event)}>
-
                                 </Button>
+                                <Button ShowButton/>
                             </SuperTD>
-{/* <VisibilityOffIcon fontSize ="inherit" /> */}
-                            {/* For testing, push each row ID in to an array. Figure out what to do next
-                            {AR_rowKeys.push("RID"+thing[0][0]+"CID"+thing[0][1])} */}
 
                             {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
                             <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
