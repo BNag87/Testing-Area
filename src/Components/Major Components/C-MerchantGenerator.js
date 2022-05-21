@@ -15,7 +15,6 @@ import {
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 //==========----------→COMPONENT STARTS HERE
 export const MerchantGenerator = () => {
@@ -71,6 +70,7 @@ export const MerchantGenerator = () => {
                     s.display = (s.display === 'none' ? 'block' : 'none')
                 }
                     return(
+                        
                         <TableRow>
                             <SuperTD colSpan={6}>
                                 <Button ShowButton/>
@@ -128,6 +128,7 @@ export const MerchantGenerator = () => {
                             <SuperTH colSpan={6}>
                                 <h2>Merchant Items Table</h2>
                             <hr/>
+
                         {/* TABLE BUTTONS */}
                         {/* InvisiDiv is an invisible div wrapper to help align elements */}
                             <InvisiDiv>
@@ -209,6 +210,11 @@ export const MerchantGenerator = () => {
                                 Shop Type: <H3>{objInnerValues[shopIndex][0]}</H3>
                             </InvisiDiv>
 
+                            {/* START HERE. Get element by id. element hidden = false? */}
+                            {/* Maybe a global unhide. Try button (disabled without unhidden rows). Button will  */}
+                            {/* Push hidden row ids to another array? maybe loop with a for loop to turn all row visibilities to [true] */}
+                            {/*  */}
+
                             <hr/> 
 
                         </SuperTH>
@@ -256,6 +262,8 @@ export const MerchantGenerator = () => {
                             >
                                 
                             {void AR_rowKeys.push("rowID-"+thing[0][0])}
+                            
+{/* Another row! */}
 
                             {/* Indidivual td elements to display each item in a row*/}
                             <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
