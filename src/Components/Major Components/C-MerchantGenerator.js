@@ -15,11 +15,11 @@ import {
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 //==========----------→COMPONENT STARTS HERE
 export const MerchantGenerator = () => {
 
+//==========----------→ ↓GENERAL FUNCTIONS HERE↓ ←---------==========
     //spits out elements of an array passed to it
     const spitArray = (arrayIn) => {
         console.table(arrayIn);
@@ -29,23 +29,33 @@ export const MerchantGenerator = () => {
     const bark = (input) =>{
         console.log(input);
     }
-
-    // create usestate to track what index is being used for rendering shop data
-    const [shopIndex, setShopIndex] = useState(0);
     
+//==========----------→ ↓USESTATES HERE↓ ←---------==========
+    // usestate to track what index is being used for rendering shop data
+    const [shopIndex, setShopIndex] = useState(0);
+    // useState to track if tooltips are being displayed
+    const [toolTipToggle, set_toolTipToggle] = useState(true);
+    //useState to track if an array of html elements is length 0 or not
+    const [referencesToggle, set_referencesToggle] = useState(false);
+
+//==========----------→ ↓JSON IMPORTS/CONVERSIONS HERE↓ ←---------==========
     //get the json data
     const jsonData = require("../Reference Files/Json Files/shops.json");
 
     //convert data in to an array
     const objInnerValues = Object.values(jsonData.shops)
+
+//==========----------→ ↓ARRAYS HERE↓ ←---------==========
+    //empty array to store key values of map generated table rows
+    let AR_rowKeys = [];
+    //empty array to store SET of rowKeys (removes duplicates. populated from a function)
+    let AR_setRowKeys = [];
+    //empty array to store html references of hidden table rows
+    let AR_RowRefs = [];
     
-    //function that handles onclick function of buttons that change the shop type the user is viewing. auto sorts and generates!
-    const ChangeMerchant = (input) => {
-        setShopIndex(input)
-    }
-
+//==========----------→ ↓ONCLICK FUNCTIONS HERE↓ ←---------==========
+    //function to toggle visibility of categories in item lists
     const fireVisibility = (e) => {
-
         try{
             //get id of element that clicked (use as an array pointer/grabber)
             let parentID = e.target.parentElement.parentElement.className;
@@ -94,6 +104,22 @@ export const MerchantGenerator = () => {
         
     }
 
+    //function that handles onclick function of buttons that change the shop type the user is viewing. auto sorts and generates!
+    const ChangeMerchant = (input) => {
+        setShopIndex(input)
+    }
+
+    //onClick function used to toggle tooltips from being displayed or not
+    const toggleTooltips = () => {
+        if(toolTipToggle)
+        {
+            set_toolTipToggle(false);
+        }
+        else{
+            set_toolTipToggle(true);
+        }
+    }
+//==========----------→ ↓SPECIAL COMPONENTS HERE↓ ←---------==========
     //A custom MUI tooltip that supports HTML input
     const HtmlTooltip = styled(({ className, ...props }) => (
         <Tooltip {...props} classes={{ popper: className }} />
@@ -107,15 +133,7 @@ export const MerchantGenerator = () => {
         },
       }));
 
-    //empty array to store key values of map generated table rows
-      let AR_rowKeys = [];
-    //empty array to store SET of rowKeys (removes duplicates. populated from a function)
-      let AR_setRowKeys = [];
-    //empty array to store html refernces of AR_setRowKeys (gives access to element attributes, notably "hidden")
-      let AR_RowRefs = [];
-
-
-    //==========----------→COMPONENT RETURN BLOCK STARTS HERE
+//==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
             <>
             <Wrapper>
@@ -205,11 +223,21 @@ export const MerchantGenerator = () => {
 
                             <hr/> 
 
+                            <h3>Options</h3>
                             <InvisiDiv>
-                                Shop Type: <H3>{objInnerValues[shopIndex][0]}</H3>
+                                <H3>Tooltips <Button ShowButton id="BTN_TooltipToggle" onClick={ () => toggleTooltips() }/> [{toolTipToggle == false ? "Off" : "On"}]</H3>
+                                <H3>Show Hidden Rows <Button ShowButton id="BTN_UnhideRows"/></H3>
                             </InvisiDiv>
 
                             <hr/> 
+
+                             
+                            
+                            <InvisiDiv>
+                            <h3>Shop Type</h3>
+                                <H3>{objInnerValues[shopIndex][0]}</H3>
+                            </InvisiDiv>
+                            <hr/>
 
                         </SuperTH>
                             </TableRow>
@@ -233,19 +261,20 @@ export const MerchantGenerator = () => {
                             {objInnerValues[shopIndex].map((thing, outerIndex) => (
                             
                             // Ternary operator to stop creating rows from element 0
-                            (outerIndex === 0) ? console.log("outerIndex WAS 0") : (outerIndex %2 === 0) ? 
+                            (outerIndex === 0) ? console.log("Skipping empty rows") : (outerIndex %2 === 0) ? 
                             Object.values(thing).map((innerThing, innerIndex) => (
                             <>
                             
                             {/* Tooltip popup for item blurb */}
                             <HtmlTooltip title={
-                                <>
-                                <Typography color= "inherit"><b>{innerThing[2]}</b></Typography>
+                                (toolTipToggle === false) ? "" :  <>
+                                <Typography color= "inherit">
+                                    <b>{innerThing[2]} </b> 
+                                </Typography>
                                 <hr/>
                                 <p><b>{innerThing[9]}</b></p>
                                 </>
-                            } arrow placement="top" followCursor={true}>
-                            
+                            } arrow placement="top">
                             
                             {/* Table rows for each record */}
                             <TableRow
@@ -269,7 +298,7 @@ export const MerchantGenerator = () => {
                                 inputPadding="1px" 
                                 onClick={(event) => fireVisibility(event)}>
                                 </Button>
-                                <Button ShowButton/>
+                                
                             </SuperTD>
 
                             {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
@@ -322,18 +351,14 @@ export const MerchantGenerator = () => {
                 {/* Tooltip popup for item blurb */}
 
                 <HtmlTooltip title={
-                    <>
-                    <Typography color= "inherit">
-                        <b>{innerThing[2]} </b> 
-                    </Typography>
-                    <hr/>
-                    <p><b>{innerThing[9]}</b></p>
-                    </>
-                    } 
-                    arrow
-                    placement="top"
-                    followCursor={true}
-                >
+                                (toolTipToggle === false) ? "" :  <>
+                                <Typography color= "inherit">
+                                    <b>{innerThing[2]} </b> 
+                                </Typography>
+                                <hr/>
+                                <p><b>{innerThing[9]}</b></p>
+                                </>
+                            } arrow placement="top">
 
                 <TableRow 
                 inputBackgroundColour="#1c1122" 
