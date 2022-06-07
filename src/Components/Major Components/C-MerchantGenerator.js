@@ -35,8 +35,7 @@ export const MerchantGenerator = () => {
     const [shopIndex, setShopIndex] = useState(0);
     // useState to track if tooltips are being displayed
     const [toolTipToggle, set_toolTipToggle] = useState(true);
-    //useState to track if an array of html elements is length 0 or not
-    const [referencesToggle, set_referencesToggle] = useState(false);
+    
 
 //==========----------→ ↓JSON IMPORTS/CONVERSIONS HERE↓ ←---------==========
     //get the json data
@@ -62,12 +61,6 @@ export const MerchantGenerator = () => {
            
             //Remove duplicates of AR_rowKeys and put in AR_setRowKeys array
             AR_setRowKeys = [...new Set(AR_rowKeys)];
-            
-            //Get the row ID where the visibility icon was clicked
-            bark("ParentID of clicked element is: ["+parentID+"]");
-            
-            bark("AR_setRowKeys: ")
-            spitArray(AR_setRowKeys)
 
             try{
                 //get the group of rows with the same ID
@@ -78,15 +71,11 @@ export const MerchantGenerator = () => {
                 {
                     //then set the display style to none to hide them. Collapses the rows!
                     var s  = els[i].style;
+                    var r = els[i];
+                    
                     s.display = (s.display === 'none' ? 'block' : 'none')
+                    AR_RowRefs.push(r)
                 }
-                    return(
-                        <TableRow>
-                            <SuperTD colSpan={6}>
-                                <Button ShowButton/>
-                            </SuperTD>
-                        </TableRow>
-                    )
             }
             catch(error)
             {
@@ -117,6 +106,24 @@ export const MerchantGenerator = () => {
         }
         else{
             set_toolTipToggle(true);
+        }
+    }
+
+    //onClick function to unhide any table rows that have been hidden and stored in the AR_RowRefs array
+    const showHiddenRows = () => {
+        try{
+            for(let i = 0; i<AR_RowRefs.length ; i++)
+            {
+                //set display as "table-row", keeps original formatting
+                AR_RowRefs[i].style.display = "table-row";
+            }
+            // With rows now unhidden, empty the array as it's not needed anymore
+            AR_RowRefs = [];
+        }
+        catch(error)
+        {
+            bark("BOWEL EXPLOSION in 'showHiddenRows':")
+            bark(error)
         }
     }
 //==========----------→ ↓SPECIAL COMPONENTS HERE↓ ←---------==========
@@ -222,17 +229,15 @@ export const MerchantGenerator = () => {
                             </InvisiDiv>
 
                             <hr/> 
-
+                        {/* OPTIONS PANEL */}
                             <h3>Options</h3>
                             <InvisiDiv>
                                 <H3>Tooltips <Button ShowButton id="BTN_TooltipToggle" onClick={ () => toggleTooltips() }/> [{toolTipToggle == false ? "Off" : "On"}]</H3>
-                                <H3>Show Hidden Rows <Button ShowButton id="BTN_UnhideRows"/></H3>
+                                <H3>Show Hidden Rows <Button ShowButton id="BTN_UnhideRows" onClick= { () => showHiddenRows() }/></H3>
                             </InvisiDiv>
 
                             <hr/> 
-
-                             
-                            
+                        {/* Displays the shop type currently selected */}
                             <InvisiDiv>
                             <h3>Shop Type</h3>
                                 <H3>{objInnerValues[shopIndex][0]}</H3>
@@ -242,20 +247,20 @@ export const MerchantGenerator = () => {
                         </SuperTH>
                             </TableRow>
 
-                            {/* TABLE HEADINGS */}
-                            <TableRow>
-                                <SuperTH>Item</SuperTH>
-                                <SuperTH>Category</SuperTH>
-                                <SuperTH>Weight</SuperTH>
-                                <SuperTH>Price Range</SuperTH>
-                                <HtmlTooltip title = "Is this item available at this merchant?"  arrow placement="top">
-                                    <SuperTH>Avl?</SuperTH>
-                                </HtmlTooltip>
-                                <HtmlTooltip title = "Is this item in short supply at this merchant?" arrow placement="top">
-                                    <SuperTH>Ltd?</SuperTH>
-                                </HtmlTooltip>
+                        {/* TABLE HEADINGS */}
+                        <TableRow>
+                            <SuperTH>Item</SuperTH>
+                            <SuperTH>Category</SuperTH>
+                            <SuperTH>Weight</SuperTH>
+                            <SuperTH>Price Range</SuperTH>
+                            <HtmlTooltip title = "Is this item available at this merchant?"  arrow placement="top">
+                                <SuperTH>Avl?</SuperTH>
+                            </HtmlTooltip>
+                            <HtmlTooltip title = "Is this item in short supply at this merchant?" arrow placement="top">
+                                <SuperTH>Ltd?</SuperTH>
+                            </HtmlTooltip>
 
-                            </TableRow>
+                        </TableRow>
 
 {/* ARRAY MAPPING! FIRST MAP===============================================================*/}
                             {objInnerValues[shopIndex].map((thing, outerIndex) => (
@@ -360,41 +365,51 @@ export const MerchantGenerator = () => {
                                 </>
                             } arrow placement="top">
 
-                <TableRow 
-                inputBackgroundColour="#1c1122" 
-                inputFontColour = "#bbbbbb" 
-                key = {innerThing[0].toString()} 
+                {/* Table rows for each record */}
+                <TableRow
+                    inputBackgroundColour="#111133" 
+                    inputFontColour = "#bbbbbb" 
+                    key = {thing[0][0]}
+                    className = {"rowID-"+thing[0][0]} 
                 >
-                    <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
-                    <SuperTD NoHoverSmallTxtTD>{innerThing[1]}</SuperTD>
+                <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
+                <SuperTD NoHoverSmallTxtTD>
+                    {innerThing[1]} <Button HideButton                                
+                        inputWidth = "20px" 
+                        inputHeight="20px" 
+                        inputMargin="3px" 
+                        inputPadding="1px" 
+                        onClick={(event) => fireVisibility(event)}>
+                    </Button>               
+                </SuperTD>
                     
-                    {/* Ternary operator to change lbs to N/A if weight is 0 */}
-                    <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
-                    "¼ lb" : innerThing[8] === 0.5 ? 
-                    "½ lb" : innerThing[8]+"lbs" : "N/A")}
-                    </SuperTD>
+                {/* Ternary operator to change lbs to N/A if weight is 0 */}
+                <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
+                "¼ lb" : innerThing[8] === 0.5 ? 
+                "½ lb" : innerThing[8]+"lbs" : "N/A")}
+                </SuperTD>
 
-                    {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP.
-                    Compounds values in to "[CHEAPEST] to [MOST EXPENSIVE]" */}
-                    <SuperTD NoHoverSmallTxtTD>
-                    {
-                            (innerThing[3] < 1 && innerThing[3] >= 0.1) ? 
-                                Math.floor(innerThing[3] * 10)+"sp" 
-                                    : 
-                                (innerThing[3] < 0.1 && innerThing[3] >= 0.01) ? 
-                                    Math.floor(innerThing[3] * 100)+"cp"
-                                        : 
-                                    innerThing[3]+"gp"} 
-                                    &nbsp;to&nbsp; 
-                                    {
-                                        (innerThing[5] < 1 && innerThing[5] >= 0.1) ? 
-                                            Math.floor(innerThing[5] * 10)+"sp" 
-                                            : 
-                                            (innerThing[5] < 0.1 && innerThing[5] >= 0.01) ? 
-                                                Math.floor(innerThing[5] * 100)+"cp"
-                                                : 
-                                                innerThing[5]+"gp"
-                                    }
+                {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP.
+                Compounds values in to "[CHEAPEST] to [MOST EXPENSIVE]" */}
+                <SuperTD NoHoverSmallTxtTD>
+                {
+                    (innerThing[3] < 1 && innerThing[3] >= 0.1) ? 
+                        Math.floor(innerThing[3] * 10)+"sp" 
+                        : 
+                        (innerThing[3] < 0.1 && innerThing[3] >= 0.01) ? 
+                            Math.floor(innerThing[3] * 100)+"cp"
+                        : 
+                        innerThing[3]+"gp"} 
+                        &nbsp;to&nbsp; 
+                        {
+                            (innerThing[5] < 1 && innerThing[5] >= 0.1) ? 
+                                Math.floor(innerThing[5] * 10)+"sp" 
+                                : 
+                                (innerThing[5] < 0.1 && innerThing[5] >= 0.01) ? 
+                                Math.floor(innerThing[5] * 100)+"cp"
+                                : 
+                                innerThing[5]+"gp"
+                        }
                     </SuperTD>
 
                     {/* Checkbox for if item is available */}
