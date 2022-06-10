@@ -1,4 +1,5 @@
 {
+    SEARCH FOR 391
     "shops" : 
         [
             [
@@ -488,7 +489,7 @@
                         "1d8 Piercing. Properties: None. A short wooden handle with a single pickaxe point."
                     ],
                     [
-                        23,
+                        39,
                         "Martial Melee",
                         "Warhammer", 
                         11, 
@@ -503,7 +504,7 @@
 
                 [
                     [
-                        24,
+                        40,
                         "Gear",
                         "Ball Bearings", 
                         0.7, 
@@ -515,7 +516,7 @@
                         "A bag of one thousand ball bearings. Can cover a ten foot area. Creatures moving through them must make a DC10 DEX save or fall prone. Creatures moving at half speed don't need to make a save."
                     ],
                     [
-                        25,
+                        41,
                         "Gear",
                         "Bell", 
                         0.7, 
@@ -527,7 +528,7 @@
                         "A small metal bell with a ringer in it. When rung, it can be heard up to sixty feet away."
                     ],
                     [
-                        26,
+                        42,
                         "Gear",
                         "Block & Tackle", 
                         0.7, 
@@ -539,7 +540,7 @@
                         "A set of pulleys with a cable threaded through them and a hook to attach to objects. Allows someone to hoist up to four times the weight they can normally lift."
                     ],
                     [
-                        27,
+                        43,
                         "Gear",
                         "Chain", 
                         3, 
@@ -551,7 +552,7 @@
                         "A ten foot long section of metal chain. Has ten HP and can be broken with a DC20 STR check."
                     ],
                     [
-                        28,
+                        44,
                         "Gear",
                         "Crowbar", 
                         1, 
@@ -563,7 +564,7 @@
                         "A solid metal bar meant for prying or leveraging. Using one grants advantage on STR checks where the leverage can be applied."
                     ],
                     [
-                        29,
+                        45,
                         "Gear",
                         "Grappling Hook", 
                         1, 
@@ -575,7 +576,7 @@
                         "A thirty foot length of rope with a heavy hook on the end. Can be used to climb or abseil."
                     ],
                     [
-                        30,
+                        46,
                         "Gear",
                         "Hammer", 
                         0.7, 
@@ -587,7 +588,7 @@
                         "A small hammer used by a craftsman or builder. Used for nails, minor breaching or last ditch defence."
                     ],
                     [
-                        31,
+                        47,
                         "Gear",
                         "Sledgehammer", 
                         1, 
@@ -599,7 +600,7 @@
                         "A longer, heavier hammer. Normally used for demolition."
                     ],
                     [
-                        32,
+                        48,
                         "Gear",
                         "Hunting Trap", 
                         3, 
@@ -611,7 +612,7 @@
                         "A heavy metal-toothed trap. Creatures passing over it must make a DC13 DEX save or take 1d4 piercing damage and stop moving. DC13 STR check to break free. Each failed check deals 1 piercing damage."
                     ],
                     [
-                        33,
+                        49,
                         "Gear",
                         "Lamp", 
                         0.3, 
@@ -623,7 +624,7 @@
                         "A small metal lamp. Casts bright light in a fifteen foot radius, dim light for a further thirty feet. Burns for six hours on one flask/pint of oil."
                     ],
                     [
-                        34,
+                        50,
                         "Gear",
                         "Bullseye Lantern", 
                         7, 
@@ -635,7 +636,7 @@
                         "A bullseye lantern casts bright light in a sixty foot cone and dim light for a further sixty feet. Burns for six hours on one flask/pint of oil."
                     ],
                     [
-                        35,
+                        51,
                         "Gear",
                         "Hooded Lantern", 
                         3, 
@@ -647,7 +648,7 @@
                         "A hooded lantern casts bright light in a thrity foot radius and dim light for a further thirty feet. Burns for six hours on one flask/pint of oil. As a bonus action, you can cover the lamp to cast only dim light in a five foot radius."
                     ],
                     [
-                        36,
+                        52,
                         "Gear",
                         "Lock", 
                         7, 
@@ -659,7 +660,7 @@
                         "A key is provided with the lock. WIthout it, a DC15 DEX/Sleight of Hand check is needed to open it. DMs can adjust prices for better quality locks."
                     ],
                     [
-                        37,
+                        53,
                         "Gear",
                         "Manacles", 
                         1, 
@@ -671,7 +672,7 @@
                         "Metal restraints that can bind a small or medium creature. DC20 DEX/Sleight of Hand check to escape them, or a DC20 STR check to break them. With thieves tools, DC15 DEX/Sleight of Hand check to escape the m"
                     ],
                     [
-                        38,
+                        54,
                         "Gear",
                         "Steel Mirror", 
                         3, 
@@ -683,7 +684,7 @@
                         "A small handled mirror. Weighty for its size."
                     ],
                     [
-                        39,
+                        55,
                         "Gear",
                         "Miners Pick", 
                         1, 
@@ -695,7 +696,7 @@
                         "A heavy mining pick. Excellent for breaking through rock."
                     ],
                     [
-                        40,
+                        56,
                         "Gear",
                         "Pitons", 
                         0.3, 
@@ -707,7 +708,7 @@
                         "A bag of ten metal spikes, with a hoop in the heads, that are easily driven into rocks. Used as a climbing aid. Can anchor ropes to them."
                     ],
                     [
-                        41,
+                        57,
                         "Gear",
                         "Iron Pot", 
                         1, 
@@ -719,7 +720,7 @@
                         "A metal pot that can hold one gallon of liquid."
                     ],
                     [
-                        42,
+                        58,
                         "Gear",
                         "Iron Spikes", 
                         0.7, 
@@ -731,7 +732,7 @@
                         "A bag of four solid iron spikes. Can be hammered in to most surfaces as an anchor point."
                     ],
                     [
-                        43,
+                        59,
                         "Gear",
                         "Whetstone", 
                         0.01, 
@@ -746,7 +747,7 @@
                 ,
                 [
                     [
-                        44,
+                        60,
                         "Artisan Tools",
                         "Carpenter Tools", 
                         6, 
@@ -758,7 +759,7 @@
                         "Files, chisels, saws and sandpaper are just some of the tools provided with carpenter tools. Lets you create woodwork items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        45,
+                        61,
                         "Artisan Tools",
                         "Mason Tools", 
                         7, 
@@ -770,7 +771,7 @@
                         "Hammers, precision chisels, rulers and grinders are just some of the tools provided with mason tools. Lets you create structural items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        46,
+                        62,
                         "Artisan Tools",
                         "Smith Tools", 
                         15, 
@@ -782,7 +783,7 @@
                         "Hammers, grinders, tongs and heat gloves are just some of the tools provided with smith tools. Lets you create metallic items. Includes equipment for making a basic forge and smelter. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        47,
+                        63,
                         "Artisan Tools",
                         "Tinker Tools", 
                         38, 
@@ -794,7 +795,7 @@
                         "Calipers, screwdrivers, hand-drills and angle grinders are just some of the tools provided with tinker tools. Lets you create interesting mechanical items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        48,
+                        64,
                         "Artisan Tools",
                         "Horn", 
                         2, 
@@ -812,7 +813,7 @@
                 "Fletcher/Bowyer",
                 [
                     [
-                        49,
+                        65,
                         "Simple Ranged",
                         "Light Crossbow", 
                         18, 
@@ -824,7 +825,7 @@
                         "1d8 piercing. Properties: Loading, Two-Handed, Ranged(80/320). A lightweight crossbow that's easier to draw by hand. Requires ammunition to use."
                     ],
                     [
-                        50,
+                        66,
                         "Simple Ranged",
                         "Shortbow", 
                         18, 
@@ -838,7 +839,7 @@
                 ],
                 [
                     [
-                        51,
+                        67,
                         "Martial Ranged",
                         "Hand Crossbow", 
                         56, 
@@ -850,7 +851,7 @@
                         "1d6 piercing. Properties: Light, Loading, Ranged(30/120). A lightweight hand mounted crossbow that's easy to carry and conceal. Requires ammunition to use."
                     ],
                     [
-                        52,
+                        68,
                         "Martial Ranged",
                         "Heavy Crossbow", 
                         38, 
@@ -862,7 +863,7 @@
                         "1d10 piercing. Properties: Heavy, Loading, Two-Handed, Ranged(100/400). A heavyweight crossbow with high draw power. Has a spade handle at the front to assist with reloading. Requires ammunition to use."
                     ],
                     [
-                        53,
+                        69,
                         "Martial Ranged",
                         "Longbow", 
                         38, 
@@ -877,7 +878,7 @@
                 ,
                 [
                     [
-                        54,
+                        70,
                         "Gear",
                         "Arrows", 
                         0.7, 
@@ -889,7 +890,7 @@
                         "A bundle of twenty fletched arrows, used with any bow."
                     ],
                     [
-                        55,
+                        71,
                         "Gear",
                         "Bolts", 
                         0.7, 
@@ -901,7 +902,7 @@
                         "A bundle of twenty fletched bolts, used with any crossbow."
                     ],
                     [
-                        56,
+                        72,
                         "Gear",
                         "Bowstring", 
                         1, 
@@ -913,7 +914,7 @@
                         "A pack of five waxed bowstrings. Can be used on bows or crossbows."
                     ],
                     [
-                        54,
+                        73,
                         "Gear",
                         "Bolt Case", 
                         0.7, 
@@ -925,7 +926,7 @@
                         "A simple case with a latch for storing up to twenty crossbow bolts."
                     ],
                     [
-                        54,
+                        74,
                         "Gear",
                         "Quiver", 
                         0.7, 
@@ -943,7 +944,7 @@
                 "Leatherworker",
                 [
                     [
-                        49,
+                        75,
                         "Light Armour",
                         "Leather Armour", 
                         20, 
@@ -955,7 +956,7 @@
                         "AC11. Interlocking pieces of leather, stiffened by being boiled in oil. Its joints are more flexible."
                     ],
                     [
-                        50,
+                        76,
                         "Light Armour",
                         "Studded Leather", 
                         33, 
@@ -969,7 +970,7 @@
                 ],
                 [
                     [
-                        51,
+                        77,
                         "Medium Armour",
                         "Hide Armour", 
                         7, 
@@ -984,7 +985,7 @@
                 ,
                 [
                     [
-                        52,
+                        78,
                         "Shields",
                         "Round Shield", 
                         7, 
@@ -998,7 +999,7 @@
                 ],
                 [
                     [
-                        53,
+                        79,
                         "Simple Ranged",
                         "Sling", 
                         0.5, 
@@ -1012,7 +1013,7 @@
                 ],
                 [
                     [
-                        54,
+                        80,
                         "Gear",
                         "Waterskin", 
                         0.1, 
@@ -1026,7 +1027,7 @@
                 ],
                 [
                     [
-                        55,
+                        81,
                         "Artisan Tools",
                         "Cobbler Tools", 
                         3, 
@@ -1038,7 +1039,7 @@
                         "Precision knives, tape measures, needles and threads are a few of the tools provided with cobbler tools. Lets you create footwear items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        56,
+                        82,
                         "Artisan Tools",
                         "Leatherworker Tools", 
                         3, 
@@ -1050,7 +1051,7 @@
                         "Precision knives, tanning racks, oils and clamps are a few of the tools provided with leatherworker tools. Lets you create leather items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        57,
+                        83,
                         "Artisan Tools",
                         "Bagpipes", 
                         22, 
@@ -1062,7 +1063,7 @@
                         "A set of bagpipes. If you have proficiency with this instrument, you can add your proficiency bonus to any Perform checks you make to play it. Each type of instrument requires a seperate proficiency."
                     ],
                     [
-                        58,
+                        84,
                         "Artisan Tools",
                         "Drum", 
                         4, 
@@ -1080,7 +1081,7 @@
                 "Temple/Faith Gear",
                 [
                     [
-                        59,
+                        85,
                         "Gear",
                         "Alms Box", 
                         3, 
@@ -1092,7 +1093,7 @@
                         "A wooden box for collecting alms. Has the local holy symbol etched in to it."
                     ],
                     [
-                        60,
+                        86,
                         "Gear",
                         "Bell", 
                         0.7, 
@@ -1104,7 +1105,7 @@
                         "A polished small metal bell with the local holy symbol etched in to it. Used to signal processions."
                     ],
                     [
-                        61,
+                        87,
                         "Gear",
                         "Blanket", 
                         0.3, 
@@ -1116,7 +1117,7 @@
                         "A simple knitted blanket. Enough for one person to sleep under."
                     ],
                     [
-                        62,
+                        88,
                         "Gear",
                         "Scripture Book", 
                         18, 
@@ -1128,7 +1129,7 @@
                         "A large ornate book of holy scripture of the local religion."
                     ],
                     [
-                        63,
+                        89,
                         "Gear",
                         "Candle", 
                         0.01, 
@@ -1140,7 +1141,7 @@
                         "A simple wax candle. Wider and taller so it lasts longer."
                     ],
                     [
-                        64,
+                        90,
                         "Gear",
                         "Map/Scroll Case", 
                         0.7, 
@@ -1152,7 +1153,7 @@
                         "A protective tube that keeps rolled up maps or scrolls safe from the elements."
                     ],
                     [
-                        65,
+                        91,
                         "Gear",
                         "Censer", 
                         3, 
@@ -1164,7 +1165,7 @@
                         "An ornamental container that burns incense. Used during holy events."
                     ],
                     [
-                        66,
+                        92,
                         "Gear",
                         "Chalk", 
                         0.1, 
@@ -1176,7 +1177,7 @@
                         "A bundle of five chalk pieces."
                     ],
                     [
-                        67,
+                        93,
                         "Gear",
                         "Flask", 
                         0.5, 
@@ -1188,7 +1189,7 @@
                         "A bundle of five small glass flasks. Normally used for potions or just storing liquids."
                     ],
                     [
-                        68,
+                        94,
                         "Gear",
                         "Holy Symbol", 
                         3, 
@@ -1200,7 +1201,7 @@
                         "Either an amulet, emblem or reliquary with the symbol of the local religion etched on it."
                     ],
                     [
-                        69,
+                        95,
                         "Gear",
                         "Healers Kit", 
                         3, 
@@ -1212,7 +1213,7 @@
                         "A leather pouch containing bandages, salves and splints. Has ten uses. As an action, you can spend one use of the kit to stabilize a creature that has no HP without needing to make a Medicine check."
                     ],
                     [
-                        70,
+                        96,
                         "Gear",
                         "Holy Water", 
                         18, 
@@ -1224,7 +1225,7 @@
                         "A single flask, filled with holy water. Can be thrown up to twenty feet. If the target is a fiend or undead, they take 2d6 radiant damage."
                     ],
                     [
-                        71,
+                        97,
                         "Gear",
                         "Incense", 
                         0.1, 
@@ -1236,7 +1237,7 @@
                         "A single dried block of fragrant woods, flowers and herbs. Usually used in holy rituals."
                     ],
                     [
-                        72,
+                        98,
                         "Gear",
                         "Ink Bottle", 
                         7, 
@@ -1248,7 +1249,7 @@
                         "A bottle of ink. No quill included."
                     ],
                     [
-                        73,
+                        99,
                         "Gear",
                         "Fountain Pen", 
                         2, 
@@ -1260,7 +1261,7 @@
                         "An ornate pen with an inkwell inside of it."
                     ],
                     [
-                        74,
+                        100,
                         "Gear",
                         "Lamp", 
                         0.3, 
@@ -1272,7 +1273,7 @@
                         "A small metal lamp. Casts bright light in a fifteen foot radius, dim light for a further thirty feet. Burns for six hours on one flask/pint of oil."
                     ],
                     [
-                        75,
+                        101,
                         "Gear",
                         "Hooded Lantern", 
                         3, 
@@ -1284,7 +1285,7 @@
                         "A hooded lantern casts bright light in a thrity foot radius and dim light for a further thirty feet. Burns for six hours on one flask/pint of oil. As a bonus action, you can cover the lamp to cast only dim light in a five foot radius."
                     ],
                     [
-                        76,
+                        102,
                         "Gear",
                         "Oil", 
                         0.1, 
@@ -1296,7 +1297,7 @@
                         "A flask of flammable oil, normally used as fuel for lanterns."
                     ],
                     [
-                        77,
+                        103,
                         "Gear",
                         "Paper", 
                         0.1, 
@@ -1308,7 +1309,7 @@
                         "A single sheet of paper for writing on."
                     ],
                     [
-                        78,
+                        104,
                         "Gear",
                         "Parchment", 
                         0.2, 
@@ -1320,7 +1321,7 @@
                         "A single sheet of parchment. Tougher than paper and doesn't smudge as easily."
                     ],
                     [
-                        79,
+                        105,
                         "Gear",
                         "Perfume Vial", 
                         3, 
@@ -1332,7 +1333,7 @@
                         "A single vial of a nice fragrance. Rubbed on to skin and stays for 1d6 hours."
                     ],
                     [
-                        80,
+                        106,
                         "Gear",
                         "Potion of Healing", 
                         38, 
@@ -1344,7 +1345,7 @@
                         "Drink to regain 2d4+2 HP. The red liquid glimmers when agitated."
                     ],
                     [
-                        81,
+                        107,
                         "Gear",
                         "Rations", 
                         0.3, 
@@ -1356,7 +1357,7 @@
                         "A wrapped pack of dried fruits/nuts/meats/fish that last for a long time."
                     ],
                     [
-                        82,
+                        108,
                         "Gear",
                         "Torch", 
                         0.1, 
@@ -1368,7 +1369,7 @@
                         "A sturdy wooden torch. Emits bright light in a thirty foot radius, dim light for a further thirty feet beyond that."
                     ],
                     [
-                        83,
+                        109,
                         "Gear",
                         "Vial", 
                         0.7, 
@@ -1380,7 +1381,7 @@
                         "A single empty glass vial. Normally used to collect samples for research purposes."
                     ],
                     [
-                        84,
+                        110,
                         "Gear",
                         "Waterskin", 
                         0.2, 
@@ -1394,7 +1395,7 @@
                 ],
                 [
                     [
-                        85,
+                        111,
                         "Artisan Tools",
                         "Calligraphy Tools", 
                         7, 
@@ -1406,7 +1407,7 @@
                         "Pencils, quills, stencils and putty are a few of the tools provided with calligraphy set. Lets you create written items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        86,
+                        112,
                         "Artisan Tools",
                         "Herbalism Kit", 
                         3, 
@@ -1418,7 +1419,7 @@
                         "Strainers, a mortar and pestle, a drying rack and vial racks are a few of the tools provided with a herbalists kit. Lets you create remedies and potions. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],                
                     [
-                        87,
+                        113,
                         "Artisan Tools",
                         "Flute", 
                         1, 
@@ -1430,7 +1431,7 @@
                         "A wooden flute. If you have proficiency with this instrument, you can add your proficiency bonus to any Perform checks you make to play it. Each type of instrument requires a seperate proficiency."
                     ],
                     [
-                        88,
+                        114,
                         "Artisan Tools",
                         "Lyre", 
                         22, 
@@ -1442,7 +1443,7 @@
                         "A U-shaped harp with strings attached to a crossbar. If you have proficiency with this instrument, you can add your proficiency bonus to any Perform checks you make to play it. Each type of instrument requires a seperate proficiency."
                     ],
                     [
-                        89,
+                        115,
                         "Artisan Tools",
                         "Horn", 
                         2, 
@@ -1456,7 +1457,7 @@
                 ],
                 [
                     [
-                        90,
+                        116,
                         "Services",
                         "Cure Wounds", 
                         7, 
@@ -1468,7 +1469,7 @@
                         "Level 1 Spell. Regain 1d8 + Spellcasting Modifier as HP. Does not work on undead or constructs."
                     ],
                     [
-                        91,
+                        117,
                         "Services",
                         "Gentle Repose", 
                         38, 
@@ -1480,7 +1481,7 @@
                         "Level 2 Spell. A corpse is protected from the effects of decay and can't become undead. Extends the amount of time before the target can't be revived."
                     ],
                     [
-                        92,
+                        118,
                         "Services",
                         "Lesser Restoration", 
                         38, 
@@ -1492,7 +1493,7 @@
                         "Level 2 Spell. A target can end ONE disease or ONE condition afflicting it. These include Blinded, Deafeaned, Paralysed or Poisoned."
                     ],
                     [
-                        93,
+                        119,
                         "Services",
                         "Remove Curse", 
                         75, 
@@ -1504,7 +1505,7 @@
                         "Level 3 Spell. A creature, or object, has all curses on it end. If the object is a cursed magic item, the curse remains but the spell breaks the attunement to the owner, so it can at least be removed or discarded."
                     ],
                     [
-                        94,
+                        120,
                         "Services",
                         "Revivify", 
                         375, 
@@ -1516,7 +1517,7 @@
                         "Level 3 Spell. A creature that has died in the last minute is returned to life with one HP. Cannot revivify someone who has died of old age, nor can it restore missing body parts."
                     ],
                     [
-                        95,
+                        121,
                         "Services",
                         "Raise Dead", 
                         875, 
@@ -1535,7 +1536,7 @@
                 "Bookseller/Library",
                 [
                     [
-                        96,
+                        122,
                         "Common Non-Fiction",
                         "101 Garlic Recipes", 
                         6, 
@@ -1548,7 +1549,7 @@
                     ],
 
                     [
-                        97,
+                        123,
                         "Common Non-Fiction",
                         "20,000 Leagues Under The Sea", 
                         6, 
@@ -1561,7 +1562,7 @@
                     ],
 
                     [
-                        98,
+                        124,
                         "Common Non-Fiction",
                         "A Brief History of Undermountain", 
                         6, 
@@ -1574,7 +1575,7 @@
                     ],
 
                     [
-                        99,
+                        125,
                         "Common Non-Fiction",
                         "A Dissertation of Law and Morality", 
                         6, 
@@ -1587,7 +1588,7 @@
                     ],
 
                     [
-                        100,
+                        126,
                         "Common Non-Fiction",
                         "A Glimpse in to the Abyss", 
                         6, 
@@ -1600,7 +1601,7 @@
                     ],
 
                     [
-                        101,
+                        127,
                         "Common Non-Fiction",
                         "A Guide to the Cold North", 
                         6, 
@@ -1613,7 +1614,7 @@
                     ],
 
                     [
-                        102,
+                        128,
                         "Common Non-Fiction",
                         "A Guide to the Underdark", 
                         6, 
@@ -1626,7 +1627,7 @@
                     ],
 
                     [
-                        103,
+                        129,
                         "Common Non-Fiction",
                         "A is for Azuth, and Other Gods", 
                         6, 
@@ -1639,7 +1640,7 @@
                     ],
 
                     [
-                        104,
+                        130,
                         "Common Non-Fiction",
                         "A Manyrealms Gallimaufry", 
                         6, 
@@ -1652,7 +1653,7 @@
                     ],
 
                     [
-                        105,
+                        131,
                         "Common Non-Fiction",
                         "A Merchant Master's Life", 
                         6, 
@@ -1665,7 +1666,7 @@
                     ],
 
                     [
-                        106,
+                        132,
                         "Common Non-Fiction",
                         "A Merchant's Sagacity", 
                         6, 
@@ -1678,7 +1679,7 @@
                     ],
 
                     [
-                        107,
+                        133,
                         "Common Non-Fiction",
                         "A Merchant's Tale", 
                         6, 
@@ -1691,7 +1692,7 @@
                     ],
 
                     [
-                        108,
+                        134,
                         "Common Non-Fiction",
                         "A Noble's guide to Etiquette", 
                         6, 
@@ -1704,7 +1705,7 @@
                     ],
 
                     [
-                        109,
+                        135,
                         "Common Non-Fiction",
                         "A Primer on Mythical Beasts", 
                         6, 
@@ -1717,7 +1718,7 @@
                     ],
 
                     [
-                        110,
+                        136,
                         "Common Non-Fiction",
                         "A Rulers Guide", 
                         6, 
@@ -1730,7 +1731,7 @@
                     ],
 
                     [
-                        111,
+                        137,
                         "Common Non-Fiction",
                         "A Sages Travel Guide to the North", 
                         6, 
@@ -1743,7 +1744,7 @@
                     ],
 
                     [
-                        112,
+                        138,
                         "Common Non-Fiction",
                         "A Shorter History of Amn", 
                         6, 
@@ -1756,7 +1757,7 @@
                     ],
 
                     [
-                        113,
+                        139,
                         "Common Non-Fiction",
                         "A Slave's Life", 
                         6, 
@@ -1769,7 +1770,7 @@
                     ],
 
                     [
-                        114,
+                        140,
                         "Common Non-Fiction",
                         "A Warrior's Views", 
                         6, 
@@ -1782,7 +1783,7 @@
                     ],
 
                     [
-                        115,
+                        141,
                         "Common Non-Fiction",
                         "A Wayfarer's Belt-Book of Advice", 
                         6, 
@@ -1795,7 +1796,7 @@
                     ],
 
                     [
-                        116,
+                        142,
                         "Common Non-Fiction",
                         "Adventurer's Guide", 
                         6, 
@@ -1808,7 +1809,7 @@
                     ],
 
                     [
-                        117,
+                        143,
                         "Common Non-Fiction",
                         "Adventures of Grin, Richard and Wu-Wei", 
                         6, 
@@ -1822,7 +1823,7 @@
 
                     [
                         
-                        9999,
+                        144,
                         "Common Non-Fiction",
                         "Amn's Arms and Armour", 
                         6, 
@@ -1836,7 +1837,7 @@
 
                     [
                         
-                        9999,
+                        145,
                         "Common Non-Fiction",
                         "Ancient Lore on Shevarash", 
                         6, 
@@ -1849,7 +1850,7 @@
                     ],
 
                     [ 
-                        9999,
+                        147,
                         "Common Non-Fiction",
                         "Historie of the Settled Lands", 
                         6, 
@@ -1862,7 +1863,7 @@
                     ],
 
                     [ 
-                        9999,
+                        148,
                         "Common Non-Fiction",
                         "Armour through the Ages", 
                         6, 
@@ -1875,7 +1876,7 @@
                     ],
 
                     [ 
-                        9999,
+                        149,
                         "Common Non-Fiction",
                         "Behaviour of Insects", 
                         6, 
@@ -1888,7 +1889,7 @@
                     ],
 
                     [ 
-                        9999,
+                        150,
                         "Common Non-Fiction",
                         "Beware the Lizard Marsh", 
                         6, 
@@ -1901,7 +1902,7 @@
                     ],
 
                     [ 
-                        9999,
+                        151,
                         "Common Non-Fiction",
                         "Book of Black Tidings", 
                         6, 
@@ -1913,7 +1914,7 @@
                         "This book talks about the criminal and mundane powers of Calimport at the time of the books release."
                     ],
                     [ 
-                        9999,
+                        152,
                         "Common Non-Fiction",
                         "The City of Neverwinter", 
                         6, 
@@ -1925,7 +1926,7 @@
                         "This book describes the city of Neverwinter as the crown jewel of northern Faerun. It details the city's history as well as it's many skilled merchants that comptete to optimise and refine on every design they make."
                     ],
                     [ 
-                        9999,
+                        153,
                         "Common Non-Fiction",
                         "Dethek: Dialects and Diction", 
                         6, 
@@ -1937,7 +1938,7 @@
                         "Contains information about Dethek, the runic script of the Dwarven language and its unique style of phrasing and writing. Also contains a guide on translating Dethek in to the common alphabet."
                     ],
                     [ 
-                        9999,
+                        154,
                         "Common Non-Fiction",
                         "Exotic Weaponry", 
                         6, 
@@ -1949,7 +1950,7 @@
                         "A collection of guides and personal battle experiences of a legendary paladin. It details how weapons made of different ores can actually provide advantages against specific types of hostiles."
                     ],
                     [ 
-                        9999,
+                        155,
                         "Common Non-Fiction",
                         "Falcon Fun", 
                         6, 
@@ -1961,7 +1962,7 @@
                         "Book of the doctrine of shadow druids. It claims that the balance of nature was a myth and that shadow druids should become isolationists and hostile. An excerpt reads: \"We are thunder, and we are rain. We shatter mankind, and grow new life in its place.\""
                     ],
                     [ 
-                        9999,
+                        156,
                         "Common Non-Fiction",
                         "Folksongs of Faerun", 
                         6, 
@@ -1973,7 +1974,7 @@
                         "A collection of folksongs from across Faerun, collected and shared by many bards in to an impressively thick volume.\""
                     ],
                     [ 
-                        9999,
+                        157,
                         "Common Non-Fiction",
                         "Ghost of Conyberry", 
                         6, 
@@ -1985,7 +1986,7 @@
                         "A book that details the hunt for a ghost, later revealed to be a banshee that stalked the town of Conyberry in the Neverwinter Woods."
                     ],
                     [ 
-                        9999,
+                        158,
                         "Common Non-Fiction",
                         "The Giantess's Curse", 
                         6, 
@@ -1997,7 +1998,7 @@
                         "Details the fall of a tribe of Giants after one of their queens bargained with a being from the hells in a bid to gain more power."
                     ],
                     [ 
-                        9999,
+                        159,
                         "Common Non-Fiction",
                         "Gnomish Firing Techniques", 
                         6, 
@@ -2009,7 +2010,7 @@
                         "A series of diagrams and heklpful explanations on how to fire flintlock firearms more quickly."
                     ],
                     [ 
-                        9999,
+                        160,
                         "Common Non-Fiction",
                         "Gold amidst Dragonfire", 
                         6, 
@@ -2021,7 +2022,7 @@
                         "Details of how a legendary band of adventurers fought and killed a Dragon. It also details the dragons hoard and just how difficult it was to move all of it, even with wagons."
                     ],
                     [ 
-                        9999,
+                        161,
                         "Common Non-Fiction",
                         "Great Goblin Recipes", 
                         6, 
@@ -2033,7 +2034,7 @@
                         "A set of recipes written by a captive of goblins that was held for several years before being rescued."
                     ],
                     [ 
-                        9999,
+                        162,
                         "Common Non-Fiction",
                         "Hippogriff Riders of the Hand", 
                         6, 
@@ -2045,7 +2046,7 @@
                         "A book that details how a division of Hippogriff riders train with their mounts since birth. It elbaorates on how effective the teamwork of each rider is due to this training and details how to care for Hippogriffs."
                     ],
                     [ 
-                        9999,
+                        163,
                         "Common Non-Fiction",
                         "History of Daggerford", 
                         6, 
@@ -2057,7 +2058,7 @@
                         "A detailed account of the City of Daggerford. It explains that the cities reuptation for harbouring criminals is a rumor that spun out of control when a corrupt politician was caught hiding from the law in the city."
                     ],
                     [ 
-                        9999,
+                        164,
                         "Common Non-Fiction",
                         "History of the Creator Races", 
                         6, 
@@ -2069,7 +2070,7 @@
                         "A thick book that details and suggests the origins of the first races to walk in Faerun. Though speculative, it is insightful."
                     ],
                     [ 
-                        9999,
+                        165,
                         "Common Non-Fiction",
                         "History of Halfing Farming", 
                         6, 
@@ -2081,7 +2082,7 @@
                         "A book that describes the farming methods of several prominent Halfling villages. It also details useful tricks and tips for gaining abundant yields of crops. Often cited by many as required reading for hopeful farmers."
                     ],
                     [ 
-                        9999,
+                        166,
                         "Common Non-Fiction",
                         "History of Halruaa", 
                         6, 
@@ -2093,7 +2094,7 @@
                         "A detailed history of an ancient settlement of wizards who fled the persecution of the Netherese. It also details how extremists were banned from the city and went on to found the city of Thay."
                     ],
                     [ 
-                        9999,
+                        167,
                         "Common Non-Fiction",
                         "History of the North", 
                         6, 
@@ -2105,7 +2106,7 @@
                         "A detailed account of the various histories that defined the northern realms. Not in chornological order, but a thematic order that makes it easier to digest."
                     ],
                     [ 
-                        9999,
+                        168,
                         "Common Non-Fiction",
                         "How to Win Friends", 
                         6, 
@@ -2117,7 +2118,7 @@
                         "A book that offers insights in to broadening emotional intelligence."
                     ],
                     [ 
-                        9999,
+                        169,
                         "Common Non-Fiction",
                         "Jakes Eel Encyclopedia", 
                         6, 
@@ -2129,7 +2130,7 @@
                         "A thick book that details different species of Eels. Included are several diagrams and biological information for each variant."
                     ],
                     [ 
-                        9999,
+                        170,
                         "Common Non-Fiction",
                         "Life Beneath the Sails", 
                         6, 
@@ -2141,7 +2142,7 @@
                         "A recounting of a life-long sailors experience on the seas. From fishing to sighting an ancient and deadly Kraken, many topics are covered. There is also a great deal of useful information for traversing and survivng the seas."
                     ],
                     [ 
-                        9999,
+                        171,
                         "Common Non-Fiction",
                         "Life of Rebrum", 
                         6, 
@@ -2153,7 +2154,7 @@
                         "A bawdy autobiography of a traveling merchant that has been frequently copied. It details a trade fair in the Underdark where unique Drow artefacts can be found."
                     ],
                     [ 
-                        9999,
+                        172,
                         "Common Non-Fiction",
                         "Lines of the North", 
                         6, 
@@ -2165,7 +2166,7 @@
                         "A book that details the road networks of the Northern Realms. Particularly useful as it details roads not visible on currently printed maps."
                     ],
                     [ 
-                        9999,
+                        173,
                         "Common Non-Fiction",
                         "Musings of an Ale Seller", 
                         6, 
@@ -2177,7 +2178,7 @@
                         "This book details the thoughts of an ale seller over a life-long career in the field. Has thoughtful musings on the dispositions of peasants and kings as well as insightful thoughts about spies."
                     ],
                     [ 
-                        9999,
+                        174,
                         "Common Non-Fiction",
                         "Musings on the Realms", 
                         6, 
@@ -2189,7 +2190,7 @@
                         "A collection of proverbs and wisdom collected from experienced people and adventurers. One excerpt reads \"Castles are well and good, but if you've not the strength to hold them...they rapidly become grand expensive tombs.\""
                     ],
                     [ 
-                        9999,
+                        175,
                         "Common Non-Fiction",
                         "My Adventures in the Realms", 
                         6, 
@@ -2201,7 +2202,7 @@
                         "An autobiography of the authors adventures. Contains insightful opinions on a variety of subjects. One excerpt reads \"I never read. No good comes of reading.\""
                     ],
                     [ 
-                        9999,
+                        176,
                         "Common Non-Fiction",
                         "My Dinner with Goblins", 
                         6, 
@@ -2213,7 +2214,7 @@
                         "A comedic book that tells of a young man hosting a dinner for his noble mother. The guests are all goblins."
                     ],
                     [ 
-                        9999,
+                        177,
                         "Common Non-Fiction",
                         "Nelanther Isles", 
                         6, 
@@ -2225,7 +2226,7 @@
                         "Details the location of the Nelanther isles, west of the Sword Coast. An archipelago where piracy became rampant due to the isolated nature of the settlements that developed there. Home to many pirate vessels, worshippers of the bitch queen Umberlee and a dangerous cutthroat culture."
                     ],
                     [ 
-                        9999,
+                        178,
                         "Common Non-Fiction",
                         "Northern Four Adventuring Troupe", 
                         6, 
@@ -2237,7 +2238,7 @@
                         "A recounting of the various exploits of a prominent band of adventurers. Included are useful tips at remaining hidden amongst many enemies and ways to identify magical traps."
                     ],
                     [ 
-                        9999,
+                        179,
                         "Common Non-Fiction",
                         "Off the Map", 
                         6, 
@@ -2249,7 +2250,7 @@
                         "A guide on how to survive in uncharted lands. Includes guides on how to track landmarks, identify edible food and even how to triangulate a position."
                     ],
                     [ 
-                        9999,
+                        180,
                         "Common Non-Fiction",
                         "On Worshipping Umberlee", 
                         6, 
@@ -2261,7 +2262,7 @@
                         "Covers the malicious stormgoddess of the sees. A petty personality with a love of flattery and power. Talks about her church being disorganised and prone to violence. Also details holy customs and festivals."
                     ],
                     [ 
-                        9999,
+                        181,
                         "Common Non-Fiction",
                         "One Halflings Wisdom", 
                         6, 
@@ -2273,7 +2274,7 @@
                         "A collection of stories told by an elder Halfing in his twilight years. The stories inspire confidence and fairness. One excerpt reads \"If you come in to possesion of a magical artefact that a family member has kept hidden for years, just leave it. Your life will be far less complicated\""
                     ],
                     [ 
-                        9999,
+                        182,
                         "Common Non-Fiction",
                         "Oral Histories: Gith and Illithid", 
                         6, 
@@ -2285,7 +2286,7 @@
                         "A telling of the great war between the Gityanki, the faction that later became the Githzerai and the Illithids. It shows a turning point in the war was when Vlaakith made a deal with Tiamat for red dragons in exchange for eternal service."
                     ],
                     [ 
-                        9999,
+                        183,
                         "Common Non-Fiction",
                         "Orcish Percussion Techniques", 
                         6, 
@@ -2297,7 +2298,7 @@
                         "A book that shows techniques of Orchish percusion players. Particular mention is given to stamina training to endure strong percussion beats, inspired from many war drummers."
                     ],
                     [ 
-                        9999,
+                        184,
                         "Common Non-Fiction",
                         "Psalms to the Old Oak", 
                         6, 
@@ -2309,7 +2310,7 @@
                         "A book of prayers used by Druids. A dense moss clings to the cover."
                     ],
                     [ 
-                        9999,
+                        185,
                         "Common Non-Fiction",
                         "Recipes for Knaves", 
                         6, 
@@ -2321,7 +2322,7 @@
                         "A set of recipes passed down from knights to the subordinates. The recipes are fairly simple but produce satisfying and tasty meals. Ample pages are devoted to the use of herbs and spices."
                     ],
                     [ 
-                        9999,
+                        186,
                         "Common Non-Fiction",
                         "Religions of the Moonsea", 
                         6, 
@@ -2333,7 +2334,7 @@
                         "This tome talks of how each god worshipped within the Moonsea region are all evil ones, following the dogma of \"Worship me, or bad things will happen to you.\" or alternatively \"Worship me or I will do bad things to you\". Common folk pay lip service out of superstition, whilst outsiders generally avoid the region."
                     ],
                     [ 
-                        9999,
+                        187,
                         "Common Non-Fiction",
                         "'Rock Eaters' They are Not", 
                         6, 
@@ -2345,7 +2346,7 @@
                         "A book dedicated to debunking the percieved stereotypes of Dwarves."
                     ],
                     [ 
-                        9999,
+                        188,
                         "Common Non-Fiction",
                         "Teachings of Morning Glory", 
                         6, 
@@ -2357,7 +2358,7 @@
                         "A book of the holy texts of Lathander. It preaches that every generation should be improved more than the one before it. Stronger, richer, wiser or richer. It also says that rulers are responsible for providing a safe realm for these generations to flourish."
                     ],
                     [ 
-                        9999,
+                        189,
                         "Common Non-Fiction",
                         "Tempo and Improvisation", 
                         6, 
@@ -2369,7 +2370,7 @@
                         "A reference book that details the music of Dwarves, Elves and Halflings. It also mentions common practices amongst musicians of these races and compares them."
                     ],
                     [ 
-                        9999,
+                        190,
                         "Common Non-Fiction",
                         "Tending Ivy", 
                         6, 
@@ -2381,7 +2382,7 @@
                         "A tome of botanical knowledge from the Hand of the Seldarine. It details how to care for exotic plants as well as the environments that they need to grow."
                     ],
                     [ 
-                        9999,
+                        191,
                         "Common Non-Fiction",
                         "The Trade of Blades", 
                         6, 
@@ -2393,7 +2394,7 @@
                         "Contains stories of a travelling weapons merchant. There are thoughtful entries on dealing with foreign entities, as well as customs of different races that help if followed when trading."
                     ],
                     [ 
-                        9999,
+                        192,
                         "Common Non-Fiction",
                         "Trade Way Travel Stops", 
                         6, 
@@ -2405,7 +2406,7 @@
                         "A well annotated guide to taverns, villages, towns and generally nice places for a travelling merchant to rest."
                     ],
                     [ 
-                        9999,
+                        193,
                         "Common Non-Fiction",
                         "Trail Tales of the North", 
                         6, 
@@ -2417,7 +2418,7 @@
                         "A collection of stories from travellers who have seen extraordinary things whilst travelling the lonesome roads through the north. Sightings of unusual beasts, mirages and even an Iffrit are some of the stories told."
                     ],
                     [ 
-                        9999,
+                        194,
                         "Common Non-Fiction",
                         "Treatise on Good Wifery", 
                         6, 
@@ -2427,12 +2428,108 @@
                         false,
                         1,
                         "A guide on how housewives can perform their chores more easily and with greater efficiency. Often said to be the most misogynistic book in existence."
+                    ],
+                    [ 
+                        195,
+                        "Common Non-Fiction",
+                        "View from Secomber", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "A book of predications and hopes for the future of the world. Includes many opinions form skilled tradesmen and tradeswomen that earnestly try to predict the development of society and technology based on current trends. Called optimistic by some and unrealistic by others, it is still a thought provoking insight into modern society on Toril."
+                    ],
+                    [ 
+                        196,
+                        "Common Non-Fiction",
+                        "View from Stormwind Hill", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "A published battle report after the end of a brutal skirmish between a small detachment of human knights defending against a marauding war band of Orcs. It details that they knights held Storwmind Hill at its highest point of the hill, inside a crumbling keep, to hold an advantage against the larger numbers of Orcs."
+                    ],
+                    [ 
+                        197,
+                        "Common Non-Fiction",
+                        "Waterdeep", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "A guide to the city of splendors, Waterdeep. The history of the city is detailed as starting with a prosperous trading centre that then developed farming areas before it's first lord emerged. Also explains the role of the masked lords, who keep the peace in the city."
+                    ],
+                    [ 
+                        198,
+                        "Common Non-Fiction",
+                        "The Way of a Wizard", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "Collected information about wizardly pursuits and Mystran worship."
+                    ],
+                    [ 
+                        199,
+                        "Common Non-Fiction",
+                        "The Way of the Gods", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "A contemplative work about the mindsets of greater dieties. It tries to examine each as if they were a king or queen and how they interact with their subjects."
+                    ],
+                    [ 
+                        200,
+                        "Common Non-Fiction",
+                        "The Well-Stocked Laboratory", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "A reference manual found in most laboratories in the Realms. Useful for apprentices or masters alike."
+                    ],
+                    [ 
+                        201,
+                        "Common Non-Fiction",
+                        "Why I'm a Harper", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "A book that details one Harper agents motivation for remaining with the secretive group for so many years. It details them noticing how effortless one of their senior members made things seem and always having the energy to do more. The book details some aspects of Harper work that ignite the imagination."
+                    ],
+                    [ 
+                        202,
+                        "Common Non-Fiction",
+                        "Yielding Tide", 
+                        6, 
+                        8, 
+                        10,
+                        true,
+                        false,
+                        1,
+                        "A story of how adept wizards from a lost realm once trapped a lesser goddess on Toril in order to steal her power. Legends say she is still trapped beneath the ruins of a forgotten city."
                     ]
                 ],
 
                 [
                     [
-                        118,
+                        203,
                         "Uncommon Non-Fiction",
                         "A Harpers Companion", 
                         14, 
@@ -2445,7 +2542,7 @@
                     ],
 
                     [
-                        119,
+                        204,
                         "Uncommon Non-Fiction",
                         "A Harpers Guide", 
                         14, 
@@ -2458,7 +2555,7 @@
                     ],
 
                     [
-                        120,
+                        205,
                         "Uncommon Non-Fiction",
                         "A Harpers Song", 
                         14, 
@@ -2471,7 +2568,7 @@
                     ],
 
                     [
-                        121,
+                        206,
                         "Uncommon Non-Fiction",
                         "Historical Treatise on Dragonspear", 
                         14, 
@@ -2484,7 +2581,7 @@
                     ],
 
                     [
-                        122,
+                        207,
                         "Uncommon Non-Fiction",
                         "A History of Draconic Interactions", 
                         14, 
@@ -2497,7 +2594,7 @@
                     ],
 
                     [
-                        123,
+                        208,
                         "Uncommon Non-Fiction",
                         "A Myth Drannan Amphigory", 
                         14, 
@@ -2510,7 +2607,7 @@
                     ],
 
                     [
-                        124,
+                        209,
                         "Uncommon Non-Fiction",
                         "Aesthetics of Human Anatomy", 
                         14, 
@@ -2523,8 +2620,7 @@
                     ],
 
                     [
-                        
-                        9999,
+                        210,
                         "Uncommon Non-Fiction",
                         "An Archmages Life at Court", 
                         14, 
@@ -2536,9 +2632,8 @@
                         "An account of the days an archmage spent as a court wizard. it describes the ruler falling deeper in to madness as he became more and more paranoid of threats, real and fake as the days went by. Eventually, the archmage was tasked with interviewing everyone within the court under a zone of truth. The author confesses that it was he who plotted the madness of the ruler in a bid to learn how the human mind can break."  
                     ],
 
-                    [
-                        
-                        9999,
+                    [   
+                        211,
                         "Uncommon Non-Fiction",
                         "An Ecology of the Planes", 
                         14, 
@@ -2551,7 +2646,7 @@
                     ],
 
                     [ 
-                        9999,
+                        212,
                         "Uncommon Non-Fiction",
                         "Art of Golem Crafting", 
                         14, 
@@ -2564,8 +2659,7 @@
                     ],
 
                     [
-                        
-                        9999,
+                        213,
                         "Uncommon Non-Fiction",
                         "The Art of Necromancy", 
                         14, 
@@ -2578,8 +2672,7 @@
                     ],
 
                     [
-                        
-                        9999,
+                        214,
                         "Uncommon Non-Fiction",
                         "The Art of Weaponcrafting", 
                         14, 
@@ -2592,7 +2685,7 @@
                     ],
 
                     [
-                        9999,
+                        215,
                         "Uncommon Non-Fiction",
                         "Better Caves and Dungeons Cookbook", 
                         14, 
@@ -2605,7 +2698,7 @@
                     ],
 
                     [
-                        9999,
+                        216,
                         "Uncommon Non-Fiction",
                         "Book of Inner Alchemy", 
                         14, 
@@ -2618,7 +2711,7 @@
                     ],
 
                     [
-                        9999,
+                        217,
                         "Uncommon Non-Fiction",
                         "Bronze Methodology", 
                         14, 
@@ -2630,7 +2723,7 @@
                         "Contains a thorough detailing of bronze metallurgy and methods to work with it."
                     ],
                     [
-                        9999,
+                        218,
                         "Uncommon Non-Fiction",
                         "Chronicle of Years to Come", 
                         14, 
@@ -2642,7 +2735,7 @@
                         "An arrangment of cryptic prophecies. Translated by Sammaster, he interpreted that the prophecies predicted that all Faerun would eventually be ruled by undead Dragons. Thus, he formed the Cult of the Dragon with the aspiration of creating dracoliches for this purpose. A translated excerpt reads: \"And naught will be left save shattered thrones with no rulers. But the dead dragons shall rule the world entire, and…\""
                     ],
                     [
-                        9999,
+                        219,
                         "Uncommon Non-Fiction",
                         "Circe's Cookbook", 
                         14, 
@@ -2654,7 +2747,7 @@
                         "A collection of personal reflections on potion making. It contains no formulas but the abstract content is said to help people understand more about the reactions that take place whilst brewing."
                     ],
                     [
-                        9999,
+                        220,
                         "Uncommon Non-Fiction",
                         "The City of Hillsfar", 
                         14, 
@@ -2666,7 +2759,7 @@
                         "A guidebook to a city known as one of the most evil of places in the lands. Non-humans who enter the city are thrown in to the arena to fight for their lives. Its ruler cared onlyfor growing the city's trade and torturing prisoners for fun."
                     ],
                     [
-                        9999,
+                        221,
                         "Uncommon Non-Fiction",
                         "The Compleat Dragon-Hunter", 
                         14, 
@@ -2678,7 +2771,7 @@
                         "A detailed guide on techniques to search for and hunt dragons. An excerpt reads: \"If it's not on fire, they'll eat it. Hells, if it is on fire, they'll put it out then eat it.\""
                     ],
                     [
-                        9999,
+                        222,
                         "Uncommon Non-Fiction",
                         "The Craftworks of Evermeet", 
                         14, 
@@ -2690,7 +2783,7 @@
                         "A book of magical formulae, rituals and ingredients required for the creation of several Elven magical items."
                     ],
                     [
-                        9999,
+                        223,
                         "Uncommon Non-Fiction",
                         "The Curse of the Vampyr", 
                         14, 
@@ -2702,7 +2795,7 @@
                         "A collection of lore on vampires. It warns of their ability to charm as well as their hunting habits."
                     ],
                     [
-                        9999,
+                        224,
                         "Uncommon Non-Fiction",
                         "Death & Divinity: A Godly Guide", 
                         14, 
@@ -2714,7 +2807,7 @@
                         "An abstract book that describes death as being too powerful for a single deity to hold. It theorises that it is split in to smaller portfolios such as disease, war, funeral rites and the like."
                     ],
                     [
-                        9999,
+                        225,
                         "Uncommon Non-Fiction",
                         "A Deep and Creeping Darkness", 
                         14, 
@@ -2726,7 +2819,7 @@
                         "A book that tells the continued misfortune of a village as it faced deaths of its miners, a plague and then unexplained disappearances. It mentions that the platinum mine is still valuable and may be worth trying to reclaim."
                     ],
                     [
-                        9999,
+                        226,
                         "Uncommon Non-Fiction",
                         "The Evil Eye", 
                         14, 
@@ -2738,7 +2831,7 @@
                         "This book discuses the practices of hags (Night, Sea and Green). Of note, it details how they enjoy striking deals with mortals and have a preference for handmade magical trinkets."
                     ],
                     [
-                        9999,
+                        227,
                         "Uncommon Non-Fiction",
                         "Experimental Techniques and Methods", 
                         14, 
@@ -2750,7 +2843,7 @@
                         "A collection of essays written by alchemists and wizards. A lot of the works are submission for final exams for apprentice magisters. The works detail unconventional uses of spells, different casting methods and theories on magic in general."
                     ],
                     [
-                        9999,
+                        228,
                         "Uncommon Non-Fiction",
                         "Great Realms Among The Stars", 
                         14, 
@@ -2762,7 +2855,7 @@
                         "A philosophical book that suggests an elven skyship can be used to visit other worlds. The author offers enough detail in each chapter to be taken seriously."
                     ],
                     [
-                        9999,
+                        229,
                         "Uncommon Non-Fiction",
                         "High History of Archmages", 
                         14, 
@@ -2774,7 +2867,7 @@
                         "A detailed history of Archmages throughout the known world. It details their work, their professional lives as well as how they gained their titles."
                     ],
                     [
-                        9999,
+                        230,
                         "Uncommon Non-Fiction",
                         "Illefarn", 
                         14, 
@@ -2786,7 +2879,7 @@
                         "A set of poems that describe the history of an ancient civilisation of Elves."
                     ],
                     [
-                        9999,
+                        231,
                         "Uncommon Non-Fiction",
                         "Internals of the Brachiopod", 
                         14, 
@@ -2798,7 +2891,7 @@
                         "A natural science book that, in granular detail, explains the biology of a type of mollusc. Many researchers base their own research off of this work."
                     ],
                     [
-                        9999,
+                        232,
                         "Uncommon Non-Fiction",
                         "The Joys of Extradimensions", 
                         14, 
@@ -2810,7 +2903,7 @@
                         "A heavily annotated book that details the practice and use of extradimensional magics. It also details how to access Mordenkainens Magnificent Mansion, with the command word 'sceptre'."
                     ],
                     [
-                        9999,
+                        233,
                         "Uncommon Non-Fiction",
                         "The Kingdom of Lions", 
                         14, 
@@ -2822,7 +2915,7 @@
                         "A book that covers the history of the city of Al-Anwhar up to the revolution led by the rulers brother."
                     ],
                     [
-                        9999,
+                        234,
                         "Uncommon Non-Fiction",
                         "Known Networks of the North", 
                         14, 
@@ -2834,7 +2927,7 @@
                         "A published military report on the spy networks found in the northern realms of Faerun. Though outdated, it still provides insight in the power of spy networks in general."
                     ],
                     [
-                        9999,
+                        235,
                         "Uncommon Non-Fiction",
                         "Lore of Lurue", 
                         14, 
@@ -2846,7 +2939,7 @@
                         "A history of the founding of Silverymoon and how the region came to be blessed by the goddess Lurue. Has a magical power that can transport nearby beings to a demiplane that looks like the North before it became Silverymoon."
                     ],
                     [
-                        9999,
+                        236,
                         "Uncommon Non-Fiction",
                         "Lore of the 133rd Layer", 
                         14, 
@@ -2858,7 +2951,7 @@
                         "A book the details the exploits of Orcus, the most feared lord of the abyss. It details his movements across the multiverse after growing complacent and moving to conquer the realms of Demogorgon and Graz'zt."
                     ],
                     [
-                        9999,
+                        237,
                         "Uncommon Non-Fiction",
                         "Luvanders Enchantments of the Heart", 
                         14, 
@@ -2870,7 +2963,7 @@
                         "A spellbook that explains the school of Illusion and its practices."
                     ],
                     [
-                        9999,
+                        238,
                         "Uncommon Non-Fiction",
                         "Musings of an Exiled Witch", 
                         14, 
@@ -2882,7 +2975,7 @@
                         "This tome shows the thoughts of an exiled witch queen and her musings on the practice of magic. Of particular note is a chapter where the author explains how so many wizrds can become enslaved to their own quest for power. The insights serve a cautionary tale for the less experienced spellcasters."
                     ],
                     [
-                        9999,
+                        239,
                         "Uncommon Non-Fiction",
                         "Musings on Mortality", 
                         14, 
@@ -2894,7 +2987,7 @@
                         "A thoughtful and ponderous book on mortality. It highlights many different perspectives of other cultures views on death as well as how interesting it is that each belief ends up with a belief in a guaranteed afterlife based on the life lived."
                     ],
                     [
-                        9999,
+                        240,
                         "Uncommon Non-Fiction",
                         "Mythal Theory", 
                         14, 
@@ -2906,7 +2999,7 @@
                         "A book of arcane research in to powerful magical effects normally created by a group of spellcasters. It details hwo they can be made to change the very nature of magic."
                     ],
                     [
-                        9999,
+                        241,
                         "Uncommon Non-Fiction",
                         "Poisons and Known Antidotes", 
                         14, 
@@ -2918,7 +3011,7 @@
                         "A detailed guide to a variety of poisons. Penned by a former assasin, it shows how to mix antidotes to some of the more severe poisons found in the world."
                     ],
                     [
-                        9999,
+                        242,
                         "Uncommon Non-Fiction",
                         "Rise and Fall of Elves", 
                         14, 
@@ -2930,7 +3023,7 @@
                         "A detailed history of elves across all of Toril. Comprised of three long chapters called \"Rise\", \"Years of glory\" and then \"Decline\"."
                     ],
                     [
-                        9999,
+                        243,
                         "Uncommon Non-Fiction",
                         "Rival Orcs and their Battles", 
                         14, 
@@ -2942,7 +3035,7 @@
                         "A collection of battle reports of skirmishes and wars between rival Orc tribes. Though a thick book, it painst a clear picture of how important honour is to Orcs. One excerpt reads \"The third war was fought when Chief Ulrak proclaimed his rival, Chief Targe, slaughtered his own children. Imagine Ulraks surprise when a full band of Targes fifty-odd children showed up with their war banners to cleanse the rumour, bellowing \"For our beloved father!\"."
                     ],
                     [
-                        9999,
+                        244,
                         "Uncommon Non-Fiction",
                         "Roads beyond Faerun", 
                         14, 
@@ -2954,7 +3047,7 @@
                         "A guide to travel in realms beyond Faerun. It warns of there being death for most, undeath for some and a wraith-like place beyond death for a few."
                     ],
                     [
-                        9999,
+                        245,
                         "Uncommon Non-Fiction",
                         "Sarah of Yellowcrest Manor", 
                         14, 
@@ -2966,7 +3059,7 @@
                         "The diary of a servant of Yellowcrest manor. It gradually shows more concern over the Manors lord, Vallis, as he began practicing profane rituals. Eventually, the family and staff were all killed. The ghost of Sarah, the author, resides in the book. Those brave enough to speak to her may learn the truth of what happened at the manor."                        
                     ],
                     [
-                        9999,
+                        246,
                         "Uncommon Non-Fiction",
                         "Secret Doors, Explosive Traps", 
                         14, 
@@ -2978,7 +3071,7 @@
                         "A guide on the mechanics of hidden doors, secret passages and traps. Useful to any rogue."                        
                     ],
                     [
-                        9999,
+                        247,
                         "Uncommon Non-Fiction",
                         "The Spectrum of Beliefs", 
                         14, 
@@ -2990,7 +3083,7 @@
                         "A large book that discusses in depth the conflicts of beliefs across multiple cultures across the planes of existence."                        
                     ],
                     [
-                        9999,
+                        248,
                         "Uncommon Non-Fiction",
                         "Speeches of a Worthy Sage", 
                         14, 
@@ -3002,7 +3095,7 @@
                         "A collection of speeches, most of which center around the philosophy of endings or death."                        
                     ],
                     [
-                        9999,
+                        249,
                         "Uncommon Non-Fiction",
                         "Tales Told", 
                         14, 
@@ -3014,7 +3107,7 @@
                         "A book that recounts an interview with a Wizard that tried cna claimed to have found 'the one true spell' that would let him weave great magics without speaking a word. Though many others who claimed this were dismissed as insane, the author notes that this particular wizard seemed calm, composed and meditative."                        
                     ],
                     [
-                        9999,
+                        250,
                         "Uncommon Non-Fiction",
                         "Talis: Divination without magic", 
                         14, 
@@ -3026,7 +3119,7 @@
                         "A tome that teaches how to use a simple deck of talis cards to perform divinations without the use of the art."                        
                     ],
                     [
-                        9999,
+                        251,
                         "Uncommon Non-Fiction",
                         "Teachings of an Angry Old Mage", 
                         14, 
@@ -3038,7 +3131,7 @@
                         "A book meant to be a reality check for idealistic spellcasters. One excerpt reads: \"If ye're a mage, it lasts only until some other wizard hurls a spell faster than thee. Speak to me not of 'great adventure'.\""                        
                     ],
                     [
-                        9999,
+                        252,
                         "Uncommon Non-Fiction",
                         "Teachings of an Angry Old Mage", 
                         14, 
@@ -3050,7 +3143,7 @@
                         "A book meant to be a reality check for idealistic spellcasters. One excerpt reads: \"If ye're a mage, it lasts only until some other wizard hurls a spell faster than thee. Speak to me not of 'great adventure'.\""                        
                     ],
                     [
-                        9999,
+                        253,
                         "Uncommon Non-Fiction",
                         "Tome of the Dragon", 
                         14, 
@@ -3062,7 +3155,7 @@
                         "A summary of theories, experiments and conclusions in the authors efforts to turn Dragons in to Dracoliches. The book is also the basis for the Cult of the Dragon."                        
                     ],
                     [
-                        9999,
+                        254,
                         "Uncommon Non-Fiction",
                         "Transubstantiality across Potentialities", 
                         600, 
@@ -3074,7 +3167,7 @@
                         "A detailed book on the casting of ancient Netheril spells. Thought lost to time, the book also provides insights on spellcasting in general."                        
                     ],
                     [
-                        9999,
+                        255,
                         "Uncommon Non-Fiction",
                         "Treatise on Blood-Metal", 
                         14, 
@@ -3086,7 +3179,7 @@
                         "In this treatise, the author expresses his reservations about 'Orcslayer' blades that would inflict deadly poison to Orcs. He feared that they would lead to the development of other alloys that were toxic to other races, spreading death and destruction."                        
                     ],
                     [
-                        9999,
+                        256,
                         "Uncommon Non-Fiction",
                         "Urgrunds Description of Darkness", 
                         14, 
@@ -3098,7 +3191,7 @@
                         "A listing of names and locations of cursed places. Ranging from castles to several books. The author suggests that the curses all stem from Bane, the Black Lord."                        
                     ],
                     [
-                        9999,
+                        257,
                         "Uncommon Non-Fiction",
                         "Uthgars Legacy", 
                         14, 
@@ -3108,15 +3201,122 @@
                         false,
                         1,
                         "This book delves in to the history of Uthgar, the Battle Father. It describes several of his conquests and the results."                        
-                    ]
-                    
+                    ],
+                    [
+                        258,
+                        "Uncommon Non-Fiction",
+                        "Volo's Bestiaries: Malaugrym", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "One of several detailed guides penned by Volothamp Geddarm. This one details the Malaugrym as extra-planar beings who seek constant amusement through evil deeds. The guide claims that they intend to invade Faerun at some point, but also that they cannot work together and also cannot learn extra-planar magics required to travel between realms. The book finishes by estimating there are no more than five known creatures in Faerun."                        
+                    ],
+                    [
+                        259,
+                        "Uncommon Non-Fiction",
+                        "Volo's Guide to Nymphs", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "One of several detailed guides penned by Volothamp Geddarm. This one details the behaviours and activities of Nymphs. This appears to be an unfinished version with notes in the margins by the publisher, Elminster."                        
+                    ],
+                    [
+                        260,
+                        "Uncommon Non-Fiction",
+                        "Volo's Guide: Snake Kingdom", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "One of several detailed guides penned by Volothamp Geddarm. This one details the city of Samargol, in the jungle of Samarach. Details a lot of points of interest and several local customs."                        
+                    ],
+                    [
+                        261,
+                        "Uncommon Non-Fiction",
+                        "Vooniar", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "A short book that talks about the small city being located northeast of Shadowdale. Named as a major trade competitor with Shadowdale just through farming. The book warns that the city is a puppet of the Black Network."                        
+                    ],
+                    [
+                        262,
+                        "Uncommon Non-Fiction",
+                        "War of the Creator Races", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "Details the conflicts of the Old Ones and an Avian creator race that all fought over a single temple in a city for a source of power. Eventually, it was burned to the ground." 
+                    ],
+                    [
+                        270,
+                        "Uncommon Non-Fiction",
+                        "Witch's Brew Cookbook", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "A collection of recipes for hag delicacies. All ingredients are strange and rare, but are said to provide potent effects if prepared properly."
+                    ],
+                    [
+                        271,
+                        "Uncommon Non-Fiction",
+                        "Wondrous Potions of Ilmater", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "A collection of recipes for potions not normally found amongst alchemists."
+                    ],
+                    [
+                        272,
+                        "Uncommon Non-Fiction",
+                        "World of Coins", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "A thoughful book that attributes falsehoods told during trades that see people who build lies upon lies, see those lies change their personality."
+                    ],
+                    [
+                        273,
+                        "Uncommon Non-Fiction",
+                        "Words to Would Be Apprentices", 
+                        14, 
+                        20, 
+                        35,
+                        true,
+                        false,
+                        1,
+                        "A collection of musings and lessons aimed at prospective spellcasters. Also included are warnings about the use of magics."
+                    ]      
+                                     
                 ]
 
                 ,
                 [
                     [
-                        
-                        9999,
+                        274,
                         "Rare Non-Fiction",
                         "Against the Undead", 
                         38, 
@@ -3128,9 +3328,8 @@
                         "A book that details a single persons quests to destroy as many undead abominations as possible. Contains lots of useful information on defeating different types from Liches to Vampires. Contains the spells: Corpselight, Cloak fron Undead, Ward against Undead, Teleport Dead, Sunburst."  
                     ],
 
-                    [
-                        
-                        9999,
+                    [ 
+                        275,
                         "Rare Non-Fiction",
                         "The Ascension of Vlaakith", 
                         30, 
@@ -3142,8 +3341,7 @@
                         "A tome written entirely in the Gith language. It details the rise to absolute power of Vlaakith and her reliance on arcane magic to achieve it. It also claims the she would have not succeeded in her campaign against the Illithids without it. It details how important arcane magic is to Githyanki society as well."  
                     ],
                     [
-                        
-                        9999,
+                        276,
                         "Rare Non-Fiction",
                         "Book of Cylinders", 
                         30, 
@@ -3155,8 +3353,7 @@
                         "An unconventional book that is wrapped in to three cylinders. The three cylinders tell of a plight of a Grippli community beset by a Yaun-Ti."  
                     ],
                     [
-                        
-                        9999,
+                        277,
                         "Rare Non-Fiction",
                         "Book of Final Breath", 
                         30, 
@@ -3168,8 +3365,7 @@
                         "An enchanted book that appears slim, but its pages never end when opened. The book captures the final words of people that died near it. One of the many excerpts reads: \"Come see this! It's mov-\""  
                     ],
                     [
-                        
-                        9999,
+                        278,
                         "Rare Non-Fiction",
                         "Book of Kaza", 
                         2000, 
@@ -3181,8 +3377,7 @@
                         "The book is a tome written by the lich, Kaza. It outlines some of the most dreadful and esoteric knowledge related to the school of necromancy."  
                     ],
                     [
-                        
-                        9999,
+                        279,
                         "Rare Non-Fiction",
                         "Book of Lore", 
                         209, 
@@ -3194,8 +3389,7 @@
                         "This book appears small, but no matter how many pages are turned, there is always one left. Each page is decorated with beautiful calligraphy. Reading the book for a week grants the reader knowledge, similar to the effects of a Legend Lore spell, based on what they read."  
                     ],
                     [
-                        
-                        9999,
+                        280,
                         "Rare Non-Fiction",
                         "Book of the Raven", 
                         30, 
@@ -3207,8 +3401,7 @@
                         "This book details how to find a Vistani castle through a seemingly impossible route through thick misty woods."  
                     ],
                     [
-                        
-                        9999,
+                        281,
                         "Rare Non-Fiction",
                         "The Book of Vile Darkness", 
                         2000, 
@@ -3220,7 +3413,7 @@
                         "This book corrupts any non-evil being that attempt to read it. If someone is able to read it for a week, they gain great power from it and become more insightful to matters in general."  
                     ],
                     [
-                        9999,
+                        282,
                         "Rare Non-Fiction",
                         "Drow Spinnan Trisagion", 
                         2000, 
@@ -3232,7 +3425,7 @@
                         "A powerful clerical tome that allows unrestricted worship to the Spiden Queen, Lolth. Those who hold it gain resistance to arcane and divine magics as well as increased awareness, allowing the user to battle effectively. Using the book, a user could cast the 'Restoration' spell."
                     ],
                     [
-                        9999,
+                        283,
                         "Rare Non-Fiction",
                         "Elameth's Compendium", 
                         1000, 
@@ -3244,7 +3437,7 @@
                         "A tome of arcane knowledge that details technical knowledge and numerous sketches of a variety of magical artifacts."
                     ],
                     [
-                        9999,
+                        284,
                         "Rare Non-Fiction",
                         "Farnarest's Guide to Enchanting", 
                         2000, 
@@ -3256,7 +3449,7 @@
                         "Penned by a famous wizard, this guide details several processes for enchanting mundane items with great magical power."
                     ],
                     [
-                        9999,
+                        285,
                         "Rare Non-Fiction",
                         "Libram of Ineffable Damnation", 
                         8000, 
@@ -3268,7 +3461,7 @@
                         "A tome that takes a week to read in utter privacy. Upon completion, and the reader having an evil disposition, they gain significant spellcasting power. Rumor has it that this book is of Tiamats horde."
                     ],
                     [
-                        9999,
+                        286,
                         "Rare Non-Fiction",
                         "Manual of Bodily Health", 
                         500, 
@@ -3280,7 +3473,7 @@
                         "A dense tome that has many guides on preventative medicine, muscle toning and diets for longevity. If studied for one week, the user gains an improved cosnstitution, at the cost of the book disintegrating."
                     ],
                     [
-                        9999,
+                        287,
                         "Rare Non-Fiction",
                         "Martek, by Martek", 
                         8000, 
@@ -3291,9 +3484,8 @@
                         1,
                         "In this book, Martek postulates that Martek, despite constantly refining Marteks wisdom, that Martek could never learn all that Martek wished to learn. Martek also found that Martek would never be satisfied by Marteks quest for knowledge."
                     ],
-
                     [
-                        9999,
+                        288,
                         "Rare Non-Fiction",
                         "Mazfroths Mighty Digressions", 
                         50, 
@@ -3305,7 +3497,7 @@
                         "An impressively thick volume of various essays on various subjects. Despite the nice cover, the handwritten pages are poorly penned. No particular themes connect, but the subjects seem to be of interest to the author at the time they were authored. One essay discusses the nature of the Weave, another covers various forms of Lycanthropes and another lists various demon lords as well as animals related to them."
                     ],
                     [
-                        9999,
+                        289,
                         "Rare Non-Fiction",
                         "The Nether Scrolls", 
                         50, 
@@ -3317,7 +3509,7 @@
                         "A book that details the ancient knowlege of the Netheril. It details ancient practices of magic, esoteric spells and touches on the politics and interactions of the Netheril and other races that existed at the time."
                     ],
                     [
-                        9999,
+                        290,
                         "Rare Non-Fiction",
                         "The Poets Song", 
                         1000, 
@@ -3329,7 +3521,7 @@
                         "A scroll written by a blind poet who feared death. Reading the scroll grants temporary mastery over death."
                     ],
                     [
-                        9999,
+                        291,
                         "Rare Non-Fiction",
                         "The Price of Beauty", 
                         1000, 
@@ -3341,7 +3533,7 @@
                         "An enchanted book that holds some power of the goddess Selune, who advocates beuaty. The book will project an image on to a mirror that the reader sees and offer advice about building self confidence and self care."
                     ],
                     [
-                        9999,
+                        292,
                         "Rare Non-Fiction",
                         "Runes Made Easy", 
                         750, 
@@ -3353,7 +3545,7 @@
                         "A collection of lore that helps readers identify various glyphs, sigils and runes. Makes identifying static magic effeccts much easier."
                     ],
                     [
-                        9999,
+                        293,
                         "Rare Non-Fiction",
                         "Sorcerers' Cyclopedia", 
                         750, 
@@ -3365,7 +3557,7 @@
                         "A powerful magic book that grants its owner a boon of intelligence, resistance to spells and spell-like effects. Allows the casting of 'True Seeing' once per day. Can only be used by arcane spellcasters"
                     ],
                     [
-                        9999,
+                        294,
                         "Rare Non-Fiction",
                         "Testament of Jade", 
                         750, 
@@ -3375,12 +3567,48 @@
                         false,
                         2,
                         "A powerful clerics book that grants its owner a boon of wisdom and charisma. Allows its owner to cast 'Cure Moderate Wounds' twice a day and 'Heal' once per day."
+                    ],
+                    [
+                        295,
+                        "Rare Non-Fiction",
+                        "Volos Guide to Things Magical", 
+                        1250, 
+                        1500, 
+                        1750,
+                        true,
+                        false,
+                        1,
+                        "A collection of long forgotten spells, articles on various facets of magic and plenty of anecdotes."
+                    ],
+                    [
+                        296,
+                        "Rare Non-Fiction",
+                        "Wythyndles Round Book", 
+                        1250, 
+                        1500, 
+                        1750,
+                        true,
+                        false,
+                        1,
+                        "A circular book that emits musical notes when opened. Contains multiple cleric spells, including some unique ones."
+                    ],
+                    [
+                        297,
+                        "Rare Non-Fiction",
+                        "X the Mystics Grimoire", 
+                        2250, 
+                        3500, 
+                        4750,
+                        true,
+                        false,
+                        1,
+                        "Contains three extremely powerful spells."
                     ]
                 ],
 
                 [
                     [
-                        97,
+                        298,
                         "Fiction",
                         "201, A Sea Odyssey", 
                         6, 
@@ -3392,7 +3620,7 @@
                         "A fiction novel that implies the development of all races is propagated by an alien race."
                     ],
                     [
-                        97,
+                        299,
                         "Fiction",
                         "A Rangers Road", 
                         6, 
@@ -3404,7 +3632,7 @@
                         "A story of a ranger and his son, doomed to walk in a war torn landscape as they face cannibals and other desperate surivors."
                     ],
                     [
-                        97,
+                        300,
                         "Fiction",
                         "A Thousand Nights and a Night", 
                         6, 
@@ -3416,7 +3644,7 @@
                         "A collections of folklore stories of the tribes found in southern Faerun. "
                     ],
                     [
-                        97,
+                        301,
                         "Fiction",
                         "Adventures of Camber Fosrick", 
                         6, 
@@ -3428,7 +3656,7 @@
                         "A collection of six short stories about a detective. Enjoyed by teenagers and young adults."
                     ],
                     [
-                        9999,
+                        302,
                         "Fiction",
                         "Apocalypto", 
                         6, 
@@ -3440,7 +3668,7 @@
                         "A collection of poetic prophecies about the end of the multiverse."
                     ],
                     [
-                        9999,
+                        303,
                         "Fiction",
                         "Araspers Little Book", 
                         6, 
@@ -3452,7 +3680,7 @@
                         "A book of musings on a band of adventurers and their stories."
                     ],
                     [
-                        9999,
+                        304,
                         "Fiction",
                         "Archetymbal", 
                         6, 
@@ -3464,8 +3692,7 @@
                         "A famous work of fiction, detailing the folly of aspirant nobles who make grand promises they inevitably can't keep, causing ruin for people and businesses alike."
                     ],     
                     [
-                        
-                        9999,
+                        305,
                         "Fiction",
                         "The Balad of Daen Winterbrush", 
                         6, 
@@ -3477,7 +3704,7 @@
                         "A book detailing the music and lyrics of said ballad. The bard's name is scribbled on the inside cover."  
                     ],
                     [
-                        9999,
+                        306,
                         "Fiction",
                         "Book of Numerological Rhymes", 
                         6, 
@@ -3489,7 +3716,7 @@
                         "An immensely popular collection of traditional songs and poems for children. An excerpt reads: \"Nine are we when taken all three. Last one slain, then six remain. None survive our first less five.\""  
                     ],
                     [
-                        9999,
+                        307,
                         "Fiction",
                         "Farewell to Limbs", 
                         6, 
@@ -3501,7 +3728,7 @@
                         "A love story of a cleric who meets an enticing drow. Despite the drow losing her fiancee to war, she encourages a relationship with the cleric. through bitterness, she manipulates him in to becoming a butcher, selling limbs for profit."  
                     ],
                     [
-                        9999,
+                        308,
                         "Fiction",
                         "Filfaeril Bound and Willing", 
                         6, 
@@ -3513,7 +3740,7 @@
                         "A work of fiction that describes the Dragon Queen Filfaeril's love of whips and chains, in salacious settings."  
                     ],
                     [
-                        9999,
+                        309,
                         "Fiction",
                         "Gone with the Air ELemental", 
                         6, 
@@ -3525,7 +3752,7 @@
                         "A tale of a maiden who was tricked in to an affair with a nefarious air elemental during a great war."  
                     ],
                     [
-                        9999,
+                        310,
                         "Fiction",
                         "Half a Life", 
                         6, 
@@ -3537,7 +3764,7 @@
                         "A tale of a half elf living amongst elves. A man in a blue outfit offers the protagonist overly cryptic help from time to time."  
                     ],
                     [
-                        9999,
+                        311,
                         "Fiction",
                         "The Haunted Bedpan", 
                         6, 
@@ -3549,7 +3776,7 @@
                         "A halfling play that is mostly toilet humour. Tells of a magical bedpan that recalls its users most emotional memories and replays them audibly when next used by the same person."  
                     ],
                     [
-                        9999,
+                        312,
                         "Fiction",
                         "Humantales for Young Fairies", 
                         6, 
@@ -3561,7 +3788,7 @@
                         "A series of stories of mythical humans and their adventures, written for a Fey audience."  
                     ],
                     [
-                        9999,
+                        313,
                         "Fiction",
                         "Moby Dragon", 
                         6, 
@@ -3573,7 +3800,7 @@
                         "A tale of a sailor that becomes obsessed with hunting a white dragon they found it sea, leading to the alienation of them from their crew."  
                     ],
                     [
-                        9999,
+                        314,
                         "Fiction",
                         "Nine Lords Errant", 
                         6, 
@@ -3585,7 +3812,7 @@
                         "A play that portrays nine Kings meeting and several consiprators plotting a murder most foul."  
                     ],
                     [
-                        9999,
+                        315,
                         "Fiction",
                         "The Nymph that said No", 
                         6, 
@@ -3597,7 +3824,7 @@
                         "A story about a man so desperate for a lover that he tried to woo a Nymph, not realising that she presided over a forest where he worked as a woodsman."  
                     ],
                     [
-                        9999,
+                        316,
                         "Fiction",
                         "Paradise Displaced", 
                         6, 
@@ -3609,7 +3836,7 @@
                         "A collection of poems that tell of Orcus tempting a human to eat sacred bacon, when their creator forbade it. It then tells of their expulsion from a paradise for the grave sin of being hungry and curious."  
                     ],
                     [
-                        9999,
+                        317,
                         "Fiction",
                         "The Pirate who became King", 
                         6, 
@@ -3621,7 +3848,7 @@
                         "A popular tale usually told around taverns. It tells of a minor noble who grew sick of the disproportional wealth around the courts. So he sailed the seas, raiding nobles ships and redistributing the wealth to the lower classes. Eventually, a horde of beholders were paid a lot to destroy him and his fleet after several decades."  
                     ],
                     [
-                        9999,
+                        318,
                         "Fiction",
                         "Proceedings", 
                         6, 
@@ -3633,7 +3860,7 @@
                         "A classic novel, lauded as one of the finest fictional works ever written. Its story is of an underdog urchin rising to power."  
                     ],
                     [
-                        9999,
+                        319,
                         "Fiction",
                         "The Rebel Prince", 
                         6, 
@@ -3645,7 +3872,7 @@
                         "A romance novel that details the exploits of a charismatic prince saving maidens from danger."  
                     ],
                     [
-                        9999,
+                        320,
                         "Fiction",
                         "Shards and Swords", 
                         6, 
@@ -3657,7 +3884,7 @@
                         "A play that features a theiflord who defends the profession of thievery. The character makes several claims that amount to theives being more honest merchants."  
                     ],
                     [
-                        9999,
+                        321,
                         "Fiction",
                         "Shemshines Bedtime Rhyme", 
                         6, 
@@ -3669,7 +3896,7 @@
                         "A mechanical pop-up book that was haunted and cursed by a malevolent undead spirit Shemshine."  
                     ],
                     [
-                        9999,
+                        322,
                         "Fiction",
                         "Snow Dwarf and the Seven Wights", 
                         6, 
@@ -3688,7 +3915,7 @@
                 "General Goods",
                 [
                     [
-                        9999,
+                        323,
                         "Gear",
                         "Abacus", 
                         1, 
@@ -3700,7 +3927,7 @@
                         "A small frame with rows of beads, used for calculations."
                     ],
                     [
-                        9999,
+                        324,
                         "Gear",
                         "Barrel", 
                         1, 
@@ -3712,7 +3939,7 @@
                         "A large wooden barrel capable of holding forty gallons of liquid, or four cubic feet of solid material."
                     ], 
                     [
-                        9999,
+                        325,
                         "Gear",
                         "Blanket", 
                         0.3, 
@@ -3724,7 +3951,7 @@
                         "A simple knitted blanket. Enough for one person to sleep under."
                     ],
                     [
-                        9999,
+                        326,
                         "Gear",
                         "Glass Bottle", 
                         1, 
@@ -3736,7 +3963,7 @@
                         "One glass bottle. Can hold one and a half pints of liquid."
                     ],
                     [
-                        9999,
+                        328,
                         "Gear",
                         "Bucket", 
                         0.03, 
@@ -3748,7 +3975,7 @@
                         "A single wooden bucket. Can hold three gallons of liquid or half a cubic foot of solid material."
                     ],
                     [
-                        9999,
+                        329,
                         "Gear",
                         "Candle", 
                         0.01, 
@@ -3760,7 +3987,7 @@
                         "A simple wax candle. Wider and taller so it lasts longer."
                     ],
                     [
-                        9999,
+                        330,
                         "Gear",
                         "Chest", 
                         3, 
@@ -3772,7 +3999,7 @@
                         "A wooden chest with a latch and lock on it. Can hold twelve cubic feet or three hundred pounds of gear. DC12 DEX check to open it without a key."
                     ],
                     [
-                        9999,
+                        331,
                         "Gear",
                         "Common Clothes", 
                         0.3, 
@@ -3784,7 +4011,7 @@
                         "Plain clothes made of locally available fabrics or materials."
                     ],
                     [
-                        9999,
+                        332,
                         "Gear",
                         "Fine Clothes", 
                         11, 
@@ -3796,7 +4023,7 @@
                         "Nice clothes made from more expensive materials or fabrics. Some have nice embroidery, some have silk linings for comfort. Some have both and more."
                     ],
                     [
-                        9999,
+                        333,
                         "Gear",
                         "Flask/Tankard", 
                         0.01, 
@@ -3808,7 +4035,7 @@
                         "A simple flask/tankard made of wood. Easily carried, lightweight and durable"
                     ],
                     [
-                        9999,
+                        334,
                         "Gear",
                         "Hammer", 
                         0.7, 
@@ -3820,7 +4047,7 @@
                         "A small hammer used by a craftsman or builder. Used for nails, minor breaching or last ditch defence."
                     ],
                     [                        
-                        9999,
+                        335,
                         "Gear",
                         "Ink Bottle", 
                         7, 
@@ -3832,7 +4059,7 @@
                         "A bottle of ink. No quill included."
                     ],
                     [
-                        9999,
+                        336,
                         "Gear",
                         "Ink Pen", 
                         0.01, 
@@ -3844,7 +4071,7 @@
                         "A quill with a small inkwell in the nib."
                     ],
                     [
-                        9999,
+                        337,
                         "Gear",
                         "Jug/Pitcher", 
                         0.01, 
@@ -3856,7 +4083,7 @@
                         "A wooden/clay/ceramic jug or pitcher can hold one gallon of liquid."
                     ],
                     [
-                        72,
+                        338,
                         "Gear",
                         "Ladder", 
                         0.07, 
@@ -3868,7 +4095,7 @@
                         "A simple but sturdy wooden ladder that is ten feet long."
                     ],
                     [
-                        9999,
+                        339,
                         "Gear",
                         "Hooded Lantern", 
                         3, 
@@ -3880,7 +4107,7 @@
                         "A hooded lantern casts bright light in a thrity foot radius and dim light for a further thirty feet. Burns for six hours on one flask/pint of oil. As a bonus action, you can cover the lamp to cast only dim light in a five foot radius."
                     ],
                     [
-                        9999,
+                        340,
                         "Gear",
                         "Lamp", 
                         0.3, 
@@ -3892,7 +4119,7 @@
                         "A small metal lamp. Casts bright light in a fifteen foot radius, dim light for a further thirty feet. Burns for six hours on one flask/pint of oil."
                     ],
                     [
-                        9999,
+                        341,
                         "Gear",
                         "Mess Kit", 
                         0.1, 
@@ -3904,7 +4131,7 @@
                         "A tin box, with a foldable handle, that contains a simple cup and cutlery. The box clamps together and one side can be used as a cooking pan, the other as a plate or shallow bowl."
                     ],
                     [
-                        9999,
+                        342,
                         "Gear",
                         "Steel Mirror", 
                         3, 
@@ -3916,7 +4143,7 @@
                         "A small handled mirror. Weighty for its size."
                     ],
                     [
-                        9999,
+                        343,
                         "Gear",
                         "Paper", 
                         0.1, 
@@ -3928,7 +4155,7 @@
                         "A single sheet of paper for writing on."
                     ],
                     [
-                        9999,
+                        344,
                         "Gear",
                         "Parchment", 
                         0.2, 
@@ -3940,7 +4167,7 @@
                         "A single sheet of parchment. Tougher than paper and doesn't smudge as easily."
                     ],
                     [
-                        9999,
+                        345,
                         "Gear",
                         "Miners Pick", 
                         1, 
@@ -3952,7 +4179,7 @@
                         "A heavy mining pick. Excellent for breaking through rock."    
                     ],
                     [
-                        9999,
+                        346,
                         "Gear",
                         "Iron Pot", 
                         1, 
@@ -3964,7 +4191,7 @@
                         "A metal pot that can hold one gallon of liquid."
                     ],
                     [
-                        9999,
+                        347,
                         "Gear",
                         "Pouch", 
                         0.3, 
@@ -3976,7 +4203,7 @@
                         "A cloth/leather pouch can hold one fifth of a cubic foor, six pounds of geear, twenty sling bullets or fifty blowgun needles."
                     ],
                     [
-                        9999,
+                        348,
                         "Gear",
                         "Hempen Rope", 
                         0.7, 
@@ -3988,7 +4215,7 @@
                         "A fifty foot coiled length of hempen rope. Though rough, it is quite tough. Has two HP and can be snapped with a DC17 STR check."
                     ],
                     [
-                        9999,
+                        349,
                         "Gear",
                         "Silk Rope", 
                         7, 
@@ -4000,7 +4227,7 @@
                         "A fifty foot coiled length of silk rope. Despite being more pleasant to hold, it is just as reliable as its hempend equivalent. Has two HP and can be snapped with a DC17 STR check."
                     ],
                     [
-                        9999,
+                        350,
                         "Gear",
                         "Sack", 
                         0.1, 
@@ -4012,7 +4239,7 @@
                         "A woven hempen sack can hold one cubic foot or thirty pounds of gear."
                     ],
                     [
-                        9999,
+                        351,
                         "Gear",
                         "Merchants Scale", 
                         3, 
@@ -4024,7 +4251,7 @@
                         "A small balance, pans and assorted weights. Can measure the exact weight of small objects to help determine their worth." 
                     ],
                     [
-                        9999,
+                        352,
                         "Gear",
                         "Shovel", 
                         1, 
@@ -4036,7 +4263,7 @@
                         "A long handled shovel with a wide pointed blade at the tip. Pierces the ground more easily than a spade."
                     ],
                     [
-                        9999,
+                        353,
                         "Gear",
                         "Signet Ring", 
                         3, 
@@ -4048,7 +4275,7 @@
                         "A ring with an intricated design carved or engraved in to it. When pressed in to warm sealing wax, it creates an identifying mark."
                     ],
                     [
-                        9999,
+                        354,
                         "Gear",
                         "Soap", 
                         0.01, 
@@ -4060,7 +4287,7 @@
                         "A bar made with an acid and an alkali. The fat can be animal fat or plant based, like olive oil. The alkali is normally lye. Used for bathing or washing out the mouth of little punks."
                     ],
                     [
-                        83,
+                        355,
                         "Gear",
                         "Vial", 
                         0.7, 
@@ -4074,7 +4301,7 @@
                 ],
                 [
                     [
-                        9999,
+                        356,
                         "Artisan Tools",
                         "Carpenter Tools", 
                         6, 
@@ -4086,7 +4313,7 @@
                         "Files, chisels, saws and sandpaper are just some of the tools provided with carpenter tools. Lets you create woodwork items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        9999,
+                        357,
                         "Artisan Tools",
                         "Cobbler Tools", 
                         3, 
@@ -4098,7 +4325,7 @@
                         "Precision knives, tape measures, needles and threads are a few of the tools provided with cobbler tools. Lets you create footwear items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        9999,
+                        358,
                         "Artisan Tools",
                         "Cook's Utensils", 
                         0.7, 
@@ -4110,7 +4337,7 @@
                         "A seletion of high quality knives, a multi purpose grater, tongs and spatulas are a few of the tools provided with a set of cook's utensils. Lets you create food items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create something."
                     ],
                     [
-                        9999,
+                        359,
                         "Artisan Tools",
                         "Glassblower Tools", 
                         22, 
@@ -4122,7 +4349,7 @@
                         "A selection of blowing pipes, heat gloves, tongs and a crucible are just a few of the tools provided with glassblower tools. Lets you create glass items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create something."
                     ],
                     [
-                        9999,
+                        360,
                         "Artisan Tools",
                         "Leatherworker Tools", 
                         3, 
@@ -4134,7 +4361,7 @@
                         "Precision knives, tanning racks, oils and clamps are a few of the tools provided with leatherworker tools. Lets you create leather items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."    
                     ],
                     [
-                        9999,
+                        361,
                         "Artisan Tools",
                         "Mason Tools", 
                         7, 
@@ -4146,7 +4373,7 @@
                         "Hammers, precision chisels, rulers and grinders are just some of the tools provided with mason tools. Lets you create structural items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."                    
                     ],
                     [
-                        9999,
+                        362,
                         "Artisan Tools",
                         "Potters Tools", 
                         7, 
@@ -4158,7 +4385,7 @@
                         "A spinning plate, clay, glaze and a small kiln are just some of the tools provided with potter's tools. Lets you create pottery items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        9999,
+                        363,
                         "Artisan Tools",
                         "Smith Tools", 
                         15, 
@@ -4170,7 +4397,7 @@
                         "Hammers, grinders, tongs and heat gloves are just some of the tools provided with smith tools. Lets you create metallic items. Includes equipment for making a basic forge and smelter. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        9999,
+                        364,
                         "Artisan Tools",
                         "Weaver Tools", 
                         0.7, 
@@ -4182,7 +4409,7 @@
                         "Thick needles, pliers, cutters and a small wood kiln are just some of the tools provided with weaver tools. Lets you create fabric items. If you have proficiency with these tools, you can add your proficiency bonus to any ability checks when trying to use the tools to create or repair something."
                     ],
                     [
-                        9999,
+                        365,
                         "Artisan Tools",
                         "Woodcarver Tools", 
                         0.7, 
@@ -4201,7 +4428,7 @@
                 "Potions",
                 [
                     [
-                        9999,
+                        366,
                         "Common Potions",
                         "Potion of Climbing", 
                         30, 
@@ -4213,7 +4440,7 @@
                         "Gain a climbing speed equal to walking speed. Gain advantage on STR/Atheletics checks made for climbing. Lasts for one hour."
                     ], 
                     [
-                        9999,
+                        367,
                         "Common Potions",
                         "Potion of Healing", 
                         30, 
@@ -4228,7 +4455,7 @@
                 ,
                 [
                     [
-                        9999,
+                        368,
                         "Uncommon Potions",
                         "Oil of Slipperiness", 
                         50, 
@@ -4240,7 +4467,7 @@
                         "A creature gains 'freedom of movement' for eight hours OR a ten foot area can be covered, creating the 'Grease' effect for eight hours."
                     ],
                     [
-                        9999,
+                        369,
                         "Uncommon Potions",
                         "Philter of Love", 
                         50, 
@@ -4252,7 +4479,7 @@
                         "Whoever drinks this potion will be charmed by the first person it sees, within a ten minute window, for one hour."
                     ],
                     [
-                        9999,
+                        370,
                         "Uncommon Potions",
                         "Potion of Animal Friendship", 
                         50, 
@@ -4264,7 +4491,7 @@
                         "Convince a creature you mean it no harm. Creature gets a DC14 WIS save if its INT is four or above to save against the effect."
                     ],
                     [
-                        9999,
+                        371,
                         "Uncommon Potions",
                         "Potion of Fire Breath", 
                         50, 
@@ -4276,7 +4503,7 @@
                         "As a bonus action, you can breathe fire at a target that is thirty feet away. Target takes 4d6 fire damage, half of that on a DC13 DEX save. Effect ends after three breaths or one hour."
                     ],
                     [
-                        9999,
+                        372,
                         "Uncommon Potions",
                         "Potion of Hill Giant Strength", 
                         50, 
@@ -4288,7 +4515,7 @@
                         "You STR score is increased to twenty-one for an hour."
                     ],
                     [
-                        9999,
+                        373,
                         "Uncommon Potions",
                         "Potion of Growth", 
                         50, 
@@ -4300,7 +4527,7 @@
                         "For 1d4 hours, target doubles in size and its weight is multiplied by eight."
                     ],
                     [
-                        9999,
+                        374,
                         "Uncommon Potions",
                         "Potion of Greater Healing", 
                         50, 
@@ -4312,7 +4539,7 @@
                         "Regain 4d4+4 HP."
                     ],
                     [
-                        9999,
+                        375,
                         "Uncommon Potions",
                         "Potion of Poison", 
                         50, 
@@ -4324,7 +4551,7 @@
                         "Creature takes 3d6 points of poison damage. Must then make a DC13 CON save or be poisoned. If poisoned, creature takes 3d6 points of poison damage on the start of each of their turns. On each DC13 CON save whilst poisoned, the damage is reduced by 1d6."
                     ],
                     [
-                        9999,
+                        376,
                         "Uncommon Potions",
                         "Potion of Resistance", 
                         50, 
@@ -4336,7 +4563,7 @@
                         "Creature gains resistance to one damage type (of the DMs choosing) for one hour."
                     ],
                     [
-                        9999,
+                        377,
                         "Uncommon Potions",
                         "Potion of Water Breathing", 
                         50, 
@@ -4351,7 +4578,7 @@
                 ,
                 [
                     [
-                        9999,
+                        378,
                         "Rare Potions",
                         "Elixr of Health", 
                         500, 
@@ -4363,7 +4590,7 @@
                         "Cures any disease and removes blindness/deafened/paralyzed/poisoned."
                     ],
                     [
-                        9999,
+                        379,
                         "Rare Potions",
                         "Oil of Etherealness", 
                         500, 
@@ -4375,7 +4602,7 @@
                         "Can not be percieved by any creatures from other planes. Can pass through objects on original plane. Each foot of movement costs an extra foot."
                     ],
                     [
-                        9999,
+                        380,
                         "Rare Potions",
                         "Potion of Clairvoyance", 
                         500, 
@@ -4387,7 +4614,7 @@
                         "Allows a creature to place an invisible sensor within one mile of a familiar location, then allows hearing and sight through it. An action switches between seeing or hearing."
                     ],
                     [
-                        9999,
+                        381,
                         "Rare Potions",
                         "Potion of Diminution", 
                         500, 
@@ -4399,7 +4626,7 @@
                         "Creatures size is halved and all weight is reduced to one eight of normal. Disadvantage on STR checks. Melee and ranged attacks suffer a 1d4 penalty to damage. Lasts for 1d4 hours."
                     ],
                     [
-                        9999,
+                        382,
                         "Rare Potions",
                         "Potion of Gaseous Form", 
                         500, 
@@ -4411,7 +4638,7 @@
                         "Creature turns in to a misty cloud with a flying speed of ten feet, gain resistance to nonmagical damage and advantage on STR, DEX and CON saves. Can occupy a creatures space and pass through small spaces. Can't cast spells, attack, talk or manipulate objects. Lasts for one hour."
                     ],
                     [
-                        9999,
+                        383,
                         "Rare Potions",
                         "Potion of Frost/Stone Giant Strength", 
                         500, 
@@ -4423,7 +4650,7 @@
                         "Your STR score is increased to twenty-three for one hour."
                     ],
                     [
-                        9999,
+                        384,
                         "Rare Potions",
                         "Potion of Fire Giant Strength", 
                         500, 
@@ -4435,7 +4662,7 @@
                         "Your STR score is increased to twenty-five for one hour."
                     ],
                     [
-                        9999,
+                        385,
                         "Rare Potions",
                         "Potion of Superior Healing", 
                         500, 
@@ -4447,7 +4674,7 @@
                         "Regain 8d4+8 HP."
                     ],
                     [
-                        9999,
+                        386,
                         "Rare Potions",
                         "Potion of Heroism", 
                         500, 
@@ -4459,7 +4686,7 @@
                         "Creature gains ten temporary HP and gains 1d4 to any attack roll or saving throw."
                     ],
                     [
-                        9999,
+                        387,
                         "Rare Potions",
                         "Potion of Invulnerability", 
                         500, 
@@ -4471,7 +4698,7 @@
                         "Creature gains resistance to all forms of damage for one minute."
                     ],
                     [
-                        9999,
+                        388,
                         "Rare Potions",
                         "Potion of Mind Reading", 
                         500, 
@@ -4486,7 +4713,7 @@
                 ,
                 [
                     [
-                        9999,
+                        389,
                         "Very Rare Potions",
                         "Oil of Sharpness", 
                         5000, 
@@ -4498,7 +4725,7 @@
                         "A slashing/piercing weapon (or five pieces of ammunition) coated with this oil gain +3 to any attack and damage rolls for one hour."
                     ],
                     [
-                        9999,
+                        390,
                         "Very Rare Potions",
                         "Potion of Flying", 
                         5000, 
@@ -4510,7 +4737,7 @@
                         "Creature gains a flying speed equal to its walking speed for one hour."
                     ],
                     [
-                        9999,
+                        391,
                         "Very Rare Potions",
                         "Potion of Cloud Giant Strength", 
                         5000, 
