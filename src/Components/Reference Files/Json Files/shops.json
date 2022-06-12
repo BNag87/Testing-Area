@@ -1,5 +1,5 @@
 {
-    SEARCH FOR 391
+
     "shops" : 
         [
             [
@@ -3742,7 +3742,7 @@
                     [
                         309,
                         "Fiction",
-                        "Gone with the Air ELemental", 
+                        "Gone with the Air Elemental", 
                         6, 
                         8, 
                         10,
@@ -4749,7 +4749,7 @@
                         "Your STR score becomes twenty-seven for one hour."
                     ],
                     [
-                        9999,
+                        392,
                         "Very Rare Potions",
                         "Potion of Supreme Healing", 
                         5000, 
@@ -4761,7 +4761,7 @@
                         "Regain 10d4 + 20 HP."
                     ],
                     [
-                        9999,
+                        393,
                         "Very Rare Potions",
                         "Potion of Invisibility", 
                         5000, 
@@ -4773,7 +4773,7 @@
                         "Creature, along with anything it's wearing or carrying becomes invisible for one hour. The effect ends if the creature attacks or casts a spell."
                     ],
                     [
-                        9999,
+                        394,
                         "Very Rare Potions",
                         "Potion of Longevity", 
                         5000, 
@@ -4785,7 +4785,7 @@
                         "Creatures age is reduced by 1d6 +6 years, to a maximum of thirteen years. There is a ten percent chance the potion will add to a creatures age instead."
                     ],
                     [
-                        9999,
+                        395,
                         "Very Rare Potions",
                         "Potion of Speed", 
                         5000, 
@@ -4797,7 +4797,7 @@
                         "Creature gains +2 to its AC, gains advantage on DEX savong throws and an additional action on its turns. That action can only be used to attack once, dash, disengage, hide or use an object."
                     ],
                     [
-                        9999,
+                        396,
                         "Very Rare Potions",
                         "Potion of Vitality", 
                         5000, 
@@ -4812,7 +4812,7 @@
                 ,
                 [
                     [
-                        9999,
+                        397,
                         "Legendary Potions",
                         "Potion of Storm Giant Strength", 
                         50000, 
@@ -4827,7 +4827,7 @@
                 ,
                 [
                     [
-                        9999,
+                        398,
                         "Gear",
                         "Acid Vial", 
                         18, 
@@ -4840,7 +4840,7 @@
                     ]
                     ,
                     [
-                        9999,
+                        399,
                         "Gear",
                         "Alchemists Fire", 
                         38, 
@@ -4852,7 +4852,7 @@
                         "Throw a flask of Alchemists Fire at a target to cause 1d4 fire damage on the start of each of its turns. Target must make a DC10 DEX save to put the flames out."
                     ],
                     [
-                        9999,
+                        400,
                         "Gear",
                         "Antitoxin Vial", 
                         38, 
@@ -4864,7 +4864,7 @@
                         "Gain advantage on saving throws against poison for one hour. Doesn't benefit Undead or Constructs."
                     ],
                     [
-                        9999,
+                        401,
                         "Gear",
                         "Component Pouch", 
                         18, 
@@ -4876,7 +4876,7 @@
                         "A leather pouch with dividers inside to store multiple different spell components."
                     ],
                     [
-                        9999,
+                        402,
                         "Gear",
                         "Oil Flask", 
                         0.07, 
@@ -4888,7 +4888,7 @@
                         "Throw a flask of oil at a creature to coat it in oil. If it takes any fire damage before one minute passes, it takes an extra five fire damage from the burning oil. After one minute, the oil dries. Can also be poured over a level five foot surface. Lit here, the oil burns for two rounds and deals five fire damage to any creature that enters it."
                     ],
                     [
-                        9999,
+                        403,
                         "Gear",
                         "Perfume Vial", 
                         3, 
@@ -4900,7 +4900,7 @@
                         "A single vial of a nice fragrance. Rubbed on to skin and stays for 1d6 hours."
                     ],
                     [
-                        9999,
+                        404,
                         "Gear",
                         "Poison Vial", 
                         75, 
@@ -4912,7 +4912,7 @@
                         "A single vial of a basic poison. Can coat a slashing weapon, a piering weapon or three pieces of ammunition. Targets hit must make a DC10 CON save or take 1d4 poison damage."
                     ],
                     [
-                        9999,
+                        405,
                         "Gear",
                         "Vial", 
                         0.7, 
@@ -4928,7 +4928,7 @@
                 ,
                 [
                     [
-                        9999,
+                        406,
                         "Alchemy Ingredients",
                         "Common Ingredient", 
                         0.08, 
@@ -4940,7 +4940,7 @@
                         "A commonly available alchemy ingredient. Ask DM for specifics"
                     ],
                     [
-                        9999,
+                        407,
                         "Alchemy Ingredients",
                         "Uncommon Ingredient", 
                         0.7, 
@@ -4952,7 +4952,7 @@
                         "An alchemy ingredient thats usually in short supply. Ask DM for specifics"
                     ],
                     [
-                        9999,
+                        408,
                         "Alchemy Ingredients",
                         "Rare Ingredient", 
                         7, 
@@ -4964,7 +4964,7 @@
                         "An alchemy ingredient that's not in stock very often. Ask DM for specifics"
                     ],
                     [
-                        9999,
+                        409,
                         "Alchemy Ingredients",
                         "Very Rare Ingredient", 
                         0.08, 
@@ -4979,7 +4979,7 @@
                 ,
                 [
                     [
-                        9999,
+                        410,
                         "Artisan Tools",
                         "Alchemists Supplies", 
                         38, 
@@ -4991,7 +4991,7 @@
                         "A mortar and pestle, drying racks, weighing scales and various clippers are just a few of the tools provided with alchemists supplies. Using these, you can create potions. If you are proficient with them, you can add your proficiency bonus to any roll you make when making potions."
                     ],
                     [
-                        9999,
+                        411,
                         "Artisan Tools",
                         "Brewers Supplies", 
                         15, 
@@ -5003,7 +5003,7 @@
                         "Several tubs of yeast, a selection of hops, fermenting casks and wort tubs are just a few of the tools provided with brewers supplies. Using these, you can create ales, beers, ciders, spirits and liquors. If you are proficient with them, you can add your proficiency bonus to any roll you make when making alcoholic drinks."
                     ],
                     [
-                        9999,
+                        412,
                         "Artisan Tools",
                         "Cook's Utensils", 
                         0.7, 
@@ -5021,7 +5021,7 @@
                 "Arcane/Magic Shop",
                 [
                     [
-                        9999,
+                        413,
                         "Simple Melee",
                         "Quarterstaff", 
                         0.1, 
@@ -5035,7 +5035,7 @@
                 ],
                 [
                     [
-                        9999,
+                        414,
                         "Gear",
                         "Abacus", 
                         1, 
@@ -5047,7 +5047,7 @@
                         "A small frame with rows of beads, used for calculations."
                     ],
                     [
-                        9999,
+                        415,
                         "Gear",
                         "Arcane Focus - Crystal", 
                         7, 
@@ -5059,7 +5059,7 @@
                         "A magically attuned crystal through which a spellcaster can cast their magics."
                     ],
                         [
-                        9999,
+                        416,
                         "Gear",
                         "Arcane Focus - Orb", 
                         15, 
@@ -5072,7 +5072,7 @@
 
                     ],
                     [
-                        9999,
+                        417,
                         "Gear",
                         "Arcane Focus - Rod", 
                         7, 
@@ -5084,7 +5084,7 @@
                         "A magically attuned rod of special metal or wood through which a spellcaster can cast their magics."
                     ],
                     [
-                        9999,
+                        418,
                         "Gear",
                         "Arcane Focus - Staff", 
                         3, 
@@ -5096,7 +5096,7 @@
                         "A magically attuned ornate staff through which a spellcaster can cast their magics."
                     ],
                     [
-                        9999,
+                        419,
                         "Gear",
                         "Arcane Focus - Wand", 
                         7, 
@@ -5108,7 +5108,7 @@
                         "A magically attuned ornate wand through which a spellcaster can cast their magics."
                     ],
                     [
-                        9999,
+                        420,
                         "Gear",
                         "Bottle", 
                         1, 
@@ -5120,7 +5120,7 @@
                         "A humble glass bottle, usually used for storing liquids."
                     ],
                     [
-                        9999,
+                        421,
                         "Gear",
                         "Candle", 
                         0.01, 
@@ -5132,7 +5132,7 @@
                         "A simple wax candle. Wider and taller so it lasts longer."
                     ],
                     [
-                        9999,
+                        422,
                         "Gear",
                         "Map/Scroll Case", 
                         0.7, 
@@ -5144,7 +5144,7 @@
                         "A protective tube that keeps rolled up maps or scrolls safe from the elements."
                     ],
                     [
-                        9999,
+                        423,
                         "Gear",
                         "Component Pouch", 
                         18, 
@@ -5156,7 +5156,7 @@
                         "A leather pouch with dividers inside to store multiple different spell components."
                     ],
                     [
-                        9999,
+                        424,
                         "Gear",
                         "Druid Focus - Mistletoe", 
                         0.7, 
@@ -5168,7 +5168,7 @@
                         "A sprig of hardy mistletoe that brims with natural power. Used as a means of power druid's spells."
                     ],
                     [
-                        9999,
+                        425,
                         "Gear",
                         "Druid Focus - Totem", 
                         0.7, 
@@ -5180,7 +5180,7 @@
                         "A hand carved wooden totem that brims with natural power. Used as a means of powering druid's spells"
                     ],
                     [
-                        9999,
+                        426,
                         "Gear",
                         "Druid Focus - Wooden Staff", 
                         0.7, 
@@ -5192,7 +5192,7 @@
                         "A gnarled wooden staff that brims with natural power. Used as a means of powering druid's spells"
                     ],
                     [
-                        9999,
+                        427,
                         "Gear",
                         "Druid Focus - Yew Wand", 
                         0.7, 
@@ -5204,7 +5204,7 @@
                         "A wooden wand, made of Yew, that brims with natural power. Used as a means of powering druid's spells"
                     ],
                     [
-                        9999,
+                        428,
                         "Gear",
                         "Hourglass", 
                         18, 
@@ -5216,7 +5216,7 @@
                         "A wooden hourglass with coloured sand in it, making it easier to see."
                     ],
                     [
-                        72,
+                        429,
                         "Gear",
                         "Ink Bottle", 
                         7, 
@@ -5228,7 +5228,7 @@
                         "A bottle of ink. No quill included."
                     ],
                     [
-                        9999,
+                        430,
                         "Gear",
                         "Ink Pen", 
                         0.01, 
@@ -5240,7 +5240,7 @@
                         "A quill with a small inkwell in the nib."
                     ],
                     [
-                        77,
+                        431,
                         "Gear",
                         "Paper", 
                         0.1, 
@@ -5252,7 +5252,7 @@
                         "A single sheet of paper for writing on."
                     ],
                     [
-                        78,
+                        432,
                         "Gear",
                         "Parchment", 
                         0.2, 
@@ -5264,7 +5264,7 @@
                         "A single sheet of parchment. Tougher than paper and doesn't smudge as easily."
                     ],
                     [
-                        9999,
+                        433,
                         "Gear",
                         "Pouch", 
                         0.3, 
@@ -5276,7 +5276,7 @@
                         "A cloth/leather pouch can hold one fifth of a cubic foor, six pounds of geear, twenty sling bullets or fifty blowgun needles."
                     ],
                     [
-                        9999,
+                        434,
                         "Gear",
                         "Robes", 
                         0.7, 
@@ -5288,7 +5288,7 @@
                         "Comfortable and ornate robes normally worn by officials or mages."
                     ],
                     [
-                        9999,
+                        435,
                         "Gear",
                         "Spellbook", 
                         0.3, 
@@ -5300,7 +5300,7 @@
                         "A leather-bound tome with one hundred blank vellum pages that record spells. Essential for wizards."
                     ],
                     [
-                        83,
+                        436,
                         "Gear",
                         "Vial", 
                         0.7, 
@@ -5315,7 +5315,7 @@
                 ,
                 [
                     [
-                        9999,
+                        437,
                         "Artisan Tools",
                         "Alchemists Supplies", 
                         38, 
@@ -5327,7 +5327,7 @@
                         "A mortar and pestle, drying racks, weighing scales and various clippers are just a few of the tools provided with alchemists supplies. Using these, you can create potions. If you are proficient with them, you can add your proficiency bonus to any roll you make when making potions."
                     ],
                     [
-                        85,
+                        438,
                         "Artisan Tools",
                         "Calligraphy Tools", 
                         7, 
@@ -5342,7 +5342,7 @@
                 ,
                 [
                     [
-                        9999,
+                        439,
                         "Scrolls/Gems",
                         "Common (Cantrip)", 
                         38, 
@@ -5354,7 +5354,7 @@
                         "A scroll or gem that contains a cantrip level spell. Scrolls or gems can be fired once before they disintegrate."
                     ],
                     [
-                        9999,
+                        440,
                         "Scrolls/Gems",
                         "Common (Level 1)", 
                         75, 
@@ -5366,7 +5366,7 @@
                         "A scroll or gem that contains a level one spell. Scrolls or gems can be fired once before they disintegrate."
                     ],
                     [
-                        9999,
+                        441,
                         "Scrolls/Gems",
                         "Uncommon (Level 2)", 
                         75, 
@@ -5378,7 +5378,7 @@
                         "A scroll or gem that contains a level two spell. Scrolls or gems can be fired once before they disintegrate."
                     ],
                     [
-                        9999,
+                        442,
                         "Scrolls/Gems",
                         "Uncommon (Level 3)", 
                         375, 
@@ -5390,7 +5390,7 @@
                         "A scroll or gem that contains a level three spell. Scrolls or gems can be fired once before they disintegrate."
                     ],
                     [
-                        9999,
+                        443,
                         "Scrolls/Gems",
                         "Rare (Level 4)", 
                         1875, 
@@ -5402,7 +5402,7 @@
                         "A scroll or gem that contains a level four spell. Scrolls or gems can be fired once before they disintegrate."
                     ],
                     [
-                        9999,
+                        444,
                         "Scrolls/Gems",
                         "Rare (Level 5)", 
                         3750, 
@@ -5416,7 +5416,7 @@
                 ],
                 [
                     [
-                        9999,
+                        445,
                         "Services",
                         "Identify Item", 
                         75, 
@@ -5434,7 +5434,7 @@
                 "Inns and Meals",
                 [
                     [
-                        9999,
+                        446,
                         "Commoner's Breakfast",
                         "'Meat' Stick",
                         0.02,
@@ -5446,7 +5446,7 @@
                         "Bland 'meat', slightly salted and roasted on a twig."
                     ],
                     [
-                        9999,
+                        447,
                         "Commoner's Breakfast",
                         "Roasted Locusts",
                         0.02,
@@ -5458,7 +5458,7 @@
                         "A plate of locusts, pan fried in a small amount of oil."
                     ],
                     [   
-                        9999,
+                        448,
                         "Commoner's Breakfast",
                         "Cheese Omelette",
                         0.03,
@@ -5470,7 +5470,7 @@
                         "A single egg omelette with a shaving of cheese mxed in."
                     ],
                     [   
-                        9999,
+                        449,
                         "Commoner's Breakfast",
                         "Ham and Cheese on Rye",
                         0.03,
@@ -5484,7 +5484,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        450,
                         "Merchant's Breakfast",
                         "Bacon & Egg Sandwich",
                         0.2,
@@ -5496,7 +5496,7 @@
                         "Two slices of fresh bacon and a fried egg with salt and pepper on soft bread slices."
                     ],
                     [   
-                        9999,
+                        451,
                         "Merchant's Breakfast",
                         "Omelette 'your' Way",
                         0.2,
@@ -5508,7 +5508,7 @@
                         "A three egg omelette with two fillings of choice."
                     ],
                     [   
-                        9999,
+                        452,
                         "Merchant's Breakfast",
                         "Bloodhawk Eggs",
                         0.3,
@@ -5520,7 +5520,7 @@
                         "Rich Bloodhawk eggs served poached, fried or scrambled. Served with two slices of toast."
                     ],
                     [   
-                        9999,
+                        453,
                         "Merchant's Breakfast",
                         "Bacon Stuffed Bread",
                         0.3,
@@ -5534,7 +5534,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        454,
                         "Noble's Breakfast",
                         "Frittata & Herbs",
                         0.7,
@@ -5546,7 +5546,7 @@
                         "An omlette layered with slices of boiled potato, peppers and garnished with fresh herbs and salt."
                     ],
                     [   
-                        9999,
+                        455,
                         "Noble's Breakfast",
                         "Bacon & Owlbear Eggs",
                         1,
@@ -5558,7 +5558,7 @@
                         "Smoked bacon rashers with a large fluffy owlbear egg."
                     ],
                     [   
-                        9999,
+                        456,
                         "Noble's Breakfast",
                         "Boar Ham Steak & Eggs",
                         1,
@@ -5570,7 +5570,7 @@
                         "Thick cut boar ham steak, perfectly seasoned and served with well cooked eggs."
                     ],
                     [   
-                        9999,
+                        457,
                         "Noble's Breakfast",
                         "Truffle Omelette",
                         2,
@@ -5584,7 +5584,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        458,
                         "Commoner's Lunch",
                         "Stockpot Stew/Soup",
                         0.03,
@@ -5596,7 +5596,7 @@
                         "A mixture of spare vegetables and meat cuts not used in regular meals."
                     ],
                     [   
-                        9999,
+                        459,
                         "Commoner's Lunch",
                         "'Adventurers' Steak",
                         0.03,
@@ -5608,7 +5608,7 @@
                         "A thick cut of meat from some kind of animal...hopefully."
                     ],
                     [   
-                        9999,
+                        460,
                         "Commoner's Lunch",
                         "Minced Pork",
                         0.03,
@@ -5620,7 +5620,7 @@
                         "A plate of minced pork with a few carrot slices mixed in."
                     ],
                     [   
-                        9999,
+                        461,
                         "Commoner's Lunch",
                         "Roast Goat & Cheese",
                         0.04,
@@ -5634,7 +5634,7 @@
                 ],
                 [                    
                     [   
-                        9999,
+                        462,
                         "Merchant's Lunch",
                         "Roast Lamb & Cheese",
                         0.3,
@@ -5646,7 +5646,7 @@
                         "Pan fried lamb chunks, served with roasted peppers and carrots and some cheese grated on top."
                     ],
                     [   
-                        9999,
+                        463,
                         "Merchant's Lunch",
                         "Boar Tenderloin",
                         0.3,
@@ -5658,7 +5658,7 @@
                         "A thick slice of boar meat, fried in oil, served with onions and mashed potatos."
                     ],
                     [   
-                        9999,
+                        464,
                         "Merchant's Lunch",
                         "Baked Goose Breast",
                         0.3,
@@ -5670,7 +5670,7 @@
                         "A butterfly cut of goose breast, pan fried in garlic butter and seasoned with black pepper. Served with shallots and fried potatoes."
                     ],
                     [   
-                        9999,
+                        465,
                         "Merchant's Lunch",
                         "Grilled Salmon",
                         0.4,
@@ -5684,7 +5684,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        466,
                         "Noble's Lunch",
                         "Rack of Lamb",
                         1,
@@ -5696,7 +5696,7 @@
                         "A rack of slow cooked lamb, glazed and soft. Served with grilled leeks and salad potatos."
                     ],
                     [   
-                        9999,
+                        467,
                         "Noble's Lunch",
                         "Shellfish Platter",
                         2,
@@ -5708,7 +5708,7 @@
                         "A platter of shellfish cooked in butter and thyme. Served with peas and asparagus."
                     ],
                     [   
-                        9999,
+                        468,
                         "Noble's Lunch",
                         "Dragon Turtle Soup",
                         3,
@@ -5720,7 +5720,7 @@
                         "A light but filling soup made with tender strips of Dragon Turtle meat and several vegetables."
                     ],
                     [   
-                        9999,
+                        469,
                         "Nobles's Lunch",
                         "Roc Meat Portion",
                         4,
@@ -5734,7 +5734,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        470,
                         "Commoner's Dinner",
                         "Stockpot Stew/Soup",
                         0.03,
@@ -5746,7 +5746,7 @@
                         "A mixture of spare vegetables and meat cuts not used in regular meals."
                     ],
                     [   
-                        9999,
+                        471,
                         "Commoner's Dinner",
                         "Grave of Small Birds",
                         0.03,
@@ -5758,7 +5758,7 @@
                         "A selection of assorted small bird meat, fried in grease and lightly salted."
                     ],
                     [   
-                        9999,
+                        472,
                         "Commoner's Dinner",
                         "'Tasha's Hideous Stew'",
                         0.03,
@@ -5770,7 +5770,7 @@
                         "A stew with random vegetables and meats thrown in, with a random bunch of herbs to give it a litle flavour."
                     ],
                     [   
-                        9999,
+                        473,
                         "Commoner's Dinner",
                         "Rabbit & Potato Plate",
                         0.04,
@@ -5784,7 +5784,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        474,
                         "Merchants's Dinner",
                         "Hunter's Pie",
                         0.3,
@@ -5796,7 +5796,7 @@
                         "A chicken and bacon pie, baked with cheese and a sweet smoky sauce."
                     ],
                     [   
-                        9999,
+                        475,
                         "Merchants's Dinner",
                         "Bloodhawk Breast",
                         0.3,
@@ -5808,7 +5808,7 @@
                         "A butterfly cut Bloodhawks breast, fried in garlic oil. Served with onions, carrots and peas."
                     ],
                     [   
-                        9999,
+                        476,
                         "Merchants's Dinner",
                         "Crocodile Steak",
                         0.3,
@@ -5820,7 +5820,7 @@
                         "A thick slice of crocodile meat, braised in a red wine sauce. Taste is a little like chicken and pork."
                     ],
                     [   
-                        9999,
+                        477,
                         "Merchants's Dinner",
                         "Roast Bullywug Legs",
                         0.3,
@@ -5834,7 +5834,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        478,
                         "Noble's Dinner",
                         "Buffalo Ribeye",
                         1,
@@ -5846,7 +5846,7 @@
                         "A large steak served medium-rare, fried to perfection and seasoned with just the right amount of salt and pepper. Served with fried potatoes and mayonnaise."
                     ],
                     [   
-                        9999,
+                        479,
                         "Noble's Dinner",
                         "Sahuagin Caviar",
                         2,
@@ -5858,7 +5858,7 @@
                         "Exotic caviar served with crackers, fried onions, chopped boiled eggs and sauteed vegetables."
                     ],
                     [   
-                        9999,
+                        480,
                         "Noble's Dinner",
                         "Owlbear Steak and Eggs",
                         3,
@@ -5870,7 +5870,7 @@
                         "A thick Owlbear steak served medium-rare, seasoned with sage and thyme. Served with fried Owlbear eggs."
                     ],
                     [   
-                        9999,
+                        481,
                         "Noble's Dinner",
                         "Dragon Steak",
                         3,
@@ -5884,7 +5884,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        482,
                         "Room Hire",
                         "Commoner's Bedroom",
                         0.03,
@@ -5896,7 +5896,7 @@
                         "A room with a rough mattress on a splintery wooden bed, loose straw for a pillow and a thin candle for light."
                     ],
                     [   
-                        9999,
+                        483,
                         "Room Hire",
                         "Merchant's Bedroom",
                         0.7,
@@ -5908,7 +5908,7 @@
                         "A room with a comfortable mattress on a well made wooden bed and a lamp is provided with a random book."
                     ],
                     [   
-                        9999,
+                        484,
                         "Room Hire",
                         "Noble's Bedroom",
                         3,
@@ -5927,7 +5927,7 @@
                 "Market/Produce",
                 [
                     [   
-                        9999,
+                        485,
                         "Drink Cups",
                         "Coffee",
                         0.03,
@@ -5939,7 +5939,7 @@
                         "Freshly made strong coffee."
                     ],
                     [   
-                        9999,
+                        486,
                         "Drink Cups",
                         "Goodberry 'Wine'",
                         0.07,
@@ -5951,7 +5951,7 @@
                         "Freshly squeezed and naturally grown goodberry juice. It's little tangy."
                     ],
                     [   
-                        9999,
+                        487,
                         "Drink Cups",
                         "Fruit Juice",
                         0.03,
@@ -5963,7 +5963,7 @@
                         "Local fruit, squashed in to juice."
                     ],
                     [   
-                        9999,
+                        488,
                         "Drink Cups",
                         "Milk",
                         0.02,
@@ -5977,7 +5977,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        489,
                         "Fruit Piece",
                         "In Season",
                         0.02,
@@ -5989,7 +5989,7 @@
                         "A piece of ripe fruit. It smells great."
                     ],
                     [   
-                        9999,
+                        490,
                         "Fruit Piece",
                         "Out of Season",
                         0.01,
@@ -6003,7 +6003,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        491,
                         "Vegetable",
                         "Amaranth Leaf",
                         0.03,
@@ -6015,7 +6015,7 @@
                         "A bitter green leaf. Tastes better when boiled."
                     ],
                     [   
-                        9999,
+                        492,
                         "Vegetable",
                         "Broccoli/Cauliflower",
                         0.02,
@@ -6027,7 +6027,7 @@
                         "A thick flower of a plant that tastes great when properly cooked."
                     ],
                     [   
-                        9999,
+                        493,
                         "Vegetable",
                         "Cabbage/Lettuce",
                         0.01,
@@ -6039,7 +6039,7 @@
                         "An easily grown head of cabbage/lettuce. Works well in salads."
                     ],
                     [   
-                        9999,
+                        494,
                         "Vegetable",
                         "Legumes",
                         0.03,
@@ -6051,7 +6051,7 @@
                         "Either beans, peas or lentils. Work well as sides or as part of a salad."
                     ],
                     [   
-                        9999,
+                        495,
                         "Vegetable",
                         "Root Vegetable ",
                         0.01,
@@ -6065,7 +6065,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        496,
                         "Grains",
                         "Amaranth",
                         1,
@@ -6077,7 +6077,7 @@
                         "A starchy grain with multiple uses as a cereal grain or a flour when milled."
                     ],
                     [   
-                        9999,
+                        497,
                         "Grains",
                         "Barley/Rye",
                         1,
@@ -6089,7 +6089,7 @@
                         "A easily grown grain that is normally milled for flour."
                     ],
                     [   
-                        9999,
+                        498,
                         "Grains",
                         "Amaranth",
                         0.01,
@@ -6101,7 +6101,7 @@
                         "A starchy grain with multiple uses as a cereal grain or a flour when milled."
                     ],
                     [   
-                        9999,
+                        499,
                         "Grains",
                         "Oats",
                         0.3,
@@ -6113,7 +6113,7 @@
                         "A versatile and dense grain that makes filling foods, breads and cereal."
                     ],
                     [   
-                        9999,
+                        500,
                         "Grains",
                         "Quinoa",
                         0.7,
@@ -6125,7 +6125,7 @@
                         "A grain with more health benefits than other grains."
                     ],
                     [   
-                        9999,
+                        501,
                         "Grains",
                         "Rice",
                         0.03,
@@ -6137,7 +6137,7 @@
                         "A flexible staple food that is easy to cook and goes well with many dishes"
                     ],
                     [   
-                        9999,
+                        502,
                         "Grains",
                         "Wheat",
                         0.7,
@@ -6151,7 +6151,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        503,
                         "Baked Goods",
                         "Almond Sweetroll",
                         0.07,
@@ -6163,7 +6163,7 @@
                         "A sweet cake with almond paste inside it. Fairly rich."
                     ],
                     [   
-                        9999,
+                        504,
                         "Baked Goods",
                         "Seedcake",
                         0.03,
@@ -6175,7 +6175,7 @@
                         "A slice of sweet cake packed with a variety of locally available seeds."
                     ],
                     [   
-                        9999,
+                        505,
                         "Baked Goods",
                         "Cheese Danish",
                         0.07,
@@ -6187,7 +6187,7 @@
                         "A flaky pastry danish with cheese baked inside it."
                     ],
                     [   
-                        9999,
+                        506,
                         "Baked Goods",
                         "Fruit Tart",
                         0.2,
@@ -6199,7 +6199,7 @@
                         "Sweet fruits with a honey glaze, baked in to a pastry case."
                     ],
                     [   
-                        9999,
+                        507,
                         "Baked Goods",
                         "Manchet Loaf",
                         0.07,
@@ -6211,7 +6211,7 @@
                         "A loaf of bread made with coarse flour."
                     ],
                     [   
-                        9999,
+                        508,
                         "Baked Goods",
                         "Quince Bread",
                         0.1,
@@ -6223,7 +6223,7 @@
                         "A loaf with boiled quince pieces in it. Tastes like a tart apple cake."
                     ],
                     [   
-                        9999,
+                        509,
                         "Baked Goods",
                         "Rye Loaf",
                         0.07,
@@ -6237,7 +6237,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        510,
                         "Protein",
                         "Beef/Buffalo/Deer",
                         0.2,
@@ -6249,7 +6249,7 @@
                         "Locally available meats of larger animals, wrapped in a clean cloth."
                     ],
                     [   
-                        9999,
+                        511,
                         "Protein",
                         "Boar/Chicken/Pork",
                         0.06,
@@ -6261,7 +6261,7 @@
                         "Locally available meats of the more popular variety, wrapped in a clean cloth."
                     ],
                     [   
-                        9999,
+                        512,
                         "Protein",
                         "Dried/Salted Meat",
                         0.3,
@@ -6273,7 +6273,7 @@
                         "Dried/salted meats meant for longer keeping. Ideal as travel rations."
                     ],
                     [   
-                        9999,
+                        513,
                         "Protein",
                         "Eggs",
                         0.02,
@@ -6285,7 +6285,7 @@
                         "Local fowl eggs with a multitude of uses."
                     ],
                     [   
-                        9999,
+                        514,
                         "Protein",
                         "Fish",
                         0.4,
@@ -6297,7 +6297,7 @@
                         "Locally caught variety of fish."
                     ],
                     [   
-                        9999,
+                        515,
                         "Protein",
                         "Goat/Lamb",
                         0.2,
@@ -6309,7 +6309,7 @@
                         "Cuts of goat/lamb meat, wrapped in a clean cloth."
                     ],
                     [   
-                        9999,
+                        516,
                         "Protein",
                         "Shellfish",
                         1,
@@ -6323,7 +6323,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        517,
                         "Cheeses",
                         "Brie",
                         0.1,
@@ -6335,7 +6335,7 @@
                         "A mildly buttery and creamy cheese that pairs well with many foods."
                     ],
                     [   
-                        9999,
+                        518,
                         "Cheeses",
                         "Cheddar",
                         0.7,
@@ -6347,7 +6347,7 @@
                         "A stronger cheese that pairs well with citrus or sweet flavours."
                     ],
                     [   
-                        9999,
+                        519,
                         "Cheeses",
                         "Cottage",
                         0.03,
@@ -6359,7 +6359,7 @@
                         "A slightly salty and creamy cheese with lots of curds in it. Good as a side or mixed in to a salad."
                     ],
                     [   
-                        9999,
+                        520,
                         "Cheeses",
                         "Parmesan",
                         0.3,
@@ -6371,7 +6371,7 @@
                         "A hard cheese with a gritty texture that tastes slightly fruity and nutty. Best grated over pastas or used in soups and risottos."
                     ],
                     [   
-                        9999,
+                        521,
                         "Cheeses",
                         "Specialty",
                         1,
@@ -6385,7 +6385,7 @@
                 ],
                 [
                     [   
-                        9999,
+                        522,
                         "Spices",
                         "Cinnamon",
                         0.07,
@@ -6397,7 +6397,7 @@
                         "A dry armomatic spice with a wide range of uses. Normally adds a warming spice to food."
                     ],
                     [   
-                        9999,
+                        523,
                         "Spices",
                         "Coriander",
                         0.07,
@@ -6409,7 +6409,7 @@
                         "A floral and citrusy tasting herb. Normally used with other spices to create exotic tastes."
                     ],
                     [   
-                        9999,
+                        524,
                         "Spices",
                         "Cinnamon",
                         0.02,
@@ -6421,7 +6421,7 @@
                         "A dry armomatic spice with a wide range of uses. Normally adds a warming spice to food."
                     ],
                     [   
-                        9999,
+                        525,
                         "Spices",
                         "Cumin",
                         0.04,
@@ -6433,7 +6433,7 @@
                         "A slightly sweet and warming spice. Normally used in exotic dishes."
                     ],
                     [   
-                        9999,
+                        526,
                         "Spices",
                         "Garlic",
                         0.01,
@@ -6445,7 +6445,7 @@
                         "Related to onions, garlic has a distinctive taste that pairs well with richer foods. Adds a lot of flavour to whatever it is paired with."
                     ],
                     [   
-                        9999,
+                        527,
                         "Spices",
                         "Mustard",
                         0.7,
@@ -6457,7 +6457,7 @@
                         "Seeds with a strong and pungent flavour. When mixed, it can be either sweet or spicy. Normally paired with meats, vegetables and cheeses."
                     ],
                     [   
-                        9999,
+                        528,
                         "Spices",
                         "Nutmeg",
                         0.07,
@@ -6469,7 +6469,7 @@
                         "A rich and nutty flavoured spice. Usually quite subtle. Adds an earthy sensation to foods it is cooked with."
                     ],
                     [   
-                        9999,
+                        529,
                         "Spices",
                         "Pepper",
                         0.03,
@@ -6481,7 +6481,7 @@
                         "A universally loved spice that adds a slightly spicy kick to whatever it is added to"
                     ],
                     [   
-                        9999,
+                        530,
                         "Spices",
                         "Salt",
                         0.04,
@@ -6493,7 +6493,7 @@
                         "A spice that all cooks swear by for its versatility. Adds 'body' to whatever it is used with."
                     ],
                     [   
-                        9999,
+                        531,
                         "Spices",
                         "Specialty",
                         0.1,
@@ -6511,7 +6511,7 @@
                 "Jeweler/Gemcutter",
                 [
                     [
-                        9999,
+                        532,
                         "Gear",
                         "Amulet/Necklace",
                         3,
@@ -6523,7 +6523,7 @@
                         "A necklace of joined delicate chains with a clasp on either end. A gem can be set in it if you include the price of the gem below."
                     ],
                     [
-                        9999,
+                        533,
                         "Gear",
                         "Earrings",
                         3,
@@ -6535,7 +6535,7 @@
                         "A styled precious metal design to be worn in the ear. A gem can be set in both pieces if you include the price of them gem below."
                     ],
                     [
-                        9999,
+                        534,
                         "Gear",
                         "Jewelery",
                         38,
@@ -6547,7 +6547,7 @@
                         "Bangles, beads, brooches or any other piece of jewelery. Has a gem set inside it."
                     ],
                     [
-                        9999,
+                        535,
                         "Gear",
                         "Signet Ring", 
                         3, 
@@ -6561,7 +6561,7 @@
                 ],
                 [
                     [
-                        9999,
+                        536,
                         "Artisan Tools",
                         "Jeweler Tools", 
                         18, 
@@ -6575,7 +6575,7 @@
                 ],
                 [
                     [
-                        9999,
+                        537,
                         "Services",
                         "Gem Appraisal", 
                         3, 
@@ -6587,7 +6587,7 @@
                         "The jeweler carefully identifies and measures the quality of three gemstones."
                     ],
                     [
-                        9999,
+                        538,
                         "Services",
                         "Resize Jewelery", 
                         7, 
@@ -6599,7 +6599,7 @@
                         "The jeweler cuts and reforms one piece of jewelery so that it fits comfortably."
                     ],
                     [
-                        9999,
+                        539,
                         "Services",
                         "Set Gem", 
                         34, 
@@ -6611,7 +6611,7 @@
                         "Price depends on the value of the gem being set. With a competent jeweler, gems can be set in to anything, not just jewelery."
                     ],
                     [
-                        9999,
+                        540,
                         "Services",
                         "Stonecutting", 
                         10, 
@@ -6625,7 +6625,7 @@
                 ],
                 [
                     [
-                        9999,
+                        541,
                         "Common Gemstones",
                         "Azurite", 
                         7, 
@@ -6637,7 +6637,7 @@
                         "A soft, deep-blue copper mineral. Produced by the weathering of copper ore deposits."
                     ],
                     [
-                        9999,
+                        542,
                         "Common Gemstones",
                         "Banded Agate", 
                         7, 
@@ -6649,7 +6649,7 @@
                         "A quartz mineraloid formed from accumulations of siliceous groundwater deposits in rock."
                     ],
                     [
-                        9999,
+                        543,
                         "Common Gemstones",
                         "Blue Quartz", 
                         7, 
@@ -6661,7 +6661,7 @@
                         "A rare form of light blue quartz. Formed from tourmaline impurities found in regular quartz. "
                     ],
                     [
-                        9999,
+                        544,
                         "Common Gemstones",
                         "Eye Agate", 
                         7, 
@@ -6673,7 +6673,7 @@
                         "A light brown gemstone with a white concentric circle on it, formed from silica impurities in agate nodules."
                     ],
                     [
-                        9999,
+                        545,
                         "Common Gemstones",
                         "Hematite", 
                         7, 
@@ -6685,7 +6685,7 @@
                         "A grey/black mineral formed from the cooling of magma."
                     ],
                     [
-                        9999,
+                        546,
                         "Common Gemstones",
                         "Lapis Lazuli", 
                         7, 
@@ -6697,7 +6697,7 @@
                         "A deep blue gemstone formed from limestone."
                     ],
                     [
-                        9999,
+                        547,
                         "Common Gemstones",
                         "Malachite", 
                         7, 
@@ -6709,7 +6709,7 @@
                         "A green mineral formed with carbonated water comes in to contact with copper."
                     ],
                     [
-                        9999,
+                        548,
                         "Common Gemstones",
                         "Moss Agate", 
                         7, 
@@ -6722,7 +6722,7 @@
                     ],
 
                     [
-                        9999,
+                        549,
                         "Common Gemstones",
                         "Obsidian", 
                         7, 
@@ -6734,7 +6734,7 @@
                         "A shiny black volcanic glass, formed by the rapid cooling of viscous lava from volcanoes."
                     ],
                     [
-                        9999,
+                        550,
                         "Common Gemstones",
                         "Rhodochrosite", 
                         7, 
@@ -6746,7 +6746,7 @@
                         "A pink mineral formed when managese rich rocks interact with hydrothermal processes."
                     ],
                     [
-                        9999,
+                        551,
                         "Common Gemstones",
                         "Tiger Eye", 
                         7, 
@@ -6758,7 +6758,7 @@
                         "A brown gem, layered with yellow bands when metal deposits are replaced with silica."
                     ],
                     [
-                        9999,
+                        552,
                         "Common Gemstones",
                         "Turquoise", 
                         7, 
@@ -6772,7 +6772,7 @@
                 ],
                 [
                     [
-                        9999,
+                        553,
                         "Uncommon Gemstones",
                         "Bloodstone", 
                         38, 
@@ -6784,7 +6784,7 @@
                         "A grey-red mineral that forms when layers of magma cooled over each other."
                     ],
                     [
-                        9999,
+                        554,
                         "Uncommon Gemstones",
                         "Carnelian", 
                         38, 
@@ -6796,7 +6796,7 @@
                         "An orange mineral that forms when two different quartz types mix."
                     ],
                     [
-                        9999,
+                        555,
                         "Uncommon Gemstones",
                         "Chalcedony", 
                         38, 
@@ -6808,7 +6808,7 @@
                         "A white mineral that forms when watery silica gels at low temperatures."
                     ],
                     [
-                        9999,
+                        556,
                         "Uncommon Gemstones",
                         "Chrysoprase", 
                         38, 
@@ -6820,7 +6820,7 @@
                         "A green mineral that forms from the weathering of magnesite rich rocks."
                     ],
                     [
-                        9999,
+                        557,
                         "Uncommon Gemstones",
                         "Citrine", 
                         38, 
@@ -6832,7 +6832,7 @@
                         "A pale yellow-brown mineral that forms amethyst is subjected to heat."
                     ],
                     [
-                        9999,
+                        558,
                         "Uncommon Gemstones",
                         "Jasper", 
                         38, 
@@ -6844,7 +6844,7 @@
                         "A black, blue or brown mineral that forms from silica rich sediments or volacnic ash."
                     ],
                     [
-                        9999,
+                        559,
                         "Uncommon Gemstones",
                         "Moonstone", 
                         38, 
@@ -6856,7 +6856,7 @@
                         "A white glowing mineral that forms from layers of magma grow in to each other."
                     ],
                     [
-                        9999,
+                        560,
                         "Uncommon Gemstones",
                         "Onyx", 
                         38, 
@@ -6868,7 +6868,7 @@
                         "A black or white mineral that forms from stalactites or stalagmites in caves."
                     ],
                     [
-                        9999,
+                        561,
                         "Uncommon Gemstones",
                         "Quartz", 
                         38, 
@@ -6880,7 +6880,7 @@
                         "A see through crystal available in several colours. Forms when silica cools in magma. Slower cooling allows larger crystals to form."
                     ],
                     [
-                        9999,
+                        562,
                         "Uncommon Gemstones",
                         "Sardonyx", 
                         38, 
@@ -6892,7 +6892,7 @@
                         "A multicoloured variety of banded Onyx. Forms from silica cooling, then more seeping in to cracks and fissure as a new layer. "
                     ],
                     [
-                        9999,
+                        563,
                         "Uncommon Gemstones",
                         "Star Rose Quartz", 
                         38, 
@@ -6904,7 +6904,7 @@
                         "A white mineral with fibres in it, arranged in to a star pattern. Forms when fibres mix in to silica during the cooling process."
                     ],
                     [                    
-                        9999,
+                        564,
                         "Uncommon Gemstones",
                         "Zircon", 
                         38, 
@@ -6919,7 +6919,7 @@
                 ,
                 [
                     [                    
-                        9999,
+                        565,
                         "Rare Gemstones",
                         "Amber", 
                         75, 
@@ -6931,7 +6931,7 @@
                         "A faint gold coloured mineral, formed from hardened tree sap."
                     ],
                     [                    
-                        9999,
+                        566,
                         "Rare Gemstones",
                         "Amethyst", 
                         75, 
@@ -6943,7 +6943,7 @@
                         "A deep purple mineral formed inside of magma bubbles, allowing the mineral to grow from silicon dioxide deposits."
                     ],
                     [                    
-                        9999,
+                        567,
                         "Rare Gemstones",
                         "Chrysoberyl", 
                         75, 
@@ -6955,7 +6955,7 @@
                         "A yellow-green prismatic mineral formed from low density magma that rise to the surface to cool."
                     ],
                     [                    
-                        9999,
+                        568,
                         "Rare Gemstones",
                         "Coral", 
                         75, 
@@ -6967,7 +6967,7 @@
                         "Crimson remains of a coral reef that has died and hardened in to a rock like mineral."
                     ],
                     [                    
-                        9999,
+                        569,
                         "Rare Gemstones",
                         "Garnet", 
                         75, 
@@ -6979,7 +6979,7 @@
                         "A red or violet mineral formed from metamorphic rock that has high aluminium content in it."
                     ],
                     [                    
-                        9999,
+                        570,
                         "Rare Gemstones",
                         "Jade", 
                         75, 
@@ -6991,7 +6991,7 @@
                         "A vivid green mineral formed from tectonic plates moving together, where metamorphic rocks mix together."
                     ],
                     [                    
-                        9999,
+                        571,
                         "Rare Gemstones",
                         "Jet", 
                         75, 
@@ -7003,7 +7003,7 @@
                         "Black ancient decomposed wood that is as hard as most minerals"
                     ],
                     [                    
-                        9999,
+                        572,
                         "Rare Gemstones",
                         "Pearl", 
                         75, 
@@ -7015,7 +7015,7 @@
                         "A lustrous white or pink spherical mineral. Formed over time from food a mollusk can't digest."
                     ],
                     [                    
-                        9999,
+                        573,
                         "Rare Gemstones",
                         "Spinel", 
                         75, 
@@ -7027,7 +7027,7 @@
                         "A clear red or green mineral formed from conrundum and magnesia mixing in magma form."
                     ],
                     [                    
-                        9999,
+                        574,
                         "Rare Gemstones",
                         "Tourmaline", 
                         75, 
@@ -7041,7 +7041,7 @@
                 ],
                 [
                     [                    
-                        9999,
+                        575,
                         "Very Rare Gemstones",
                         "Alexandrite", 
                         375, 
@@ -7053,7 +7053,7 @@
                         "A dark green gem that only forms when aluminium and beryllium combines with iron, titanium and chromium."
                     ],
                     [                    
-                        9999,
+                        576,
                         "Very Rare Gemstones",
                         "Aquamarine", 
                         375, 
@@ -7065,7 +7065,7 @@
                         "A pale green/blue mineral that forms with a slow cooling process and thousands of years."
                     ],
                     [                    
-                        9999,
+                        577,
                         "Very Rare Gemstones",
                         "Black Pearl", 
                         375, 
@@ -7077,7 +7077,7 @@
                         "This gem is formed from a specific species of oyster if a piece of sand gets stuck in their body."
                     ],
                     [                    
-                        9999,
+                        578,
                         "Very Rare Gemstones",
                         "Blue Spinel", 
                         375, 
@@ -7089,7 +7089,7 @@
                         "A rarely formed mineral that requires cobalt impurities to occur during the gems formation to give it the signature blue shade."
                     ],
                     [                    
-                        9999,
+                        579,
                         "Very Rare Gemstones",
                         "Peridot", 
                         375, 
@@ -7101,7 +7101,7 @@
                         "A rich green gem that forms deep in the crust of the world at very high temperatures."
                     ],
                     [                    
-                        9999,
+                        580,
                         "Very Rare Gemstones",
                         "Topaz", 
                         375, 
@@ -7113,7 +7113,7 @@
                         "A vivid yellow mineral that forms when fluorine gas mixes with a few specific magma formations."
                     ],
                     [                    
-                        9999,
+                        581,
                         "Very Rare Gemstones",
                         "Alexandrite", 
                         375, 
@@ -7128,7 +7128,7 @@
                 ,
                 [
                     [                    
-                        9999,
+                        582,
                         "Rarest Gemstones",
                         "Black Opal", 
                         750, 
@@ -7140,7 +7140,7 @@
                         "A black mineral with multi-coloured speckles. Forms from mineral rich water evaporating under intense cosntant heat."
                     ],
                     [                    
-                        9999,
+                        583,
                         "Rarest Gemstones",
                         "Blue Sapphire", 
                         750, 
@@ -7152,7 +7152,7 @@
                         "A lustrous blue gem formed when titanium mixes with corundum, deep underground."
                     ],
                     [                    
-                        9999,
+                        584,
                         "Rarest Gemstones",
                         "Emerald", 
                         750, 
@@ -7164,7 +7164,7 @@
                         "A rich green mineral that forms from a long period of cooling and with berylium deposits."
                     ],
                     [                    
-                        9999,
+                        585,
                         "Rarest Gemstones",
                         "Fire Opal", 
                         750, 
@@ -7176,7 +7176,7 @@
                         "A bright orange mineral with brighter streaks of yellow in it. Forms in the depths of volcanoes when magma surrounds and traps water, subjecting it to intense heat and pressure."
                     ],
                     [                    
-                        9999,
+                        586,
                         "Rarest Gemstones",
                         "Opal", 
                         750, 
@@ -7188,7 +7188,7 @@
                         "A pale blue/green mineral. Forms from mineral rich water seeping through sandstone and evaporting over a long time."
                     ],
                     [                    
-                        9999,
+                        587,
                         "Rarest Gemstones",
                         "Star Sapphire", 
                         750, 
@@ -7200,7 +7200,7 @@
                         "A lustrous blue gem with a persistent optical illusion, called asterism. showing a white star through the centre of the gem. Forms as a normal sapphire would, but with inclusions of rutile causing the effect."
                     ],
                     [                    
-                        9999,
+                        588,
                         "Rarest Gemstones",
                         "Star Ruby", 
                         750, 
@@ -7212,7 +7212,7 @@
                         "A rich red mineral with a persistent optical illusion, called asterism. showing a white star through the centre of the gem. Forms as a normal ruby would, but with inclusions of rutile causing the effect."
                     ],
                     [                                       
-                        9999,
+                        589,
                         "Rarest Gemstones",
                         "Yellow Sapphire", 
                         750, 
@@ -7227,7 +7227,7 @@
                 [
                 
                     [                    
-                        9999,
+                        590,
                         "Royalty Gemstones",
                         "Black Sapphire", 
                         3750, 
@@ -7239,7 +7239,7 @@
                         "A lustrous black mineral. Forms as a normal sapphire would but with inclusions of hematite"
                     ],
                     [                    
-                        9999,
+                        591,
                         "Royalty Gemstones",
                         "Diamond", 
                         3750, 
@@ -7251,7 +7251,7 @@
                         "An entirely transparent mineral that forms out of pure carbon under intense heat and pressure over a long time. Difficult to cut."
                     ],
                     [                    
-                        9999,
+                        592,
                         "Royalty Gemstones",
                         "Jacinth", 
                         3750, 
@@ -7263,7 +7263,7 @@
                         "A fiery orange mineral. Formed as zircon but with iron impurities giving it a distinctive colour."
                     ],
                     [                    
-                        9999,
+                        593,
                         "Royalty Gemstones",
                         "Ruby", 
                         3750, 
@@ -7283,7 +7283,7 @@
                 "Clothing",
                 [
                     [
-                        9999,
+                        594,
                         "Clothes",
                         "Bandolier",
                         6,
@@ -7295,7 +7295,7 @@
                         "An assortment of pouches sewn in to a thick strap, usually worn around the chest. Provides quick access to small items."
                     ],
                     [
-                        9999,
+                        595,
                         "Clothes",
                         "Belt",
                         1,
@@ -7307,7 +7307,7 @@
                         "A buckled leather strap worn over pants to help keep them up."
                     ],
                     [
-                        9999,
+                        596,
                         "Clothes",
                         "Premium Backpack",
                         3,
@@ -7319,7 +7319,7 @@
                         "A backpack with adjustable straps, clips and seperate compartments"
                     ],
                     [
-                        9999,
+                        597,
                         "Clothes",
                         "Blouse",
                         0.7,
@@ -7331,7 +7331,7 @@
                         "A top for women. Fine seams and embroidery adorn it."
                     ],
                     [
-                        9999,
+                        598,
                         "Clothes",
                         "Breeches",
                         0.7,
@@ -7343,7 +7343,7 @@
                         "Knee high trousers that are designed to be flexible."
                     ],
                     [
-                        9999,
+                        599,
                         "Clothes",
                         "Boots",
                         3,
@@ -7355,7 +7355,7 @@
                         "Well made leather boots that are tough, well fitted and last for a long time."
                     ],
                     [
-                        9999,
+                        600,
                         "Clothes",
                         "Bow tie",
                         0.3,
@@ -7367,7 +7367,7 @@
                         "A short tie, wrapped in to a bow."
                     ],
                     [
-                        9999,
+                        601,
                         "Clothes",
                         "Cloak/Mantle",
                         3,
@@ -7379,7 +7379,7 @@
                         "A cloak or mantle worn over the shoulders that helps keep the wearer warm without restricting movement."
                     ],
                     [
-                        9999,
+                        602,
                         "Clothes",
                         "Coat",
                         3,
@@ -7391,7 +7391,7 @@
                         "A coat with an oiled outer layer to help fend off the elements and a fur lined inner layer for comfort and warmth."
                     ],
                     [
-                        9999,
+                        603,
                         "Clothes",
                         "Coin Purse",
                         0.7,
@@ -7403,7 +7403,7 @@
                         "A leather coin purse that snaps shut. Can hold 100 coins at most."
                     ],
                     [
-                        9999,
+                        604,
                         "Clothes",
                         "Corset",
                         2,
@@ -7415,7 +7415,7 @@
                         "A chest piece with iron bars down the length of it. It is tightened with several buckles at the back to train the waist."
                     ],
                     [
-                        9999,
+                        605,
                         "Clothes",
                         "Dress",
                         2,
@@ -7427,7 +7427,7 @@
                         "An elegant dress with embroidery on it. Made of fine cloths and/or silks"
                     ],
                     [
-                        9999,
+                        606,
                         "Clothes",
                         "Dress Pants",
                         1,
@@ -7439,7 +7439,7 @@
                         "Smart trousers, neatly pressed. Ideal for formal events. Made to the customers size and preferences."
                     ],
                     [
-                        9999,
+                        607,
                         "Clothes",
                         "Dress Shirt",
                         0.7,
@@ -7451,7 +7451,7 @@
                         "A smart shirt, neatly pressed and well sewn. Ideal for formal events."
                     ],
                     [
-                        9999,
+                        608,
                         "Clothes",
                         "Dress Shoes",
                         2,
@@ -7463,7 +7463,7 @@
                         "Elegant shoes, polished to a mirror sheen. Ideal for formal events."
                     ],
                     [
-                        9999,
+                        609,
                         "Clothes",
                         "Dance Shoes",
                         1,
@@ -7475,7 +7475,7 @@
                         "A pair of form fitting shoes with tougher soles for performing dances."
                     ],
                     [
-                        9999,
+                        610,
                         "Clothes",
                         "Gloves",
                         0.7,
@@ -7487,7 +7487,7 @@
                         "Comfortable leather gloves that still allow the wearer to manipulate objects."
                     ],
                     [
-                        9999,
+                        611,
                         "Clothes",
                         "Hat",
                         1,
@@ -7499,7 +7499,7 @@
                         "A hat, available in a number of styles."
                     ],
                     [
-                        9999,
+                        612,
                         "Clothes",
                         "Jacket",
                         3,
@@ -7511,7 +7511,7 @@
                         "Unlike a coat, a jacket fits only the torso but its lighter and easier to wear."
                     ],
                     [
-                        9999,
+                        613,
                         "Clothes",
                         "Jerkin",
                         1,
@@ -7524,7 +7524,7 @@
                     ],
                   
                     [
-                        9999,
+                        614,
                         "Clothes",
                         "Pouch",
                         0.7,
@@ -7536,7 +7536,7 @@
                         "A small leatther pouch, sealed with a clasp. Ideal for holding small items."
                     ],
                     [
-                        9999,
+                        615,
                         "Clothes",
                         "Robes", 
                         0.7, 
@@ -7548,7 +7548,7 @@
                         "Comfortable and ornate robes normally worn by officials or mages."
                     ],
                     [
-                        9999,
+                        616,
                         "Clothes",
                         "Sandals", 
                         2, 
@@ -7560,7 +7560,7 @@
                         "Straps of leather spaced apart that form a shoe. Soft and comfortable."
                     ],
                     [
-                        9999,
+                        617,
                         "Clothes",
                         "Scarf", 
                         0.3, 
@@ -7572,7 +7572,7 @@
                         "A length of fabric worn around the neck to provide warmth."
                     ],
                     [
-                        9999,
+                        618,
                         "Clothes",
                         "Skirt", 
                         2, 
@@ -7584,7 +7584,7 @@
                         "A knee or shin length wrap of fabric, sewn along the outer thigh."
                     ],
                     [
-                        9999,
+                        619,
                         "Clothes",
                         "Swimwear", 
                         0.7, 
@@ -7596,7 +7596,7 @@
                         "A garment made of strong but thin oiled leather. Waterproof and flexible."
                     ],
                     [
-                        9999,
+                        620,
                         "Gear",
                         "Tie", 
                         0.3, 
@@ -7608,7 +7608,7 @@
                         "A length of straight cut fabric, folded and wrapped around the neck as a piece of formal attire."
                     ],
                     [
-                        9999,
+                        621,
                         "Clothes",
                         "Tunic", 
                         0.3, 
@@ -7620,7 +7620,7 @@
                         "A long piece of fabric, sewn like a shirt, that is reaches the knees. Tied at the waist with a belt."
                     ],
                     [
-                        9999,
+                        622,
                         "Clothes",
                         "Undergarments", 
                         0.3, 
@@ -7635,7 +7635,7 @@
                 ,
                 [
                     [
-                        9999,
+                        623,
                         "Services",
                         "Adjustments", 
                         1, 
@@ -7647,7 +7647,7 @@
                         "The clothier can add or remove parts of a garment, like adding pockets or removing embroidery."
                     ],
                     [
-                        9999,
+                        624,
                         "Services",
                         "Alterations", 
                         1, 
@@ -7659,7 +7659,7 @@
                         "A garment is repaired or adjusted to suit the build of the customer."
                     ],
                     [
-                        9999,
+                        625,
                         "Services",
                         "Embrodiery", 
                         1, 
@@ -7671,7 +7671,7 @@
                         "Per one foot of fabric, a pattern of choice is embroidered on to any fabric of the customers request."
                     ],
                     [
-                        9999,
+                        626,
                         "Services",
                         "Fur Lining", 
                         2, 
@@ -7683,7 +7683,7 @@
                         "Lines the inside of a garment with soft fur. Exceptionally comfortable and warming."
                     ],
                     [
-                        9999,
+                        627,
                         "Services",
                         "Leather Lining", 
                         3, 
@@ -7695,7 +7695,7 @@
                         "Lines the inside of a garment with soft leather. Quite comfortable but adds a little extra protection."
                     ],
                     [
-                        9999,
+                        628,
                         "Services",
                         "Specialty Lining", 
                         5, 
@@ -7707,7 +7707,7 @@
                         "Lines the inside of a garment with a local specialty fabric or leather. Ask DM for specifics."
                     ],
                     [
-                        9999,
+                        629,
                         "Services",
                         "Silk Lining", 
                         4, 
