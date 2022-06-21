@@ -69,6 +69,16 @@ export const Wrapper = styled.div`
     
     background: rgb(100,200,200);
 `;
+
+export const TopBar = styled.div`
+    width: ${props => props.inputWidth || "100%"};
+    height: ${props => props.inputHeight || "15%"};
+    margin: ${props => props.inputMargin || "0px"};
+    padding: ${props => props.inputPadding || "20px"};
+    background: rgb(100,200,250);
+    
+`;
+
 export const RowSpacer = styled.div`
 width: 100%;
 `
