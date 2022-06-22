@@ -16,9 +16,10 @@ body {
 // ==========-------------------- HEADER STYLES
 export const InvisiDiv = styled.div`
 display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
+align-items: ${props => props.inputAlignItems || "center"};
+justify-content: ${props => props.inputJustifyContent || "center"};
+text-align: ${props => props.inputTextAlign || "center"};
+width: ${props => props.inputWidth || "auto"};
 
 ${props => props.IconDiv && css`
       display: inherit;
@@ -50,6 +51,9 @@ padding: ${props => props.inputPadding || "5px"};
 width: 180px;
 align-items: center;
 justify-content: center;
+font-size: ${props => props.inputFontSize || "14px"};
+font-weight: ${props => props.inputFontWeight || "medium"};
+text-shadow: ${props => props.inputFontShadow || "none"};
 `
 // ==========--------------------DIV STYLES
 export const Wrapper = styled.div`
@@ -71,6 +75,8 @@ export const Wrapper = styled.div`
 `;
 
 export const TopBar = styled.div`
+    display: flex;
+    flex-direction: row;
     width: ${props => props.inputWidth || "100%"};
     height: ${props => props.inputHeight || "15%"};
     margin: ${props => props.inputMargin || "0px"};

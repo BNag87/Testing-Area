@@ -26,8 +26,14 @@ return(
             anchor="left" 
             open={ isDrawerOpen }
             onClose={() => setIsDrawerOpen(false)}>               
-                <Box background="rgb(100,200,200)" width="250px" textAlign="center" role="presentation">
-                    <Typography variant="h6" component="div">Side Panel</Typography>
+
+                <Box sx={{
+                    backgroundColor:"rgb(100,200,200)",
+                    width: "250px", 
+                    textAlign:"center",
+                    }}
+                    role="presentation">
+                    <Typography variant="h6" component="div">DM Tools</Typography>
                 </Box>
         </Drawer>
     </>
