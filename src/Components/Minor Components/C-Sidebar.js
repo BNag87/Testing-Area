@@ -1,6 +1,7 @@
 //==========----------→ ↓IMPORTS HERE↓ ←---------==========
 import React from 'react';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import { Drawer, Box, Typography, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu'
 //==========----------→ ↓STYLE IMPORTS HERE↓ ←---------==========
@@ -33,7 +34,13 @@ return(
                     textAlign:"center",
                     }}
                     role="presentation">
-                    <Typography variant="h6" component="div">DM Tools</Typography>
+                    <Typography variant="h5" component="div">DM Tools</Typography>
+                    <hr/>
+                    <Typography variant="h6"><Link to="/">Home</Link></Typography>
+                    <hr/>
+                    <Typography variant="h6"><Link to="MerchantList">Merchant Inventories</Link></Typography>
+                    <Typography variant="h6"><Link to="NPCGenerator">NPC Generator</Link></Typography>
+                    <p>More to come</p>
                 </Box>
         </Drawer>
     </>

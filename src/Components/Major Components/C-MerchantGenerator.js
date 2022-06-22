@@ -135,8 +135,8 @@ export const MerchantGenerator = () => {
 //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
             <>
-            <Wrapper>
-                <h2>Merchant Generator</h2>
+            <InvisiDiv>
+            <Wrapper inputWidth="60%">
                 <Table inputWidth = "auto">
                     
                     <TableHead>
@@ -272,7 +272,7 @@ export const MerchantGenerator = () => {
                                 <hr/>
                                 <p><b>{innerThing[9]}</b></p>
                                 </>
-                            } arrow placement="top">
+                            } arrow placement="top" followCursor={true}>
                             
                             {/* Table rows for each record */}
                             <TableRow
@@ -356,7 +356,7 @@ export const MerchantGenerator = () => {
                                 <hr/>
                                 <p><b>{innerThing[9]}</b></p>
                                 </>
-                            } arrow placement="top">
+                            } arrow placement="top" followCursor={true}>
 
                 {/* Table rows for each record */}
                 <TableRow
@@ -426,6 +426,7 @@ export const MerchantGenerator = () => {
                     </TableHead>
                 </Table>
             </Wrapper>
+            </InvisiDiv>
             </>
     )
 }

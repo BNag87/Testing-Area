@@ -77,6 +77,7 @@ export const Wrapper = styled.div`
 export const TopBar = styled.div`
     display: flex;
     flex-direction: row;
+  
     width: ${props => props.inputWidth || "100%"};
     height: ${props => props.inputHeight || "15%"};
     margin: ${props => props.inputMargin || "0px"};
@@ -94,7 +95,7 @@ height: 100%;
 // ==========-------------------- TABLE STYLES
 export const Table = styled.table`
 text-align: center;
-table-layout: fixed;
+
 border: 3px outset grey;
 width: ${props => props.inputWidth || "300px"}
 `;
@@ -102,14 +103,16 @@ width: ${props => props.inputWidth || "300px"}
 export const SuperTH = styled.th`
 background: ${props => props.inputBackgroundColour || "black"};
 color: ${props => props.inputFontColour || "white"};
+width: ${props => props.inputWidth || "auto"};
 font-variant: small-caps;
-padding: 0px 10px 0px 10px;
+padding: 0px 5px 0px 5px;
 `;
 export const TableHead = styled.thead`
 /* border: outset white; */
 background: black;
 color: white;
 font-variant: small-caps;
+width: ${props => props.inputWidth || "auto"};
 `;
 export const SuperTD = styled.td`
 padding: 2px 5px 2px 5px;
@@ -142,7 +145,7 @@ export const TableRow = styled.tr`
     text-align:center;
     font-size: ${props => props.inputFontSize || "900"};
     font-style: ${props => props.inputFontStyle || "bold"};
-    background: white;
+    background: ${props => props.inputBackgroundColour || "#b368a3"};
     color: black;
     padding: ${props => props.inputPadding || "5px"};
     margin: ${props => props.inputMargin || "-3px 0px 5px 0px"};
@@ -150,7 +153,7 @@ export const TableRow = styled.tr`
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputHeight || "auto"};
     &:disabled{
-    background: darkgray;
+    background: #b368a3;
     color: black;
     transition: ease-in-out 0.3s;
     }
