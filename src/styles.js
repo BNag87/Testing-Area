@@ -16,9 +16,10 @@ body {
 // ==========-------------------- HEADER STYLES
 export const InvisiDiv = styled.div`
 display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
+align-items: ${props => props.inputAlignItems || "center"};
+justify-content: ${props => props.inputJustifyContent || "center"};
+text-align: ${props => props.inputTextAlign || "center"};
+width: ${props => props.inputWidth || "auto"};
 
 ${props => props.IconDiv && css`
       display: inherit;
@@ -50,6 +51,9 @@ padding: ${props => props.inputPadding || "5px"};
 width: 180px;
 align-items: center;
 justify-content: center;
+font-size: ${props => props.inputFontSize || "14px"};
+font-weight: ${props => props.inputFontWeight || "medium"};
+text-shadow: ${props => props.inputFontShadow || "none"};
 `
 // ==========--------------------DIV STYLES
 export const Wrapper = styled.div`
@@ -69,6 +73,19 @@ export const Wrapper = styled.div`
     
     background: rgb(100,200,200);
 `;
+
+export const TopBar = styled.div`
+    display: flex;
+    flex-direction: row;
+  
+    width: ${props => props.inputWidth || "100%"};
+    height: ${props => props.inputHeight || "15%"};
+    margin: ${props => props.inputMargin || "0px"};
+    padding: ${props => props.inputPadding || "20px"};
+    background: rgb(100,200,250);
+    
+`;
+
 export const RowSpacer = styled.div`
 width: 100%;
 `
@@ -78,7 +95,7 @@ height: 100%;
 // ==========-------------------- TABLE STYLES
 export const Table = styled.table`
 text-align: center;
-table-layout: fixed;
+
 border: 3px outset grey;
 width: ${props => props.inputWidth || "300px"}
 `;
@@ -86,14 +103,16 @@ width: ${props => props.inputWidth || "300px"}
 export const SuperTH = styled.th`
 background: ${props => props.inputBackgroundColour || "black"};
 color: ${props => props.inputFontColour || "white"};
+width: ${props => props.inputWidth || "auto"};
 font-variant: small-caps;
-padding: 0px 10px 0px 10px;
+padding: 0px 5px 0px 5px;
 `;
 export const TableHead = styled.thead`
 /* border: outset white; */
 background: black;
 color: white;
 font-variant: small-caps;
+width: ${props => props.inputWidth || "auto"};
 `;
 export const SuperTD = styled.td`
 padding: 2px 5px 2px 5px;
@@ -126,7 +145,7 @@ export const TableRow = styled.tr`
     text-align:center;
     font-size: ${props => props.inputFontSize || "900"};
     font-style: ${props => props.inputFontStyle || "bold"};
-    background: white;
+    background: ${props => props.inputBackgroundColour || "#b368a3"};
     color: black;
     padding: ${props => props.inputPadding || "5px"};
     margin: ${props => props.inputMargin || "-3px 0px 5px 0px"};
@@ -134,7 +153,7 @@ export const TableRow = styled.tr`
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputHeight || "auto"};
     &:disabled{
-    background: darkgray;
+    background: #b368a3;
     color: black;
     transition: ease-in-out 0.3s;
     }
