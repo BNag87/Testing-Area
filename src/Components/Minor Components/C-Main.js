@@ -1,6 +1,5 @@
 //=====================MAIN IMPORTS
 import React from 'react';
-import {Sidebar} from './C-Sidebar';
 //=====================STYLING IMPORTS
 import {
     InvisiDiv,

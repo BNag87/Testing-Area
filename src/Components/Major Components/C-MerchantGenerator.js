@@ -42,8 +42,6 @@ export const MerchantGenerator = () => {
 //==========----------→ ↓ARRAYS HERE↓ ←---------==========
     //empty array to store key values of map generated table rows
     let AR_rowKeys = [];
-    //empty array to store SET of rowKeys (removes duplicates. populated from a function)
-    let AR_setRowKeys = [];
     //empty array to store html references of hidden table rows
     let AR_RowRefs = [];
     

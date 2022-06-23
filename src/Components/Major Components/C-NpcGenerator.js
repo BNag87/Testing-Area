@@ -11,7 +11,7 @@ import {
     TextInput,
     TextArea,
     InvisiDiv, 
-    
+    H3,
     } from "../../styles";
 import { 
             FN_get_npc_name, //function that grabs a random npc first name
@@ -258,27 +258,104 @@ return(
             </TableRow>        
 
             <TableRow inputBackgroundColour="#b368a3">
-                <SuperTH inputWidth="15%">Name <Button id = "btn_nameNPC" disabled = {st_crippled} NoHoverButton onClick = { nameNPC } inputWidth="40px">?</Button></SuperTH>
+                <SuperTH inputWidth="100px">
+                <InvisiDiv>
+                    <H3 ForTH>Name</H3> 
+                </InvisiDiv>
+
+                <InvisiDiv>
+                    <Button 
+                        id = "btn_nameNPC" 
+                        disabled = {st_crippled} 
+                        NoHoverButton 
+                        onClick = { nameNPC } 
+                        inputWidth="40px"
+                        inputMargin="0px 0px 10px 0px">
+                            ?
+                    </Button>
+                </InvisiDiv>
+                </SuperTH>
+
                 <SuperTD>
-                    <TextInput id = "dis_npc_name" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_name}></TextInput>
+                    <TextInput 
+                        id = "dis_npc_name" 
+                        inputMargin="3px" 
+                        inputWidth="90%" 
+                        inputHeight="35px" 
+                        disabled={true} 
+                        value={st_blurbVars.GL_name}>
+                    </TextInput>
                 </SuperTD>
 
-                <SuperTH inputWidth="15%">Gender <Button id = "btn_genderNPC" disabled = {st_crippled} NoHoverButton onClick={ genderNPC } inputWidth="40px">?</Button></SuperTH>
+                <SuperTH>
+                    <InvisiDiv>
+                        <H3 ForTH>Gender</H3> 
+                    </InvisiDiv>
+                    <InvisiDiv>
+                        <Button 
+                            id = "btn_genderNPC" 
+                            disabled = {st_crippled} 
+                            NoHoverButton 
+                            onClick={ genderNPC } 
+                            inputWidth="40px" 
+                            inputMargin="0px 0px 10px 0px">?</Button>
+                    </InvisiDiv>
+                </SuperTH>
+                    
                     <SuperTD>
-                        <TextInput id = "dis_npc_gender" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_gender}></TextInput>
+                        <TextInput 
+                            id = "dis_npc_gender" 
+                            inputMargin="3px" 
+                            inputWidth="90%" 
+                            inputHeight="35px" 
+                            disabled={true} 
+                            value={st_blurbVars.GL_gender}>
+                        </TextInput>
                     </SuperTD>
                 
             </TableRow>
             <TableRow inputBackgroundColour="#b368a3">
-                <SuperTH inputWidth="15%">Race <Button id = "btn_raceNPC" disabled = {st_crippled} NoHoverButton onClick={ raceNPC } inputWidth="40px" value = {st_blurbVars.GL_race}>?</Button></SuperTH>
+                <SuperTH>
+                    <InvisiDiv>
+                        <H3 ForTH>Race</H3>
+                    </InvisiDiv>
+                    
+                    <InvisiDiv>
+                        <Button 
+                            id = "btn_raceNPC" 
+                            disabled = {st_crippled} 
+                            NoHoverButton 
+                            onClick={ raceNPC } 
+                            inputWidth="40px" 
+                            inputMargin="0px 0px 10px 0px" 
+                            value = {st_blurbVars.GL_race}>?
+                        </Button>
+                    </InvisiDiv>
+                </SuperTH>
                     <SuperTD>
                         <TextInput id = "dis_npc_race" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_race}></TextInput>
                         
                     </SuperTD>
                
-                <SuperTH inputWidth="15%">Talent <Button id = "btn_talentNPC" disabled = {st_crippled}  NoHoverButton onClick = { talentNPC } inputWidth="40px" value = {st_blurbVars.GL_talent}>?</Button></SuperTH>
+                <SuperTH >
+                    <InvisiDiv>
+                        <H3 ForTH>Talent</H3>
+                    </InvisiDiv>
+                    
+                    <InvisiDiv>
+                        <Button 
+                            id = "btn_talentNPC"
+                            disabled = {st_crippled}  
+                            NoHoverButton 
+                            onClick = { talentNPC } 
+                            inputWidth="40px" 
+                            inputMargin="0px 0px 10px 0px" 
+                            value = {st_blurbVars.GL_talent}>?</Button>
+                    </InvisiDiv>
+                    </SuperTH>
+
                     <SuperTD>
-                        <TextInput id = "dis_npc_talent" inputMargin="3px" inputWidth="90%" inputHeight="35px" inputFontSize="900" inputFontStyle="bolder" disabled={true} value = {st_blurbVars.GL_talent}></TextInput>     
+                        <TextInput id = "dis_npc_talent" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_talent}></TextInput>     
                     </SuperTD>
             </TableRow>
             </TableHead>
@@ -286,33 +363,82 @@ return(
             
             <TableHead>
             <TableRow inputBackgroundColour="#b368a3">
-                <SuperTH inputWidth="15%">
-                    Demeanor <Button id = "btn_demeanorNPC" disabled = {st_crippled} NoHoverButton onClick= { demeanorNPC } inputWidth="40px">?</Button>
+                <SuperTH inputWidth="70px">
+                    <InvisiDiv>
+                        <H3 ForTH>Demeanor</H3>
+                    </InvisiDiv>
+                    <InvisiDiv> 
+                        <Button 
+                            id = "btn_demeanorNPC" 
+                            disabled = {st_crippled} 
+                            NoHoverButton 
+                            onClick= { demeanorNPC } 
+                            inputWidth="40px" 
+                            inputMargin="0px 0px 10px 0px">?</Button>
+                    </InvisiDiv>
                 </SuperTH>
                 
                 <SuperTD>
-                    <TextInput id = "dis_npc_demeanor" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_demeanor}></TextInput>
+                    <TextInput id = "dis_npc_demeanor" inputMargin="3px" inputWidth="95%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_demeanor}></TextInput>
                     
                 </SuperTD>
                 
                 <SuperTH >
-                    Alignment <Button id = "btn_alignmentNPC" disabled = {st_crippled} NoHoverButton onClick={ alignmentNPC } inputWidth="40px">?</Button>
+                    <InvisiDiv>
+                        <H3 ForTH>Alignment</H3>
+                    </InvisiDiv>
+                    <InvisiDiv>
+                        <Button 
+                            id = "btn_alignmentNPC"
+                            disabled = {st_crippled} 
+                            NoHoverButton 
+                            onClick={ alignmentNPC } 
+                            inputMargin="0px 0px 10px 0px"
+                            inputWidth="40px">?</Button>
+                    </InvisiDiv>
                 </SuperTH>
 
                 <SuperTD>
-                    <TextInput id = "dis_npc_alignment" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {"(" + st_npc_Alignment + ") " + st_blurbVars.GL_alignment}></TextInput>
+                    <TextInput id = "dis_npc_alignment" inputFontSize="14px" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {"(" + st_npc_Alignment + ") " + st_blurbVars.GL_alignment}></TextInput>
                     
                 </SuperTD>
                 </TableRow>
                 
                 <TableRow inputBackgroundColour="#b368a3">
-                <SuperTH>Bond <Button id = "btn_bondNPC" disabled = {st_crippled} NoHoverButton onClick={ bondsNPC } inputWidth="40px">?</Button></SuperTH>
+                <SuperTH>
+                    <InvisiDiv>
+                        <H3 ForTH>Bond</H3>
+                    </InvisiDiv> 
+                    
+                    <InvisiDiv>
+                        <Button 
+                            id = "btn_bondNPC" 
+                            disabled = {st_crippled} 
+                            NoHoverButton 
+                            onClick={ bondsNPC } 
+                            inputWidth="40px" 
+                            inputMargin="0px 0px 10px 0px">?
+                        </Button>
+                    </InvisiDiv>
+                </SuperTH>
+                    
                 <SuperTD>
                     <TextInput id = "dis_npc_bonds" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_bond}></TextInput>
                     
                 </SuperTD>
                 
-                <SuperTH>Flaw <Button id = "btn_flawNPC" disabled = {st_crippled} NoHoverButton onClick={ flawsNPC }inputWidth="40px">?</Button></SuperTH>
+                
+                <SuperTH>
+                    <InvisiDiv><H3 ForTH>Flaw</H3></InvisiDiv> 
+                    <Button 
+                        id = "btn_flawNPC" 
+                        disabled = {st_crippled} 
+                        NoHoverButton 
+                        onClick={ flawsNPC } 
+                        inputWidth="40px" 
+                        inputMargin="0px 0px 10px 0px">?
+                    </Button>
+                </SuperTH>
                 <SuperTD>
                     <TextInput id = "dis_npc_flaws" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true}  value = {st_blurbVars.GL_flaw}></TextInput>
                     

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Drawer, Box, Typography, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu'
+import { InvisiDiv } from "../../styles"
 //==========----------→ ↓STYLE IMPORTS HERE↓ ←---------==========
 
 
@@ -14,6 +15,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 export const Sidebar = () => {
     //state var to control the opening of the sidebar'
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+
+// ==========-------------------- HEADER STYLES
 
 //==========----------→ ↓COMPONENT PARTS HERE↓ ←---------==========
 return(
@@ -30,17 +33,22 @@ return(
 
                 <Box sx={{
                     backgroundColor:"rgb(100,200,200)",
-                    width: "250px", 
+                    width: "250px",
+                    height: "100%", 
                     textAlign:"center",
                     }}
                     role="presentation">
-                    <Typography variant="h5" component="div">DM Tools</Typography>
+                    <Typography variant="h5" component="div" sx={{margin: 5}}>DM Tools</Typography>
                     <hr/>
-                    <Typography variant="h6"><Link to="/">Home</Link></Typography>
+                    <Typography variant="h6">
+                            <InvisiDiv><Link to="/">Home</Link></InvisiDiv>
+                    </Typography>
                     <hr/>
                     <Typography variant="h6"><Link to="MerchantList">Merchant Inventories</Link></Typography>
                     <Typography variant="h6"><Link to="NPCGenerator">NPC Generator</Link></Typography>
+                    <hr/>
                     <p>More to come</p>
+                    <p>Made by Basil Nagle</p>
                 </Box>
         </Drawer>
     </>

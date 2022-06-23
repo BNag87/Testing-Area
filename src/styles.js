@@ -13,6 +13,7 @@ body {
   font-family: calibri;
 }
 `;
+
 // ==========-------------------- HEADER STYLES
 export const InvisiDiv = styled.div`
 display: flex;
@@ -54,6 +55,16 @@ justify-content: center;
 font-size: ${props => props.inputFontSize || "14px"};
 font-weight: ${props => props.inputFontWeight || "medium"};
 text-shadow: ${props => props.inputFontShadow || "none"};
+font-variant: ${props => props.inputFontVariant || "none"};
+
+${props => props.ForTH && css`
+  border: none;
+  background: none;
+  padding: 0px;
+  font-size: 18px;
+  font-variant: small-caps;
+  `}
+
 `
 // ==========--------------------DIV STYLES
 export const Wrapper = styled.div`
@@ -95,18 +106,19 @@ height: 100%;
 // ==========-------------------- TABLE STYLES
 export const Table = styled.table`
 text-align: center;
-
 border: 3px outset grey;
 width: ${props => props.inputWidth || "300px"}
 `;
 
 export const SuperTH = styled.th`
+
 background: ${props => props.inputBackgroundColour || "black"};
 color: ${props => props.inputFontColour || "white"};
-width: ${props => props.inputWidth || "auto"};
+width: ${props => props.inputWidth || "20%"};
 font-variant: small-caps;
-padding: 0px 5px 0px 5px;
+padding: 0px -5px 0px -5px;
 `;
+
 export const TableHead = styled.thead`
 /* border: outset white; */
 background: black;
@@ -116,7 +128,7 @@ width: ${props => props.inputWidth || "auto"};
 `;
 export const SuperTD = styled.td`
 padding: 2px 5px 2px 5px;
-
+width: ${props => props.inputWidth || "80px"};
 ${props => props.NoHoverTD && css`
   font-weight: bold;
   }
@@ -143,8 +155,8 @@ export const TableRow = styled.tr`
   // ==========-------------------- INPUT STYLES
   export const TextInput = styled.input`
     text-align:center;
-    font-size: ${props => props.inputFontSize || "900"};
-    font-style: ${props => props.inputFontStyle || "bold"};
+    font-size: ${props => props.inputFontSize || "16px"};
+    font-style: ${props => props.inputFontStyle || "bolder"};
     background: ${props => props.inputBackgroundColour || "#b368a3"};
     color: black;
     padding: ${props => props.inputPadding || "5px"};
