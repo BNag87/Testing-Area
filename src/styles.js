@@ -2,12 +2,16 @@ import styled, { createGlobalStyle, css } from "styled-components";
 import visIcon from "./Components/Reference Files/Images/visibilityOff.png"
 import visIconShow from "./Components/Reference Files/Images/visibilityOn.png"
 
+import d4Gif from "./Components/Reference Files/Images/d4.gif"
+
+
+
 // ==========-------------------- GLOBAL STYLES
 export const GlobalStyle = createGlobalStyle`
 body {
   display: flex;
   flex-direction: column;
-  background: grey;
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(82,169,139,1) 40%, rgba(255,255,255,1) 100%);
   margin: 0;
   padding: 0;
   font-family: calibri;
@@ -17,10 +21,20 @@ body {
 // ==========-------------------- HEADER STYLES
 export const InvisiDiv = styled.div`
 display: flex;
+background: ${props => props.inputBackground || "none"};
 align-items: ${props => props.inputAlignItems || "center"};
 justify-content: ${props => props.inputJustifyContent || "center"};
 text-align: ${props => props.inputTextAlign || "center"};
 width: ${props => props.inputWidth || "auto"};
+height: ${props => props.inputHeight || "auto"};
+z-index: ${props => props.Z || "5"};
+
+padding: ${props => props.inputPadding || "0px"};
+margin: ${props => props.inputMargin || "0px"};
+
+${props => props.d4Div && css`
+background: url(${d4Gif});
+`}
 
 ${props => props.IconDiv && css`
       display: inherit;
@@ -81,8 +95,9 @@ export const Wrapper = styled.div`
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    
-    background: rgb(100,200,200);
+    z-index: ${props => props.Z || "5"};
+
+    background:${props => props.inputFlexDirection || "rgb(100,200,200)"};
 `;
 
 export const TopBar = styled.div`
@@ -94,6 +109,9 @@ export const TopBar = styled.div`
     margin: ${props => props.inputMargin || "0px"};
     padding: ${props => props.inputPadding || "20px"};
     background: rgb(100,200,250);
+        position: fixed;
+    z-index: ${props => props.Z || "5"};
+
     
 `;
 

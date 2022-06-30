@@ -7,7 +7,7 @@ export const PageTopbar = () => {
     return(
         <>
         <TopBar>
-            <InvisiDiv inputAlignItems="left" inputTextAlign="left" inputWidth="5%">
+            <InvisiDiv inputAlignItems="left" inputTextAlign="left" inputWidth="5%" Z="6">
             <Sidebar/>            
             </InvisiDiv>
 

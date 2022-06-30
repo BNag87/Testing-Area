@@ -133,8 +133,8 @@ export const MerchantGenerator = () => {
 //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
             <>
-            <InvisiDiv>
-            <Wrapper inputWidth="60%">
+            <InvisiDiv inputPadding="0px 0px 0px 0px">
+            <Wrapper inputWidth="70%">
                 <Table inputWidth = "auto">
                     
                     <TableHead>
