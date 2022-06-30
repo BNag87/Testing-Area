@@ -133,9 +133,10 @@ export const MerchantGenerator = () => {
 //==========----------→COMPONENT RETURN BLOCK STARTS HERE
         return(
             <>
-            <InvisiDiv inputPadding="0px 0px 0px 0px">
+                <InvisiDiv inputHeight="170px" />
+    <InvisiDiv inputMargin="0px 0px 500px 0px" Z="1">
             <Wrapper inputWidth="70%">
-                <Table inputWidth = "auto">
+                <Table inputWidth = "100%">
                     
                     <TableHead>
                         {/* TABLE TITLE */}
@@ -241,14 +242,14 @@ export const MerchantGenerator = () => {
                         {/* TABLE HEADINGS */}
                         <TableRow>
                             <SuperTH>Item</SuperTH>
-                            <SuperTH>Category</SuperTH>
-                            <SuperTH>Weight</SuperTH>
+                            <SuperTH inputWidth="80px">Category</SuperTH>
+                            <SuperTH inputWidth="40px">Weight</SuperTH>
                             <SuperTH>Price Range</SuperTH>
                             <HtmlTooltip title = "Is this item available at this merchant?"  arrow placement="top">
-                                <SuperTH>Avl?</SuperTH>
+                                <SuperTH inputWidth="20px">Avl?</SuperTH>
                             </HtmlTooltip>
                             <HtmlTooltip title = "Is this item in short supply at this merchant?" arrow placement="top">
-                                <SuperTH>Ltd?</SuperTH>
+                                <SuperTH inputWidth="20px">Ltd?</SuperTH>
                             </HtmlTooltip>
 
                         </TableRow>

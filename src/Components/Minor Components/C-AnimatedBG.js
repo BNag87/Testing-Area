@@ -20,76 +20,61 @@ export const AnimatedBG = () => {
       };
 
       return (
-        <Particles style={{ position: "fixed", zIndex: "-1" }}
+        <Particles style={{ position: "fixed", zIndex: "-1", height:"100%" }}
           id="tsparticles"
           init={particlesInit}
           loaded={particlesLoaded}
           options={{
             background: {
                 color: {
-                    value: "linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(82,169,139,1) 40%, rgba(255,255,255,1) 100%)",
+                    value: "linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(82,169,139,1) 40%, rgba(190,190,199,1) 100%)",
                 },
             },
-            fpsLimit: 120,
-            interactivity: {
-              events: {
-                onHover: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                resize: true,
-              },
-              modes: {
-                push: {
-                  quantity: 4,
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 0.4,
-                },
-              },
-            },
+            fpsLimit: 60,
+
             particles: {
               color: {
-                value: "#ffffff",
+                value: "rgb(200,220,210)",
+                fill: true,
               },
 
               move: {
                 direction: "bottom",
                 enable: true,
-                outModes: {
-                  default: "destroy",
-                },
+                outModes: "out",
                 random: true,
                 speed: 3,
                 straight: true,
-                
               },
               number: {
                 density: {
                   enable: true,
-                  area: 800,
+                  area: 700,
                 },
-                value: 80,
+                value: 190,
               },
 
               rotate: {
                 animation: {
                   enable: true,
-                  speed: 4,
+                  speed: 8,
                   sync: false,
                 },
             },
 
               opacity: {
-                value: 0.5,
+                value: 0.8,
               },
               shape: {
-                type: "triangle",
+                type: ["square", "triangle", "polygon"],
               },
               size: {
-                value: { min: 1, max: 5 },
+                value: { min: 4, max: 5 },
               },
+
+              zIndex: {
+                value: { min: 0, max: 100 }
+              }
             },
             detectRetina: true,
           }}
