@@ -108,7 +108,8 @@ export const TopBar = styled.div`
     height: ${props => props.inputHeight || "15%"};
     margin: ${props => props.inputMargin || "0px"};
     padding: ${props => props.inputPadding || "20px"};
-    background: rgb(100,200,250);
+    border-bottom: solid white 5px;
+    background: rgba(100,200,250, 0.8);
         position: fixed;
     z-index: ${props => props.Z || "5"};
 

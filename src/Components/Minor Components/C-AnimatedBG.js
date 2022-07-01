@@ -34,11 +34,12 @@ export const AnimatedBG = () => {
 
             particles: {
               color: {
-                value: "rgb(200,220,210)",
-                fill: true,
+                value: 
+                        "rgb(180,195,200)",
+                fill: false,
               },
 
-              move: {
+            move: {
                 direction: "bottom",
                 enable: true,
                 outModes: "out",
@@ -46,15 +47,32 @@ export const AnimatedBG = () => {
                 speed: 3,
                 straight: true,
               },
-              number: {
-                density: {
+            number: {
+              density: {
                   enable: true,
                   area: 700,
                 },
                 value: 190,
               },
+            
+            roll: {
+              darken: {
+                enable: true,
+                value: 30,
+              },
+              enlighten: {
+                enable: true,
+                value: 30,
+              },
+              enable: true,
+              mode: "horizontal",
+              speed: {
+                min: 10,
+                max: 15,
+              },
+            },
 
-              rotate: {
+            rotate: {
                 animation: {
                   enable: true,
                   speed: 8,
@@ -63,13 +81,13 @@ export const AnimatedBG = () => {
             },
 
               opacity: {
-                value: 0.8,
+                value: 0.5,
               },
               shape: {
                 type: ["square", "triangle", "polygon"],
               },
               size: {
-                value: { min: 4, max: 5 },
+                value: { min: 6, max: 7 },
               },
 
               zIndex: {
