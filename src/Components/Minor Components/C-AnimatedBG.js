@@ -1,5 +1,4 @@
 import React from 'react';
-import { InvisiDiv } from '../../styles';
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles"

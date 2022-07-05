@@ -46,6 +46,7 @@ return(
                     <hr/>
                     <Typography variant="h6"><Link to="MerchantList">Merchant Inventories</Link></Typography>
                     <Typography variant="h6"><Link to="NPCGenerator">NPC Generator</Link></Typography>
+                    <Typography variant="h6"><Link to="WildSurges">Random Magic Effects</Link></Typography>
                     <hr/>
                     <p>More to come</p>
                     <p>Made by Basil Nagle</p>

@@ -12,6 +12,7 @@ import { AnimatedBG } from "./Components/Minor Components/C-AnimatedBG.js";
 import { 
   GlobalStyle
 } from "./styles";
+import { WildSurges } from "./Components/Major Components/C-WildSurges.js";
 
 
 
@@ -27,10 +28,12 @@ function App() {
     <Routes>
         <Route path="/" element={ <Main/> } />
         <Route path="NPCGenerator" element={ <NpcGenerator/>} />
+        <Route path="WildSurges" element={ <WildSurges/>} />
         <Route path="MerchantList" element={ <MerchantGenerator/>} />
+        
     </Routes>
     
-    <AnimatedBG/>
+    {/* <AnimatedBG/> */}
 
     </>
   )
