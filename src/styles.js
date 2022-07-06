@@ -173,14 +173,16 @@ export const TableRow = styled.tr`
   `;
   // ==========-------------------- INPUT STYLES
   export const TextInput = styled.input`
-    text-align:center;
+    text-align: center;
     font-size: ${props => props.inputFontSize || "16px"};
     font-style: ${props => props.inputFontStyle || "bolder"};
+    font-family: ${props => props.inputFontFamily || "inherit"};
     background: ${props => props.inputBackgroundColour || "#b368a3"};
     color: black;
     padding: ${props => props.inputPadding || "5px"};
     margin: ${props => props.inputMargin || "-3px 0px 5px 0px"};
-    border: none;
+    border: ${props => props.inputBorder || "-3px 0px 5px 0px"};
+    border-radius: ${props => props.inputBorderRadius || "none"};
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputHeight || "auto"};
     &:disabled{
@@ -192,7 +194,8 @@ export const TableRow = styled.tr`
     export const TextArea = styled.textarea`
       text-align: ${props => props.inputTextAlign || "left"};
       justify-content: ${props => props.inputJustify || "flex-start"};
-      font-size: ${props => props.inputFontSize || "900"};
+      font-size: ${props => props.inputFontSize || "900"}; 
+      font-weight: ${props => props.inputFontWeight || "normal"};
       background: ${props => props.inputDBG || "rgba(255, 255, 255, 0.25)"};
       color: ${props => props.inputDFC || "white"};
       padding: ${props => props.inputPadding || "5px"};
@@ -202,6 +205,7 @@ export const TableRow = styled.tr`
       width: ${props => props.inputWidth || "430px"};
       height: ${props => props.inputHeight || "125px"};
       resize: none;
+
       &:disabled{
       background: ${props => props.inputDBG || "rgba(255, 255, 255, 0.15)"};
       color: ${props => props.inputDFC || "white"};
