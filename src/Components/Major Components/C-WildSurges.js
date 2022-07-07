@@ -25,8 +25,17 @@ export const WildSurges = () => {
     //get the json data
     const jsonData = require("../Reference Files/Json Files/randomEffects.json");
 
-    //convert data in to an array
-    const objInnerValues = Object.values(jsonData.effects)
+    //convert data
+    const objInnerValues = Object.values(jsonData.effects).reduce((acc, cur, index, original) => {
+        if(index % 2 === 0) {
+          const item = {
+            id: cur,
+            text: original[index+1]
+          };
+          acc.push(item);
+        }
+        return acc;
+      }, []);
 
     const randRanged = (min, max) => { 
         return Math.floor(Math.random() * (max - min + 1) + min)
@@ -116,32 +125,19 @@ export const WildSurges = () => {
                             
                             </SuperTH>
                         </TableRow>
-                        
-                        {console.log("Log of objinnervalues:")}
-                        {console.log(objInnerValues)}
                                 
                 {/* ARRAY MAPPING! FIRST MAP===============================================================*/}
-                {objInnerValues.map((thing, Index) => (
-
-                    // Ternary operator to Only create rows from even indexes (0, 2, 4, 6 etc)
-
-                    (Index % 2 === 0 ? 
-                        <>
-                        {console.log("Thing: ")}
-                        {console.log(thing)}
-                        {/* Thing, in this true statement, is the id number */}
-                            <SuperTH>{thing}</SuperTH>
-                        </>
-                        :
-                        <>
-                        {/* Thingg is this instance is the actual data */}
-                        <SuperTD NoHoverTD>{thing}</SuperTD>
-                        </>
-                    )
-
-                ))
-                }
-                </TableHead>
+                    {
+                        objInnerValues.map((thing) => (
+                            <>
+                            <TableRow NoHoverTR>
+                            <SuperTH>{thing.id}</SuperTH>
+                            <SuperTD NoHoverTD>{thing.text}</SuperTD>
+                            </TableRow>
+                            </>
+                        ))
+                    }
+                    </TableHead>
                 </Table>
             </Wrapper>
         

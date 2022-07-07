@@ -145,6 +145,7 @@ color: white;
 font-variant: small-caps;
 width: ${props => props.inputWidth || "auto"};
 `;
+
 export const SuperTD = styled.td`
 padding: 2px 5px 2px 5px;
 width: ${props => props.inputWidth || "80px"};
@@ -154,13 +155,13 @@ ${props => props.NoHoverTD && css`
 `}
 
 ${props => props.NoHoverSmallTxtTD && css`
-  
       font-variant: none;
       font-family: consolas;
       font-size: smaller;
   }
 `}
 `;
+
 export const TableRow = styled.tr`
   /* border: dashed white;  */
   background: ${props => props.inputBackgroundColour || "white"};
@@ -170,6 +171,16 @@ export const TableRow = styled.tr`
           background: #b368a3; //blue
           transition: ease-in-out 0.3s;
       }
+
+      ${props => props.NoHoverTR && css`
+      background: lightcyan; //blue
+      color: #b3c378; //greenish
+      &:hover {
+          color: none; //greenish
+          background: none; //blue
+        }
+    `}
+
   `;
   // ==========-------------------- INPUT STYLES
   export const TextInput = styled.input`
