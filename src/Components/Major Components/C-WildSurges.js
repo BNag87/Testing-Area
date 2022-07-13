@@ -21,6 +21,11 @@ export const WildSurges = () => {
     // usestate to track random effects when generated
     const [randEffect, setRandEffect] = useState("");
 
+        //short version of console.log
+        const bark = (input) => {
+            console.log(input);
+        }
+
 //==========----------→ ↓JSON IMPORTS/CONVERSIONS HERE↓ ←---------==========
     //get the json data
     const jsonData = require("../Reference Files/Json Files/randomEffects.json");
@@ -37,32 +42,91 @@ export const WildSurges = () => {
         return acc;
       }, []);
 
+    // for display/pagination, split the huge array into twenty arrays of 50
+    // each array will contain the entirety of the massive array, used for pagination
+    let AR_pag1 = objInnerValues.splice(0,500)
+    let AR_pag2 = objInnerValues.splice(0,500)
+    let AR_pag3 = objInnerValues.splice(0,500)
+    let AR_pag4 = objInnerValues.splice(0,500)
+    let AR_pag5 = objInnerValues.splice(0,500)
+    let AR_pag6 = objInnerValues.splice(0,500)
+    let AR_pag7 = objInnerValues.splice(0,500)
+    let AR_pag8 = objInnerValues.splice(0,500)
+    let AR_pag9 = objInnerValues.splice(0,500)
+    let AR_pag10 = objInnerValues.splice(0,500)
+    let AR_pag11 = objInnerValues.splice(0,500)
+    let AR_pag12 = objInnerValues.splice(0,500)
+    let AR_pag13 = objInnerValues.splice(0,500)
+    let AR_pag14 = objInnerValues.splice(0,500)
+    let AR_pag15 = objInnerValues.splice(0,500)
+    let AR_pag16 = objInnerValues.splice(0,500)
+    let AR_pag17 = objInnerValues.splice(0,500)
+    let AR_pag18 = objInnerValues.splice(0,500)
+    let AR_pag19 = objInnerValues.splice(0,500)
+    let AR_pag20 = objInnerValues.splice(0,500)
+
+    // array for storing arrays above
+    let AR_concSplits = [];  
+    AR_concSplits.push(AR_pag1, AR_pag2, AR_pag3, AR_pag4, AR_pag5, AR_pag6, AR_pag7, AR_pag8, AR_pag9, AR_pag10,
+                       AR_pag11, AR_pag12, AR_pag13, AR_pag14, AR_pag15, AR_pag16, AR_pag17, AR_pag18, AR_pag19, AR_pag20);
+
     const randRanged = (min, max) => { 
         return Math.floor(Math.random() * (max - min + 1) + min)
       }
 
-
     //function to grab and spit out a random spell effect
-    const randomEffect = (input) => {
+    //START HERE!! NEED TO REWORK IT SO IT GRABS THE RIGHT RECORD FROM THE RIGHT ARRAY
+    //SEPERATE FUNCTION MAYBE?
+
+    const getRecord = (input) => {
+    
+        //find the right array first.
+        //each one contains 500, soo divide input by 500
+
+        //input will be the item index. use that to pick the right array
+        let index = Math.floor(input/500);
+        let targetArray = AR_concSplits[index];
+        let IDin = parseInt(input);
+        let value = "";
+
+        try{
+        for(let i=0; i < targetArray.length; i++)
+            {
+                
+                if(parseInt(targetArray[i].id) === IDin)
+                {
+                    value = String(targetArray[i].text);
+                    break;
+                }
+            }
+        }
+        catch(error)
+        {
+            bark("===============\nToilet blocked in getRecord function: ");
+            bark(error);
+            bark("\n===============");
+        }
+            
+        return value;
+
+    }
+
+    const randomEffect = () => {
         
         //Internal variables
-        let var_Input = parseInt(input);
         let var_TextOut = document.getElementById("effectTextBox");
         let var_IdOut = document.getElementById("dis_PickID");
-        let var_idData = 0;
+        let var_idData = randRanged(0, 9999);
 
-        
-        var_idData = randRanged(0, 9999);
-        var_IdOut.value = var_idData
-
-        for (let i = 0; i < objInnerValues.length; i++) 
-        {
-            if (objInnerValues[i] == var_idData) {
-                var_TextOut.value = String(objInnerValues[i+1]);
-                break;
-            }    
+        try
+            {
+                var_IdOut.value = var_idData;
+                var_TextOut.value = getRecord(var_idData);
+            }
+        catch(error){
+            bark("Bowel explosion in click:");
+            bark(error);
         }
-
     }
 
     return(
@@ -127,7 +191,7 @@ export const WildSurges = () => {
                         </TableRow>
                                 
                 {/* ARRAY MAPPING! FIRST MAP===============================================================*/}
-                    {
+                    {/* {
                         objInnerValues.map((thing) => (
                             <>
                             <TableRow NoHoverTR>
@@ -136,7 +200,12 @@ export const WildSurges = () => {
                             </TableRow>
                             </>
                         ))
-                    }
+                    } */}
+
+                    <SuperTD NoHoverTD colSpan={2}>
+                    
+                    </SuperTD>
+                    
                     </TableHead>
                 </Table>
             </Wrapper>
