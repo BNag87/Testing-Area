@@ -8,12 +8,13 @@ import {
     SuperTH,
     SuperTD,
     Button,
-    TextArea,
     TextInput,
-    H3,
     InvisiDiv,
     } from "../../styles";
 
+    import {  FirstPage, LastPage } from '@mui/icons-material';
+    import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+    import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 //==========----------→COMPONENT STARTS HERE
 export const WildSurges = () => {
 
@@ -201,6 +202,16 @@ export const WildSurges = () => {
                             </>
                         ))
                     } */}
+
+                    <InvisiDiv inputWidth="100px" inputBackground="rgba(20,20, 90, 0.3)">
+                    {/* PAGINATION FEATURE */}
+
+                        <FirstPage/>
+                            <NavigateBeforeIcon/>
+                                <TextInput/>
+                            <NavigateNextIcon/>
+                        <LastPage/>
+                    </InvisiDiv>
 
                     <SuperTD NoHoverTD colSpan={2}>
                     
