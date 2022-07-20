@@ -22,10 +22,19 @@ export const WildSurges = () => {
     // usestate to track random effects when generated
     const [randEffect, setRandEffect] = useState("");
 
-        //short version of console.log
-        const bark = (input) => {
-            console.log(input);
-        }
+    //useState to choose an effect array to map through for display
+    const [ST_ArrayMarker, set_ST_ArrayMarker] = useState(0);
+
+//==========----------→ ↓GENERIC FUNCTIONS HERE↓ ←---------==========
+    //short version of console.log
+    const bark = (input) => {
+        console.log(input);
+    }
+
+    //create and return a random number between two inputs
+    const randRanged = (min, max) => { 
+        return Math.floor(Math.random() * (max - min + 1) + min)
+    }
 
 //==========----------→ ↓JSON IMPORTS/CONVERSIONS HERE↓ ←---------==========
     //get the json data
@@ -71,13 +80,6 @@ export const WildSurges = () => {
     AR_concSplits.push(AR_pag1, AR_pag2, AR_pag3, AR_pag4, AR_pag5, AR_pag6, AR_pag7, AR_pag8, AR_pag9, AR_pag10,
                        AR_pag11, AR_pag12, AR_pag13, AR_pag14, AR_pag15, AR_pag16, AR_pag17, AR_pag18, AR_pag19, AR_pag20);
 
-    const randRanged = (min, max) => { 
-        return Math.floor(Math.random() * (max - min + 1) + min)
-      }
-
-    //function to grab and spit out a random spell effect
-    //START HERE!! NEED TO REWORK IT SO IT GRABS THE RIGHT RECORD FROM THE RIGHT ARRAY
-    //SEPERATE FUNCTION MAYBE?
 
     const getRecord = (input) => {
     
@@ -148,7 +150,7 @@ export const WildSurges = () => {
                             {/* TABLEROW TAG */}
                             <SuperTH colSpan={4}>
                                 <h2>Random Spell Failures</h2>
-                                Click the '?' button or type in the result of a d10000 roll to find a random spell effect. These can be used as Wild magic surges or just for random spell effects as needed by a DM.
+                                Click the '?' button to find a random spell effect. These can be used as Wild magic surges or just for random spell effects as needed by a DM.
                             <hr/>  
 
                             <InvisiDiv inputMargin="15px 0px 0px 10px">
@@ -176,11 +178,13 @@ export const WildSurges = () => {
                                 
                                 <Button 
                                     inputBackground = "#222222" 
-                                    inputBorder= "outset rgba(150, 40, 40, 0.4) 3px" 
+                                    inputRadius = "0px 8px 8px 0px"
                                     inputColor = "#cccccc" 
+                                    inputMargin= "0px 10px 8px 0px"
                                     inputFontSize = "normal" 
                                     inputFontVariant = "normal" 
-                                    inputWidth = "40px" 
+                                    inputWidth="50px" 
+                                    inputHeight="64px" 
                                     onClick = {() => randomEffect()}>
                                     ?
                                 </Button>
@@ -202,21 +206,34 @@ export const WildSurges = () => {
                             </>
                         ))
                     } */}
-
-                    <InvisiDiv inputWidth="100px" inputBackground="rgba(20,20, 90, 0.3)">
+                <TableRow>
+                    <SuperTH colSpan={4}>
+                    <InvisiDiv 
+                        inputWidth="auto" 
+                        inputBackground="rgba(255,255, 255, 0.3)"
+                        inputBorder="solid rgba(255, 255, 255, 0.1) 1px"
+                        inputFlexDirection="row"
+                        inputMargin="5px 20px 5px 20px"
+                        inputPadding="10px"
+                        >
                     {/* PAGINATION FEATURE */}
 
-                        <FirstPage/>
+                        <Button 
+                            inputBorder=" solid rbga(255 ,255 ,255 ,0.2) 1px" 
+                            inputRadius="100%" 
+                            inputBackground="rbga(255,255,255,0.1)"
+                            inputWidth="45px"
+                            inputHeight="40px"> <FirstPage/> </Button>
                             <NavigateBeforeIcon/>
                                 <TextInput/>
                             <NavigateNextIcon/>
                         <LastPage/>
-                    </InvisiDiv>
+                        
+                    </InvisiDiv>    
+                    </SuperTH>
 
-                    <SuperTD NoHoverTD colSpan={2}>
-                    
-                    </SuperTD>
-                    
+
+                </TableRow>    
                     </TableHead>
                 </Table>
             </Wrapper>

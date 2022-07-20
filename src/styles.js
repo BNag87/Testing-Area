@@ -21,10 +21,12 @@ body {
 // ==========-------------------- HEADER STYLES
 export const InvisiDiv = styled.div`
 display: flex;
+
 background: ${props => props.inputBackground || "none"};
 align-items: ${props => props.inputAlignItems || "center"};
 justify-content: ${props => props.inputJustifyContent || "center"};
 text-align: ${props => props.inputTextAlign || "center"};
+
 width: ${props => props.inputWidth || "auto"};
 height: ${props => props.inputHeight || "auto"};
 z-index: ${props => props.Z || "5"};
