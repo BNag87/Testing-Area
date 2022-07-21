@@ -23,6 +23,9 @@ export const InvisiDiv = styled.div`
 display: flex;
 
 background: ${props => props.inputBackground || "none"};
+border: ${props => props.inputBorder || "none"};
+border-radius: ${props => props.inputRadius || "none"};
+
 align-items: ${props => props.inputAlignItems || "center"};
 justify-content: ${props => props.inputJustifyContent || "center"};
 text-align: ${props => props.inputTextAlign || "center"};
@@ -132,11 +135,14 @@ width: ${props => props.inputWidth || "300px"}
 `;
 
 export const SuperTH = styled.th`
-
 background: ${props => props.inputBackgroundColour || "black"};
 color: ${props => props.inputFontColour || "white"};
+
 width: ${props => props.inputWidth || "20%"};
+height: ${props => props.inputHeight || "auto"};
+
 font-variant: small-caps;
+
 padding: 0px -5px 0px -5px;
 `;
 
@@ -151,6 +157,8 @@ width: ${props => props.inputWidth || "auto"};
 export const SuperTD = styled.td`
 padding: 2px 5px 2px 5px;
 width: ${props => props.inputWidth || "80px"};
+height: ${props => props.inputHeight || "auto"};
+
 ${props => props.NoHoverTD && css`
   font-weight: bold;
   }
@@ -165,9 +173,9 @@ ${props => props.NoHoverSmallTxtTD && css`
 `;
 
 export const TableRow = styled.tr`
-  /* border: dashed white;  */
   background: ${props => props.inputBackgroundColour || "white"};
   color: ${props => props.inputFontColour || "white"};
+  height: ${props => props.inputHeight || "auto"};
       &:hover {
           color: #FFD700; //gold
           background: #b368a3; //blue
@@ -191,7 +199,7 @@ export const TableRow = styled.tr`
     font-style: ${props => props.inputFontStyle || "bolder"};
     font-family: ${props => props.inputFontFamily || "inherit"};
     background: ${props => props.inputBackgroundColour || "#b368a3"};
-    color: black;
+    color: ${props => props.inputColour || "black"};
     padding: ${props => props.inputPadding || "5px"};
     margin: ${props => props.inputMargin || "-3px 0px 5px 0px"};
     border: ${props => props.inputBorder || "-3px 0px 5px 0px"};
@@ -230,24 +238,28 @@ export const TableRow = styled.tr`
     }
     `;
   export const Button = styled.button`
-  
+
+    background: ${props => props.inputBackground || "rgba(179 ,104 ,163 ,1)"}; //blue
+    color: ${props => props.inputColor || "#b3c378"}; //greenish
+
     border: ${props => props.inputBorder || "red 1px solid"};
     border-radius: ${props => props.inputRadius || "5px 3px 5px 3px"};
     box-shadow: ${props => props.inputBoxShadow || "2px 2px rgba(0,0,0,0.4)"};
+    text-align: center;
+
     padding: ${props => props.inputPadding || "10px 10px 10px 10px"};
     margin: ${props => props.inputMargin || "3px 3px 3px 3px"};
-    background: ${props => props.inputBackground || "#b368a3"}; //blue
-    color: ${props => props.inputColor || "#b3c378"}; //greenish
-    text-align: center;
+    
     font-variant: ${props => props.inputFontVariant || "small-caps"};
     font-weight: ${props => props.inputFontWeight || "bolder"};
     font-size: ${props => props.inputFontSize || "large"};
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputHeight || "auto"};
     cursor: pointer;
+
       &:hover{
-        color: ${props => props.inputHBackground || "green"};
-        background: ${props => props.inputHColour || "white"};
+        color: ${props => props.inputHColour || "green"};
+        background: ${props => props.HBackground || "white"};
         transition: ease-in-out 0.3s; 
       }
       &:disabled{
@@ -261,6 +273,7 @@ export const TableRow = styled.tr`
         transition: ease-in-out 0.3s; 
       }
       }
+    
       ${props => props.NoHoverButton && css`
       background: lightcyan; //blue
       color: #b3c378; //greenish
@@ -269,6 +282,7 @@ export const TableRow = styled.tr`
           background: #b368a3; //blue
         }
     `}
+
     ${props => props.HideButton && css`
     background-image: url(${visIcon});
     background-color: rgba(200,190,190, 0.2); //blue
@@ -277,10 +291,10 @@ export const TableRow = styled.tr`
       background-position: center;
       background-size: contain;
     
-    width: 20px;
-    height: 20px;    
-    padding: 1px;
-    margin: 3px;
+      width: 20px;
+      height: 20px;    
+      padding: 1px;
+      margin: 3px;
 
       &:hover {
         background: url(${visIcon});
@@ -290,6 +304,7 @@ export const TableRow = styled.tr`
         background-size: contain;
         }
     `}
+    
     ${props => props.ShowButton && css`
     
     background-image: url(${visIconShow});
@@ -311,5 +326,19 @@ export const TableRow = styled.tr`
         background-position: center;
         background-size: contain;
         }
+    `}
+
+    ${props => props.PageButton && css`
+    border-radius: 100px; 
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    
+      &:hover {
+        background: rgba(255,255,255,0.5);
+        color: black;
+      }
     `}
 `;

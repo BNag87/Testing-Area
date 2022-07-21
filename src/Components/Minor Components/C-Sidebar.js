@@ -44,8 +44,15 @@ return(
                             <InvisiDiv><Link to="/">Home</Link></InvisiDiv>
                     </Typography>
                     <hr/>
-                    <Typography variant="h6"><Link to="MerchantList">Merchant Inventories</Link></Typography>
-                    <Typography variant="h6"><Link to="NPCGenerator">NPC Generator</Link></Typography>
+
+{/* disabled components 
+
+<Link to="MerchantList">Merchant Inventories</Link>
+<Link to="NPCGenerator">NPC Generator</Link>
+*/}
+
+                    <Typography variant="h6">Merchant List</Typography>
+                    <Typography variant="h6">NPC Generator</Typography>
                     <Typography variant="h6"><Link to="WildSurges">Random Magic Effects</Link></Typography>
                     <hr/>
                     <p>More to come</p>

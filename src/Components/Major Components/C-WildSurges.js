@@ -19,11 +19,8 @@ import {
 export const WildSurges = () => {
 
 //==========----------→ ↓USESTATES HERE↓ ←---------==========
-    // usestate to track random effects when generated
-    const [randEffect, setRandEffect] = useState("");
-
     //useState to choose an effect array to map through for display
-    const [ST_ArrayMarker, set_ST_ArrayMarker] = useState(0);
+    const [ST_ArrayMarker, set_ST_ArrayMarker] = useState(1);
 
 //==========----------→ ↓GENERIC FUNCTIONS HERE↓ ←---------==========
     //short version of console.log
@@ -80,11 +77,14 @@ export const WildSurges = () => {
     AR_concSplits.push(AR_pag1, AR_pag2, AR_pag3, AR_pag4, AR_pag5, AR_pag6, AR_pag7, AR_pag8, AR_pag9, AR_pag10,
                        AR_pag11, AR_pag12, AR_pag13, AR_pag14, AR_pag15, AR_pag16, AR_pag17, AR_pag18, AR_pag19, AR_pag20);
 
+                       
+//FUNCTIONS BLOCK===============================================================
 
+// get random magical effect (plus ID number)
     const getRecord = (input) => {
     
         //find the right array first.
-        //each one contains 500, soo divide input by 500
+        //each one contains 500, so divide input by 500
 
         //input will be the item index. use that to pick the right array
         let index = Math.floor(input/500);
@@ -109,11 +109,10 @@ export const WildSurges = () => {
             bark(error);
             bark("\n===============");
         }
-            
         return value;
-
     }
 
+//display random magical effect
     const randomEffect = () => {
         
         //Internal variables
@@ -131,6 +130,71 @@ export const WildSurges = () => {
             bark(error);
         }
     }
+
+//ONCLICK FUNCTIONS BLOCK===============================================================
+    //used to change the 'page number' of a map block to display records        
+const setPage = (input) => {
+    try{
+    let pos = ST_ArrayMarker;
+
+    switch(input)
+    {
+        case "next":            
+            pos++;
+            set_ST_ArrayMarker(pos);
+
+            if((pos) >= 21)
+            {
+                pos=20;
+                set_ST_ArrayMarker(pos);
+            }  
+            else if((pos) <= 1)
+            {
+                pos=1;
+                set_ST_ArrayMarker(pos);
+            }
+
+            break;
+
+        case "last":
+            pos=20;
+            set_ST_ArrayMarker(pos);
+            break;
+
+        case "prev":
+            pos--;
+            set_ST_ArrayMarker(pos);
+            
+            if((pos) >= 21)
+            {
+                pos=20;
+                set_ST_ArrayMarker(pos);
+            }  
+            else if((pos) <= 1)
+            {
+                pos=1;
+                set_ST_ArrayMarker(pos);
+            }
+
+            break;
+
+        case "first":
+            pos=1;
+            set_ST_ArrayMarker(pos);
+            break;
+        default:
+            break;
+    }
+}
+    
+    catch(e)
+    {
+        bark("Bowel obstruction in setPage function:")
+        bark(e)
+    }
+    }
+
+//COMPONENT RETURN BLOCK===============================================================
 
     return(
         <>
@@ -195,40 +259,65 @@ export const WildSurges = () => {
                             </SuperTH>
                         </TableRow>
                                 
-                {/* ARRAY MAPPING! FIRST MAP===============================================================*/}
-                    {/* {
-                        objInnerValues.map((thing) => (
-                            <>
-                            <TableRow NoHoverTR>
-                            <SuperTH>{thing.id}</SuperTH>
-                            <SuperTD NoHoverTD>{thing.text}</SuperTD>
-                            </TableRow>
-                            </>
-                        ))
-                    } */}
+{/* ARRAY MAPPING! FIRST MAP===============================================================*/}
+{/* { AR_concSplits[(ST_ArrayMarker-1)].map((thing, index) => (
+
+    
+        <TableRow NoHoverTR inputHeight="20px" inputBackgroundColour="gray" inputFontColour="black">
+        
+        <> 
+            <SuperTH key={"ID"+index}>
+                {thing.id}
+            </SuperTH>
+            <SuperTD NoHoverTD inputBackground="black">
+                {thing.text}
+            </SuperTD>
+            </TableRow>
+        </>
+        )} */}
+
+
+
                 <TableRow>
                     <SuperTH colSpan={4}>
                     <InvisiDiv 
                         inputWidth="auto" 
-                        inputBackground="rgba(255,255, 255, 0.3)"
-                        inputBorder="solid rgba(255, 255, 255, 0.1) 1px"
+                        inputBackground="none"
+                        inputBorder="none"
                         inputFlexDirection="row"
-                        inputMargin="5px 20px 5px 20px"
-                        inputPadding="10px"
                         >
                     {/* PAGINATION FEATURE */}
 
-                        <Button 
-                            inputBorder=" solid rbga(255 ,255 ,255 ,0.2) 1px" 
-                            inputRadius="100%" 
-                            inputBackground="rbga(255,255,255,0.1)"
-                            inputWidth="45px"
-                            inputHeight="40px"> <FirstPage/> </Button>
-                            <NavigateBeforeIcon/>
-                                <TextInput/>
-                            <NavigateNextIcon/>
-                        <LastPage/>
-                        
+                        <InvisiDiv 
+                            inputWidth="auto" 
+                            inputBackground="rgba(255, 255, 255, 0.1)" 
+                            inputBorder="solid rgba(255,255,255,0.2) 2px"
+                            inputRadius="100px"
+                            inputMargin="10px 0px 10px 0px">
+
+                            <Button PageButton onClick={() => setPage("first")}> 
+                                <FirstPage/> 
+                            </Button>
+                            <Button PageButton onClick={() => setPage("prev")}> 
+                                <NavigateBeforeIcon/>
+                            </Button>
+                                    
+                            <TextInput
+                            inputBackgroundColour="none"
+                            inputBorder="none"
+                            inputColour="white"
+                            inputPadding="3px"
+                            inputMargin="5px"
+                            value={"Page "+ST_ArrayMarker+"/20"}/>
+                            
+                            <Button PageButton onClick={() => setPage("next")}>
+                                <NavigateNextIcon/>
+                            </Button>
+                            <Button PageButton onClick={() => setPage("last")}> 
+                                <LastPage/>
+                            </Button>
+                        </InvisiDiv>
+
                     </InvisiDiv>    
                     </SuperTH>
 
