@@ -131,7 +131,9 @@ height: 100%;
 export const Table = styled.table`
 text-align: center;
 border: 3px outset grey;
-width: ${props => props.inputWidth || "300px"}
+width: ${props => props.inputWidth || "300px"};
+height: ${props => props.inputHeight || "auto"};
+overflow-y: ${props => props.inputOverflow || "none"};
 `;
 
 export const SuperTH = styled.th`

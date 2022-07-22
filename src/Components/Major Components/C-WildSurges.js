@@ -260,21 +260,37 @@ const setPage = (input) => {
                         </TableRow>
                                 
 {/* ARRAY MAPPING! FIRST MAP===============================================================*/}
-{/* { AR_concSplits[(ST_ArrayMarker-1)].map((thing, index) => (
 
-    
-        <TableRow NoHoverTR inputHeight="20px" inputBackgroundColour="gray" inputFontColour="black">
-        
-        <> 
-            <SuperTH key={"ID"+index}>
-                {thing.id}
+    {AR_concSplits[(ST_ArrayMarker-1)].map((thing, index, elements) => (
+    (index % 2 === 0) ?
+    <> 
+         
+
+            <TableRow NoHoverTR inputHeight="20px" inputBackgroundColour="gray" inputFontColour="black">
+            
+            <SuperTH>
+                {elements[index].id}
             </SuperTH>
+            
             <SuperTD NoHoverTD inputBackground="black">
-                {thing.text}
+                {elements[index].text}
             </SuperTD>
+
+            <SuperTH>
+                {elements[index+1]}
+            </SuperTH>
+
+            <SuperTD NoHoverTD inputBackground="black">
+                {elements[index+1]}
+            </SuperTD>
+
             </TableRow>
-        </>
-        )} */}
+    </>
+    :
+    <>
+        {bark('Index was odd. Skipping to next')}
+    </>
+        ))} 
 
 
 
