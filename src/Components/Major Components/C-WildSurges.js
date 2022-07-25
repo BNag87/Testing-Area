@@ -38,6 +38,9 @@ export const WildSurges = () => {
     const jsonData = require("../Reference Files/Json Files/randomEffects.json");
 
     //convert data
+
+    const allValues = Object.values(jsonData.effects);
+
     const objInnerValues = Object.values(jsonData.effects).reduce((acc, cur, index, original) => {
         if(index % 2 === 0) {
           const item = {
@@ -49,8 +52,7 @@ export const WildSurges = () => {
         return acc;
       }, []);
 
-    // for display/pagination, split the huge array into twenty arrays of 50
-    // each array will contain the entirety of the massive array, used for pagination
+    // for display/pagination, split the huge array into twenty arrays of 500
     let AR_pag1 = objInnerValues.splice(0,500)
     let AR_pag2 = objInnerValues.splice(0,500)
     let AR_pag3 = objInnerValues.splice(0,500)
@@ -74,8 +76,10 @@ export const WildSurges = () => {
 
     // array for storing arrays above
     let AR_concSplits = [];  
-    AR_concSplits.push(AR_pag1, AR_pag2, AR_pag3, AR_pag4, AR_pag5, AR_pag6, AR_pag7, AR_pag8, AR_pag9, AR_pag10,
-                       AR_pag11, AR_pag12, AR_pag13, AR_pag14, AR_pag15, AR_pag16, AR_pag17, AR_pag18, AR_pag19, AR_pag20);
+    AR_concSplits.push(
+        AR_pag1, AR_pag2, AR_pag3, AR_pag4, AR_pag5, AR_pag6, AR_pag7, AR_pag8, AR_pag9, AR_pag10,
+        AR_pag11, AR_pag12, AR_pag13, AR_pag14, AR_pag15, AR_pag16, AR_pag17, AR_pag18, AR_pag19, AR_pag20
+        );
 
                        
 //FUNCTIONS BLOCK===============================================================
@@ -93,7 +97,7 @@ export const WildSurges = () => {
         let value = "";
 
         try{
-        for(let i=0; i < targetArray.length; i++)
+            for(let i=0; i < targetArray.length; i++)
             {
                 
                 if(parseInt(targetArray[i].id) === IDin)
@@ -114,9 +118,9 @@ export const WildSurges = () => {
 
 //display random magical effect
     const randomEffect = () => {
-        
         //Internal variables
         let var_TextOut = document.getElementById("effectTextBox");
+        console.log(var_TextOut);
         let var_IdOut = document.getElementById("dis_PickID");
         let var_idData = randRanged(0, 9999);
 

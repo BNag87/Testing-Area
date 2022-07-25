@@ -242,9 +242,9 @@ export const MerchantGenerator = () => {
                         {/* TABLE HEADINGS */}
                         <TableRow>
                             <SuperTH>Item</SuperTH>
-                            <SuperTH inputWidth="80px">Category</SuperTH>
-                            <SuperTH inputWidth="40px">Weight</SuperTH>
-                            <SuperTH>Price Range</SuperTH>
+                            <SuperTH inputWidth="40%">Category</SuperTH>
+                            <SuperTH inputWidth="30%">Weight</SuperTH>
+                            <SuperTH inputWidth="10%">Price Range</SuperTH>
                             <HtmlTooltip title = "Is this item available at this merchant?"  arrow placement="top">
                                 <SuperTH inputWidth="20px">Avl?</SuperTH>
                             </HtmlTooltip>
