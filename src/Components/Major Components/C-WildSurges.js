@@ -131,12 +131,92 @@ export const WildSurges = () => {
         }
     }
 
+//ONCLICK FUNCTIONS BLOCK===============================================================
+    //used to change the 'page number' of a map block to display records        
+const setPage = (input) => {
+    try{
+    let pos = ST_ArrayMarker;
+
+    switch(input)
+    {
+        case "next":            
+            pos++;
+            set_ST_ArrayMarker(pos);
+
+            if((pos) >= 21)
+            {
+                pos=20;
+                set_ST_ArrayMarker(pos);
+            }  
+            else if((pos) <= 1)
+            {
+                pos=1;
+                set_ST_ArrayMarker(pos);
+            }
+
+            break;
+
+        case "last":
+            pos=20;
+            set_ST_ArrayMarker(pos);
+            break;
+
+        case "prev":
+            pos--;
+            set_ST_ArrayMarker(pos);
+            
+            if((pos) >= 21)
+            {
+                pos=20;
+                set_ST_ArrayMarker(pos);
+            }  
+            else if((pos) <= 1)
+            {
+                pos=1;
+                set_ST_ArrayMarker(pos);
+            }
+
+            break;
+
+        case "first":
+            pos=1;
+            set_ST_ArrayMarker(pos);
+            break;
+        default:
+            break;
+    }
+}
+    
+    catch(e)
+    {
+        bark("Bowel obstruction in setPage function:")
+        bark(e)
+    }
+    }
+
+    //START FROM HERE!! NEED TO MAKE SURE ONLY NUMBERS ARE INPUT!
+//ONCHANGE FUNCTIONS BLOCK===============================================================
+    //used to change page index when an id number is input to text box
+const setFromTextBox = (input) => {
+    
+    var x=document.getElementById(effectTextBox).value;
+    var regex=/^[0-9]+$/;
+    if (x.match(regex))
+    {
+        alert("Must input numbers. Setting search to '1'.");
+        x = 1;
+    }
+
+}
+
+//COMPONENT RETURN BLOCK===============================================================
+
     return(
         <>
 
-        <InvisiDiv inputHeight="100vh">
+        <InvisiDiv inputHeight="100%" inputMargin="160px 0px 0px 0px" Z="1">
 
-            <Wrapper inputWidth="80%">
+            <Wrapper inputWidth="80%" Z="2">
                 {/* WRAPPER CONTENT - CONTAINS ALL ELEMENTS */}
             
                 <Table inputWidth = "100%">
@@ -189,8 +269,51 @@ export const WildSurges = () => {
 
                             <hr/>  
                             
-                            </SuperTH>
-                        </TableRow>
+                <TableRow>
+                    <SuperTH colSpan={4}>
+                    <InvisiDiv 
+                        inputWidth="auto" 
+                        inputBackground="none"
+                        inputBorder="none"
+                        inputFlexDirection="row"
+                        >
+                    {/* PAGINATION FEATURE */}
+
+                        <InvisiDiv 
+                            inputWidth="auto" 
+                            inputBackground="rgba(255, 255, 255, 0.1)" 
+                            inputBorder="solid rgba(255,255,255,0.2) 2px"
+                            inputRadius="100px"
+                            inputMargin="5px 0px 10px 0px">
+
+                            <Button PageButton onClick={() => setPage("first")}> 
+                                <FirstPage/> 
+                            </Button>
+                            <Button PageButton onClick={() => setPage("prev")}> 
+                                <NavigateBeforeIcon/>
+                            </Button>
+                                    
+                            <TextInput
+                            inputBackgroundColour="none"
+                            inputBorder="none"
+                            inputColour="white"
+                            inputPadding="3px"
+                            inputMargin="5px"
+                            value={"Page "+ST_ArrayMarker+"/20"}/>
+                            
+                            <Button PageButton onClick={() => setPage("next")}>
+                                <NavigateNextIcon/>
+                            </Button>
+                            <Button PageButton onClick={() => setPage("last")}> 
+                                <LastPage/>
+                            </Button>
+                        </InvisiDiv>
+                    </InvisiDiv>    
+                    </SuperTH>
+                </TableRow>  
+
+            </SuperTH>
+        </TableRow>
                                 
                 {/* ARRAY MAPPING! FIRST MAP===============================================================*/}
                     {/* {
@@ -204,10 +327,87 @@ export const WildSurges = () => {
                         ))
                     } */}
 
-                    <SuperTD NoHoverTD colSpan={2}>
-                    
-                    </SuperTD>
-                    
+    {AR_concSplits[(ST_ArrayMarker-1)].map((thing, index, elements) => (
+        // Index was out of bounds.
+    (index < 0 || index > 499) ? bark("Index was <0 or >499!") 
+    :
+        // index was at least 0 or an even number
+    (index === 0 || index % 2 === 0) ?
+    <> 
+        
+            <TableRow NoHoverTR inputHeight="20px" inputBackgroundColour="#232323" inputFontColour="black">
+            
+            <SuperTH inputWidth="0px">
+                {thing.id}
+            </SuperTH>
+            
+            <SuperTD NoHoverTD inputBackgroundColour="black">
+                {thing.text}
+            </SuperTD>
+
+            <SuperTH inputWidth="0px">
+                {((elements[index+1].id))}
+            </SuperTH>
+
+            <SuperTD NoHoverTD inputBackground="black">
+                {((elements[index+1].text))}
+            </SuperTD>
+
+            </TableRow>
+    </>
+    :
+    <>
+        {bark('Index was odd. Skipping to next')}
+    </>
+        ))} 
+
+
+
+                <TableRow>
+                    <SuperTH colSpan={4}>
+                    <InvisiDiv 
+                        inputWidth="auto" 
+                        inputBackground="none"
+                        inputBorder="none"
+                        inputFlexDirection="row"
+                        >
+                    {/* PAGINATION FEATURE */}
+
+                        <InvisiDiv 
+                            inputWidth="auto" 
+                            inputBackground="rgba(255, 255, 255, 0.1)" 
+                            inputBorder="solid rgba(255,255,255,0.2) 2px"
+                            inputRadius="100px"
+                            inputMargin="10px 0px 10px 0px">
+
+                            <Button PageButton onClick={() => setPage("first")}> 
+                                <FirstPage/> 
+                            </Button>
+                            <Button PageButton onClick={() => setPage("prev")}> 
+                                <NavigateBeforeIcon/>
+                            </Button>
+                                    
+                            <TextInput
+                            inputBackgroundColour="none"
+                            inputBorder="none"
+                            inputColour="white"
+                            inputPadding="3px"
+                            inputMargin="5px"
+                            value={"Page "+ST_ArrayMarker+"/20"}/>
+                            
+                            <Button PageButton onClick={() => setPage("next")}>
+                                <NavigateNextIcon/>
+                            </Button>
+                            <Button PageButton onClick={() => setPage("last")}> 
+                                <LastPage/>
+                            </Button>
+                        </InvisiDiv>
+
+                    </InvisiDiv>    
+                    </SuperTH>
+
+
+                </TableRow>    
                     </TableHead>
                 </Table>
             </Wrapper>
