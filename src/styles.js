@@ -161,6 +161,12 @@ padding: 2px 5px 2px 5px;
 width: ${props => props.inputWidth || "80px"};
 height: ${props => props.inputHeight || "auto"};
 
+color: ${props => props.inputColour || "#aaaaaa"};
+background: ${props => props.inputBackgroundColour || "#232323"};
+font-size: ${props => props.inputFontSize || "12px"};
+font-variant: ${props => props.inputFontVariant || "None"};
+font-weight: ${props => props.inputFontWeight || "lighter"};;
+
 ${props => props.NoHoverTD && css`
   font-weight: bold;
   }
