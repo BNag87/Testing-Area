@@ -25,9 +25,9 @@ function App() {
     {/* ROUTES ARE LINKED IN THE SIDEBAR COMPONENT. ENABLE/DISABLE THOSE TOO TO PREVENT ERRORS */}
     <Routes>
         <Route path="/" element={ <Main/> } />
-        {/* <Route path="NPCGenerator" element={ <NpcGenerator/>} /> */}
+        <Route path="NPCGenerator" element={ <NpcGenerator/>} />
         <Route path="WildSurges" element={ <WildSurges/>} />
-        {/* <Route path="MerchantList" element={ <MerchantGenerator/>} /> */}
+        <Route path="MerchantList" element={ <MerchantGenerator/>} />
         
     </Routes>
     

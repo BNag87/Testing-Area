@@ -240,9 +240,9 @@ function genAllBlurbs(){
 }
 return(
     <>
-    <InvisiDiv inputHeight="170px" />
-    <InvisiDiv inputMargin="0px 0px 500px 0px">
-    <Wrapper inputWidth="65%">
+    <InvisiDiv inputHeight="170px" Z="2"/>
+    <InvisiDiv inputMargin="0px 0px 500px 0px" Z="2">
+    <Wrapper inputWidth="65%" Z="1">
         <Table inputWidth="95%">
             <TableHead>
 

@@ -53,23 +53,6 @@ export const AnimatedBG = () => {
                 },
                 value: 190,
               },
-            
-            roll: {
-              darken: {
-                enable: true,
-                value: 30,
-              },
-              enlighten: {
-                enable: true,
-                value: 30,
-              },
-              enable: true,
-              mode: "horizontal",
-              speed: {
-                min: 10,
-                max: 15,
-              },
-            },
 
             rotate: {
                 animation: {

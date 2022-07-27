@@ -1,8 +1,7 @@
 import styled, { createGlobalStyle, css } from "styled-components";
 import visIcon from "./Components/Reference Files/Images/visibilityOff.png"
 import visIconShow from "./Components/Reference Files/Images/visibilityOn.png"
-
-import d4Gif from "./Components/Reference Files/Images/d4.gif"
+import {Link} from "react-router-dom";
 
 
 
@@ -36,10 +35,6 @@ z-index: ${props => props.Z || "5"};
 
 padding: ${props => props.inputPadding || "0px"};
 margin: ${props => props.inputMargin || "0px"};
-
-${props => props.d4Div && css`
-background: url(${d4Gif});
-`}
 
 ${props => props.IconDiv && css`
       display: inherit;
@@ -102,7 +97,7 @@ export const Wrapper = styled.div`
     flex-wrap: wrap;
     z-index: ${props => props.Z || "5"};
 
-    background:${props => props.inputFlexDirection || "rgb(100,200,200)"};
+    background:${props => props.inputBackground || "rgb(100,200,200)"};
 `;
 
 export const TopBar = styled.div`
@@ -126,6 +121,15 @@ width: 100%;
 `
 export const ColumnSplitter = styled.div`
 height: 100%;
+`
+// ==========--------------------ROUTER LINK STYLES
+export const NLink = styled(Link)`
+font-variant: small-caps;
+font-weight: bolder;
+font-family: "Calibri";
+font-size: 16px;
+text-decoration: none;
+color: rgba(200,200,250,0.8);
 `
 // ==========-------------------- TABLE STYLES
 export const Table = styled.table`
@@ -220,7 +224,7 @@ export const TableRow = styled.tr`
     transition: ease-in-out 0.3s;
     }
     `;
-    export const TextArea = styled.textarea`
+  export const TextArea = styled.textarea`
       text-align: ${props => props.inputTextAlign || "left"};
       justify-content: ${props => props.inputJustify || "flex-start"};
       font-size: ${props => props.inputFontSize || "900"}; 
@@ -261,6 +265,7 @@ export const TableRow = styled.tr`
     font-variant: ${props => props.inputFontVariant || "small-caps"};
     font-weight: ${props => props.inputFontWeight || "bolder"};
     font-size: ${props => props.inputFontSize || "large"};
+
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputHeight || "auto"};
     cursor: pointer;
