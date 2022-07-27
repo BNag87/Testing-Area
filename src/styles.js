@@ -1,13 +1,16 @@
 import styled, { createGlobalStyle, css } from "styled-components";
 import visIcon from "./Components/Reference Files/Images/visibilityOff.png"
 import visIconShow from "./Components/Reference Files/Images/visibilityOn.png"
+import {Link} from "react-router-dom";
+
+
 
 // ==========-------------------- GLOBAL STYLES
 export const GlobalStyle = createGlobalStyle`
 body {
   display: flex;
   flex-direction: column;
-  background: grey;
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(82,169,139,1) 40%, rgba(255,255,255,1) 100%);
   margin: 0;
   padding: 0;
   font-family: calibri;
@@ -17,10 +20,21 @@ body {
 // ==========-------------------- HEADER STYLES
 export const InvisiDiv = styled.div`
 display: flex;
+
+background: ${props => props.inputBackground || "none"};
+border: ${props => props.inputBorder || "none"};
+border-radius: ${props => props.inputRadius || "none"};
+
 align-items: ${props => props.inputAlignItems || "center"};
 justify-content: ${props => props.inputJustifyContent || "center"};
 text-align: ${props => props.inputTextAlign || "center"};
+
 width: ${props => props.inputWidth || "auto"};
+height: ${props => props.inputHeight || "auto"};
+z-index: ${props => props.Z || "5"};
+
+padding: ${props => props.inputPadding || "0px"};
+margin: ${props => props.inputMargin || "0px"};
 
 ${props => props.IconDiv && css`
       display: inherit;
@@ -81,8 +95,9 @@ export const Wrapper = styled.div`
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    
-    background: rgb(100,200,200);
+    z-index: ${props => props.Z || "5"};
+
+    background:${props => props.inputBackground || "rgb(100,200,200)"};
 `;
 
 export const TopBar = styled.div`
@@ -93,7 +108,11 @@ export const TopBar = styled.div`
     height: ${props => props.inputHeight || "15%"};
     margin: ${props => props.inputMargin || "0px"};
     padding: ${props => props.inputPadding || "20px"};
-    background: rgb(100,200,250);
+    border-bottom: solid white 5px;
+    background: rgba(100,200,250, 0.8);
+        position: fixed;
+    z-index: ${props => props.Z || "5"};
+
     
 `;
 
@@ -103,19 +122,33 @@ width: 100%;
 export const ColumnSplitter = styled.div`
 height: 100%;
 `
+// ==========--------------------ROUTER LINK STYLES
+export const NLink = styled(Link)`
+font-variant: small-caps;
+font-weight: bolder;
+font-family: "Calibri";
+font-size: 16px;
+text-decoration: none;
+color: rgba(200,200,250,0.8);
+`
 // ==========-------------------- TABLE STYLES
 export const Table = styled.table`
 text-align: center;
 border: 3px outset grey;
-width: ${props => props.inputWidth || "300px"}
+width: ${props => props.inputWidth || "300px"};
+height: ${props => props.inputHeight || "auto"};
+overflow-y: ${props => props.inputOverflow || "none"};
 `;
 
 export const SuperTH = styled.th`
-
 background: ${props => props.inputBackgroundColour || "black"};
 color: ${props => props.inputFontColour || "white"};
+
 width: ${props => props.inputWidth || "20%"};
+height: ${props => props.inputHeight || "auto"};
+
 font-variant: small-caps;
+
 padding: 0px -5px 0px -5px;
 `;
 
@@ -126,42 +159,63 @@ color: white;
 font-variant: small-caps;
 width: ${props => props.inputWidth || "auto"};
 `;
+
 export const SuperTD = styled.td`
 padding: 2px 5px 2px 5px;
 width: ${props => props.inputWidth || "80px"};
+height: ${props => props.inputHeight || "auto"};
+
+color: ${props => props.inputColour || "#aaaaaa"};
+background: ${props => props.inputBackgroundColour || "#232323"};
+font-size: ${props => props.inputFontSize || "12px"};
+font-variant: ${props => props.inputFontVariant || "None"};
+font-weight: ${props => props.inputFontWeight || "lighter"};;
+
 ${props => props.NoHoverTD && css`
   font-weight: bold;
   }
 `}
 
 ${props => props.NoHoverSmallTxtTD && css`
-  
       font-variant: none;
       font-family: consolas;
       font-size: smaller;
   }
 `}
 `;
+
 export const TableRow = styled.tr`
-  /* border: dashed white;  */
   background: ${props => props.inputBackgroundColour || "white"};
   color: ${props => props.inputFontColour || "white"};
+  height: ${props => props.inputHeight || "auto"};
       &:hover {
           color: #FFD700; //gold
           background: #b368a3; //blue
           transition: ease-in-out 0.3s;
       }
+
+      ${props => props.NoHoverTR && css`
+      background: lightcyan; //blue
+      color: #b3c378; //greenish
+      &:hover {
+          color: none; //greenish
+          background: none; //blue
+        }
+    `}
+
   `;
   // ==========-------------------- INPUT STYLES
   export const TextInput = styled.input`
-    text-align:center;
+    text-align: center;
     font-size: ${props => props.inputFontSize || "16px"};
     font-style: ${props => props.inputFontStyle || "bolder"};
+    font-family: ${props => props.inputFontFamily || "inherit"};
     background: ${props => props.inputBackgroundColour || "#b368a3"};
-    color: black;
+    color: ${props => props.inputColour || "black"};
     padding: ${props => props.inputPadding || "5px"};
     margin: ${props => props.inputMargin || "-3px 0px 5px 0px"};
-    border: none;
+    border: ${props => props.inputBorder || "-3px 0px 5px 0px"};
+    border-radius: ${props => props.inputBorderRadius || "none"};
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputHeight || "auto"};
     &:disabled{
@@ -170,10 +224,11 @@ export const TableRow = styled.tr`
     transition: ease-in-out 0.3s;
     }
     `;
-    export const TextArea = styled.textarea`
+  export const TextArea = styled.textarea`
       text-align: ${props => props.inputTextAlign || "left"};
       justify-content: ${props => props.inputJustify || "flex-start"};
-      font-size: ${props => props.inputFontSize || "900"};
+      font-size: ${props => props.inputFontSize || "900"}; 
+      font-weight: ${props => props.inputFontWeight || "normal"};
       background: ${props => props.inputDBG || "rgba(255, 255, 255, 0.25)"};
       color: ${props => props.inputDFC || "white"};
       padding: ${props => props.inputPadding || "5px"};
@@ -183,6 +238,7 @@ export const TableRow = styled.tr`
       width: ${props => props.inputWidth || "430px"};
       height: ${props => props.inputHeight || "125px"};
       resize: none;
+
       &:disabled{
       background: ${props => props.inputDBG || "rgba(255, 255, 255, 0.15)"};
       color: ${props => props.inputDFC || "white"};
@@ -194,24 +250,29 @@ export const TableRow = styled.tr`
     }
     `;
   export const Button = styled.button`
-  
+
+    background: ${props => props.inputBackground || "rgba(179 ,104 ,163 ,1)"}; //blue
+    color: ${props => props.inputColor || "#b3c378"}; //greenish
+
     border: ${props => props.inputBorder || "red 1px solid"};
     border-radius: ${props => props.inputRadius || "5px 3px 5px 3px"};
     box-shadow: ${props => props.inputBoxShadow || "2px 2px rgba(0,0,0,0.4)"};
+    text-align: center;
+
     padding: ${props => props.inputPadding || "10px 10px 10px 10px"};
     margin: ${props => props.inputMargin || "3px 3px 3px 3px"};
-    background: ${props => props.inputBackground || "#b368a3"}; //blue
-    color: ${props => props.inputColor || "#b3c378"}; //greenish
-    text-align: center;
+    
     font-variant: ${props => props.inputFontVariant || "small-caps"};
     font-weight: ${props => props.inputFontWeight || "bolder"};
     font-size: ${props => props.inputFontSize || "large"};
+
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputHeight || "auto"};
     cursor: pointer;
+
       &:hover{
-        color: ${props => props.inputHBackground || "green"};
-        background: ${props => props.inputHColour || "white"};
+        color: ${props => props.inputHColour || "green"};
+        background: ${props => props.HBackground || "white"};
         transition: ease-in-out 0.3s; 
       }
       &:disabled{
@@ -225,6 +286,7 @@ export const TableRow = styled.tr`
         transition: ease-in-out 0.3s; 
       }
       }
+    
       ${props => props.NoHoverButton && css`
       background: lightcyan; //blue
       color: #b3c378; //greenish
@@ -233,6 +295,7 @@ export const TableRow = styled.tr`
           background: #b368a3; //blue
         }
     `}
+
     ${props => props.HideButton && css`
     background-image: url(${visIcon});
     background-color: rgba(200,190,190, 0.2); //blue
@@ -241,10 +304,10 @@ export const TableRow = styled.tr`
       background-position: center;
       background-size: contain;
     
-    width: 20px;
-    height: 20px;    
-    padding: 1px;
-    margin: 3px;
+      width: 20px;
+      height: 20px;    
+      padding: 1px;
+      margin: 3px;
 
       &:hover {
         background: url(${visIcon});
@@ -254,6 +317,7 @@ export const TableRow = styled.tr`
         background-size: contain;
         }
     `}
+    
     ${props => props.ShowButton && css`
     
     background-image: url(${visIconShow});
@@ -275,5 +339,19 @@ export const TableRow = styled.tr`
         background-position: center;
         background-size: contain;
         }
+    `}
+
+    ${props => props.PageButton && css`
+    border-radius: 100px; 
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    
+      &:hover {
+        background: rgba(255,255,255,0.5);
+        color: black;
+      }
     `}
 `;

@@ -1,10 +1,9 @@
 //==========----------→ ↓IMPORTS HERE↓ ←---------==========
 import React from 'react';
 import { useState } from 'react';
-import { Link } from "react-router-dom";
 import { Drawer, Box, Typography, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu'
-import { InvisiDiv } from "../../styles"
+import { NLink, Wrapper } from "../../styles"
 //==========----------→ ↓STYLE IMPORTS HERE↓ ←---------==========
 
 
@@ -41,12 +40,46 @@ return(
                     <Typography variant="h5" component="div" sx={{margin: 5}}>DM Tools</Typography>
                     <hr/>
                     <Typography variant="h6">
-                            <InvisiDiv><Link to="/">Home</Link></InvisiDiv>
+                        <NLink to="/">
+                            <Wrapper inputBackground="rgb(100,100,150)">
+                                    Home
+                            </Wrapper>
+                        </NLink>
                     </Typography>
                     <hr/>
-                    <Typography variant="h6"><Link to="MerchantList">Merchant Inventories</Link></Typography>
-                    <Typography variant="h6"><Link to="NPCGenerator">NPC Generator</Link></Typography>
+
+{/* disabled components 
+
+<Link to="MerchantList">Merchant Inventories</Link>
+<Link to="NPCGenerator">NPC Generator</Link>
+*/}
+
+                    <Typography variant="h6">
+                        <NLink to="MerchantList">
+                            <Wrapper inputBackground="rgb(50,50,100)">
+                                Merchant List
+                            </Wrapper>
+                        </NLink>
+                    </Typography>
+                    
+                    <Typography variant="h6">
+                        <NLink to="NPCGenerator">
+                            <Wrapper inputBackground="rgb(50,50,100)">
+                                NPC Generator
+                            </Wrapper>
+                        </NLink>
+                    </Typography>
+                    
+                    <Typography variant="h6">
+                        <NLink to="WildSurges">
+                            <Wrapper inputBackground="rgb(50,50,100)">
+                                Random Magic Effects
+                            </Wrapper>
+                        </NLink>
+                    </Typography>
+                    
                     <hr/>
+                    
                     <p>More to come</p>
                     <p>Made by Basil Nagle</p>
                 </Box>
