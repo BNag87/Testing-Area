@@ -1,6 +1,7 @@
 import React from "react";
 
 import { TopBar, InvisiDiv, H3} from "../../styles";
+import { DiceRoller } from "../Major Components/C-DiceRoller";
 import { Sidebar } from "./C-Sidebar";
 
 export const PageTopbar = () => {
@@ -22,6 +23,7 @@ export const PageTopbar = () => {
                 >
                     DMs S.A.K
                 </H3>
+                <DiceRoller/>
             </InvisiDiv>
         </TopBar>
         </>
