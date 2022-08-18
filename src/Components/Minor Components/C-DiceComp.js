@@ -1,9 +1,9 @@
 //This component is meant to be an individual dice roller
-//PArts include a tezt box, a label and a roll button
+//Parts include a text box, a label and a roll button
 //Props will be passed in to change the values of each component
 
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { 
     Wrapper,
     Button,
@@ -15,10 +15,6 @@ export const DiceComp = (props) => {
 //==========Dicecomp Variables=========
 let var_faces = props.DiceFaces;
 
-// usestate to track and change count of dice and bonus
-const [var_count, set_var_count] = useState(1);
-const [var_bonus, set_var_bonus] = useState(0);
-
 //==========Dicecomp functions=========
 
     //Shorthand version of console.log
@@ -28,17 +24,22 @@ const [var_bonus, set_var_bonus] = useState(0);
         console.log("%c"+ input, "font-weight:bold; font-color=blue; background: black; padding:5px");
     }
 
+    //useEffect to trigger re-renders
+    useEffect(() => {
+    }, [var_count, var_bonus])
+
     //Random number between two input numbers
     const randNumber = (min, max) => { 
-        return Math.floor(Math.random() * (max - min + 1) + min)
+        return Math.round(Math.random() * (max - min + 1) + min)
     }
 
     //ONCHANGE FUNCTION: Change values of dice count or dice bonus
     const UpdateVars = () =>
     {
-        bark("UpdateVars fired.");
         let countRef = parseInt(document.getElementById("id_Count").value);
         let bonusRef = parseInt(document.getElementById("id_Bonus").value);
+
+            bark(In 'UpdateVars' )
 
         if(isNaN(countRef))
         {
@@ -49,19 +50,20 @@ const [var_bonus, set_var_bonus] = useState(0);
             bonusRef = 1;
         }
 
+        
         set_var_count(countRef);
         set_var_bonus(bonusRef);
-        
+
     }
 
-    //ONCLICK FUNCTION: roll a dice, based on dount, face and bonus of that dice
+    //ONCLICK FUNCTION: roll a dice, based on count, face and bonus of that dice
     const RollThisDice = (count, face, bonus) => {
 
     //Internal scope Variables
         set_var_count(parseInt(count));
-        bark("On a d"+props.DiceFaces+" roll, var_count was set to: " +var_count);
         var_faces = parseInt(face);
         set_var_bonus(parseInt(bonus));
+
         if(isNaN(var_count))
         {
             set_var_count(1);
@@ -79,10 +81,14 @@ const [var_bonus, set_var_bonus] = useState(0);
             //Roll the dice, generate the result as many times as needed
         for(let i = 0; i < var_count; i++)
             {
-                let result = ((randNumber(var_count, var_faces) + var_bonus))
+                
+                let result = Math.floor((randNumber(1, props.DiceFaces)))
+                bark("Loop "+(i+1)+ "/"+(var_count)+". 1d"+props.DiceFaces+"= "+result);
                 results.push(result);
-                bark("Result from "+var_count+"d"+var_faces+"+"+var_bonus+"= "+result)
+                
             }
+            bark("Rolls made: "+results+". (Each roll adds "+var_bonus+" to it)");
+            
         }
 
         catch(error)
@@ -92,11 +98,16 @@ const [var_bonus, set_var_bonus] = useState(0);
         }
 }   
 
+// usestate to track and change count of dice and bonus
+const [var_count, set_var_count] = useState(1);
+const [var_bonus, set_var_bonus] = useState(0);
+bark("States initialised:\nvar_count: "+var_count+"\nvar_bonus: "+var_bonus);
+
 return(
 <Wrapper inputFlexDirection="row">
-    <TextInput id="id_Count" defaultValue={var_count} onChange={() => UpdateVars()}/> {/* Number of dice to roll */}
+    <TextInput id="id_Count" inputWidth="25px" inputBorder="none" inputMargin="5px" inputPadding="5px" defaultValue={var_count} onChange={() => UpdateVars()}/> {/* Number of dice to roll */}
     d{var_faces}+
-    <TextInput id="id_Bonus" defaultValue={var_bonus} onChange={() => UpdateVars()}/>    {/* Bonus to this dice roll */}
+    <TextInput id="id_Bonus" inputWidth="25px" inputBorder="none" inputMargin="5px" inputPadding="5px" defaultValue={var_bonus} onChange={() => UpdateVars()}/>    {/* Bonus to this dice roll */}
     <Button onClick={() => RollThisDice(var_count, var_faces, var_bonus)}>{var_count}d{var_faces}+{var_bonus}</Button>
 </Wrapper>
 )
