@@ -1,6 +1,7 @@
 import React from "react";
 
 import { TopBar, InvisiDiv, H3} from "../../styles";
+import { DiceComp } from "./C-DiceComp";
 import { Sidebar } from "./C-Sidebar";
 
 export const PageTopbar = () => {
@@ -11,7 +12,7 @@ export const PageTopbar = () => {
             <Sidebar/>            
             </InvisiDiv>
 
-            <InvisiDiv inputAlignItems="center" inputTextAlign="center" inputWidth="87%">
+            <InvisiDiv inputAlignItems="center" inputTextAlign="center" inputMargin="0px 110px 0px 0px" inputWidth="100%" inputFlexDirection="column">
                 <H3 
                 inputBorder="none" 
                 inputFontSize="35px" 
@@ -19,9 +20,11 @@ export const PageTopbar = () => {
                 inputBackgroundColour="none" 
                 inputFontWeight="1000" 
                 inputColour="rgba(30,30,30,0.7)"
+                inputWidth="100%"
                 >
                     DMs S.A.K
                 </H3>
+                <DiceComp/>
             </InvisiDiv>
         </TopBar>
         </>

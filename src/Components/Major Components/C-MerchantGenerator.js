@@ -134,7 +134,7 @@ export const MerchantGenerator = () => {
         return(
             <>
                 <InvisiDiv inputHeight="170px" Z="2"/>
-    <InvisiDiv inputMargin="0px 0px 500px 0px" Z="2">
+    <InvisiDiv inputMargin="20px 0px 0px 0px" Z="2">
             <Wrapper inputWidth="70%" Z="1">
                 <Table inputWidth = "100%">
                     
@@ -234,7 +234,6 @@ export const MerchantGenerator = () => {
                             <h3>Shop Type</h3>
                                 <H3>{objInnerValues[shopIndex][0]}</H3>
                             </InvisiDiv>
-                            <hr/>
 
                         </SuperTH>
                             </TableRow>
