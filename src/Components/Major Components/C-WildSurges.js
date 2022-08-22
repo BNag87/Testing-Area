@@ -112,7 +112,7 @@ export const WildSurges = () => {
 
     }
 
-    //onclick function, updayes display fields with random effect/id
+    //onclick function, updates display fields with random effect/id
     const randomEffect = () => {
         //Internal variables
         let var_TextOut = document.getElementById("effectTextBox");
@@ -124,7 +124,7 @@ export const WildSurges = () => {
             {
                 var_IdOut.value = var_idData;
                 var_TextOut.value = getRecord(var_idData);
-                set_ST_ArrayMarker(Math.floor(var_idData/500));
+                set_ST_ArrayMarker(Math.floor(var_idData/500)+1);
             }
         catch(error){
             bark("Bowel explosion in onclick function:");
@@ -200,7 +200,7 @@ const setPage = (input) => {
     return(
         <>
 
-        <InvisiDiv inputHeight="100%" inputMargin="160px 0px 0px 0px" Z="1">
+        <InvisiDiv inputHeight="100%" inputMargin="180px 0px 0px 0px" Z="1">
 
             <Wrapper inputWidth="80%" Z="2">
                 {/* WRAPPER CONTENT - CONTAINS ALL ELEMENTS */}
@@ -240,6 +240,7 @@ const setPage = (input) => {
                                 inputTextAlign="center" 
                                 inputFontSize="18px" 
                                 inputFontWeight="bolder" 
+                                inputDColour="Black"
                                 disabled={true}/>
                             
                             <Button 

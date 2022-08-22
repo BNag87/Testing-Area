@@ -20,6 +20,7 @@ body {
 // ==========-------------------- HEADER STYLES
 export const InvisiDiv = styled.div`
 display: flex;
+flex-direction: ${props => props.inputFlexDirection || "none"};
 
 background: ${props => props.inputBackground || "none"};
 border: ${props => props.inputBorder || "none"};
@@ -80,15 +81,26 @@ ${props => props.ForTH && css`
   `}
 
 `
+
+export const P = styled.p`
+width: ${props => props.inputWidth || "auto"};
+margin: ${props => props.inputMargin || "0px"};
+padding: ${props => props.inputPadding || "0px"};
+font-size: ${props => props.inputFontSize || "14px"};
+font-weight: ${props => props.inputFontWeight || "bold"};
+text-shadow: ${props => props.inputFontShadow || "none"};
+font-variant: ${props => props.inputFontVariant || "none"};
+`
+
 // ==========--------------------DIV STYLES
 export const Wrapper = styled.div`
     width: ${props => props.inputWidth || "auto"};
     height: auto;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.3) ;
-    border: 5px solid white;
-    border-radius: 20px;
+    margin: ${props => props.inputMargin || "10px"};
+    padding: ${props => props.inputPadding || "10px"};
+    box-shadow: ${props => props.inputBoxShadow || "5px 5px rgba(0, 0, 0, 0.3)"};
+    border: ${props => props.inputBorder || "5px solid white"};
+    border-radius: ${props => props.inputBorderRadius || "20px"};
     display: flex;
     flex-direction: ${props => props.inputFlexDirection || "column"};
     align-items: center;
@@ -105,7 +117,7 @@ export const TopBar = styled.div`
     flex-direction: row;
   
     width: ${props => props.inputWidth || "100%"};
-    height: ${props => props.inputHeight || "15%"};
+    height: ${props => props.inputHeight || "20%"};
     margin: ${props => props.inputMargin || "0px"};
     padding: ${props => props.inputPadding || "20px"};
     border-bottom: solid white 5px;
@@ -219,9 +231,9 @@ export const TableRow = styled.tr`
     width: ${props => props.inputWidth || "80px"};
     height: ${props => props.inputHeight || "auto"};
     &:disabled{
-    background: #b368a3;
-    color: black;
-    transition: ease-in-out 0.3s;
+      background: ${props => props.inputDBackgroundColour || "#b368a3"};
+      color: ${props => props.inputDColour || "#b368a3"};;
+      transition: ease-in-out 0.3s;
     }
     `;
   export const TextArea = styled.textarea`

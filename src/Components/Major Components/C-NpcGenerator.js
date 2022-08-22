@@ -241,9 +241,9 @@ function genAllBlurbs(){
 return(
     <>
     <InvisiDiv inputHeight="170px" Z="2"/>
-    <InvisiDiv inputMargin="0px 0px 500px 0px" Z="2">
+    <InvisiDiv inputMargin="20px 0px 0px 0px" Z="2">
     <Wrapper inputWidth="65%" Z="1">
-        <Table inputWidth="95%">
+        <Table inputWidth="100%">
             <TableHead>
 
             <TableRow>
@@ -283,6 +283,7 @@ return(
                         inputMargin="3px" 
                         inputWidth="90%" 
                         inputHeight="35px" 
+                        inputDColour="Black"
                         disabled={true} 
                         value={st_blurbVars.GL_name}>
                     </TextInput>
@@ -309,6 +310,7 @@ return(
                             inputMargin="3px" 
                             inputWidth="90%" 
                             inputHeight="35px" 
+                            inputDColour="Black"
                             disabled={true} 
                             value={st_blurbVars.GL_gender}>
                         </TextInput>
@@ -334,7 +336,7 @@ return(
                     </InvisiDiv>
                 </SuperTH>
                     <SuperTD>
-                        <TextInput id = "dis_npc_race" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_race}></TextInput>
+                        <TextInput id = "dis_npc_race" inputDColour="Black" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_race}></TextInput>
                         
                     </SuperTD>
                
@@ -356,7 +358,7 @@ return(
                     </SuperTH>
 
                     <SuperTD>
-                        <TextInput id = "dis_npc_talent" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_talent}></TextInput>     
+                        <TextInput id = "dis_npc_talent" inputDColour="Black" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_talent}></TextInput>     
                     </SuperTD>
             </TableRow>
             </TableHead>
@@ -380,7 +382,7 @@ return(
                 </SuperTH>
                 
                 <SuperTD>
-                    <TextInput id = "dis_npc_demeanor" inputMargin="3px" inputWidth="95%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_demeanor}></TextInput>
+                    <TextInput id = "dis_npc_demeanor" inputDColour="Black" inputMargin="3px" inputWidth="95%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_demeanor}></TextInput>
                     
                 </SuperTD>
                 
@@ -400,7 +402,7 @@ return(
                 </SuperTH>
 
                 <SuperTD>
-                    <TextInput id = "dis_npc_alignment" inputFontSize="14px" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {"(" + st_npc_Alignment + ") " + st_blurbVars.GL_alignment}></TextInput>
+                    <TextInput id = "dis_npc_alignment" inputDColour="Black" inputFontSize="14px" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {"(" + st_npc_Alignment + ") " + st_blurbVars.GL_alignment}></TextInput>
                     
                 </SuperTD>
                 </TableRow>
@@ -424,7 +426,7 @@ return(
                 </SuperTH>
                     
                 <SuperTD>
-                    <TextInput id = "dis_npc_bonds" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_bond}></TextInput>
+                    <TextInput id = "dis_npc_bonds" inputDColour="Black" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true} value = {st_blurbVars.GL_bond}></TextInput>
                     
                 </SuperTD>
                 
@@ -441,7 +443,7 @@ return(
                     </Button>
                 </SuperTH>
                 <SuperTD>
-                    <TextInput id = "dis_npc_flaws" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true}  value = {st_blurbVars.GL_flaw}></TextInput>
+                    <TextInput id = "dis_npc_flaws" inputDColour="Black" inputMargin="3px" inputWidth="90%" inputHeight="35px" disabled={true}  value = {st_blurbVars.GL_flaw}></TextInput>
                     
                 </SuperTD>
                 </TableRow>
