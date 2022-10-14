@@ -174,14 +174,14 @@ width: ${props => props.inputWidth || "auto"};
 
 export const SuperTD = styled.td`
 padding: 2px 5px 2px 5px;
-width: ${props => props.inputWidth || "80px"};
+width: ${props => props.inputWidth || "auto"};
 height: ${props => props.inputHeight || "auto"};
 
 color: ${props => props.inputColour || "#aaaaaa"};
-background: ${props => props.inputBackgroundColour || "#232323"};
+background: ${props => props.inputBackgroundColour || "none"};
 font-size: ${props => props.inputFontSize || "12px"};
 font-variant: ${props => props.inputFontVariant || "None"};
-font-weight: ${props => props.inputFontWeight || "lighter"};;
+font-weight: ${props => props.inputFontWeight || "bold"};;
 
 ${props => props.NoHoverTD && css`
   font-weight: bold;
@@ -201,17 +201,16 @@ export const TableRow = styled.tr`
   color: ${props => props.inputFontColour || "white"};
   height: ${props => props.inputHeight || "auto"};
       &:hover {
-          color: #FFD700; //gold
+          color:  ${props => props.inputHFontColour || "#FFD700"}; //gold
           background: #b368a3; //blue
           transition: ease-in-out 0.3s;
       }
 
       ${props => props.NoHoverTR && css`
-      background: lightcyan; //blue
-      color: #b3c378; //greenish
+
       &:hover {
-          color: none; //greenish
-          background: none; //blue
+          color: none; 
+          background: none;
         }
     `}
 

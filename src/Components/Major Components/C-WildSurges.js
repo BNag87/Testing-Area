@@ -200,7 +200,7 @@ const setPage = (input) => {
     return(
         <>
 
-        <InvisiDiv inputHeight="100%" inputMargin="180px 0px 0px 0px" Z="1">
+        <InvisiDiv inputHeight="100%" inputMargin="16% 0% 0% 0%" Z="1">
 
             <Wrapper inputWidth="80%" Z="2">
                 {/* WRAPPER CONTENT - CONTAINS ALL ELEMENTS */}
@@ -320,7 +320,7 @@ const setPage = (input) => {
                 {thing.id}
             </SuperTH>
             
-            <SuperTD NoHoverTD>
+            <SuperTD>
                 {thing.text}
             </SuperTD>
 
@@ -328,7 +328,7 @@ const setPage = (input) => {
                 {((elements[index+1].id))}
             </SuperTH>
 
-            <SuperTD NoHoverTD>
+            <SuperTD>
                 {((elements[index+1].text))}
             </SuperTD>
 

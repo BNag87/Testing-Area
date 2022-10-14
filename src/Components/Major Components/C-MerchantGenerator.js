@@ -134,7 +134,7 @@ export const MerchantGenerator = () => {
         return(
             <>
                 <InvisiDiv inputHeight="170px" Z="2"/>
-    <InvisiDiv inputMargin="20px 0px 0px 0px" Z="2">
+    <InvisiDiv inputMargin="5% 0% 0% 0%" Z="2">
             <Wrapper inputWidth="70%" Z="1">
                 <Table inputWidth = "100%">
                     
@@ -240,17 +240,16 @@ export const MerchantGenerator = () => {
 
                         {/* TABLE HEADINGS */}
                         <TableRow>
-                            <SuperTH>Item</SuperTH>
-                            <SuperTH inputWidth="40%">Category</SuperTH>
-                            <SuperTH inputWidth="30%">Weight</SuperTH>
+                            <SuperTH inputWidth="40%">Item</SuperTH>
+                            <SuperTH inputWidth="20%">Category</SuperTH>
+                            <SuperTH inputWidth="10%">Weight</SuperTH>
                             <SuperTH inputWidth="10%">Price Range</SuperTH>
-                            <HtmlTooltip title = "Is this item available at this merchant?"  arrow placement="top">
-                                <SuperTH inputWidth="20px">Avl?</SuperTH>
+                            <HtmlTooltip title = "Is this item available at this merchant?" arrow placement="top">
+                                <SuperTH inputWidth="10%">Avl</SuperTH>
                             </HtmlTooltip>
                             <HtmlTooltip title = "Is this item in short supply at this merchant?" arrow placement="top">
-                                <SuperTH inputWidth="20px">Ltd?</SuperTH>
+                                <SuperTH inputWidth="10%">Ltd</SuperTH>
                             </HtmlTooltip>
-
                         </TableRow>
 
 {/* ARRAY MAPPING! FIRST MAP===============================================================*/}
@@ -283,9 +282,9 @@ export const MerchantGenerator = () => {
                             {void AR_rowKeys.push("rowID-"+thing[0][0])}
 
                             {/* Indidivual td elements to display each item in a row*/}
-                            <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
+                            <SuperTD inputFontVariant="small-caps" inputFontSize="16px">{innerThing[2]}</SuperTD>
                             
-                            <SuperTD NoHoverSmallTxtTD>
+                            <SuperTD inputFontSize="16px">
                             {innerThing[1]} <Button HideButton
                                                 
                                 inputWidth = "20px" 
@@ -298,14 +297,13 @@ export const MerchantGenerator = () => {
                             </SuperTD>
 
                             {/* Ternary operator to change lbs to N/A if weight is 0 as well as characters for 1/2 or 1/4 lbs */}
-                            <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
-                            "¼ lb" : innerThing[8] === 0.5 ? 
-                            "½ lb" : innerThing[8]+"lbs" : "N/A")}
-                                
-                                </SuperTD>
+                            <SuperTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
+                                "1/4 lb" : innerThing[8] === 0.5 ? 
+                                "1/2 lb" : innerThing[8]+"lbs" : "N/A")}    
+                            </SuperTD>
 
                     {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP */}
-                    <SuperTD NoHoverSmallTxtTD>
+                    <SuperTD>
                         {
                             (innerThing[3] < 1 && innerThing[3] >= 0.1) ? 
                             Math.floor(innerThing[3] * 10)+"sp" 
@@ -342,6 +340,7 @@ export const MerchantGenerator = () => {
             </>
         ))
 :
+
         Object.values(thing).map((innerThing, innerIndex) => (
             <>
                 {/* Tooltip popup for item blurb */}
@@ -363,8 +362,8 @@ export const MerchantGenerator = () => {
                     key = {thing[0][0]}
                     className = {"rowID-"+thing[0][0]} 
                 >
-                <SuperTD NoHoverTD>{innerThing[2]}</SuperTD>
-                <SuperTD NoHoverSmallTxtTD>
+                <SuperTD inputFontVariant="small-caps" inputFontSize="16px">{innerThing[2]}</SuperTD>
+                <SuperTD inputFontSize="16px">
                     {innerThing[1]} <Button HideButton                                
                         inputWidth = "20px" 
                         inputHeight="20px" 
@@ -375,14 +374,14 @@ export const MerchantGenerator = () => {
                 </SuperTD>
                     
                 {/* Ternary operator to change lbs to N/A if weight is 0 */}
-                <SuperTD NoHoverSmallTxtTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
-                "¼ lb" : innerThing[8] === 0.5 ? 
-                "½ lb" : innerThing[8]+"lbs" : "N/A")}
+                <SuperTD>{(innerThing[8] !== 0 ? innerThing[8] === 0.25 ?
+                "1/4 lb" : innerThing[8] === 0.5 ? 
+                "1/2 lb" : innerThing[8]+"lbs" : "N/A")}
                 </SuperTD>
 
                 {/* Nested ternary operators to calculate if an amount is denoted in GP, SP or CP.
                 Compounds values in to "[CHEAPEST] to [MOST EXPENSIVE]" */}
-                <SuperTD NoHoverSmallTxtTD>
+                <SuperTD >
                 {
                     (innerThing[3] < 1 && innerThing[3] >= 0.1) ? 
                         Math.floor(innerThing[3] * 10)+"sp" 

@@ -241,7 +241,7 @@ function genAllBlurbs(){
 return(
     <>
     <InvisiDiv inputHeight="170px" Z="2"/>
-    <InvisiDiv inputMargin="20px 0px 0px 0px" Z="2">
+    <InvisiDiv inputMargin="5% 0% 0% 0%" Z="2">
     <Wrapper inputWidth="65%" Z="1">
         <Table inputWidth="100%">
             <TableHead>

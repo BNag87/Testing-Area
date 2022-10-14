@@ -7,7 +7,7 @@ import { Sidebar } from "./C-Sidebar";
 export const PageTopbar = () => {
     return(
         <>
-        <TopBar>
+        <TopBar inputHeight="20%">
             <InvisiDiv inputAlignItems="left" inputTextAlign="left" inputWidth="5%" Z="6">
             <Sidebar/>            
             </InvisiDiv>

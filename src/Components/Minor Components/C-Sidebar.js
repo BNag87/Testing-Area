@@ -77,6 +77,14 @@ return(
                             </Wrapper>
                         </NLink>
                     </Typography>
+
+                    <Typography variant="h6">
+                        <NLink to="TreasureGen">
+                            <Wrapper inputBackground="rgb(50,50,100)">
+                                Treasure Generator
+                            </Wrapper>
+                        </NLink>
+                    </Typography>
                     
                     <hr/>
                     
